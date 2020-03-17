@@ -1,0 +1,35 @@
+.DS_Store
+
+*node_modules*
+*package-lock.json*
+
+# local env files
+v2/app/.env.local
+v2/app.env.*.local
+
+# Log files
+v2/app/npm-debug.log*
+v2/app/yarn-debug.log*
+v2/app/yarn-error.log*
+
+# Editor directories and files
+.idea
+*.vscode
+.vs
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+###################
+# compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
