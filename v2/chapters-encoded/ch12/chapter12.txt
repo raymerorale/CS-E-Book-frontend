@@ -1,0 +1,307 @@
+@
+
+page1@
+
+CHAPTER 12
+
+Objectives
+
+At the end of the chapter, the learners are expected to:
+
+- Define what is a procedure in assembly language.
+
+- Learn how to set up program that call procedures.
+
+- Acknowledge the task and responsibility of a procedure in a program development
+
+
+COMPUTER SYSTEMS ORGANIZATION WITH ASSEMBLY LANGUAGE
+
+USING PROCEDURE
+@
+
+page2@
+
+DESIGN PROGRAMS USING PROCEDURE
+
+A good program designer breaks a program into procedures. Procedures make it possible to break a large program down into smaller piece so that each piece can be shown to work correctly without the reference to any of the others.
+
+You might ask, "How do I know how to split a long program into procedures?" Here are suggested guidelines to follow:
+
+- Design your program so that each procedure performs only one function.
+
+- Keep procedure small.
+
+DEFINING A PROCEDURE
+
+Every procedure is defined using PROC and ENDP directives. Since these are directives, they don't generate machine language instructions; rather PROC and ENDP are directions to the assembler, marking the beginning and end of the procedure. In assembly, the first declared procedure in the program is considered the major calling procedure.
+
+
+Format:
+
+	<procedure - name> PROC
+		<instruction-1>
+		<instruction-2>
+		....
+		<instruction-n>
+	<procedure - name>ENDP
+
+Example:
+
+	MAIN PROC
+		CALL P1
+		CALL P2
+		CALL QUITPROGRAM
+	MAIN ENDP
+@
+
+page3@
+
+CALLING PROCEDURE
+
+To call a procedure, use CALL instruction
+
+	Format:
+
+		CALL <procedure-name>
+
+	Example
+
+		MAIN PROC
+			CALL P1
+			CALL P2
+			CALL QUIT PROGRAM
+		MAIN ENDP
+
+		P1 PROC
+			MOV AH, 02H
+			MOV DL, 41H
+			INT 21H
+			RET
+		P1 ENDP
+
+
+RETURNING FROM A PROCEDURE
+
+You must make it a point that every procedure returns to its calling procedure. Use RET instruction, to do this just type RET before you end the procedure.
+@
+
+page3@
+
+APPLYING THE CONCEPT OF PROCEDURE IN A PROGRAM
+
+code segment
+	assume cs: code; ds:code
+	org 100h
+begin:
+			mov cl,26
+			mov ah,02
+			mov dl,41h
+FIRST:		int 21h
+			add dl,1
+			loop FIRST
+
+			call LINEFEED
+
+			mov cl,10
+			mov ah,02
+			mov dl,30h
+SECOND:		int 21h
+			add dl,1
+			loop SECOND
+
+			call LINEFEED
+
+			mov cl,26
+			mov ah,02
+			mov dl,41h
+THIRD:		int 21h
+			add dl,1
+			loop SECOND
+			int 20h
+
+LINEFEED:	mov ah,02
+			mov dl,0ah
+			int 21h
+			mov dl,0dh
+			int 21h
+			RET
+
+code ends
+	end begin
+@
+
+page4@
+
+INT 10H FUNCTIONS
+
+AH = 00H	<b>Set the display mode</b>
+			
+				- TEXT MODE
+					- AL=00H 40 columns x 25 rows, black and white
+					- AL=01H 40 columns x 25 rows, color
+					- AL=02H 80 columns x 25 rows, black and white
+					- AL=03H 80 columns x 25 rows, color
+					- AL=04H 80 columns x 25 rows, monochrome display adapter
+
+				- GRAPHICS MODE
+					- AL=04H 320 x 200 pixels, color
+					- AL=05H 320 x 200 pixels, black and white
+					- AL=06H 640 x 200 pixels, black and white
+
+AH = 01H	<b>Set the cursor size.</b>
+
+			CH Starting scan line of the cursor.
+				- The top line is 00H on both the monochrome and color graphics displays
+				- The bottom line 13H for monochrome and 07h for color graphics color graphics adapter.
+				- Valid range: 00H to 31H
+
+			CL Last scan line of the cursor.
+
+			The power-on setting for the color graphics adapter is CH=06 and CL=07H. For monochrome display; CH=11H and CL=12H
+
+AH = 02H	<b>Set the cursor position.</b>
+
+			DH Row number
+
+			DL Column number
+
+			The upper left corner of the screen is (0,0).
+
+			BH Page number
+				- This is the number of the display page, but most program  use page zero (0).
+
+AH = 03H	<b>Reads the cursor position.</b>
+
+			BH Page Number
+
+			On exit:
+			DH Row number of the cursor
+			DL Column number of the cursor
+			CH and CL size of the cursor
+@
+
+page5@
+AH = 04H	<b>Reads the light pen position</b>
+
+AH = 05H	Select active display page.
+
+			AL New page number
+				- From 0 to 7 for modes 0 and 1
+				- From 0 to 3 for modes 2 and 3
+
+AH = 06H	<b>Scrolls Up.</b>
+
+			AL Number of lines to b lank at the bottom of the window.
+				- Normal scrolling blanks on (1) line
+				- Set to zero (0) blank entire window.
+
+			BH Display attributes to use for blank lines.
+
+			CH, CL Row and column number of the upper-left corner of the screen
+
+			DH, DL Row and column number of the lower-right corner of the screen
+
+AH = 07H 	<b>Scroll down</b>
+
+			The same with scroll up (AH = 06h), but lines are left blank at the top of the screen instead of the bottom.
+
+AH = 08H	<b>Read attribute and character under the cursor</b>
+
+			AH Attribute of character read (Text mode only)
+
+			AL Character read
+
+			BH Display page (Text mode only)
+
+AH = 09H	<b>Display character with attributes</b>
+
+			AL Character to display
+
+			BH Page number (Text mode only)
+
+			BL Background and text color
+
+			CX Number of times to write character and attribute on screen
+
+AH = 10H 	<b>Writes character under cursor</b> (normal attributes)
+
+			AL Character to write
+
+			BH Display page
+
+			CX Number of times to write character
+@
+
+page6@
+AH = 11H	<b>Various graphics function</b>
+
+			AL Character to write
+
+			BH Display page
+
+			CX Number of times to write character
+
+AH = 13H	<b>Display string attributes.</b>
+
+			AL = 00H Display attribute and string without advancing cursor.
+
+			BH Page number (text mode only)
+
+			BL Background and text color
+
+			BP Address of string in base pointer of extra segment.
+
+			CX Length of string
+
+			DH Row number
+
+			DL Column number
+
+AH = 14H 	<b>Writes teletype.</b> Writes one character to the screen and move the cursor to the next position.
+
+			AL Character to write
+
+			BH Display page (Text mode only)
+
+			BL Color of character (Graphics mode only)
+
+AH = 15H	<b>Return current video state.</b>
+
+			AH Number of characters per line
+
+			AL Display mode current current set
+
+			BH Active display pages
+@
+
+page7@
+
+INT 21H FUNCTIONS
+
+AH = 01H	<b>Keyboard input.</b> This function waits for you to type a character on the keyboard. It echoes the character to the screen and
+			returns the ASCII in the AL register.
+
+AH = 02H	<b>Display output.</b> This function displays one character on the screen
+
+			DL of DX Character to display on the screen
+
+AH = 07		<b>Keyboard input without echo.</b> This function waits for you to type a character on the keyboard but the character does not display on the screen and returns the ASCII in the AL register.
+
+			AL Character read from the keyboard.
+
+AH = 09H	<b>Display String</b> This function display the string pointed to by the DS, DX pair of registers.
+
+			The end of the string should be marked with the dollar ($) symbol.
+
+AH = 0AH 	<b>Read String</b> This function reads the string from the keyboard.
+
+AH = 4CH 	<b>Exit to DOS.</b> This function allows to go back to DOS environment
+
+			AL Return code
+				- Normally sets to zero (0).
+
+@
+
+
+

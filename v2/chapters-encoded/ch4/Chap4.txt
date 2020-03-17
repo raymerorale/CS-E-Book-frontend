@@ -1,0 +1,285 @@
+Basic Features of Microcomputer
+Chapter 4
+Objectives
+	1) Discuss the different topics covered herein.
+	2) Calculate the different data items measured in bits, bytes, and related units.
+	3) Recognized the relevance of the features of microcomputer in day to day living
+
+BITS
+The fundamental of building block of the computer storage is the bit. It is a contraction of the compound word "binary digit". A bit can be equal to zero (0) which means off state or it can be equal to one (1) which is considered on state. A single bit doesn't provide much information, but it is surprising what a bunch of them can do. A binary number like 1100 has four (4) bits: 101010 has six (6) bits; and 10010110 has eight (8) bits.
+
+The figure below shows four (4) light-emitting diodes (LEDs). A colored circle means that the LED is on; and the uncolored circle means it is off.
+
+											●○●○
+							LED 		BINARY VALUE
+							On 				  1
+							Off 			  0		(table)
+
+The above figure shows on-off-on-off. This indicate the LED displays stands for binary number 1010
+
+BYTES
+Each group of eight (8) related bits is called a byte. It is the basic unit of binary information. Most Computers process data with a length of eight (8) bits or some multiple of eight (8) bits.
+
+RELATED BYTES
+There are also some groupings as you can see in the table below. Of these terms, most common are "byte" and "word". A program can treat a group of one or more related bytes as unit of data. A group of bytes that defines a particular value is commonly kbown as a <b>data item.</b>
+
+							TERMS 				MEANING
+							Nibble			Half of a byte
+							Byte 			Group of eight (8) bits
+							Word 			A 2-byte (16-bit) data item
+							Doubleword		A 4-byte (32-bit) data item
+							Quadword		An 8-byte (64 bit) data item
+							Paragraph		A 16-byte (128 bits) data item
+							Kilobyte(KB)	Equivalent to 1,024 bytes (2^10)
+							Megabyte(MB)	Equivalent to 1,0248,576 bytes (2^20)	(table)
+
+NEGATIVE NUMBERS 
+A signed binary digit is considered positive if the leftmost bit is always equal to zero (0). For all negative numbers, the leftmost bit is always equal to one (1).
+
+Example :		+35 = 0110 0011 (base 2)
+			  -3410 = 1101 1101 (base 2)
+
+
+However, representing a binary number as negative is not as simple as setting the leftmost bit to 1. Instead, it is expressed in two's complement notation.
+
+TWO'S COMPLEMENT NOTATION
+It is rule to represent a binary number as negative. Here are the steps to find the 2's complement of a positive number.
+
+Example:		Obtain the value of -58 (base 10) in binary form
+
+Step 1:			Get the absolute value of -58 (i.e. 58) and convert it to its equivalent bits.
+
+				58 	=	0011 1010
+
+Step 2:			Reverse the bits by changing all 0's to 1's and all 1's to 0's.
+
+				58					=		0011 1010
+				Reverse bits 		=		1100 0101
+				58					=		0011 1010
+				Reverse bits 		= 		1100 0101
+											+		1
+									-----------------
+											1100 0110
+
+
+				Therefore,		-58 (base 10) = 1100 0110 (base 2)
+
+You can observe a pattern form as decimal and binary number decrease in value . Dont be confused! Keep in mind that the microprocessor knows when a number is negative or not.
+
+							DECIMAL 			    BINARY
+						 ... and so on 	   	    ... and so on 
+						  	   +5				0 0 0 0  0 1 0 1
+						  	   +4				0 0 0 0  0 1 0 0
+						  	   +3				0 0 0 0  0 0 1 1
+						  	   +2				0 0 0 0  0 0 1 0
+						  	   +1 				0 0 0 0  0 0 0 1
+						  	   0				0 0 0 0  0 0 0 0 
+						  	   -1				1 1 1 1  1 1 1 1
+						  	   -2				1 1 1 1  1 1 1 0
+						  	   -3				1 1 1 1  1 1 0 1
+						  	   -4				1 1 1 1  1 1 0 0
+						  	   -5				1 1 1 1  1 0 1 1
+						 ... and so on 	   	    ... and so on 		(table)
+
+HOW CHARACTERS ARE STORED? 
+If computer memory can hold only long sequence of 0's and 1's. How meaningful information stored? There are several ways. Text which is information consisting of characters is represented by a code. As you know, each byte contains 8 bits and each of these bits can be a 0 or a 1; there are 2^8 or 256 different possibilities. These 256 patterns are used to form a code. One pattern stands for one symbol.
+
+For example, the pattern for the uppercase letter A is 0100 0001. The set of patterns along with the characters they stand for is called the <b>American Standard Code for Information Interchange</b>, or simply ASCII (pronounced ask-ee). Characters are stored in 8-bit patterns given for each character in the ASCII table. Thus, if you want to decode a long string of bits, all you have to do is divide the bits into bytes and look up each patterns in the ASCII reference table.
+
+ASCII
+To get information in and out of a computer, we need to use numbers, letters and other symbols. This implies some kind of alphanumeric code I/O unit of a computer. At one time, every manufacturer has a different code which led to all kinds of confusion.
+Eventually, industry settled on an I/O code known as the American Standard Code for Information Interchange. This code allows computer manufacturers to standardize I/O  hardware such as keyboards, printers, monitors, and other devices. The 8-bit ASCII that the computer uses provides 256 characters including symbols for foreign alphabets. In particular, the uppercase letters are distinguished from the lowercase letters.
+
+For example, Uppercase "A" = 0100 0001, while lowercase "a" = 0110 0001 
+
+MICROPROCESSOR
+The heart and brain of the computer is the microprocessor (or simply processor) based on Intel 8086 family that performs all the execution of instruction and processing of data that is entirely contained on a single silicon chips. Microprocessor vary in speed, capacity of memory, registers and data bus.
+
+MICROCOMPUTER
+It can be called as the Personal Computer (PC), single chip processor or system on a chip. Microcomputer is a digital computer system that uses a microprocessor  as its Central Processing Unit (CPU). Desktop computers, laptop computers, video game consoled and many types of handheld devices are all examples of microcomputers.
+
+MICROCOMPUTER ARCHITECHTURE
+Inside any computer based on a member of the 8086 family, the basic structure of the main components is the same as shown in the figure below :
+
+			------------------------------------------------------------------------------------
+			|									ADDRESS BUS 									|
+			------------------------------------------------------------------------------------
+					|				|				|				|				|
+			---------------	----------------- --------------- --------------  ----------------
+			|			  |	|				| |		BUS	    | |	 EXECUTION	| |				 |
+			|	 INPUT	  |	|	  MEMORY	| |	 INTERFACE  | |		UNIT	| |	   OUTPUT	 |
+			|			  |	|				| |	   UNIT     | |				| |				 |
+			--------------- ----------------- --------------- --------------- ----------------
+					|				|				|				|				|
+			------------------------------------------------------------------------------------
+			|									DATA BUS 										|
+			------------------------------------------------------------------------------------
+
+BRIEF DESCRIPTION OF DIFFERENT INTEL MICROPROCESSOR
+
+						8088				80188				8086				80186				80286				80386				80386SX				80486
+Witdth of Data Bus 		8-bit 				8-bit 				16-bit 				16-bit 				16-bit				32-bit				16-bit				32-bit
+Width of Address- 		20-bit				20-bit				20-bit				20-bit				24-bit				32-bit				32-bit				32-bit
+Bus
+Maximum Clock Rate 		5 MHZ				8 MHZ				5 MHZ 				5 MHZ 				10 MHZ 				16 MHZ 				16 MHZ 				16 MHZ
+
+						it has 16-bit		The enhanhed		Similar to 			The tune up 		It runs faster		It has 32-bit		Function			It acts like a
+						register that		version of 			8088/80188			of 8086 with 		than the 			registers.			ally				super fast
+						process 2- 			8088 with a 		but higher in 		a few				preceeding			It can address 		identical 			80386 chip.
+						bytes at a 			few					performance			additional 			processors.			up to 4 billion 	to 80386			Floating point
+						time.				additional 			and can run 		instructions.		It can address up 	bytes of 			but 				arithmetic
+						it can 				instruction.		faster.									to 16 million 		internal memory.	lower in 			operations
+						address up 													It can run all 		bytes of internal	Like 80286, it  	performance.  		are so called
+						to 1 million		It can run in 							8086 and 8088		memory.				can operate in 							math co-processor
+						bytes if 			real mode								software			It can operate in 	real or
+						internal 			that is one 												real or protected 	protected
+						memory. 			program at a 												mode. 				mode for
+						The data bus 		time. 														It has special 		multitasking.
+						can transfer 																	instructions to 
+						1 byte at a 																	enable
+						time. 																			multitasking. It
+																										uses virtual
+																										memory
+																										                                                                               (table)
+
+Information is sent from one main component to another along the communication channel which is often called <b>system bus</b>. The system bus is made up of three separate buses: the <b>data bus</b>, the <b>address bus</b> and the <b>control bus</b>. Data items to be stored in memory or which are retreived from memory to be used in calculations are sent along the <b>data bus</b>. The address on which that data item is to be retreived is sent along the <b>adress bus</b>.
+
+All activity within the microcomputer including the storage and retreival of data items is initiated by the microprocessor but managed by the <b>control bus</b>. It is the responsibility of the control bus. For example, to switch the direction of travel on the data bus depending on whether a data item is to be stored or retreived from the memory.
+
+Both programs and data are stored in the memory, the <b>bus interface unit</b> within the microprocessor fetching new instructions or data as necessary. It is also the BIU's job to interpret or decode instructions and to route results to their proper destinations. The microprocessors execution unit carries out any arithmetic which is required, including memory address calculations.
+
+REGISTERS
+The processors registers are used to control instructions being executed to handle addressing of memory and to provide arithmetic capability. The 80386 contains a total of sixteen registers that are of interest to to the application programmer. These registers may be grouped into these basic categories :
+
+		General registers 						The eigtht general-purpose registers are used primarily to contain operands for arithmetic operations.
+
+		Segment registers 						These special-purpose registers permit systems software designers to choose either flat or segmented model of memory organization. These six 	 										registers determine, at any given time, which segments of memory are currently addressable.
+
+		Status and instruction registers 		These special purpose registers are used to record and alter certain aspects of the 80386 processors state.
+
+GENERAL-PURPOSE REGISTERS
+The 16-bit regi BX, CX, and DX has a separate name and can be treated as a unit. This feature is useful for handling characters and other 80bit data items. The byte registers are named AH, BH CH, and DH (high bytes); Likewise,they are uniques in that you can address them as one-word or as a one byte portion. The leftmost byte is the "high-byte" portion and the rightmost byte is "low-byte" portion.
+
+All of the general-purpose registers are available for addressing calculations and for the results of the most arithmetic and logical calculations; however, a few functions are dedicated to certain registers. By implicitly choosing registers for these functions, the 80386 architecture can encode instructions more compactly. The instruction that use specific regiters include: double-precision multiply and divide, I/O, string instructions, translate, loop, variable shift and rotate, and stack operations.
+
+		AX REGISTER
+			Sometimes called as the <b>ACCUMULATOR</b>, this is used in input, output and arithmetic operations.
+			
+			Example : 				AX = 8035h
+						AH = 80h 				AL = 35h
+															(table)
+
+		BX REGISTER
+			This is known as the <b>BASE REGISTER</b>, since it is the only general-purpose register that can be used as an index to extend addressing. It is also used for computations.
+
+			Example :				BX = 0C05h
+						BH = 0C05h 				BL = 05h
+															(table)
+		CX REGISTER
+			It is referred to as the <b>COUNTER REGISTER</b>. This is used with the certain instruction that perform operations repeatedly. It may contain a value to control the number of timer a loop is repeated. It can be used for computations.
+
+			Example :
+									CX = B1F2h
+						CH = B1h 				CL = F2h
+															(table)
+
+		DX REGISTER
+			It is known as the <b>DATA REGISTER</b> because it is used to hold data for any purposes. Some input/output operations and multiply/divide operations that involve large values requies its use.
+
+			Example : 				DX = 0BEAh
+						DH = 08h				DL = EAh
+															(table)
+
+		SP REGISTER
+			<b>STACK POINTER</b> is a 16-bit register pointing to program stack. This register provides an offset value which when associated with the SS Registe, refers to the current word being processed in the stack. The stack is maintained as a LIFO with its bottom at the start of the stack segment (specified by the SS segment register). Unlike the SP register,
+			the BP can be used to specify the offset of other programs segments.
+
+		BP REGISTER
+			This 16-bit <b>BASE POINTER</b> register facilitates referencing parameters, which are the data, and address that a program passes through the stack. IT is a 16-bit register pointing to the data in stack segment. It is usually used by subroutines to locate variables that were passed on the stack by a calling program. BP register is usually used for based, based indexed or register indirect addressing.
+
+		SI REGISTER 
+			The 16-bit <b>SOURCE INDEX</b> register is required for some string operations. It is associated with the DS register. SI is used for indexed, based indexed and register indirect addressing, as well as a source data address in string manipulation instructions. Used in conjunction with the DS register to point the data locations in the data segment.
+
+		DI REGISTER
+			The 16-bit <b>DESTINATION INDEX</b>	register is also required for some string operations and is associated with the ES register.It is used in conjunction with the ES register in string operation. DI is used for indexed, based indexed and register indirect addressing, as well as a destination data addresses in string manipulation instruction, In short, Destination Index and SI Source Index registers are used to hold address.
+
+SEGMENT REGISTERS
+These are registers that provide for addressing an are of memory known as the current segment. At any giver instant, six segments of memory may immediately accessible to an executing 80386 program. The segment registers <b>CS, DS, SS, ES, FS,</b> and <b>GS</b> are used to identify these six current segments. Each of these registers specifies a particular kind of segment, as characterized by the associated mnemonics ("code", "data", or "stack"). Each register uniquely determines one particular segmen, from among the segments that make up the program that is to be immediately accesible at highest speed.
+
+		CS REGISTER
+			<b>CODE SEGMENT REGISTER</b> contains the starting address of a programs segments. This segment address plus an offset value in the IP register indicates the address of an instruction to be fetched for execution. 
+
+		DS REGISTER
+			<b>DATA SEGMENT REGISTER</b> contains the starting address of a programs data segment. Instructions use this address to locate data.
+
+		ES REGISTER
+			<b>EXTRA SEGMENT REGISTER<b> is used by some string operations to handle memory addressing. It is associated with DI register. A program that requires the use of may initialize it with an appropriate segment address.
+
+		SS REGISTER
+			<b>STACK SEGMENT REGISTER</b> permits the implementations of a stack in memory that a program uses for temporary storage address of a program stack segment in the SS register.
+
+		IP REGISTER
+			The instruction pointer register (IP) contains the offset address, relative to the start of the current code segment, of the next sequential instruction to be executed. The instruction pointer is not directly visible to the programmer; it is controlled implicitly by control-transfer instructions, interrupts, and exceptions. It is associated with the CS register in that IP indicates the current instruction within the currently executing code segment.
+
+FLAG REGISTERS
+These are special registers that indicate the present status of the computer and the result of processing. Many instructions involving comparisons and arithmetic change the status of the flags, which some instructions may test to determine subsequent action.
+
+The 32-bit flags register is named EFLAGS. The flags control certain operations and indicate the status of the 80386. The flags may be considered in three groups: the status flags, control flags, and systems flags.
+
+The status flags of the FLAGS register allow the result of one instruction to influence later instructions. The arithmetic instructions use OF, SF, ZF, AF, PF, and CF. The SCAS (Scan String), CMPS (Compare String), and LOOP instructions use ZF to signal that their operations are complete. There are instructions to set, clear, and complement CF before execution of an arithmetic instruction.
+
+		OVERLFLOW FLAG (OF)
+			It indicates that the result of an operation is too long to be stored in the destination operand.
+			OV is displayed if there is an OVERFLOW; otherwise NV is displayed for NO OVERFLOW.
+			Sample Code that will change the status of the overflow flag :
+
+					MOV AL, 04
+					ADD AL, 7F
+					INT 20
+
+
+		DIRECTION FLAG (DF)
+			It is used in string operations to determine the direction of the data transfer. UP is displayed for UPWARD direction; otherwise DN is displayed for DOWNWARD direction.
+
+		SIGN FLAG (SF)
+			It indicated that the result of an operation is positive or negative. PL is displayed for PLUS; otherwise NG for NEGATIVE.
+			Sample code that will change the status of the sign flag :
+
+					MOV AL, 03
+					SUB AL, 08
+					INT 20
+
+		ZERO FLAG (ZF)
+			It indicates whether an operation produced a zero result. ZR is displayed for ZERO; otherwise NZ for NON ZERO.
+			Sample code that will change the status of the zero flag :
+					MOV AX, 0008
+					SUB AL, 0008
+					INT 20
+
+		AUXILLARY CARRY FLAG (AF)
+			It indicates whether an operations produced a zero result. ZR is displayed for ZERO; otherwise NZ for NON ZERO.
+			Sample code that will change the status of the zero flag :
+
+					MOV AX, 0008
+					SUB AL, 0008
+					INT 20
+
+		PARITY FLAG (PF)
+			It indicates whether the result of an operation contains an even number or odd number of 1s. PE is displayed for PARITY EVEN; otherwise PO for PARITY ODD.
+			Sample Code that will change the status of the parity flag :
+
+					MOV AL, 08
+					MOV AL, 02
+					INT 20
+
+		CARRY FLAG (CF)
+			It indicates whether the instructions produced a value that can be too big (or too small) to be held in the specified register or memory location.
+			CY is displayed for CARRY; otherwise NC for NO CARRY.
+			Sample code that will change the status of the parity flag :
+
+					MOV AL, FF
+					SUB AL, 01
+					INT 20
+
+		
+

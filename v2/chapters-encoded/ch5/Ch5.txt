@@ -1,0 +1,1053 @@
+Chapter 5
+Introduction to Machine Language
+
+Objectives
+1) Describe machine language and its focus.
+2) Code simple debug programs.
+3) Acquire a sense of persistence in learning machine language.
+
+BUG
+It is the computer terminology for error or mistake in a program or computer system and the term debugging is a methodical process or finding and reducing the number of bugs or defects in a computer program. These terms stemmed from the early days of computing. In particular, it was in 1947 that an event occurred that is of special interest to programmers and students of computing. Grace Murray Hopper, discovered a small, dead moth in the machine and removed it with tweezers. The moth went into their logbook along with a note recording an incident for posterity. From then on, computing errors were called bugs and the process of finding and removing them was known as debugging.
+
+DEBUGGER
+Debugger is a program tool that provides an environment for testing load modules. Load modules are executable files that can have extensions of .COM and .EXE. It also allows us to run machine code programs in such a way that we can observe the changes a program makes to register and memory. Some examples of debugger include Code Viewm Debug, GNU Debugger, T-Bug, Turbo Debugger and Visual Studio Debugger. Using a debugger you can display the program, execute one instruction at a time, see the results of each instruction, and display area of memory, and so on.
+
+DEBUG
+In 1980, Tim Paterson began working on a 16-bit OS for the 8086 S-100 Bus card he had designed for SCP (Seattle Computer Products) the previous year. To help in getting QDOS (later called 86-DOS) to work correctly, Paterson created a debugger in a ROM chip; the code for that ROM version was released into the Public Domain. Paterson adapted the code to run as a .COM program under QDOS, and also added the ability to disassemble 8086 machine code.
+
+In the meantime, Microsoft had been busy purchasing the rights to sell Paterson QDOS to IBM for their 'secret' PC project. Tim was then hired by Microsoft as the primary author of their first OS. When he completed his work on IBM's Personal Computer DOS 1.00 in 1981, his DEBUG.COM utility was included with it. All the functionality that was put into DEBUG is still there and little has been added to it (the major exception being the Assemble command, added under DOS 2.0).
+
+DEBUG is software that is classified as debugger which is used for testing and debugging executable programs. A feature of DEBUG is that it displays all program code and data in hexadecimal format and any data that you enter into memory must also be in hex form. It also provides a single-step mode which allows you to execute a program one instruction at at time so that you can view the effect of each instruction on memory locations and registers.
+
+When Debug is started without any parameters of the Debug prompt, a "-", appears. The use can then enter one of several one or two-letter subcommands, including "a" to enter the assembler mode, "d" to perform a hexadecimal dump, "t" to trace and "u" to unassemble (disassemble) a program in memory. Debug can also be used as a "debug script" interpreter using the following syntax.
+
+Changes in MS-DEBUG
+
+DOS 2.0 
+	With the release of DOS 2.0, DEBUG gained the ability to assemble instructions directly into machine code (the A command). This is one of the most important commands for many of its users. Though lacking much of the functionality of a stand-alone Assembler, e.g., all Jumps must be hexadecimal addresses (no labels can be used), many useful .COM programs have been assembled with this command.
+
+DOS 3.0 
+	Under DOS 3.0, the P (Proceed) command was added, so DEBUG could quickly execute subroutines; at the same time, it became possible to attempt stepping through interrupts with the T (Trace) command.
+
+DOS 4.0
+	When DOS made EMS (Expanded Memory) functions available under DOS 4.0, the four commands xa, xd, xm, and xs were also added to DEBUG. It appears they were rarely, if ever used though, even by programmers. For most of us, the only noticeable change in DEBUG was the addition of the help command (type a '?' while inside DEBUG) under DOS 5.0; when all DOS commands finally got the /? command-line switch.
+
+DOS 5.0
+	DEBUG's code went through a number of changes (and 'bug fixes' too) over the years! Some of these internal changes were related to DOS system calls and screen output, then there was the change in file type from a .COM to an .EXE program under DOS 5.0. But in spite of all those changes and others which followed, DEBUG has never had an official revision since 2.40 (those digits have been embedded inside all versions of DEBUG since DOS 3.0)	
+
+MASM
+	Microsoft did create their own, Assembler (MASM), 'C' compiler and Debugger (CodeView). Rather than using MASM and CodeView, many opted for the less expensive Borland assembler (TASM) and Turbo Debugger when they appeared, or some other commercial product. Howeverm users and studetns alike can still learn a great deal about Assembly language by using DEBUG.
+
+Advantages of DEBUG
+1) It is free
+2) It is universally available
+3) It is simple to use
+4) It requires relatively little memory
+
+DEBUG COMMANDS 
+DEBUG's set of commands lets you perform a number of useful operations. The commands of interest at this point are the following.
+
+	?		Displays a list of Debug commands.
+	A 		Assembles 8086/8087/8088 mnemonics.
+	C 		Compares two portions of memory.
+	D 		Displays the contents of a portion of a memory.
+	E 		Enters data into memory starting at a specified address.
+	F 		Fills a range of memory starting at a specified address.
+	G 		Runs the executable file that is in memory.
+	H 		Performs hexadecimal arithmetic.
+	I 		Displays one byte value from a specified port.
+	L 		Loads the contents of a file or disk sectors into memory.
+	M 		Copies the contents of a block of memory.
+	N 		Specifies a file for an l or w command, or specifies the parameters for the file you are testing.
+	O 		Sends one byte value to an output port.
+	P 		Executes a loop, a repeated string instrcution, a software interrupt, or a subroutine.
+	Q  		Stops the Debug session.
+	R 		Displays or alters the contentd of one or more registers.
+	S 		Searches a portion of memory for a specified pattern of one or more byte values.
+	T 		Executes one instructuon and then displays the contents of all registers, the status of all flags, and the 				decoded form of the instruction that Debug will execute next.
+	U 		Disassembles bytes and displays the corresponding source statements.
+	W 		Write the file being tested to a disk.
+	XA 		Allocates expanded memory.
+	XD 		Deallocates expanded memory.
+	XM 		Maps expanded memory pages.
+	XS 		Displays the status of expanded memory.
+
+A (Assemble)
+	Assembles 8086/8087/8088 mnemonics directly into memory. This command creates executable machine code from assembly-language statements. All numeric values are in hexadecimal format, and you must type them as 1 to 4 characters. You specify a prefix mnemonic in front of the operation code (opcode) to which it refers.
+
+	Syntax:		a[address]
+
+				Parameters
+				address
+				Specifies the location where you type assembly-language mnemonics. You use hexadecimal values for address and type each value without the trailing "h" character. If you do not specify an address, a starts assembling where it last stopped.
+
+				Notes
+				Using mnemonics
+				The segment-override mnemonics are cs:, ds:, es:, and ss:. The mnemonics for the far return is retf. String-manipulation mnemonics must explicitly state the string size. For example, use movsw to move word strings (16 bits), and use movsb to move byte strings (8 bits).
+
+C (Compare)
+	Compares two portions of memory.
+
+	Syntax:		c range address
+
+				Parameters
+				range
+				Specifies the starting and ending addresses, or the starting address and length, of the first area of memory you want to compare. For information about valid range values, see the debug command.
+
+				address
+				Specifies the starting address of the second area of memory you want to compare. For information about valid range values, see the debug command.
+
+				Notes
+				If the range and address memory areas are identical, Debug displays nothing and returns directly to the Debug prompt. If there are differences, Debug displays them in the following format: address1 byte1 byte2 address2
+
+	Example:	The following commands have the same effect:
+				c100, 10f 300
+				C100|10 300
+
+				Each command compares the block of memory from the 100h through 10Fh with the block of memory from 300h through 30Fh.
+				Debug responds to either of the previous commands with a display similar to the following
+				(assuming DS = 197F)				:
+
+				197F:0100 4D E4 197F:0300
+				197F:0101 67 99 197F:0301
+				197F:0102 A3 27 197F:0302
+				197F:0103 35 F3 197F:0303
+				197F:0104 97 BD 197F:0304
+				197F:0105 04 35 197F:0305
+				197F:0107 76 71 197F:0307
+				197F:0108 E6 11 197F:0308
+				197F:0109 19 2C 197F:0309
+				197F:010A 80 0A 197F:030A
+				197F:010B 36 7F 197F:030B
+				197F:010C BE 22 197F:030C
+				197F:010D 83 93 197F:030D
+				197F:010E 49 77 197F:030E
+				197F:010F 4F 8A 197F:030F
+				Notice that the addresses 197F:0106 and 197F:0306 are missing from the list. This means that the values in those addresses are identical.
+
+D (Dump)
+	Displays the contents of a range of memory addresses.
+	Syntax:		d[range]
+
+				Parameters
+				range
+				Specifies the starting and ending addresses, or the starting address and length, of the memory area whose contents you want to display. For information about valid range values, see the debug command. If you do not specify range, Debug displays the contents of 128 bytes, starting at the end of the address range specified in the previous d command.
+
+				Notes
+				When you use the d command, Debug displays memory contents in two portionsL a hexadecimal portion (each byte values is shown in hexadecimal format) and an ASCII portion (each byte value is shown as an ASCII character). Each nonprinting character is denoted by a periond (.) in the ASCII portion of the display. Each display line shows the contents of 16 bytes, with a hyphen between the eight and ninth bytes. Each display line begins on a 16-byte boundary.
+
+	Example:	Suppose you type the following command:
+				dcs:100 10f
+
+				Debug displays the contents of the range in the following format:
+				04BA:0100 54 4F 4D 00 54 41 57 59-45 52 00 00 00 00 00 00 TOM.SAWYER.......
+
+				If you type the d command without parameters, Debug formats the display as described in the previous example. Each line of the display begins with an address that is 16 bytes greater than the address on the previous line (or 8 bytes if you have 40-column screen).
+
+				For each subsquent d command you type without parameters, Debug displays the bytes immediately following those last displayed. If you type the following command, Debug displays the contents of 20h bytes, starting at
+				CS:100:
+				dcs:100|20
+
+				If you type the following command, Debug displays the contents of all bytes in the range of lines from 100h through 115h in the CS segment:
+				dcs:100 115
+
+E (Enter)
+	Enters data into memory at the address you specify.
+	You can type data in either hexadecimal or ASCII format. Any data previously stored at the specified address is lost.
+	Syntax: 	e address[list]
+
+				Parameters
+
+				address
+				Specifies the first memory location where you want to enter data.
+
+				list
+				Specifies the data you want to enter into successive bytes of memory.
+
+				Notes
+				Using the address parameter
+				If you specify a value for address without specifying a value for the optional list parameter, Debug displays the address and its contents, repeats the address on the next line, and waits for your input. At this point, you can perform one of the following actions:
+
+					Replace the byte value. To do this, you type a new value after the current value. If the value you type is not a valid hexadecimal value or if it contains more than two digits. Debug does not echo the invalid or extra character.
+
+					Advance to the next byte. To do this, you press the SPACEBAR. To change the value in that byte, type a new value after the current value. If you move beyond an 8-byte boundary when you press the SPACEBAR, Debug starts a new display line and displays the new address at the beginning of the line.
+
+					Return to the preceding byte. To do this, you press the HYPHEN key. You can press the HYPHEN key repeatedly to move back more than 1 byte. When you press HYPHEN, Debug starts a new line and displays the current address and byte value.
+
+					Stop the e command. To do this, you press the ENTER key. You can press ENTER at any byte position.
+
+
+				Using the list parameter 
+				If you specify values for the list parameter, the e command sequentially replaces the existing bytes values with the values from the list. If an error occurs, no byte values are changed.
+				List values can be either hexadecimal byte values or strings. You seperate values by using a space, a comma, or a tab character. You must enclose strings within single or double quotation marks.
+
+
+	Examples: 	Suppose you type the following command:
+				ecs:100
+
+				Debug displays the contents of the first byte in the following format:
+				04BA:0100 EB._
+
+				To change this value to 41, type 41 at the cursor, as follows:
+				04BA:0100 EB.41_
+
+				You can type consecutive byte values with one e command. Instead of pressing ENTER after typing the new value, press the SPACEBAR. Debug displays the next  value. In this example, if you press the SPACEBAR three times, Debug displays the following values:
+				04BA:0100 EB.41 10. 00. BC._
+
+				To change the hexadecimal value BC to 42, type 42 at the cursore as follows:
+				04BA:0100 EB.41 10. 00. BC.42_
+
+				Now suppose that you decide the value 10 should be 6F. To correct this value, press the HYPHEN key twice to return to address 0101 (value 10).
+				Debug displays the following:
+				04BA:0100 EB.41 10. 00. BC.42-
+				04BA:0102 00.-
+				04BA:0101 10._
+
+				Type 6F at the cursor to change the value, as follows: 
+				04BA:0101 10.6f_
+				Press ENTER to stop the e command and return to the Debug prompt. The following is an example of a string entry:
+				eds:100 "This is the text example"
+				The string will fill 24 bytes, starting at DS:100.
+
+F (Fill)
+	Fills addresses in the specified memory area with values you specify. You can specify data in either hexadecimal of ASCII format. Any data previously stored at the specified address is lost.
+
+	Syntax:		f range list
+
+				Parameters
+				range
+				Specifies the starting and ending addresses, or the starting address and length, of the memory area you want to fill. For information about valid range values, see the debug command.
+
+				list
+				Specifies the data you want to enter. List can consist of hexadecimal numbers or a string enclosed in quotation marks.
+
+				Notes
+				Using the range parameter
+				If range contains more bytes than the number of values in list, Debug assigns the values in list repeatedly until all bytes in range are filled.
+				If any of the memory in range is bad or doesn't exist, Debug displays an error messages and stops the f command.
+
+				Using the list parameter
+				If list contains more values than the number of bytes in range, Debug ignores the extra values in list.
+
+
+	Example: 	Suppose you type the following command:
+				04BA:100|100 42 45 52 54 41
+
+				In response, Debug fills memory locations 04BA:100 through 04BA:1FF with the values specified. Debug repeats the five values until all the 100h bytes are filled.
+
+G (Go)
+	Runs the program currently in memory.
+	Syntax:		g[=address][breakpoints]
+
+				Parameters
+				= address
+				Specifies the address in the program currently in memory at which you want execution to begin: If you do not specify address, MS-DOS begins program execution at the current address in the CS:IP registers.
+
+				breakpoints
+				Specifies 1 to 10 temporary breakpoints that you can set as part of the g command.
+
+				Notes 
+				Using the address parameter
+				You must precede the address parameter with an equal sign (=) to distinguish the starting address (address) from the breakpoint addresses (breakpoints).
+
+				Specifying breakpoints 
+				The program stops at the first breakpoint it encounters, regardless of where you typed that breakpoint in the breakpoints list. Debug places the original instruction at each breakpoint with an interrupt code.
+
+				Whent the program reaches a breakpoint, Debug restores all breakpoint addresses to their original instructions and displays the contents of all registers, the status of all flahs, and the decoded form of the last instruction executed. Debug displays the same information as it would display if you used the Debug r (register) command and specified the breakpoint address.
+
+				If you do not stop the program at one of the breakpoints, Debug does not replace the interrupt codes with the original instructions.
+
+
+				Limitations on setting breakpoints
+				You can set breakpoints only at addresses containing the first byte of an 8086 operation code (opcode). If you set more than 10 breakpoints, Debug displays the following message:
+				bp Error
+
+				Requirements for the user stack pointer
+				The user stack pointer must be valid and must have 6 bytes available for the g command. This command uses an iret instruction to jump to the program being tested. Debug sets the user stack pointer and pushes the user flags, the code segment register, and the instruction pointer onto the user stack. (If the user stack is not valid or is too small, the operation system might fail). Debug places an interrupt code (0CCh) at the specified breakpoint address(es).
+
+				Restarting a program
+				Do not attempt to restart a program after MS-DOS displays the following message:
+				Program terminated normally
+				To run the program properly, you must reload it by using the Debug n (name) and l (load) commands.
+
+	Example:	Suppose you type the following command:
+				gcs:7550
+
+				MS-DOS runs the program currently in memory up to the breakpoint address 7550 in the CS segment. Debug then displays the contents of the registers and the status of the flags and stops the g command.
+
+				The following command sets two breakpoints:
+				gcs:7550, cs:8000
+
+				If you type the g command again after Debug encounters a breakpoint, exectuion begins at the instruction after the breakpoint, rather than at the usual starting address.
+
+H (Hex)	
+	Performs hexadecimal arithmetic on two parameters you specify.
+
+	Syntax:		h value1 value2
+
+				Parameters
+				value1 
+				Represetns any hexadecimal number in the range 0 through FFFFh.
+
+				value2
+				Represents a second hexadecimal number in the range 0 through FFFFh.
+
+				Note 
+				Debug first adds two parameters you specify and then subtracts the second parameter from the first. The results of these calculations are displayed on one time - first the sum, then the difference.
+
+	Example:	Suppose you type the following command:
+				h19f 10a
+				Debug performs the calculations and displays the following result:
+				02A9 0095
+
+I (Input)
+	Reads and displays one byte value from the port you specify.
+	Syntax:		|port
+				Parameter
+				port
+				Specifies the input port by address. The address can be a 16-bit value.
+
+	Example: 	Suppose you type the following command:
+				i2f8
+
+				Suppose also that the byte balue at the port is 42h. Debug reads the byte and then displays the value as follows:
+				42
+
+L (Load)
+	Loads a file or contents of specific disk sectors into memory. To load the contents of the number of bytes specified in the BX:CX registers from a disk file, use the following syntax:
+
+	Syntax:		l[address]
+				To bypass the MS-DOS file system and directly load specific sectors, use the following syntax: l address drive start number
+
+				Parameters
+				address
+				Specifies the memory location where you want to load the file or the sector contetns. If you don not specify address, Debug uses the current address in the CS register.
+
+				drive
+				Specifies the drive that contains the disk from which specifi sectors are to be read. This value is numeric: 0 = A, 1 = B, 2 = C, and so on. You use the drive, start, and number parameters only if you want to load the contents of specific sectors rather than load the file specified on the debug command line or in the most recent Debug n (name) command.
+
+				start
+				Specifies the hexadecimal number for the first sector whose contents you want to load.
+
+				number
+				Specifies the hexadecimal number of consecutive sectors whose contents you want to load.
+
+				Notes
+				Using the l command without parameters
+				When you use the 1 command without parameters, the file you specified on the debug command line is loaded into memory, beginning at address CS:100. Debug also sets the BX and CX registers to the number of bytes loaded. If you did not specify a file on the debug command line, the file loaded is the one you most recently specified by using the n command.
+
+				Using the l command with the address parameter
+				If you use the l command wiht the address parameter, Debug begins loading the file or the contents of the specified sectors at the memory location address.
+
+				Using the l command with all parameters
+				If you use the l command with all parameters, Debug loads the contents of specific disk sectors instead of loading a file.
+
+				Loading the contents of specific sectors
+				Each sector in the range you specify is read from drive. Debug begins loading with start and continues until the contents of the number of sectors specified in number have been loaded.
+
+				Loading an .EXE file 
+				Debug ignores the address parameter for .EXE files. If you specify an .EXE file, Debug relocates the file to the loading address specified in the header of .EXE file. The header itself is stripped off the .EXE file before the file is loaded into memory, so the size of an .EXE file on disk differs from its size in memory. If you want to examine a complete .EXE file, rename the file with a different extension.
+
+				Opening a hex file
+				A hex file is a file that uses the Intel hexadecimal format, as described in the MS-DOS Encyclopedia. Debug assumes that files with the .HEX extension are hexadecimal-format files. You can type the l command at the address specified in the hex file. If the l command you type includes the address parameter, Debug adds the specified address to the address found in the hex file to determine the starting address.
+
+	Examples 	Suppose you start Debug and type the following command:
+				nfile.com
+
+				You can now type the l command to load FILE.COM. Debug loads the file and displays the Debug prompt. 
+
+				Suppose that you want to load the contents of 109 (6Dh) sectors from drive C, beginning with logical sector 15 (0Fh), into memory beginning at address 04BA:0100. To do this, type the following command:
+				l04ba:100 2 0f 6d
+
+M (Move)
+	Copies the contents of a block of a memory to another block of memory.
+	Syntax:		m range address
+
+				Parameters
+				range
+				Specifies the starting and ending addresses, or the starting address and the length, of the memory area whose contents you want to copy.
+
+				address 
+				Specifies the starting address of the location to which you want to copy the contents of range.
+
+				Notes 
+				Effects of the copy operation on existing data
+				If the addresses in the block being copied don not have new data writtern to them, the original data remains intact. However, if the destination block already contains data (as it might in an overlapping copy operation), that data is overwritten. (Overlapping copy operations are those in which part of the destination block overlaps part of the source block.)
+
+				Performing overlapping copy operations
+				The m command performs overlapping copy operations without losing data at the destination addresses. The contents of addresses that will be overwritten are copied first. Thus, if data is to be copied form higher addresses to lower addresses, the copy operation begins at the source block's lowest address and progresses toward the highest address. Conversely, if data is to be copied from lower addresses to higher addresse, the copy operation begins at the source block's highest address and progresses toward the lowest address.
+
+	Example:	Suppose you type the following command:
+				mcs:100 110 cs:500
+
+				Debug first copies the contents of address CS:110 to CS:510, then copies the contents of CS:10F to CS:50F, and so on until it has copied the contents of CS:100 to CS:500. To view the results, you can use the Debug d (dump) command, specifying the destination address you used with the m command.
+
+N (Name)
+	Specifies the name of an executable file for a Debug l(load) or w(write) command, or specifies parameters for the executable file being debugged.
+
+	Syntax:		n[drive:][path]filename
+				To specify parameters for the executable file you are testing, use the following syntax:
+				n file-parameters
+
+				To clear the current specifications, use the following syntax:
+				n
+
+				Parameters
+				[drive:][path]filename
+				Specifies the location and name of the executable file you want to test.
+
+				file-parameters
+				Specifies parameters and switches for the executable file you are testing.
+
+				Notes
+				The two uses of the n command 
+				You can use the n command in two ways. First, you can use it to specify a file to be used by a later l or w command. If you start Debug without naming a file to be debugged, you must use the command n filename before you can use the l command to load the file. The filename is correctly formatted for a file control block at CS:5C. Second, you can use the n command to specify command line parameters and switches for the file being debugged.
+
+				Memory areas
+				Memory 				Contents
+				CS:5C				File control block (FCB) for file 1
+				CS:6C				File control block (FCB) for file 2
+				CS:80				Length of n command line (in characters)
+				CS:81				Beginning of n command-line characters
+
+				The first filename you specify for the n command is placed in a file control block (FCB) at CS:5C. If you specify a second filename, this name is placed in a FCB at CS:6C. The number of characters typed on the n command line (exclusive of the first character, n) is stored at location CS:80. The actual characters on the n command line(gain, exclusive of the letter n) are stored beginning at CS:81. Note that these characters can be any switches and delimiters that would be legal in a command typed at the MS-DOS prompt.
+
+	Examples 	Suppose you've started Debug and loaded the program PROG.COM for debugging. You subsequently decide to 				specify two parameters for PROG.COM and run the program. Following is the sequence of commands for this 			example:
+
+				debug prog.com
+				nparam1 param2
+				g
+
+				In this case, the Debug g (go) command runs the program as if you had typed the following command at the MS-DOS prompt:
+
+					prog param1 param2
+
+				Testing and debugging therefore reflect a typical run-time environment for PROG.COM.
+
+				In the following sequence of commands, the first n command specifies FILE1.EXE as the file for the subsequent l command, which loads FILE1.EXE into memory. The second n command specifies the parameters to be used by FILE1.EXE. Finally, the g command runs FILE1.EXE as if you had typed <b>file1 file2.dat file3.dat</b> at the MS-DOS prompt.
+
+					nfile1.exe
+					l
+					nfile2.dat file3.dat
+					g
+
+				Note that you do not use the l command after the second form of the n command. Also note that if you now use the w command, MS-DOS saves FILE1.EXE, the file being debugged, with the name FILE2.DAT. To avoid this result, you should always use the first form of the n command immediately before either an l or a w command.
+
+O (Output)	
+	Sends the value of a byte to an output port.
+	Syntax:		o port byte-value
+				Parameters
+				port
+				Specifies the output port by address. The port address can be a 16-bit value.
+
+				byte-value
+				Specifies the byte value you want to direct to port.
+
+	Example 	To send the byte value 4Fh to the output port at address 2F8h, type the following command:
+
+				o2f8 4f
+
+P (Proceed)
+	Executes a loop, a repeated string instruction, a software interrupt, or a subroutine; or trace through any other instruction.
+
+	Syntax: 	p[=address][number]
+
+				Parameters
+				=address
+				Specifies the location of the first instruction to execute. If you do not specify an address, the default address is the current address specified in the CS:IP registers
+
+				number
+				Specifies the number of instructions to execute before returning control to Debug. The default value is 1.
+
+				Notes 
+				Transferring control to the program being tested
+				When the p command transfers control from Debug the program being tested, that program runs without interruption until the loop, repeated string instruction, software interrupt, or subroutine at the specified number of machine instructions have been executed. Control then returns to Debug.
+
+				Limitations on the address parameter
+				If the address parameter does not specify a segment, Debug uses the CS register of the program being tested. If you omit address, the program is executed beginning at the address specified by its CS:IP registers. You must precede the address parameter with an equal sign (=) to distinguish it from the number parameter. If the instruction at the specified address is not a loop, a repeated string instruction, a software interrupt, or a subroutine, the p command works the same way as the Debug t (trace) command.
+
+				Messages displayed with the p command
+				After p executes an instruction, Debug displays the contents of the program's registers, the status of its flags, and the decoded form of the next instruction to be executed.
+
+				Caution: You cannot use the p command to trace through read-only memory(ROM).
+
+	Example 	Suppose that the program you're testing contatins a call instruction at address CS:143F. To run the 				subroutine that is the destination of call and then return control to Debug, type the following command:
+				p=143f
+				Debug displays the results in the following format:
+
+AX=0000 BX=0000 CX=0000 DX=0000 SP=FFFE BP=0000 SI=0000 DI=0000 
+DS=2246 ES=2246 SS=2246 CS=2246 IP=1443 NV UP EI PL NZ AP PO NC
+2246:1442 7505		JNZ		144A
+
+Q (Quit)	
+	Stops the Debug session without saving the file currently being tested.
+	After you type q control returns to MS-DOS.
+
+	Syntax 		q
+
+	Example 	To stop debugging session, type the following command: q
+				MS-DOS displays the MS-DOS prompt
+
+Debug: R (Register)	
+
+	Displays or alters the contents of one or more central processing unit (CPU) registers.
+
+	Syntax 		r[register-name]								
+				To display the contents of all registers and flags in the register storage area, use the following syntax:r
+
+				Parameter
+				register-name
+				Specifies the name of the register whose contents you want to display.
+
+				Notes 
+				Using the r command
+				If you specify a register name, MS-DOS displays the 16-bit value of that register in hexadecimal notation and displays a colon as the prompt. If you want to change the value contained in the register, type a new value a press ENTER; otherwise, just press ENTER to return to the Debug prompt.
+
+				Valid register names
+				The following are valid values for register-name:
+				ax, bx, cx, dx, sp, bp, si, di, ds, es, ss, cs, ip, pc, and f.
+				Both ip and pc refer to the instruction pointer.
+				If you specify a register name other than one from preceeding list, MS-DOS displays the followign message:
+				br error
+
+				Using the f character instead of a register name
+				If you type the f character instead of a register name, Debug displays the current setting of each flag as a two-letter code and then displays the Debug prompt. To change the setting of a flag, type the appropriate two-letter code from the following table:
+
+				Flag name 			Set   				Clear
+
+				Overflow			ov  				nv
+				Direction			dn(decrement) 		up(increment)
+				Interrupt 			ei(enabled)    		di(disabled)
+				Sign 				ng(negative) 		pl(positive)
+				Zero 				zr 					nz
+				Auxiliary Carry 	ac 					na
+				Parity				pe(even) 			po(odd)
+				Carry 				cy 					nc
+
+				You can type new flag values in any order. You need to leave spaces between these values. To stop the r command, press ENTER. Any flags for which you did not specify new values remain unchanged.
+
+				Messages displyaed with the r command
+
+				If you specify more than one value for a flag, Debug displays the following message:
+					df error
+
+				If you specify a flag code not listed in the preceding table, Debug displays the following message:
+					bf error
+
+				In both cases, Debug ignores all settings specified after the invalid entry.
+
+				Default settings for Debug
+				When you start Debug, the segment registers are set to the bottom of free memory, the instruction pointer is set to 0100h, all flags are cleared, and the remaining registers are set to zero, except for sp, which is set to FFEEh.
+
+	Examples 	To view the contents of all registers, the status of all flags, and the decoded form of the instruction 			at the current location, type the following command:
+
+				If the current location is CS:11A, the display will look similar to the following:
+
+AX=0E00 BX=00FF CX=0007 DX=01FF SP=039D BP=0000 SI=005C DI=0000
+DS=04BA ES=04BA SS=04BA CS=04BA IP=011A NV UP DI NG NZ NAC PE NC				
+04BAA:011A 	CD21		INT 21
+
+				To view only the status of the flags, type the following command:
+					rf
+
+				Debug displays the information in the following format:
+					NV UP DI NG NZ AP PE NC
+
+				Now you can type one or more valid flag values, in any order, with or without spaces, as in the following command:
+					nv up di ng nz ac pe nc - pleicy
+
+				Debug stops the r command and displays the Debug prompt. To see the changes, type either the r or rf command. Debug then displays the following:
+					NV UP EI PL NZ AC PE CY - _
+
+				Press ENTER to return to the Debug prompt.
+
+S (Search)				
+	Searches a range of addresses for a pattern of one or more byte values.
+
+	Syntax 		s range list
+				Parameters
+				range
+				Specifies the beginning and ending addresses of the range you want to search. For information about valid values for the range parameter, see the debug command.
+
+				list
+				Specifies the pattern of one or more byte values or a string you want to search for. Seperate each byte value from the next with a space or a comma. Enclose string values in quotation marks.
+
+				Note
+				If the list parameter contains more than one byte value, Debug displays only the first address where the byte value occurs. If list contains only one byte value, Debug displays all addresses where the value occurs in the specified range.
+
+	Examples 	Suppose you want to find all addresses in the range CS:100 through CS:110 that contatin the value 41. To
+				do this, type the following command:
+					scs:100 110 41
+
+				Debug displays the results in the following format:
+					04BA:0104
+					04BA:010D	
+
+				The following command searches for the string "Ph" in the range CS:100 through CS:1A0:
+					scs:100 1a0 "Ph"
+
+T (Trace)
+	Executes one instruction and displays the contents of all registers the status of all flags, and the decoded form of the instruction executed.
+
+	Syntax:		t[=address][number]
+
+				Parameters
+				= address
+				Specifies the address at which Debug is to start tracing instructions. If you omit the address parameter, tracing begins at the address specified by your program's CS:IP registers. For information about valid values for the address parameter, see the debug command.
+
+				number
+				Specifies the number of instructions to be traced. This value must be a hexadecimal number. The default value is 1.
+
+				Notes
+				<b>Tracing instructions in read-only memory</b>
+
+				The t command uses the hardware trace mode of the 8086 or 8088 microprocessor. Therefore, you can also trace instructions stored in read-only memory (ROM).
+
+				Using the address parameter
+				You must precede the address parameter with an equal sign (=) to distinguish it from the number parameter.
+
+	Example 	To execute one instruction (pointed to by CS:IP),
+				and then display the contents of the registers, the status of the flags, and the decoded form of the instruction, type the following command:
+					-t
+
+				If the position of the instruction in the program were 04BA:011A, Debug might display the following information:
+
+AX=0E00 BX=00FF CX=0007 DX=01FF SP=039D BP=0000 SI=005C DI=0000
+DS=04BA ES=04BA SS=04BA CS=04BA IP=011A NV UP DI NG NZ AC PE NC
+04BA:011A 	CD21		INT 21
+
+U (Unassemble)								
+	Disassembles bytes and displays their corresponding source statements, including addresses and byte values. The disassembled code looks like a listing for an assembled file.
+
+	Syntax: 	u[range]
+				To disassemble 20h bytes(the default number), beginning at the first address after the address displayed by the previous u command, use the following syntax: u
+
+				Parameter
+				range
+				Specifies the starting and ending addresses, or the starting address and length, of the code you want to disassemble. For information about valid values for the range parameter, see the debug command.
+
+	Examples 	To disassemble 16 (10h) bytes, beginning at address 04BA:0100, type the following command:
+					u04ba:100|10
+				Debug displays the results in the following format:								 
+
+					04BA:0100 	206472 	AND 	[SI+72], AH
+					04BA:0103 		69	DB 		69
+					04BA:0104	  7665	JBE 	016B
+					04BA:0106 	207370	AND  	[BP+DI+70], DH
+					04BA:0109 	    65 	DB 		65
+					04BA:010A 	    63 	DB 		63		
+					04BA:010B 	    69 	DB 		69
+					04BA:010C 	    66 	DB 		66
+					04BA:010D 	    69 	DB 		69
+					04BA:010E 	    63 	DB 		63
+ 					04BA:010F 	    61 	DB 		61
+
+ 				To display only the information for the specific addresses 04BA:0100 through 04BA:0108, type the following command:
+
+ 					u04ba:0100 0108
+
+ 				Debug displays the following:
+
+ 					04BA:0100 	206472 	AND 	[SI+72], AH
+					04BA:0103 		69	DB 		69
+					04BA:0104	  7665	JBE 	016B
+					04BA:0106 	207370	AND  	[BP+DI+70], DH
+
+W (Write)
+	Writes a file or specific sectors to disk.
+
+	You must have specified the name of the disk file when you started. Debug or in the most recent of the disk file when you started Debug or in the most recent Debug n (name) command. Both of these methods properly format a filename for a file control block at address CS:5C.
+
+	
+	Syntax:		w[address]
+
+				To bypass the MS-DOS file system and directly write specific sectors, use the following syntax: w address drive start number
+
+				Caution: Writing specific sectors is extremely risky because it bypasses the MS-DOS file handler. The disk's file structure can easily be damaged if the wrong values are typed.
+
+				Parameters
+				address
+				Specifies the beginning memory address of the file, or portion of the file, you want to write to a disk file. If you do not specify address, Debug starts from CS:100. For information about valid values for the address parameter, see the debug command.
+
+				drive
+				Specifies the drivw that contains the destination disk. This value is numeric: 0 = A, 1 = B, 2 = C, and so on.
+
+				start
+				Specifies the hexadecimal number of the first sector to which you want to write.
+
+				number
+				Specifies the number of sectors to which you want to write.
+
+
+				Notes
+				Resetting BX:CX before using the w comman without parameters
+				If you have a Debug g (go), t (trace), p (proceed), or r (register) command, you must reset the BX:CX registers before using the w command without parameters.
+
+				Writing a modified file to a disk
+				If you modify the file but do not change the name, length, or starting address, Debug can still correctly write the file to the original disk location.
+
+				Limitation on the w command
+				You cannot write an .EXE or .HEX file with this command
+
+	Example  	Suppose you want to write the contents of memory, beginning at the address CS:100, to the disk in drive B.			  You want the data to begin in the disk's logical sector number 37h and continue for 2Bh sectors. To do 				this, type following command:
+
+					wcs:100 1 37 2b
+
+				When the write operation is complete, Debug displays the Debug prompt again.
+
+
+XA (Allocate Expanded Memory)
+	Allocates a specified number of pages of expanded memory. To use expanded memory, you must have installed an expanded-memory device driver that confirms to version 4.0 of the Lotus/Intel/Microsoft Expanded Memory Specification (LIM EMS).
+
+	Syntax: 	xa[count]
+
+				Parameter
+				count
+				Specifies the number of 16-kilobyte pages of expanded memory to allocate.
+
+	Example 	To allocate handle 0003, type the following command:
+
+				xa 0003
+				if the command is successful, Debug displays the following message:
+				Handle 0003 allocated
+
+XD (Deallocate Expanded Memory)
+	Deallocates a handle to expanded memory.
+	To use expanded memory, you must have installed an expanded-memory device driver that conforms to version 4.0 of the Lotus/Intel/Microsoft Expanded Memory Specification (LIM EMS).
+
+	Syntax: 	xd[handle]
+
+				Parameters
+				handle
+				Specifies the handle you want to deallocate
+
+	Example 	To deallocate handle 0003, type the following command:
+
+				xa 0003
+				if the command is successful, Debug displays the following message:
+				Handle 0003 deallocated
+
+M (Map Expanded Memory Pages)
+	Maps a logical page of expanded memory, belonging to the specified handle, to a physical page of expanded memory. To use expanded memory, you must have installed an expanded-memory device driver that conforms to version 4.0 of the Lotus/Intel/Microsoft Expanded Memory Specification (LIM EMS).
+
+	Syntax: 	xm[lpage][ppage][handle]
+
+				Parameters
+				lpage
+				Specifies the number of the logical page of expanded memory that you want to map to physical page ppage.
+
+				ppage
+				Specifies the number of the physical page to which lpage is to be mappped.
+
+				handle
+				Specifies the handle.
+
+	Example 	To map logical page 5 of handle 0003 to physical page 2, type the following command:
+					xm 5 2 0003
+
+				If the command is successful, Debug displays the following message:
+				Logical page 05 mapped to physical page 02
+
+Debug: XS (Display Expanded-Memory Status)
+	Displays information about the status of expanded memory. To use expanded memory, you must have installed an expanded-memory device driver that conforms to version 4.0 of the Lotus/Intel/Microsoft Expanded Memory Specification (LIM EMS).
+
+	Syntax 	 	xs
+
+				Note
+				The information that Debug Displays has the following format:
+
+				Handle xx has xx pages allogcated
+				Physical page xx= Frame segment xx
+				xx of a total xx EMS pages have been allocated
+				xx of a total xx EMS handles have been allocated
+
+	Example 	To display expanded-memory information, type the following command:
+
+				xs
+				Debug displays information similar to the following
+				Handle 0000 has 0000 pages allocated
+				Handle 0001 has 0002 pages allocated				
+				Physical page 00 = Frame segment C000
+				Physical page 01 = Frame segment C400
+				Physical page 02 = Frame segment C800
+				Physical page 03 = Frame segment CC00
+				2 of a total 80 EMS pages have been allocated
+				2 of a total FF EMS handles have been allocated
+
+Rules of Debug Commands
+Here are some basic rules in using DEBUG.
+
+	It is not case-sensitive.
+	It assumes that all numbers given are in hexadecimal format.
+	You can enter a space only when it is needed to seperate parameters of a particular command.				
+	You should specify segments and offsets with a colon, in the form <segment>:<offset>
+
+A Sample Session with Debug
+	
+	Below are the illustrations that will demonstrate how to use DEBUG.
+
+Starting Debug
+From the DOS prompt, key in the word DEBUG and press ENTER key. A hyphen (-) appears on screen, that is the DEBUG prompt. DEBUG us now ready to accept commands
+
+(pic1 p 149)
+
+Quitting and closing the DEBUG environment
+To close DEBUG and go back to DOS environment. Type Q and press <ENTER> key.
+
+(pic2 p 149)
+
+Adding and subtracting 4-digit hexadecimal values
+
+To get the sum and difference of two hexadecimal numbers: type H followed by a space, a 4-digit hexadecimal value followed by a space agein, another 4-digit hexadecimal value and then press <ENTER> key. The leftmost part is the sum and the rightmost part is the difference.
+
+(pic1 p 150)
+
+Viewing the contents of the registers
+To show the values of the registers: type R and press <ENTER> key.
+
+(pic2 p 150)
+
+Changing the contents of a specific register
+To modify the value of a particular register, let's say BX:type R followed by a space, type BX and press <ENTER>. Debug will display the current value of BX (i.e. 0000) and will wait for you to enter the new value. Just type in the new value in hexadecimal form after the colon and press <ENTER> key. To confirm if the new value for BX is stored, type R to display the values of the registers.
+
+(pic1 p 151)
+
+Entering String
+Lets store the string into memory. We'll start at offset 0200h so that the string wont become tangled with the code at 0100h. Here are the steps:
+
+Step 1: 	Convert every character into ints hexadecimal equivalent code using the ASCII reference table.
+
+H 	e 	l 	l 	o 	, 	<space> 	W 	o 	r 	l 	d 	!
+48 	65 	6C 	6C 	6F 	2C 		20 	 	57 	6F 	72 	6C 	64 	21
+
+Step 2: 	Add the last number 24h which is the ASCII for $symbol. It tells DOS that this is the end of the string.
+
+H 	e 	l 	l 	o 	, 	<space> 	W 	o 	r 	l 	d 	! 	$
+48 	65 	6C 	6C 	6F 	2C 		20 	 	57 	6F 	72 	6C 	64 	21 	24
+
+Step 3: Enter these hex codes using the command E 0200. Type E 0200 after the DEBUG prompt and press ENTER key. Key in the first hex code (i.e. 48) and press SPACE bar. Key in the second hex code (i.e. 65) and press SPACE bar. Do it over and over again until you have entered 24 for the dollar sign. Press ENTER key to end the process.
+
+(pic1 p 152)
+
+Displaying the input string
+Now that you've stored the string into memory. it's time to see how it looks like. Use D command to display or dump the contents of memory on screen. Since you'd input the string at offset 0200h, you are going to use this address again to display the string. Type D 0200 and press <ENTER> key
+
+(pic2 p 152)
+
+The DEBUG display
+We know that D command dumps the contents of a requested data area on screen. It displays eight(8) lines of data, each containing sixteen (16) bytes or 32 hex codes, for 128 bytes in all, beginning with the address that you specify in the D command. Diagrammatically we have the following:
+
+(pic1 p 153)
+
+The display consists of three parts.
+
+	1)	The address in segment: offset format
+	2) 	The hexadecimal representation are those that shows (2) hex digit for each byte, followed by a space for 			readability. Also, a hyphen seperates the second 8 byes from the first 8.
+	3) 	The ASCII representation of bytes that contatins displayable characters, which can help you, interpret the hex 		representation.
+
+Take note that the remaining characters displated after the dollar ($) sign are the miscellaneuos assortment of characters. Whenever you see a period (.) in the ASCII window, it represents either a period or a special character such as the Greek letter alpha. DEBUG's D command displays only 96 out of 256 characters in the ASCII table so a period is used for the remaining 160 characters.
+
+Creating a program in DEBUG
+To construct a program in DEBUG: type A 0100 and press <ENTER> key. This command tells DEBUG to begin accepting symbolic assembly instructions and initializes the starting address for your instructions in the code segment at offset 0100h. Type in the following instructions, each followed by pressing <ENTER> key:
+
+		MOV AX, 0BEA
+		MOV BX, 0103
+		ADD AX, BX
+		INT 20
+
+When you have keyed in the last instruction (i.e. INT 20) press <ENTER> key again to exit from the A command. That is one extra <ENTER> which tells DEBUG that you have no more symbolic instructions to enter. On completion, DEBUG should display the following:
+
+(pic1 p 154)
+
+Executing one instruction at a time
+To run each instruction: type T and press <ENTER> key. DEBUG will display the new values of the registers and the next instruction to be fetched and executed. Repeat this process until NOP is displayed. NOP (pronounce as "no-op") is an instruction that does nothing and it means that's the end of tracing the program.
+
+(pic1 p 155)
+
+Running the entire program
+To execute the entire symbolic assembly program: type G and press <ENTER> key. DEBUG will display the output and the message "Program terminated normally". Let's have a new set of program this time, key in the following instructions each followed by pressing <ENTER> key:
+
+		MOV AX, 0BEA
+		MOV BX, 0103
+		ADD AX, BX
+		INT 20		
+
+(pic2 p 155)
+
+Saving your program
+To save your work in DEBUG follow the procedures below: ("We'll assume that we are going to save the program illustrated above in the same path - drive C:")
+
+Step 1:		Determine the number of bytes by subtracting the last offset address (before the DEBUG prompt) from 0100. Type 			   H 0108 0100 press <ENTER> key. Get the rightmost value of the difference (0008)
+
+Step 2:		Store that value (0008) to CX register.
+			Type R CX press <ENTER> key, after the colon type in 0008 and press <ENTER> key again.
+
+Step 3: 	Give the filename
+Step 4: 	Save the program onto disk storage by using W command.
+			Type W and press <ENTER> key. The message "Writing 0008 bytes" will be displayed on screen.
+Step 5: 	Lastly, check if the DEBUG program was stored by quitting DEBUG and using dir *.com DOS command to view the 			contents to disk storage.
+
+(pic1 p 157)
+
+C:\>DIR *.COM
+
+Volume in drive C has no label
+Volume Serial Number is 382B-08ED
+Directory of C:\
+
+COMMAND 		COM 	93,890 		04-23-99 	10:22P 		COMMAND.COM
+SAMPLE 			COM 		 8 		05-09-05 	 8:08P 		SAMPLE.COM
+				2 file(s) 			93,898 bytes
+				0 dir(s) 		 18,141.33 MB free
+
+C:\>
+
+Running your program in DOS environment
+
+To execute your DEBUG program in DOS environment, just type only the base name (no need to add the extension name .COM) and press ENTER key.
+
+C:\>SAMPLE
+:)
+C:\>
+
+Loading your DEBUG program
+To retrieve your DEBUG program for modification, type DEBUG followed by a space and the file name. This time add the extension name .COM (i.e. DEBUG SAMPLE.COM) and press ENTER key. Debug prompt will be displayed on screen which means it is ready to accept any modification. From the DEBUG prompt, type U 0100 and press ENTER Key. Your program will be listed down on screen.
+
+(pic1 p 158)
+
+Modifying Instruction in DEBUG
+TO change a particular instruction in DEBUG, type A followed by space, followed by the offset address and press ENTER key. DEBUG is now ready to accept a new instruction for this offset address. For example, instead of MOV DL, 01 your instruction is MOV DL, 03. To do this, type A 0102 and press <ENTER> key. Type MOV DL, 03 and press <ENTER> and <ENTER> key again. If you want to make sure that the instruction was changed, type U100
+
+(pic1 p 159)
+
+Addition and Subtraction, Machine Language Style
+
+The machine code to add the values of AX and BX is 01h and D8h, while to subtract their values is 29h and D8h. These numbers have no meaning to us, but the compiler will interpret as add and subtract instructions.
+
+As an example, let's add and subtract 083Ah and 050Ch. To do this, follow the process below:
+
+Step 1: 	Store 083Ah to AX, while 050Ch to BX register
+
+(pic1 p 160)
+
+Step 2: 	Input the numbers 01h and D8h using E command.
+
+(pic2 p 160)
+
+Step 3: 	Display the register and trace if the instruction will work.
+
+(pic1 p 161)
+
+For subtraction, apply the same procedure but use different machine code. Try it in your computer.
+
+Multiplication and Division, Machine Language Style
+As an example, let's multiply and divide 0808h and 0300h. To do this, follow the process below:
+
+Step 1: 	Store 0808h to AX, while 0300h to BX register.
+
+(pic2 p 161)
+
+Step 2: 	Input the numbers F7h and E3h using E command.
+
+(pic1 p 162)
+
+Step 3: 	Display the register and trace if the instruction will work
+
+(pic2 p 162)
+
+In multiplication, when the product is greater than 16-bit result, the higher 16-bits are stored in DX register. For division, the quotient is stored in AX while the remainder is stored in DX. Now, try dividing the sample numbers in your computer.
+
+BASIC ASSEMBLY INSTRUCTIONS USED IN DEBUG
+
+	1)	MOV(MOV Data)
+		It copies and transfers data between two registers, or between an immediate data to register.
+		Format: 	MOV<register>,<register>
+					MOV<register>,<immediate data>
+
+		Example: 	MOV AX, BX
+					MOV CX, 5083
+					MOV CL, DL
+					MOV BL, 33
+
+	2) 	ADD(ADD Data)
+		It is used to get the sum of two registers or a register and an immediate data, and stores the result to the leftmost register.
+
+		Format: 	ADD<register>,<register>
+					ADD<register>,<immediate data>										
+
+		Example: 	ADD CX, BX
+					ADD AX, 0308
+					ADD AL, BL
+					ADD CL, 85
+
+	3) 	SUB(Subtract Data)
+		It is used to get the difference of two registers or a register and an immediate data, and stores the result to the leftmost register.
+
+		Format: 	SUB<register>,<register>
+					SUB<register>,<immediate data>					
+
+		Example: 	SUB CX, BX
+					SUB AX, 0308
+					SUB AL, BL
+					SUB CL, 85
+
+	4) 	MUL(Multiply Data)
+		It is used to get the product of a given register and AX register and stores the result to AX register. If the product is greater than 16 bits, the overflow is stored in DX register.
+
+		Format: 	MUL<register>
+
+		Example: 	MUL CX
+
+	5) 	DIV(Divide Data)
+		It is used to divide the value of a given register and AX register, and stores the quotient to AX and the remainder to DX registers, respectively.
+
+		Format: 	DIV<register>
+		Example: 	DIV BX
+
+	6) 	INC(Increment by One)
+		It is used to increase the value of the register by one (1).
+
+		Format: 	INC<register>
+
+		Example: 	INC AX
+					INC CH
+
+	7) 	DEC(Decrement by One)
+		The opposite of INC, instead of increasing, it decreases the value of the register by one (1).
+
+		Format: 	DEC<register>
+
+		Example: 	DEC AX
+					DEC CH
+
+	8) 	LOOP(Loop Until Complete) 
+		It controls the execution of a program segment in a specified number of times. The CX register should contain a count value before starting the loop and automatically decrements by one (1). If CX register is not equal to zero (0). it transfers to its operand address which points to the start of the loop; otherwise it drops through to the next instruction.
+
+		Format: 	LOOP <offset address>
+		 			LOOP 0108
+
+Programming using DEBUG
+
+1) 	Displaying character (uppercase 'A') on screen.
+(pic1 p 168)
+2) 	Displaying character (lowercase 'b') twice on screen.
+(pic2 p 168)
+3) 	Using control characters (0A - Line feed and 0D - Carriage Return) in a screen display.
+(pic1 p 169)		
+4)  Displaying the same character (lowercase 'z') thirty times using LOOP on screen.
+(pic2 p 169)
+5) 	Displaying different characters ('A' to Z) using LOOP on the same line.
+(pic1 p 170)
+6) 	Displaying different characters ('0' to '9') using LOOP vertically.
+(pic2 p 170)
+7) 	Displaying different character ('0' to '9') using LOOPs with seperator (underscore) horizontally.
+(pic1 p 171)
+8) 	Displaying string ('computer') on screen.
+	
+	Step 1: 	Code the instruction at -A 0100
+	(pic2 p 171)
+	Step 2:		Input the hex code of every character of the string at -E 0200
+	(pic1 p 172)
+
+	Step 3: 	Press <ENTER> key to go back to the hyphen prompt, then key in -D 0200 and press <ENTER> key to display the string.
+	(pic2 p 172) 

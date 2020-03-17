@@ -1,0 +1,257 @@
+Requirements for Coding Assembly Language
+Chapter 7
+Objectives
+	1) Enumerate the key requirements for designing assembly language program.
+	2) Apply these requirements in actual program development.
+	3) Integrate the worth of each requirements in making a successful working program in assembly language.
+
+COMMENT
+
+<i>Comment</i> is a part of a program that is ignored by the assembler. Though optional, the use of comments throughout a program can improve its readability and clarity especially in assembly language where the purpose of a set of instruction is often ambiguous. It begins with a semicolon (;) and whenever you code it, the assembler assumes that all characters to its right side is a comment.
+
+Ways to Include Comment
+	- Any statement whose first non-blank character is a semicolon
+	Example :
+			; This program displays Hello, World!
+	- At the end of an instruction
+	Example : 
+			MOV AX, 8053h ; initializes the value of AX to 8053h 
+
+RESERVED WORDS
+
+These are words in which assembler assigns a special meaning and it cannot be used as identifiers. They are reserved for their own purpose to be used only under special condition. Using them for a wrong purposes causes the assembler to generate error messages.
+
+Categories of Reserved Words
+
+	- Instruction
+		These are statements that will be translated into machine language and executed by the computer.
+		Examples : 
+						MOV					ADD					SUB
+						MUL					DIV 				INC
+						DEC 				LOOP 				CMP
+	- Directives
+		These are statements that give information to the assembler. Sometimes directives are called pseudo-ops (short term for pseudo operations and pronounced as "su-da-op"). Unlike instructions, directives are not transalated into machine language but they are necessary for your program to assemble properly.
+
+						TITLE DOSSEG
+						.MODEL
+						.STACK
+						.DATA
+						.CODE
+
+	- Operators 
+		These are used at assembly time to affect the value of an operand. Like directives, operators are recognized by the assembler and they don't correspond to machine instructions.
+		Example :
+						OFFSET			SIZE			LENGTH
+						PTR				MODE 			+,-,*,/
+
+	- Pre-defined Symbols
+		These are symbols that return information to your program.
+		Example : 
+						@data 							@model
+
+
+IDENTIFIER
+
+An identifier is user-defined name (variable) that you apply to an item in your program that you expect to reference.
+
+	Type of Identifiers
+
+		-Name 
+			It referes to the address of a data item
+			Example : 
+							x	db		0
+						  msg   db		"aloha  $"
+
+		-Label 
+			It refers to the address of an instruction or procedure
+			Example : 
+							MOV DL, 41h 
+				   A:		INT 21h
+				   			ADD DL, 30h
+				   			INT 21h
+				   			SUB DL, 20h
+				   			LOOP A
+
+Rules in Constructing Valid Identifier
+
+	- It must use letters (A..Z, a..z), numbers (0..9) and/or special characters like underscore (_), question mark (?), and at sign (@).
+	- It must always start with a letter.
+	- It must not use reserved words.
+	- It must not exceed to 31 characters.
+
+		Examples of valid identifiers :			neym r2d2 Num_1 msg8
+
+		Exmaples of invalid identifiers :		title num-1 4ever 
+
+
+STATEMENT
+
+An assembly language statement programs consist of a set of statements. The two types of statements are <i>instructions</i> and <i>directives</i>. Since these types were discussed in the previous part of this text, here are some of the general guidelines for coding a bonafide statement:
+
+	- A statement may begin anywhere on the line.
+	- Each line can only contain one statement.
+	- Unlike C Language, assembly is not case sensitive. You can use either upper or lowecase letters.
+	- Take note that statements can have two (2) operands, a single operand and even none at all!
+
+		Examples : 		ADD AX, BX		; uses 2 operands
+						DEC CX			; uses single operand
+						RET 			; no operand
+
+MOST COMMON DIRECTIVES
+
+We already learned that assembly language supports a number of statements that enable you to control the way in which a program assbles and lists. These statements called <i><directives/i> act only during the assembly of a program and generates no machine code. The most common directives are explained in the next section :
+
+	1) TITLE
+		It creates a title (up to 60 characters) of a source listing
+
+		-----Format------------------------------------------------
+		|							TITLE<TEXT>					  |
+		-----------------------------------------------------------
+
+		Examples : 		TITLE This program displays Kamusta, RTU!
+						TITLE PROGRAM1.ASM
+
+	2) DOSSEG
+		It tells the assembler to ignore all other request and to adopt the DOS segment sequence-stack, data, and code.
+
+		-----Format------------------------------------------------
+		|							DOSSEG						  |
+		-----------------------------------------------------------
+
+		Examples :		DOSSEG
+
+	3) .MODEL
+		It specifies and initializes the memory model before defining any segment.
+
+		-----Format------------------------------------------------
+		|							.MODEL<memory-model>		  |
+		-----------------------------------------------------------
+
+		Examples :		.MODEL TINY
+						.MODEL SMALL
+						.MODEL MEDIUM
+
+	4) .STACK
+		 It defines the size of the stack. The default stack size is 1,024 bytes which you can overrule.
+
+		 -----Format------------------------------------------------
+		|							.STACK<size>				   |
+		------------------------------------------------------------
+
+		Examples :		.STACK 0100h
+
+	5) .DATA
+		-It defines and marks the beginning of data segment
+
+		-----Format------------------------------------------------
+		|							.DATA 						  |
+		-----------------------------------------------------------
+
+		Example 		.DATA
+
+	6) .CODE
+		- It defines and marks the code segment which consists of a set of instructions.
+
+		-----Format------------------------------------------------
+		|							.CODE 						  |
+		-----------------------------------------------------------
+
+		Example : 		.CODE
+
+	7) END
+		- It it placed at the last line of the source code
+
+		-----Format------------------------------------------------
+		|							.END 						  |
+		-----------------------------------------------------------
+
+		Example : 		END
+
+	8) For defining data 
+
+		DIRECTIVE 					LENGTH 					DESCRIPTION
+								  (in bytes)
+
+		    DB 						   1 					Define Byte
+		    DW						   2					Define Word
+		    DD 						   4					Define Doubleword
+		    DF 						   6					Define Farword
+		    DQ  					   8					Define Quadword
+		    DT					  	   10					Define Tenbytes
+		    																	(table)
+
+STRING
+
+<i>String</i> is used for descriptive data such as person's name or simply a message. It must end with a dollar ($) symbol and defined in double quotation marks (" "). DB is the conventional format for defining string of any length.
+
+Example :			neym	db 		"Louis Vuitton$"
+
+If a string contains a single quote, you can define it this way :
+
+Example :			food 	db 		"Gerry's Grills$"
+
+NUMERICAL CONSTANT
+
+They are used to define arithmetic values and memory addresses. It is identified with a radix <i>specifier</i> such as d for decimal, b for binary, and h for hexadecimal.
+
+Example : 
+	   msg 	db 		"Bon jour, monsieur!", OAh, 0Dh, "$"
+	   msg 	db 		"Bon jour, monsieur!", 10d, 13dd, "$"
+
+<b>Display String</b>. This function displays the string pointed to by the DS, DX pair of registers.
+
+<b>MOV AH, 09</b>
+<b>INT 21 FUNCTIONS</b>
+
+The end of the strings should be marked with the dollar ($) symbol.
+
+Sample Program
+------------------------------
+// @Ch7Image1
+------------------------------
+
+
+
+		MOV AH, 09				DOS Service that Display String
+
+		MOV DX, 109				<b>DX</b> is the register where to store the location (Offset Address) of the String
+
+								<b>0109</b> is the offset address where the string is located
+
+		INT 21					Display the content of the 
+
+		INT 20					End of the Program
+
+		DB 						<b>Define Bytes</b> followed by " <string> "
+
+		$						Terminator
+																					(table)
+
+
+Sample Program with Multiple Strings
+------------------------------
+// @Ch7Image2
+------------------------------
+
+<b>Keyboard Input</b> This function waits for you to type a character on the keyboard. It echoes the character to the screen and returns the ASCII in the AL register.
+
+AL Character read from the keyboard.
+
+MOV AH,01
+INT 21 FUNCTION
+
+------------------------------
+// @Ch7Image3
+------------------------------
+
+	MOV AH, 01			DOS Service that allows to input <b>SINGLE</b> character with echo ON
+	INT 21				Store the ASCII value at the register AL
+	INT 20				End of the Program
+																			(table)
+
+
+------------------------------
+// @Ch7Image4
+------------------------------
+
+AL = 61					61 the ASCII value of 'a'

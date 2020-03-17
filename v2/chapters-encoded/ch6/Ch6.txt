@@ -1,0 +1,373 @@
+Chapter 6
+Fundamentals of Assembly Language
+
+Objectives
+At the end of the chapter, the learners are expected to:
+
+1)	Explain how assembly language evolved and classified.
+2) 	Compare and contrast assembly language to other computer programming languages.
+3) 	Appreciate the advantages of using assembly language in solving machine problems.
+
+Programming Language
+A programming language is a notation for expressing instructions to be carried out by the computer. It is a medium of communication between human and the machine, and often between one human being and another.
+
+Classification of Programming Language
+
+The proliferation of computer programming languages continues to this very day. There have probably been more than 3,000 programming languages designed and implemented, although many of these have been used exclusively for "in house" production rather than marketed for commercial use. Programming languages can be classified as:
+
+	1)	High-Level Language
+		A high-level programming language is an English-like language that provides for more natural expression of algorithms. It is usually designed to handle a particular application area efficiently. It can express the same program as low-level language, but with less detail and fewer lines of code. Languages like BASIC, Pascal, COBOL, and PROLOG are some of the examples of high-level languages.
+
+	2) 	Mid-Level Language
+		It is a computer language which combine low-level efficiency with high-level language structure abstraction and portability. Examples of mid-level language include C and MODULA-2.
+
+	3)	Low-Level Language
+		A low-level language is considered to be machine-oriented since it closely follows the built in instruction set of the underlyinh computer. Assembly and machine languages are common examples of low-level language.
+
+Language Translator
+It is also known as language processor. Language translator is software that accepts source program coded in high/mid-level language as input and produces the equivalent machine language instruction.
+
+Types of Language Translator
+Basically, there are three types of language processor:
+
+	1) 	Compiler
+		A compiler is a translator program that transforms an entire source program composed of high/mid-level language statements into an object program consisting of machine language executable code.
+
+		High/Mid Level Language
+		Machine Languages 										   ----------
+		Source Program                        ----------------->  | COMPILER | -----------> 
+		Instruction                                                ----------
+
+	2) 	Interpreter
+		An interpreter processes the source program on a statement-by-statement basis. It translates hihg/mid-level language statements and then executes it one statement at a time.
+
+		High/Mid Level Language
+		Machine Languages 										   -------------
+		Source Program                        ----------------->  | INTERPRETER | -----------> 
+		Instruction                                                -------------				
+
+	3) 	Assembler 
+		An assembler is a language translator that transforms assembly language to machine language instruction.
+
+		High/Mid Level Language
+		Machine Languages 										   -----------
+		Source Program                        ----------------->  | ASSEMBLER | -----------> 
+		Instruction                                                -----------						
+
+Linker
+
+Linker is a computer program for high, mid, and low levels of programming language that completes the process by converting the object code into executable machine code.
+
+Assembly Language
+
+It is a low-level language that provides a kind of shorthand notation called mnemonic (memory aid) for the actual machine language instruction. It is much easier to remember SUB AX, BX than 0010101111000011 which is the actual instruction code that the machine uses.
+
+Advantages of Assembly Language
+
+Despite the fact that coding in high-level language is more productive, some advantages of using assembly language are as follows:
+
+	1) 	It provides more control over handling particular hardware requirements.
+	2) 	It generates smaller, more compact executable modules.
+	3) 	It results in faster execution.
+
+When do you Use Assembly Language
+
+You might ask, "When should I use assembly language?" The chief reason you might use assembly language is if you want to do something that is impossible with high-level language. Since this language gives you direct control over the processor, you can do anything that the machine is capable of doing. High-level languages can't provide you this sort of control.
+
+Likewise, you might use assembly language to speed up a slow program. Programs coded in high-level language often execute slower than their assembly language counterparts. Futhermore, to use assembly means to design a program to be small as possible. When you are faced with compressing a program into a tiny space, using it is often the best way.
+
+One last important point, when you need technical magazines and journals, you'll often see examples expressed in assembly language because that is the only way to show what the processor is actually doing. Even if you don't write many assembly language programs yourself, you will be able to read them like a top-notch programmer.
+
+ 																											Bit Manipulation
+Shifting	
+	Shift Left Logical
+
+A shift left logical of one position moves each bit to the left by one. The low-order bit (the right-most bit) is replaced by a zero and the high-order bit (the left-most bit) is discarded.
+
+Shifting by two positions is the same as performing a one-position shift two times. Shifting by zero positions leaves the pattern unchanged. Shifting an N-bit pattern left by N or more positions changes all of the bits to zero.
+
+The picture shows the operation performed on eight bits. The original patter is 1010 0111. The resulting pattern is 0100 1110.
+
+(pic1 p 179)
+
+A left shift moves the bits in the designated register to the left.
+						<SHL: Shift Left>
+
+Example:
+MOV CL, 03				CL = 03
+MOV AL, 10110111		AL = 10110111 = B7
+SHL AL, 01 				AL = 01101110 = 6E (1 time to left)
+SHL AL, CL 				AL = 01110000 = 70 (3 times to the left)
+
+Shift Right Logical
+
+A shift right logical instruction. It moves bits to the right by a number of positions less than 32. The high-order bit gets zeros and the low-order bits are discarded.
+
+If the bit pattern is regarded as an unsigned integer or a positive two's comp. interger, then a right shift of one bit position performs an integer divide by two. A right shift by N positions performs an integer divided by 2".
+
+The "trick" of dividing an integer by shifting should not be used in place of the MIPS arithmetic divide instruction (which will be covered in a few chapters). If you mean "divide" that is what you should write. But the trick is often used in hardware, and sometimes pops up in odd software uses, so you should know about it.
+
+(pic1 p 181)
+
+A right shift moves the bits in the designated register to the right.
+						<SHR: Shift Right>
+Example:
+MOV CL, 03				CL = 03
+MOV AL, 10110111 		AL = 10110111 = B7
+SHR AL, 01 				AL = 01011011 = 5B (1 time to the right)
+SHR AL, CL 				AL = 00001011 = 0B (3 times to the right)	
+
+ROTATING
+
+Right Rotate
+A right rotate rotates the bits in the designated register to the right.
+						<ROR:  Rotate right>
+Example:
+MOV CL, 03 				CL = 03
+MOV BL, B7 				BL = 10110111 = B7
+ROR BL, 1				BL = 11011011 = D8
+ROR BL, CL 				BL = 01111011 = 7B
+
+Left Rotate
+A left rotate rotates the bite in the designated register to the left.
+						<ROL: Rotate Left>
+Example: (Rotating Left)
+MOV CL, 03 				CL = 03
+MOV BH, B7 				BH = 10110111 = B7
+ROL BH, 01 				BH = 01101111 = F6
+ROL BH, CL 				BH = 01111011 = 7B
+
+Basic Logic Operations 
+
+AND
+	The AND operation performs logical multiplication, is often used to replace discrete logic AND gates of the speed required not too great.
+
+	Instruction 		Comments
+	AND AL, BL 			AL is the logical product of AL AND BL
+	AND CX, DX 			CX is the logical product of CX AND DX
+	AND CL, 33			CL is the logical product of CL AND 33
+	AND CX, 3030 		CX is the logical product of CX AND 3030
+
+Example:
+	MOV BX, 3155 		BX = 3155
+	MOV AX, BX 			AX = 3155
+	AND AX, 0F0F 		AX = 3155; AX AND 0F0F = 0105
+	MOV CX, AX 			CX = 0105
+
+OR
+	The OR operation performs logical addition, which is slightly different form of arithmetic addition. In logical addition, the sum is only 0 when both numbers are 0; Otherwise the sum is a 1.	
+
+	Instruction 		Comments
+	OR AL, BL 			AL is the logical sum of AL AND BL
+	OR CX, DX 			CX is the logical sum of CX AND DX
+	OR CL, 33			CL is the logical sum of CL AND 33
+	OR CX, 3030 		CX is the logical sum of CX AND 3030	
+
+Example:
+	MOV AL, 5 			AL = 5
+	MOV BL, 7 			BL = 7
+	MUL BL 				AX = 23
+	OR AX, 3030 		AX = 3033
+
+The Exclusive-OR
+
+	The Exclusive-OR operation (XOR) differs from the inclusive-OR (OR) mainly in that the 1, 1 condition of the OR function produce a 1 while the 1, 1 condition of the Exclusive-OR operation produces a 0. In other words, the Exclusive-OR excludes the latter condition while the inclusive-OR includes it.
+
+	Instruction 		Comments
+	XOR CH, DL 			CH is the Exclusive-OR of CH and DL
+	XOR AH, EE 			AH is the Exclusive-OR of AH and EE
+
+NOT and NEG
+	Logical inversion or one's complement (NOT) and arithmetic sign inversion or two's compliment (NEG) are the last two logical functions available except for shift and rotates.
+
+	Instruction 		Comments
+	NOT CH 				CH is one's complemented
+	NEG CH 				CH is two's complemented
+	NEG AX 				AX is two's complemented
+
+
+Program Control Instruction
+
+Conditional Jump Instructions
+These are instructions that transfer control depending on the setting of CMP instruction whether a certain condition is met or not.
+
+	Instruction 		Description
+	JE 					Jump if Equal
+	JNE 				Jump if Not Equal
+	JL 					Jump if Less than
+	JLE 				Jump if Less than or Equal to 
+	JG 					Jump if Greater than
+	JGE 				Jump if Greater than or Equal to
+	JZ 					Jump if Zero
+	JNZ 				Jump if Not Zero
+
+Format:
+			<conditional jump instruction> <label>
+Example: 	
+					CMP AL, 'Y'
+					JE TAMA
+					CMP AL, 'N'
+					JE MALI
+
+			TAMA:	MOV AH, 09h
+					MOV DX, OFFSET ANSI
+					INT 21h
+
+Unconditional JMP
+JMP is considered as unconditional jump instruction because it is always executed by the machine. It does not depend on a conditioner being true or false.
+
+Format:	
+			JMP <label>
+Example:
+					CMP AL, 'Y'					
+					JE TAMA
+					CMP AL, 'N'
+					JE MALI
+					JMP TAPOS
+
+			TAMA: 	MOV AH, 09h
+					MOV DX, OFFSET ANSI
+					INT 21h
+
+			TAPOS: 	MOV AX, 4C00h
+					INT 21h
+
+IF-ELSE CONSTRUCT
+A conditional statement of C language in the form:
+			
+			if<condition>
+				{	
+					<statement-1>;
+					<statement-2>;	
+						:
+					<statement-n>;	
+				}					
+			else
+				{
+					<statement-1>;
+					<statement-2>;	
+						:
+					<statement-n>;	
+				}
+
+can be implemented by assembly language of the form:
+			<CMP instruction>
+			<conditional jump instruction> <label-1>
+			<instruction-1>
+			<instruction-2>
+				:
+			<instruction-n>
+			<JMP instruction> <label-2>
+
+Example:
+		
+			C Language 							Assembly Language
+
+if(ax == 0){									CMP AX, 0000h	
+	cx = cx - ax;								JNZ ACTION1
+	ax = ax + 1;								SUB CX, AX
+}      											INC AX
+else{ 											JMP NEXT
+	cx = cx - 8;					
+}									ACTION: 	SUB CX, 0008h
+									NEXT:
+
+DO.. WHILE CONSTRUCT
+A do.. while loop similar to C language:
+			do{
+				<statement-1>;
+				<statement-2>;
+					:
+				<statement-n>;	
+			}					
+			while <condition>;
+
+can be implemented in assembly language in the form:
+			<label>: 	<instruction-1>
+						<instruction-2>
+							:
+						<instruction-n>
+						<CMP instruction>
+						<conditional jump instruction> <label>
+
+Example:
+
+			C Language 							Assembly Language
+
+ax = 5;											MOV AX, 0005h
+do{									HERE: 		DEC AX	
+	ax = ax + 1;								INC BX
+	bx = bx + 1;								CMP AX
+}      											JNZ HERE
+while(ax >= 0) 									
+					
+WHILE CONSTRUCT
+Similarly, C language while loop:
+
+			while{
+				<statement-1>;
+				<statement-2>;
+					:
+				<statement-n>;
+			}
+
+is roughly equivalent to the assembly language structure:
+			<label-1>	<CMP instruction>
+						<conditional jump instruction> <label-2>
+						<instruction-1>
+						<instruction-2>
+							:
+						<instruction-n>
+						JMP <label-1>
+
+			<label-2>	<instruction-1>
+						<instruction-2>
+							:
+						<instruction-n>
+
+Example:
+
+			C Language 							Assembly Language
+
+while(ax <= 10){					START: 		CMP AX 000Ah
+	ax = ax + bx;								JGE NEXT
+	bx = bx + 1;								ADD AX, BX
+}												INC BX
+												JMP START
+
+									NEXT: 		ADD CX, AX
+
+THE CMP INSTRUCTION
+CMP(CoMPare) instruction is used to compare character data, as well as, numeric data fields. The main use of CMP is in decision making in conjunction with conjunction jump instructions.
+
+Format:
+			CMP <register>,<register>
+			CMP <register>,<immediate-data>
+
+Example:
+		 	CMP AL, 'Y'
+		 	CMP DX, 0000h
+
+Example: JNE
+			
+			MOV AH, 10 				AH = 10
+			MOV BH, 10 				BH = 10
+	ZZZ: 	ADD BH, AH 				BH = 20 / 30 / 40 / 50
+			MOV DL, BH 				DL = 20 / 30 / 40 / 50
+			CMP BH, 50 				20-50 = -30 / Z = 1
+									30-50 = -20 / Z = 1
+									40-50 = -10 / Z = 1
+									50-50 = 0   / Z = 0
+			JNE CHRIS
+			SUB DL, 50 				DL = 50-50 = 0
+
+EXAMPLE: JE
+			
+			MOV BH, 10 				BH = 10
+			MOV AH, 10 				AH = 10
+	ZZZ: 	ADD BH, AH 				BH = 20 / 30
+			MOV DL, BH 				DL = 20 / 30
+			CMP BH, 20 				20-20 = 0  / Z = 0
+									30-20 = 10 / Z = 1
+			JNE CHRIS
+			SUB DL, 30 				DL = 30-30 = 0														

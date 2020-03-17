@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CS E-Book</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Roboto|&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            font-family: 'Baloo Chettan 2', cursive;
+        }
+        form{
+            width: 20em;
+            margin-top: 12em;
+            margin-left:auto;
+            margin-right:auto;
+            text-align: center;
+        }
+        .row{
+           height: 100vh;
+        }
+        
+        .bg-img{
+            background-image: url('pictures/login-bg.jpg');
+            background-size: cover;
+            text-shadow: 2px 2px black;
+            color: white;
+        }
+        .title{
+            font-size: 2.5em;
+            font-weight: 800;
+            font-family: 'Roboto', sans-serif;
+        }
+        .subtitle{
+            font-size: 1.75em;
+            font-family: 'Roboto', sans-serif;
+        }
+        .bg-blue {
+            background-image: linear-gradient(to right, #0182ecdf , #0b1f8f);
+        }
+        img{
+            margin-top: 8em;
+            margin-bottom: 1em;
+        }
+        
+    </style>
+    <body class="bg-light">
+        <div class="row m-0">
+            <div class="col-7 bg-img text-center">
+                <img src="pictures/book-logo.png" width="200px">
+                <p class="title mb-0">COMPUTER STUDENTS</p>
+                <p class="subtitle">ONLINE LEARNING MATERIAL</p>
+            </div>
+            <div class="col-5">
+                
+                <form>
+                    <h4>Sign in to get started</h4>
+                    <div class="form-group mt-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary"><i class="fa fa-user text-white"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-primary"><i class="fa fa-key text-white"></i></span>
+                            </div>
+                            <input type="password" class="form-control border-left-0" placeholder="Password">
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn bg-blue border-0 w-100 text-light"><b>LOG IN</b></button>
+                        <!-- <a class="ml-2 btn-dark btn pl-4 pr-4">Register</a> -->
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,820 @@
+Arithmetic Operations
+Chapter 2
+Objectives
+	1)Distinguish the different processes of performing diverse arithmetic operations on various number systems.
+	2)Add, Subtract, Multiply, and Divide Numbers following the standard steps.
+	3)Develop an attitude of handling numbers and its mathematical operations in detail.
+
+Four Fundamental Arithmetic Operations
+1. Addition
+	Addition is one of the basic operations of arithmetic. In its simplest form, addition combines two numbers, the augend and addend, into a single number, called the sum
+
+	A. Decimal
+		When you learned arithmetic in school, you memorized how to add decimal numbers the easier way. However, in this context, it wil demonstrate the long method of adding decimal numbers. This Method will be helpful when you'll add
+		binary and hexadecimal numbers.
+
+		Example:                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)	
+										--------------------------------
+	Step 1: Add starting the rightmost digit
+	(i.e 8 plus 9)
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)	
+										--------------------------------	
+															17
+
+	Step 2: Since the result is greater than nine(9), subtract ten (10) from the result 17. You'll subtract 10 because decimal is a base-10 number system.															
+
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)	
+										--------------------------------	
+															17 (base 10)
+										-					10 (base 10)
+										--------------------------------
+															7 (base 10)
+
+	Step 3: Count the number of times you subtract 10 and that will be the value of the carry over.															
+													1
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)	
+										--------------------------------	
+															17 (base 10)
+										-					10 (base 10)
+										--------------------------------
+															7 (base 10)
+
+	Step 4: Add the digits in the tens place value, including the carry.
+
+													1
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)		
+										--------------------------------
+													6		17 (base 10)
+										-					10 (base 10)
+										--------------------------------
+															7 (base 10)	
+
+	Note: Because the result is less than ten (10), no need to subtract it.
+
+	Step 5: Add the digits in the last place value(leftmost digit), including the carry of there is.
+
+													1
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)		
+										--------------------------------
+											5		6		17 (base 10)
+										-					10 (base 10)
+										--------------------------------
+															7 (base 10)														
+	
+	Step 6: Write down together the resulting digits and that is the final answer. 
+
+	Therefore,
+
+				                            3		5		8 (base 10)	
+										+	2		0		9 (base 10)		
+										--------------------------------
+											5		6		7 (base 10)
+
+	B. Binary
+		Adding binary numbers is similar to decimal addition. Instead of subtracting ten (10), you'll subtract two(2). If the result is greater than one (1), since binary is a base-2 number system.
+
+	Example:
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+
+	Step 1: Add starting from the rightmost digit						
+
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+															2
+
+	Step 2: Since the result is greater than one (1), subtract two(2) from the result 2. You'll subtract 2 because binary is a base-2 number system.
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+															2
+										-					2					
+										--------------------------------																	0
+	
+	Step 3: Count the number of times you subtract 2 and that will be the value of the carry over.
+
+													1
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+															2
+										-					2					
+										--------------------------------																	0
+
+	Step 4: Add the bits in the second place value from the right including the carry over.
+
+													1
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+													3		2
+										-					2					
+										--------------------------------																	0
+
+	Note: Repeat step 2 until the result is less than two (2)									
+
+													1
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+													3		2
+										-			2		2					
+										--------------------------------															1		0
+	Note: Repeat step 3.
+
+											1		1
+				                            1		1		1 (base 2)	
+										+			1		1 (base 2)		
+										--------------------------------
+													3		2
+										-			2		2					
+										--------------------------------															1		0
+
+	Step 5: Add the digits in the last place value (leftmost digit), including the carry if there is. Repeat steps 2 and 3 if necessary.
+
+									1		1		1
+				                            1		1		1 (base 2)	
+									+				1		1 (base 2)		
+									----------------------------------
+											2		3		2
+									-		2		2		2					
+									----------------------------------															0		1		0
+
+	Step 6: If there is nothing to add with the carry, just bring it down and write the resulting bits together.	
+
+									1		1		1
+				                            1		1		1 (base 2)	
+									+				1		1 (base 2)		
+									----------------------------------
+											2		3		2
+									-		2		2		2					
+									----------------------------------													   1	   0       1       0							
+
+	Therefore,									
+				                            1		1		1 (base 2)	
+									+				1		1 (base 2)		
+								--------------------------------------
+									1		0		1		0 (base 2)
+
+	You can also use the binary addition table shown below:
+
+	+		0		1
+	0		0		1
+	1		1		10 (in tabular form)									
+
+	Reminder: If the sum is a 2-bit result (i.e. 10), the leftmost digit (1) is the carry over.
+
+	C. Hexadecimal
+
+	Adding HEX numbers is similar also to decimal addition. Instead of subtracting 10 (10), you'll subtract sixteen (16)
+	if the result is greater than 15, since it is a base-16 number system.
+
+	Example:		
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+
+	Step 1: Add starting from rigthmost digit
+	(i.e. 12 for C plus 14 for E)
+
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+															26
+
+	Step 2: Since the result is greater than fifteen (15), subtract	sixteen (16) from the result 26. You'll subtract 16 because Hexadecimal is a base-16 number system.
+
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+															26		
+									-						16
+								--------------------------------------
+															10
+
+	Step 3: Count the number of times you subtract 16 and that will be the value of the carry over.						
+													
+													1
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+															26		
+									-						16
+								--------------------------------------
+															10															
+
+	Step 4: Add the digits in the second place value from the right including the carry over.
+
+													1
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+													29		26		
+									-						16
+								--------------------------------------
+															10															
+
+	Note: Repeat step 2 until the result is less than sixteen (16).
+
+																																																									1
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+													29		26		
+									-				16		16
+								--------------------------------------
+													13		10															
+
+	Step 5: Add the digits in the last place value (leftmost digit), including the carry if there is. Repeat steps 2 and 3 if necessary.
+
+											1		1
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+											11		29		26		
+									-				16		16
+								--------------------------------------
+													13		10															
+
+	Step 6: If there are 2-digit results, convert 10,11,12,13,14, and 15 to A,B,C,D,E, and F respectively. And write them down together.
+
+		11 = B 		13 = D 		10 = A
+
+																																					1		1
+				                            A		F		C (base 16)	
+									+				D		E (base 16)		
+								--------------------------------------
+											B		D		A (base 16)	
+
+	You can also use the hexadecimal addition table shown below:
+
+	+	0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+	0	0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+	1	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F	10
+	2	2	3	4	5	6	7	8	9	A	B	C	D	E	F	10	11  												
+	3	3	4	5	6	7	8	9	A	B	C	D	E	F	10	11	12
+	4 	4	5	6	7	8	9	A	B	C	D	E	F	10	11	12  13
+	5	5	6	7	8	9	A	B	C	D	E	F	10	11	12  13	14
+	6 	6	7	8	9	A	B	C	D	E	F	10	11	12  13	14	15
+	7	7	8	9	A	B	C	D	E	F	10	11	12  13	14	15	16
+	8	8	9	A	B	C	D	E	F	10	11	12  13	14	15	16	17
+	9	9	A	B	C	D	E	F	10	11	12  13	14	15	16	17	18
+	A	A	B	C	D	E	F	10	11	12  13	14	15	16	17	18	19
+	B 	B	C	D	E	F	10	11	12  13	14	15	16	17	18	19	1A
+	C	C	D	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B
+	D 	D	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C
+	E	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C	1D
+	F	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C	1D 	1E		(table)
+
+	REMINDER: If the sum is a 2-digit result (i.e. 1B) the leftmost digit (1) is the carry over.
+
+	2. Subtraction
+
+		In mathematics, subtraction is one of the four basic arithmetic operations. It is usually denoted by an infix minus sign. The traditional names for the terms of the subtraction: a = b - c; where a is the difference, b is the minuend and c is the subtrahend
+	
+	A. Decimal
+
+	Example:
+
+				                            5		8		1 (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+	
+	Step 1: Subtract starting from the rightmost digit (i.e. 1 minus 3). Since the minuend 1 is less than the subtrahend 3, borrow 1 unit from the left digit (i.e. 8) which is equivalent to 10 (remember, every unit is equivalent to 10 because decimal is a base-10 number system) and add it to 1, which will be equal to 11 now.
+
+				                            5		8		1(11) (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+
+	Step 2: Then subtract 11 to 3.						
+				                            5		8		1(11) (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+															8
+
+	Step 3: The digit 8 will become 7 now because 1 in the ones place value borrow one unit from 8 tens place value		
+
+				                            5		8(7)		1(11) (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+															8
+
+	Step 4: Subtract the digits from the tens place value(i.e. 7 minus 3). Given that the minuend is greater than the subtrahend, you'll not borrow 1 unit from 5.															
+
+				                            5		8(7)		1(11) (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+													4		8
+
+	Step 5: Subtract the next digits (i.e. 5 minus 2)												
+
+				                            5		8(7)		1(11) (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+											3		4		8
+
+	Therefore,											
+				                            5		8		1 (base 10)	
+									-		2		3		3 (base 10)		
+								--------------------------------------
+											3		4		8 (base 10)	
+
+	B. Binary
+		The procedure used in subtracting decimal is similar to binary subtraction. However, instead of ten (10), a single unit you borrow is equivalent to two (2).
+
+	Example:
+				                            1		1		0 (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+	
+	Step 1: Subtract strating from the rightmost digit (i.e. 0 minus 1). Since the minuend 0 is less than the subtrahend 1, borrow 1 unit from the left digit (i.e. 1), which is equivalent to 2, and add it up to 0, which will be equal to 2 now.
+
+				                            1		1		0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+
+	Step 2: Then subtract 2 to 1.							
+
+				                            1		1		0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+															1
+
+	Step 3: The digit 1 will become 0 now.
+
+				                            1		1(0)	0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+															1
+
+	Step 4: 0 minus 1 cannot be, so borrow 1 unit from the left digit again. 0 becomes 2 now.							
+
+				                            1		1(2)	0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+															1															
+	Step 5: Subtract the digits (i.e. 2 minus 1)
+
+				                            1		1(2)	0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+													1		1															
+	
+	Step 6: The leftmost digit becomes 0. Since there are no numbers to subtract, that's the end of the subtraction process
+
+				                            1(0)	1(2)	0(2) (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+													1		1															
+	Therefore,																											
+
+				                            1		1		0 (base 2)	
+									-				1		1 (base 2)		
+								--------------------------------------
+													1		1 (base 2)		
+
+	C. Hexadecimal																											Subtraction in Hexadecimal is similar to decimal. If the subtrahend is greater than the minuend, you borrow 1 unit, which is equal to 16 instead of 10.
+
+	Example:
+				                            B		E		A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+
+	Step 1: Subtract starting from the rightmost digit (i.e. A (10) minus 0).							
+
+				                            B		E		A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+															10
+
+	Step 2: Then subtract the digits in the next place value (i.e. E(14) minus F(15)). Like in decimal system, you have to borrow 1 unit from the left digit and that 1 unit is equal to 16. Add it to E or 14 and E becomes 30.
+
+				                            B		E(30)	A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+															10															
+	Step 3: Subtract the digits (i.e. 30 minus 15)
+
+				                            B(10)	E(30)	A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+													15		10															
+	
+	Step 4: The leftmost digits become 10. Since there are no numbers to subtract, that's the end of the subtraction process, just bring 10 down.
+
+				                            B(10)	E(30)	A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+											10		15		10															
+
+	Step 5: If necessary, convert the 2-digit difference to its hexadecimal character.
+	10 = A 	15 = F 	10 = A
+
+				                            B		E		A (base 16)	
+									-				F		0 (base 16)		
+								--------------------------------------
+											A		F		A (base 16)																	
+	3. Multiplication
+	In its simplest form, multiplication is a quick way of adding identical numbers. The result of multiplying numbers is called a product. The numbers being multiplied are called coefficients or factors, and individually as the multiplicand and multiplier.
+
+	A. Decimal
+		To multiply two numbers in base-10, let's have the following:
+
+	Example: 											
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------
+
+	Step 1: Multiply the digits of the rightmost column (i.e. 6 times 5) and the
+	product is 30. The leftmost digit of the product is to be carried over 8 and 0 should be written below 6.
+
+													3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+															0
+
+	Step 2: Then, multiply 6 again to the digit on the second column (i.e. 6 times 8). Add the product to the carry over 3, the result is 51. 1 should be written before the product and 5 is carried over 3.															
+													3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+													1		0															
+
+	Step 3: Again, multiply 6 to the digit on the third column (i.e. 6 times 3). Add the prodcut to the carry over 5, the result is 23. Since there is no number in the fourth column, write 23 before 1 and 0.									
+	
+											5		3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+									2		3		1		0															
+
+	Step 4: Now, multiply 9 to the digit on the first column of the multiplicand (i.e. 9 times 5) and the product is 45. The leftmost digit of the product is to be carried over 8 and 5 should be written below.
+
+													4
+											5		3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+									2		3		1		0														
+													5
+
+	Step 5: Then, multiply 9 again to the digit on the second column (i.e. 9 times 8). Add the product to the carry over 4, the result is 76. 6 should be written before the product 5 and 7 is the carry over.														
+											7		4
+											5		3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+									2		3		1		0														
+											6		5
+
+	Step 6: Again, multiply 9 to the digit on the third column (i.e. 9 times 3). Add the product to the carry over 7, and the result is 34. Since there is no number in the fourth column, write 34 before 6 and 5.								
+
+											7		4
+											5		3
+				                            3		8		5 (base 10)	
+									x				9		6 (base 10)		
+								--------------------------------------									
+									2		3		1		0														
+							3		4		6		5			
+
+	Step 7: Add the temporary products starting from the rightmost side and there you have the final answer.
+
+											7		4
+											5		3
+				                            3		8		5 (base 10)	
+							x						9		6 (base 10)		
+							-------------------------------------------									
+									2		3		1		0														
+							3		4		6		5
+							-------------------------------------------									
+							3		6		9		6		0 (base 10)
+
+	Therefore, 							
+
+				                            3		8		5 (base 10)	
+							x						9		6 (base 10)		
+							-------------------------------------------									
+							3		6		9		6		0 (base 10)
+
+	B. Binary
+		The process of binary multiplication is similar to decimal number system. Though, when you add the temporary products, you'll use the concept of binary addition.
+
+	Example:
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+
+	Step 1: Multiply the bits on the first column (rightmost). 1 times 1 is equal to 1; write the result below the multiplier.
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+															1
+	
+	Step 2: Multiply 1 again to the digit on the second column of the multiplicand (i.e. 1 times 0), write the result	
+	below the multiplier before the product 1.
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+													0		1
+
+	Step 3: Nowm multiply 1 to the digit on the third column of the multiplicand (i.e. 1 times 1), write the result below the multiplier before the product 0.
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+											1		0		1															
+
+	Step 4: Do the same thing with the next bit; just repeat steps 1 to 3 until all the bits of the multiplier have been multiplied.																										
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+											1		0		1															
+													1
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+											1		0		1															
+											0		1											
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+											1		0		1															
+									1		0		1											
+
+	Step 5: Add using binary addition concept.
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+											1		0		1															
+									1		0		1									
+							-------------------------------------------
+									1		1		1		1 (base 2)
+
+	Therefore,									
+
+				                            1		0		1 (base 2)	
+							x						1		1 (base 2)		
+							-------------------------------------------									
+									1		1		1		1 (base 2)
+
+ 	C. Hexadecimal
+ 		Use the table below to assist in Hexadecimal multiplication. The process is the same just like the previous number systems, but when adding use the concept of hexadecimal addition.								
+
+	+	0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+	0	0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+	1	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F	10
+	2	2	3	4	5	6	7	8	9	A	B	C	D	E	F	10	11  												
+	3	3	4	5	6	7	8	9	A	B	C	D	E	F	10	11	12
+	4 	4	5	6	7	8	9	A	B	C	D	E	F	10	11	12  13
+	5	5	6	7	8	9	A	B	C	D	E	F	10	11	12  13	14
+	6 	6	7	8	9	A	B	C	D	E	F	10	11	12  13	14	15
+	7	7	8	9	A	B	C	D	E	F	10	11	12  13	14	15	16
+	8	8	9	A	B	C	D	E	F	10	11	12  13	14	15	16	17
+	9	9	A	B	C	D	E	F	10	11	12  13	14	15	16	17	18
+	A	A	B	C	D	E	F	10	11	12  13	14	15	16	17	18	19
+	B 	B	C	D	E	F	10	11	12  13	14	15	16	17	18	19	1A
+	C	C	D	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B
+	D 	D	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C
+	E	E	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C	1D
+	F	F	10	11	12  13	14	15	16	17	18	19	1A	1B	1C	1D 	1E		(table)
+
+	Reminder: If the product is a 2-digit result (i.e. 1B), the leftmost digit (1) is the carry over.
+
+	Example: 		
+
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+
+	Step 1: Multiply the digits on the first column (rightmost). 8 times 0 is equal to 0; write the result below the multiplier.
+
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+															0
+
+	Step 2: Again, multiply 8 to the digit on the second column of the multiplicand (i.e. 8 times 11(B)), and the result is 58. Write 8 before the product 0 and 5 is carried over 1.															
+
+											5
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+													8		0
+
+	Step 3: Now, multiply 8 to the digit on the third column of the multiplicand (i.e. 8 times 1). Add the product to the carry over 5(i.e. 8 + 5 = 13(D)), and write the result below.
+
+											5
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+											D		8		0														
+
+	Step 4: Do the same thing  with the most digit; just repeat steps 1 to 3 until all the digits of the multiplier have been multiplied.											
+
+											5
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+							6		0		D		8		0														
+
+											5
+				                    C       1		B		0 (base 16)	
+							x						1		B (base 16)		
+							-------------------------------------------									
+							6		0		D		8		0															
+							C 		1 		B 		0
+
+	Step 5: Add by using  the concept of hexadecimal addition.												
+
+											5
+				                    C       1		B		0 (base 16)	
+					x								1		B (base 16)		
+					---------------------------------------------------									
+							6		0		D		8		0															
+							C 		1 		B 		0
+					---------------------------------------------------									
+					1		2		2		8		8		0
+
+	Therefore,
+
+				                    C       1		B		0 (base 16)	
+					x								1		B (base 16)		
+					---------------------------------------------------									
+					1		2		2		8		8		0 (base 16)
+
+	4. Division
+		In mathematics, especially in elementary arithmetic, division, is an operation, which is the reverse of multiplication, and sometimes can be interpreted as repeated subtraction. The expression a = b / c, a is called the quotient, b the dividend, and c the divisor.
+
+	A. Decimal
+		This is how to divide decimal numbers:
+		Example:
+
+									  __________________________
+						35 (base 10) / 158 (base 10)
+
+	Step 1: Since the divisor is a 2-digit number, divide it to the first 2 digits of the dividend starting from the left. If the 2-digit dividend is less than the divisor, include the next digit and divide the numbers (i.e. 158 divided by 35). Write the quotient above the dividend in line with the last digit, which is 8.
+
+									  
+									     4	
+									  __________________________
+						35 (base 10) / 158 (base 10)
+
+	Step 2: Multiply the quotient to the divisor (i.e. times 35). Write the product below 158.							
+
+									     4	
+									  __________________________
+						35 (base 10) / 158 (base 10)
+									 - 140			 
+
+	Step 3: Subtract the dividend and the product (i.e. 158 minus 140). Write the difference below 140.
+
+	Step 4: If the difference is less than the divisor and no other digit is to be brought down from the dividend, that difference is considered the remainder. Otherwise, repeat steps 1 to 3.
+
+									     4	
+									  __________________________
+						35 (base 10) / 158 (base 10)
+									 - 140			 
+									 -------
+									 	18
+	Therefore, 
+
+									     4			r. 18
+									  __________________________
+						35 (base 10) / 158 (base 10)
+
+	B. Binary						
+
+	There  is a resemblance between decimal and binary division but getting the difference uses binary subtraction concept.
+
+	Example: 	
+
+									  __________________________
+						11 (base 2)  / 10111 (base 2)
+
+	Step 1: Since the divisor is a 2-digit number, divide it to the first 2 digits of the dividend starting from the left. If the 2-digit dividend is less than the divisor, include the next digit and divide the numbers (i.e. 101 divided by 11). Write the quotient above the dividend in line with the last digit, which is 1.
+
+									     1
+									  __________________________
+						11 (base 2)  / 10111 (base 2)						
+
+	Step 2: Multiply the quotient to the divisor (i.e. times 11). Write the product below 101.
+
+									     1
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+	
+	Step 3: Subtract the dividend and the product (i.e. 101 minus 11). Write the difference below 11.					
+
+									     1
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	10
+
+	Step 4: Bring dow the fourth digit (i.e. 1). 101 will now be the dividend. Repeat steps 1 to 3 again until the digits have been brought down and divided.									 					 
+
+									     1
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101	
+
+									     11
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									     11
+							
+
+									     11
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									 -   11
+									 -------
+									 	 10
+
+									     11
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									 -   11
+									 -------
+									 	 101
+
+									     111
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									 -   11
+									 -------
+									 	 101
+									      11
+
+									     111
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									 -   11
+									 -------
+									 	 101
+									 -    11									      
+									 -------
+									      10
+
+	Step 4: If the difference is less than the divisor and no other digits is to be brought down from the dividend, that difference is considered the remainder.
+									 
+									     111
+									  __________________________
+						11 (base 2)  / 10111 (base 2)					
+									 -  11
+									 ------									
+									 	101
+									 -   11
+									 -------
+									 	 101
+									 -    11									      
+									 -------
+									      10
+
+	C. Hexadecimal
+		You always find it difficult to divide Hexadecimal numbers, right? Dividing hexadecimal numbers is not difficult, actually it's the most complicated thing to do manually. That's why it is recommended to do the following steps:
+
+	Step 1: Convert the dividend and the divisor into its decimal equivalent.
+	Step 2: After converting, divide the number in decimal way.
+	Step 3: Convert the quotient and the remainder (if any) into its Hexadecimal equivalent and that gives you the final answer.
+
+	It is really advisable to convert hexadecimal to decimal rather than binary and use binary division because of the following reasons:
+
+	1) Decimal is our everyday system of arithmetic
+	2) Binary equivalent of Hexadecimal is too long, dealing with these voluminous set of numbers is prone to commit mistakes.

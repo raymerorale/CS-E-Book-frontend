@@ -1,0 +1,31 @@
+{
+    "chapter1": [
+        "Number System",
+        "Base",
+        ["Common Used Bases of Number Systems in Assembly Language",[
+            "Decimal Number System",
+            "Binary Number System",
+            "Hexadecimal Number System"]],
+        "Equivalences",
+        ["Conversion of Number Systems",[
+            "Decimal to Binary",
+            "Decimal to Hexadecimal",
+            "Binary to Decimal",
+            "Binary to Hexadecimal",
+            "Hexadecimal to Decimal",
+            "Hexadecimal to Binary"]],
+        "Lecture Exercise 1",
+        "Laboratory Exercise 1",
+        "Lecture Exercise 2",
+        "Laboratory Exercise 2",
+        "Lecture Exercise 3",
+        "Laboratory Exercise 3",
+        "Lecture Exercise 4",
+        "Laboratory Exercise 4",
+        "Lecture Exercise 5",
+        "Laboratory Exercise 5",
+        "Lecture Exercise 6",
+        "Laboratory Exercise 6"],
+    "chapter2": []
+}
+

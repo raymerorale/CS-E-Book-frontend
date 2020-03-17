@@ -1,0 +1,93 @@
+Chapter 1 Number System Revisited
+- Introduction to Number System
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/crSGS1uBSNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Decimal to Binary Conversion 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2U9b76JRz7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Decimal to Hexadecimal Conversion
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uVpQ9pPskNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-Binary to Decimal Conversion
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Tt-RA6KD30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Binary to Hexadecimal Conversion
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8T4F7WboWPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Hexadecimal to Decimal Conversion
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1tHgs0mrZ5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Hexadecimal to Binary Conversion
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WI6Uvci2p7E?start=0&end=234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 2 Arithmetic Operation
+- Binary Addition
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ri0VhKhw7dY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Hexadecimal Addition
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y0B6tuC6niE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Binary Subtraction
+<iframe width="560" height="315" src="https://www.youtube.com/embed/31N9tjaWZbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Hexadecimal Subtraction
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3mV7q3_OAGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Binary Multiplication
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_kwXcIV7dyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Hexadecimal Multiplication
+<iframe width="560" height="315" src="https://www.youtube.com/embed/66sIxqnXUvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Binary Division
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VKemv9u40gc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Chapter 3 Disk Operating System Commands
+-Disk Operating System
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EbxukDnRqSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Command Prompt and DOS Commands
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MNwErTxfkUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 4 Basic Feature of Microprocessor
+-Microcomputer Architechture
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aj8gdnUjWD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+-Registers
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EAhDfRJ0miM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 5 Introduction to Machine Language
+-Sample Session with Debug
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s1uOGjt0YJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-Creating Program in Debug/DosBox
+<iframe width="560" height="315" src="https://www.youtube.com/embed/azGrJVdnyi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Chapter 6 Fundamentals of Assemby Language
+
+-Programming Language and Classification
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ifo76VyrBYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 7 Requirements for coding Assembly Language
+
+Assembly Language Directives
+-<iframe width="560" height="315" src="https://www.youtube.com/embed/4ZEer_0VTPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 8 Understanding the Assembly Language Program
+-Sample Program
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDYwJ1FryKc?start=502&end=709" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Chapter 9 Assembling,Linking, and running the program
+-Creating,Assembling,Linking and runnning the program
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDYwJ1FryKc?start=502" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Chapter 10
+// wala na ko mahanap - naka hindi language na  - maikli lang naman ang chapter
+
+Chapter 11
+// wala na ko mahanap - naka hindi language na - maikli lang naman ang chapter
+
+
+Chapter 12  Using Procedure
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0dLkvasLSlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,0 +1,285 @@
+@
+
+page1@
+
+
+Chapter 3
+
+OBJECTIVES
+
+- Be familiar with the basic commands utilized in DOS environment.
+
+- Apply the concepts discussed here in hands-on activities.
+
+- integrate the significance of practice makes perfect attitude in mastering DOS commands.
+
+
+
+
+
+Computer Systems Organization With Assembly Language
+----------------------------------------------------
+           DISK OPERATING SYSTEM COMMANDS
+@
+
+page2@
+<b>DISK OPERATING SYSTEM</b>
+
+DOS is an acronym for Disk Operating System. DOS traced back its roots from the emergence of the "Personal Computer (PC)". During those times when IBM was about to launch its new generation computer they are in the dilemma of finding a suitable operating system for their machine. Since disks are the predominant method of storing data before, it was the most popular operating system for microcomputer systems. It is an operating system that provides support services for other programs. Also, DOS is a collection of programs provided as files. These programs provide services such as file and memory management support for devices attached to your computer. The illustration below shows how DOS environment looks like.
+
+IBM sourced out their system to Digital Research, the company that sold their Operating System with its CP/M computer. Digital Research was the leader of those systems that time. But unfortunately, the small company in Seattle, named Microsoft was the company where IBM commissioned to create the operating system for their machines. Microsoft was bold enough to take the challenge of providing IBM with an operating system. MS-DOS was the standard operating system for IBM-compatible personal computers.
+
+
+<b>COMMAND PROMPT</b>
+You use DOS prompt to enter DOS commands. Theses commands specify to DOS the exact action you wish to take as well as any special information needed to carry out your request. The illustration below shows the DOS environment.
+
+@
+
+page3@
+
+//picture1 #TODO
+
+<b>CLS</b>
+
+//picture2 #TODO
+
+<b>HOW TO CHANGE DRIVE</b>
+
+When you use command prompt entries, a DOS prompt appears to indiate that DOS is ready to process your next entry. The default setting for this prompt displays a letter representing the active drive. To change from drive C to drive A, type <b>A</b> followed by a colon (:) and press enter key.
+
+//picture3 #TODO
+@
+
+page4@
+<b>CD</b>
+
+This command changes the current directory. For example, you want to go to WINDOWS subdirectory, just type <b>CD</b> and the subdirectory name and press ENTER key.
+
+//picture4 #TODO
+
+If you want to go back to the previous directory, you can use <b>CD..</b> or <b>CD\</b>
+
+//picture5 #TODO
+
+<b>DIR</b> 
+
+This command lists the content of a directory, to enter this command, just type <b>DIR</b> and press <ENTER> key.
+@
+
+page5@
+
+//picture6 #TODO
+
+<b>COPY</b>
+
+This command duplicates file or files to another location/directory. To  enter this command, type COPY, followed by a space and the filename, space again, path name and press <ENTER> key.
+
+//picture7 #TODO
+
+<b>REN</b>
+
+This command changes the name of your life and cannot change the names of subdirectories. To enter this command type REN, followed by a space, then the old filename, space again, the new filename and press <ENTER> key.
+@
+
+page6@
+
+//picture8 #TODO
+
+<b>DEL</b>
+
+This command removes one or more files from a disk. To enter this command, type <b>DEL</b> followed by a space, then the filename and press <ENTER> key.
+
+//picture9 #TODO
+
+<b>MD</b>
+
+This command creates a subdirectory using the name you provide preferably eight (8) characters long and must start with a letter. To enter this command, type <b>MD</b> followed by a space then the subdirectory name and press <ENTER> key.
+
+//picture10 #TODO
+@
+
+page7@
+
+<b>RD</b>
+
+This command removes a specific subdirectory. Make sure that the subdirectory is empty. Make sure that the subdirectory is empty. To enter this command type <b>RD</b> followed by a space then the subdirectory name and press <ENTER> key.
+
+//picture11 #TODO
+
+<b>LIST OF USEFUL DOS COMMANDS</b>
+
+Note: Where example files (e.g., file.ext, file1, file2), file extensions (.ext), directories (e.g., diry, diry1, diry2), commands (e.g., command), and drive letters (e.g., a:, b:, c:) are given, substitute the name of your own file, directory, command, or drive letter. Since DOS is not case sensitive, you can type these commands in either upper- or lowercase.
+
+<b>DOS COMMAND</b>					<b>MEANING</b>
+help								List commands (only in DOS versions 5 later)
+
+help command 						See help for the DOS command.
+
+command /?							List switches for the DOS command.
+
+path=c:\windows; c:\dos 			Specify in which directories DOS searches for commands or programs.
+
+prompt $p$g 						Make the DOS prompt display the current directory.
+
+dir 								List files in the current directory in one column.
+
+dir /w 								List files in five columns
+
+dir /p 								List files one page at a time
+
+dir *.ext 							List all files with an .ext extension
+
+dir z???.ext 						List files with .ext extensions that have four letters and start with z (where z is a character of your choice).
+
+dir file.ext /s 					Search for the file.ext in the current directory and all subdirectories under the current directory; most useful
+									if the current directory; most useful if the current directory is the root (i.e., C:\).
+
+type file.ext 						View the contents of the text file file.ext.
+
+edit file.ext 						Use the DOS editor to edit the file file.ext.
+
+a:									Change to the a: drive.
+
+md c:\diry 							Make a new subdirectory named diry in the c:\ directory
+
+cd c:\diry 							Change to subdirectory diry.
+
+rd c:\diry 							Remove the existing subdirectory named diry.
+
+del file.ext 						Delete a file named file.ext
+
+ren file1 file2						Rename file file1 to file2.
+
+copy file1 file2					Copy file file1 to file2.
+@
+
+page8@
+verify on 							Turn on verification of copy commands.
+
+verify off							Turn off verification of copy commands.
+
+xcopy diry1 diry2 /s 				Copy all files and subdirectories in directory diry1 to diry2.
+
+xcopy diry1 diry2 /p 				Ask for confirmation of each file before copying it from diry1 to diry2.
+
+diskcopy a: b:						Duplicate a disk using two floppy drives.
+
+diskcopy a: a:						Duplicate a disk using the same floppy drive.
+
+format a:							Format a floppy disk in drive a:.
+
+format a: /s 						Format a bootable floppy disk (include system files).
+
+backup c:\diry\*.ext a:				Back up all files with the extension .ext in c:\diry\ to floppy drive a: .
+
+backup c:\ a: /s 					Back up the entire c: drive to floppy drive a:.
+
+restore a:\ c:\diry\*.ext 			Restore backed-up files with the extension .ext in drive a: to the c:\diry\ directory.
+
+restore a: c:\ /s 					Restore backed-up files and subdirectories from drive a: to c:\.
+
+ver 								Check the version of DOS.
+
+time 								Check or correct the system time.
+@
+
+page8@
+date 								Check or correct the system date.
+
+cls 								Clear the screen.
+
+scandisk							Scan and check drive c: for errors. ScanDisk replaces chkdsk (see below) on DOS version 6.0 and above (including
+									Windows 95).
+
+chkdsk								Check disk and memory usage of the current disk.
+
+chkdsk /f 							Fix errors reported by chkdsk.
+
+chkdsk file.ext 					Check a particular file.
+
+chkdsk a: 							Check a particular drive (in this case, a floppy in the a: drive).
+
+mem 								Check memory usage.
+@
+
+page 9@
+<b>Batch File</b>
+
+A batch file is a text file that contains a sequence of commands for a computer operating system. It's called a batch file because it batches (bundles or packages) into a single file a set of commands that would otherwise have to be presented to the system interactively from a keyboard one at a time. A batch file is usually created for command sequences for which a user has a repeated need. Commonly needed batch files are often delivered as part of an operating system. You initiate the sequence of commands in the batch file by simply entering the name of the batch file on a command line.
+
+In the Disk Operating System (DOS), a batch file has the file name extension ".BAT". (The best known DOS batch file is the AUTOEXEC.BAT file that initializes DOS when you start the system.) In UNIX-based operating systems, a batch file is called a shell script. In IBM's mainframe VM operating systems, it's called an EXEC. (http://searchwinit.techtarget.com/definition/batch-file)
+
+Sample of batch program. <b>FILENAME: index.bat</b>
+
+//picture12 #TODO
+@
+
+page10@
+
+<b>OUTPUT</b>
+//picture13 #TODO
+
+<b>Batch File Command</b>
+
+<b>Commands</b>								<b>Functions</b>
+
+
+<b>START Command</b>						The START command can launch a Windows program either by specifying the program name (and its
+											command-line parameters), or by specifying a data file name that is associated with a particular program (one that would automatically launch if you clicked on it in Windows).
+											<b>(http://www.aumha.org/a/batches.php)</b>
+
+<b>IF and IF NOT Commands</b>				There are three variations of the IF and IF NOT commands.
+											IF EXIST: Execute the command line only if a particular file exists:
+											IF EXIST some.txt COPY
+											c:\some.dll%windir%\SYSTEM\some.dll
+											Compare two text strings, and execute
+@
+
+page11@
+											the command line only if they are identical. IF %HostWinBootDrv%==C SET
+											WinDir=C:\WINDOWS
+											Error testing: Check the exit code of the most recent run program. If it is equal to or greater than the number specified, execute the command:
+											IF ERRORLEVEL 4 ERASE trashfile.tmp
+											/P
+											<b>(http://www.aumha.org/a/batches.php)</b>
+
+<b>GOTO Command</b>							You can set a label in a batch file by beginning a line with a colon. You can then go directly to that
+											label with the GOTO command. The GOTO command searches both forward and backward in the batch file;
+											that is, it simply goes to the label location, regardless of where it is in the file.
+											<b>(http://www.aumha.org/a/batches.php)</b>
+
+<b>Menu Creation</b>
+
+Sometimes you want to let a batch file branch one way or another based on user input. This is especially helpful when you have several related batch processes and would like to combine them into a single application.
+
+Back in DOS days, a common approach was to construct menus with multiple batch files. For example, you could create one batch file called MENU.BAT that displayed the menu (a series of text lines), inviting a user to type a 1, 2, 3 etc. (or A, B, C, etc.) to choose an option (a program to run, or archiving process, or whatever). That menu batch file would end, delivering the user back to a command prompt. You would then have a series of other batch
+@
+
+page12@
+
+files called 1.BAT, 2.BAT, 3.BAT, etc. so that, when the user typed (for example) 2 and pressed Enter, it would run 2.BAT (This is way easier to understand if you walk through making one! It's really terribly simple.)
+
+Today, when user's don't live in a DOS command prompt world, we want something slightly more sophisticated - and, fortunately, we have it. There is a pretty cool way to allow user input in Windows 2000 and XP, and even better ways that work in Windows Vista.
+
+In Windows 2000 or XP, the SET command has new /A and /P flags that allow user input. The latter is especially helpful for our present purposes. You can accept user input and assign it to a system variable with the following code:
+
+SET /P variable=PromptString
+
+The <i>PromptString</i> is optional. If you include one, it will be displayed on the screen. (Don't forget a space at the end of the prompt of you want one!) For example,
+
+SET /P M=Type 1 or 2, then press ENTER.
+
+will display on the monitor the phrase "Type 1 or 2, then press ENTER." It will then wait for the user to type something and press Enter. It will then assign whatever character the user types to the system variable %M%, which you can use in other batch file commands.
+
+Windows Vista has added the CHOICE command. This is pretty cool! It lets you build simple menus just from this one command. On a Windows Vista Computer, open a command prompt and type CHOICE /? to see all things you can do with it. At the present, this might not be so useful if you are writing batch files that also will be run on Windows XP computers, because the CHOICE command will not work on those computers - and the SET /P approach above still works in Vista.
+@
+
+page13@
+
+Sample Program of MENU. <b>FILENAME: MENU.BAT</b>
+
+//picture14 #TODO
+
+OUTPUT:
+
+//picture15 #TODO
