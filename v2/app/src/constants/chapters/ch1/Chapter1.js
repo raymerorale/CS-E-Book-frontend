@@ -165,11 +165,124 @@ export const CHAPTER1 = {
 			title: `Lecture Exercise 1`,
 			content: `
 			<b>LECTURE EXERCISE 1</b>
-			<br>
-			<br>
+			<style>
+			table, th, td 
+			{
+  				border: 1px solid black;
+  				border-collapse: collapse;
+  				font-size: 18px;  				
+			}
+			table#t01
+			{
+				width:99%;
+			}
+			th
+			{
+				width: 31%;
+				text-align: right;
+				padding-right: 5px;
+			}
+			td
+			{
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			table#t02
+			{
+				width:99%;
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button 
+			{
+ 			-webkit-appearance: none;
+  			margin: 2;
+  			}
+			</style>
+			<body>
+			<table style="width:99%">
+				<tr>
+   					<td align="left" ><b> CHAPTER 1 LECTURE - EXERCISE 1 </b></td>
+  				</tr>
+  			</table>
+  			<br/>
+  			<table id="t01">
+  				<tr>
+  					<th><b><label for="sname"> NAME</b></th>
+  					<td><input type="text" id="sname" name="sname" size="25%"></td>
+  					<th><b>DATE</b></th>
+  					<td><input type="date" size="25%"></td>
+  				</tr>
+  				<tr>
+  					<th><b>COURSE</b></th>
+  					<td><input type="text" size="25%"></td>
+  					<th><b>SECTION</b></th>
+  					<td><input type="text" size="25%"></td>
+  				</tr>
+  				<tr>
+  					<th><b>CLASS SCHEDULE</b></th>
+  					<td><input type="text" size="25%"></td>
+  					<th><b>INSTRUCTOR</b></th>
+  					<td><input type="text" size="25%"></td>
+  				</tr>
+  			</table>
+  			<p>Conversion from Decimal to Binary<p>
+  			<table id="t02" >
+  			
+  				<tr align="center">
+  					<td width="200"><b>DECIMAL</b></td>
+  					<td ><b>BINARY</b></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>1. 25 </b></td>
+  					<td><input type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>2. 75 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>3. 165 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>4. 284 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>5. 319 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>6. 527 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>7. 754 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>8. 816 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>9. 957 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+  				<tr align="left">
+  					<td><b>10. 1027 </b></td>
+  					<td><input  type="number" style="width: 40em"></td>
+  				</tr>
+
+  			</table>
+  		<br/>
+  		<form action="/action_page.php">
+ 		<input type="submit" value="SUBMIT">
+		</form>
+			</body></table>
 
 			`
-		},
+		}, //So di ko na tinapos to. Scratch lang din naman to, kasi sabi ni nics di nadaw sasama pala exercises. And di ko na din alam paano tapusin ih. HAHA 
+		
 		{
 			title: `Laboratory Exercise 1`,
 			content: `

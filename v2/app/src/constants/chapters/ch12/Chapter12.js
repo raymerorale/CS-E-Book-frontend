@@ -128,17 +128,21 @@ export const CHAPTER12 = {
 			}
 			 th {
 			 	text-align: left;
+			 	padding-left: 20px;
+			 	}
+			 tr {
+			 	background-color: #ffcf86;
 			 	}
 			</style>
 			<body>
 			<table style="width:98%">
- 				<tr>
+ 				<tr style="background-color:#fda63a">
    					<td colspan="2" align="center" ><b>INT 10H FUNCTIONS </b></td>
   				</tr>
 
   				<tr>
   					<td width="150" align="center"> AH = 00H </td>
-  					<th style="text-indent: 20px" ><p><font size="3"><b> Set the display mode.</p></b>
+  					<th><p><font size="3"><b> Set the display mode.</p></b>
 
  						<p >
   						<b>&#8226; TEXT MODE </b>
@@ -162,7 +166,7 @@ export const CHAPTER12 = {
 
 				<tr>
   					<td align="center">AH = 01H</td>
-  					<th style="padding-left: 20px"><p> <font size="3" ><b> Set the cursor size. </b></p>
+  					<th><p> <font size="3" ><b> Set the cursor size. </b></p>
   						
   						<p>		
   						CH Starting scan line of the cursor.<br/>
@@ -182,7 +186,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 02H</td>
-					<th style="padding-left: 20px"><p> <font size="3" ><b> Sets the cursor position.</b></p>
+					<th><p> <font size="3" ><b> Sets the cursor position.</b></p>
 							
 						<p>
 						DH Row number <br/>
@@ -197,7 +201,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 03H</td>
-					<th style="padding-left: 20px"><p> <font size="3" ><b> Reads the cursor position. </b></p>
+					<th><p> <font size="3" ><b> Reads the cursor position. </b></p>
 
 					<p>
 					BH Page Number</p>
@@ -212,12 +216,12 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 04H</td>
-					<th style="padding-left: 20px"><p> <font size="3" ><b> Reads the light pen position. </b></p>
+					<th><p> <font size="3" ><b> Reads the light pen position. </b></p>
 				</tr>
 
 				<tr>
 					<td align="center">AH = 05H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"> Select active display page. </p>
+					<th><p> <font size = "3"> Select active display page. </p>
 						<p> AL New page number
 						<ul>
 						-From 0 to 7 for modes 0 and 1 <br/>
@@ -228,7 +232,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 06H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Scrolls Up. </b></p>
+					<th><p> <font size = "3"><b> Scrolls Up. </b></p>
 
 						<p>
 						AL Number of lines to b lank at the bottom of the window. <br/>
@@ -245,14 +249,14 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 07H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Scroll down. </b></p>
+					<th><p> <font size = "3"><b> Scroll down. </b></p>
 						<p>The same with scroll up (AH = 06h), but lines are left blank at the top of the screen instead of the bottom.</p>
 					</th>
 				</tr>
 
 				<tr>
 					<td align="center">AH = 08H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Read attribute and character under the cursor. </b></p>
+					<th><p> <font size = "3"><b> Read attribute and character under the cursor. </b></p>
 						<p> AH Attribute of character read (Text mode only) </p>
 						<p> AL Character read </p>
 						<p> BH Display page (Text mode only) </p>
@@ -261,17 +265,17 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 09H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Display character with attributes. </b></p>
+					<th><p> <font size = "3"><b> Display character with attributes. </b></p>
 						<p> AL Character to display </p>
 						<p> BH Page number (Text mode only) </p>
 						<p> BL Background and text color </p>
 						<p> CX Number of times to write character and attribute on screen </p>
-					<th>
+					</th>
 				</tr>
 
 				<tr>
 					<td align="center">AH = 10H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Display character with attributes. </b> (normal attributes) </p>
+					<th><p> <font size = "3"><b> Display character with attributes. </b> (normal attributes) </p>
 						<p> AL Character to write </p>
 						<p> BH Display page</p>
 						<p> CX Number of times to write character </p>
@@ -280,7 +284,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 11H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Various graphics function </b></p>
+					<th><p> <font size = "3"><b> Various graphics function </b></p>
 						<p> AL Character to write </p>
 						<p> BH Display page </p>
 						<p> CX Number of times to write character </p>
@@ -289,7 +293,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 13H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Display string attributes. </b></p>
+					<th><p> <font size = "3"><b> Display string attributes. </b></p>
 						<p> AL = 00H Display attribute and string without advancing cursor. </p>
 						<p> BH Page number (text mode only) </p>
 						<p> BL Background and text color </p>
@@ -299,7 +303,7 @@ export const CHAPTER12 = {
 						<p> DL Column number </p>
 				<tr>
 					<td align="center">AH = 14H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Writes teletype. </b>
+					<th><p> <font size = "3"><b> Writes teletype. </b>
 					Writes one character to the screen and move the cursor to the next position.</p>
 						<p> AL Character to write </p>
 						<p> BH Display page (Text mode only) </p>
@@ -309,7 +313,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center">AH = 15H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Return current video state. </b>
+					<th><p> <font size = "3"><b> Return current video state. </b>
 						<p> AH Number of characters per line </p>
 						<p> AL Display mode current current set </p>
 						<p> BH Active display pages </p>
@@ -328,17 +332,21 @@ export const CHAPTER12 = {
 			}
 			 th {
 			 	text-align: left;
+			 	padding-left: 20px
+			 	}
+			 tr {
+			 	background-color: #ffcf86;
 			 	}
 			</style>
 			<body>
 			<table style="width:98%">
- 				<tr>
+ 				<tr style="background-color:#fda63a">
    					<td colspan="2" align="center" ><b>INT 21H FUNCTIONS </b></td>
   				</tr>
 
   				<tr>
 					<td width="150" align="center">AH = 01H</td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Keyboard input. </b>
+					<th><p> <font size = "3"><b> Keyboard input. </b>
 					This function waits for you to type a character on the keyboard. It echoes the character to the screen and returns the ASCII in the AL register.</p>
 					<p> AL Character read from the keyboard </p>
 					</th>
@@ -346,7 +354,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center"> AH = 02H </td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Display output. </b>
+					<th><p> <font size = "3"><b> Display output. </b>
 					This function displays one character on the screen. </p>
 						<p> DL of DX Character to display on the screen. </p>
 					</th>
@@ -354,7 +362,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center"> AH = 07H </td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Keyboard input without echo. </b>
+					<th><p> <font size = "3"><b> Keyboard input without echo. </b>
 					This function waits for you to type a character on the keyboard but the character does not display on the screen and returns the ASCII in the AL register. </p>
 						<p> AL Character read from the keyboard. </p>
 					</th>
@@ -362,7 +370,7 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center"> AH = 09H </td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Display String.ssss </b>
+					<th><p> <font size = "3"><b> Display String.ssss </b>
 					This function display the string pointed to by the DS, DX pair of registers.</p>
 						<p>The end of the string should be marked with the dollar ($) symbol. </p>
 					</th>
@@ -370,20 +378,20 @@ export const CHAPTER12 = {
 
 				<tr>
 					<td align="center"> AH = 0AH </td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Read String. </b>
+					<th><p> <font size = "3"><b> Read String. </b>
 					This function reads the string from the keyboard.</p>
 					</th>
 				</tr>
 
 				<tr>
 					<td align="center"> AH = 4CH </td>
-					<th style="padding-left: 20px"><p> <font size = "3"><b> Exit to DOS. </b>
+					<th><p> <font size = "3"><b> Exit to DOS. </b>
 					This function allows to go back to DOS environment. </p>
 						</p>AL Return code<br/>
 							- Normally sets to zero (0). </p>
 					</th>
 				</tr>
- 					</body></table>`,
+ 			</body></table>`,
 		},
 	]
 };
