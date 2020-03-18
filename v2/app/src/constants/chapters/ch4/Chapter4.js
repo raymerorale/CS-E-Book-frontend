@@ -1,4 +1,5 @@
 export const CHAPTER4 = {
+	read_status: 'Disabled',
 	title: 'Chapter IV',
 	description: `<h1 align = center>CHAPTER 4</h1>
 				<h2 align = center>BASIC FEATURE OF MICROPROCESSOR</h2>`,
@@ -10,6 +11,7 @@ export const CHAPTER4 = {
 	sub: [
 
 		{
+			read_status: 'Disabled',
 			title: 'Bits, Bytes, Related Bytes',
 			content: `<b> Bits </b>
 			<style>

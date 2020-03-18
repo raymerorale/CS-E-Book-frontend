@@ -1,20 +1,36 @@
 <template>
     <v-list>
-      <template v-for='node in nodes'>
+      <template v-for='(node, index) in nodes'>
           <v-list-group
+            :disabled="node.read_status === 'Disabled'"
+            :inactive="node.read_status === 'Disabled'"
             class="pl-5"
+            :key="node.title"
             v-if='node.sub && node.sub.length'
             v-model='node.active'
           >
-            <v-list-item :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" @click='changeContentView(node)' slot='activator'>
-                <v-list-item>
+            <v-list-item 
+              :disabled="node.read_status === 'Disabled'"
+              :inactive="node.read_status === 'Disabled'"
+              :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" 
+              @click='changeContentView(node, index)' slot='activator'>
+                <v-list-item :disabled="node.read_status === 'Disabled'">
                   <v-list-item-title> {{ node.title }} </v-list-item-title>
                 </v-list-item>  
             </v-list-item>
-            <list-container class='py-0 pl-3' :nodes='node.sub'/>
+            <list-container 
+              class='py-0 pl-3' 
+              :nodes='node.sub'
+              :parent_nodes="nodes"
+              :parent_index="index"
+              />
           </v-list-group>
-          <v-list-item @click='changeContentView(node)' v-else>
-              <v-list-item>
+          <v-list-item 
+            :disabled="node.read_status === 'Disabled'"
+            :inactive="node.read_status === 'Disabled'"
+            :key="node.title"
+            @click='changeContentView(node, index)' v-else>
+              <v-list-item :disabled="node.read_status === 'Disabled'">
                 <v-list-item-title> {{ node.title }} </v-list-item-title>
               </v-list-item>
           </v-list-item>
@@ -31,11 +47,20 @@ export default {
     ListContainer
   },
   props: [
-    'nodes'
+    'nodes',
+    'parent_nodes',
+    'parent_index'
   ],
   methods: {
-  	changeContentView (content) {
-  		bus.$emit('changeContentView', content)
+  	changeContentView (content, index) {
+      let next = this.nodes[index + 1]
+      if (content && content.sub && content.sub.length > 0) {
+        next = content.sub[0]
+      }
+      if (!next) {
+        next = this.parent_nodes[this.parent_index + 1]
+      }
+  		bus.$emit('changeContentView', { content, next })
   	},
   }
 }

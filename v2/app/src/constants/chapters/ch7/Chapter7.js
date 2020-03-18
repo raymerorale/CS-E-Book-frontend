@@ -1,4 +1,5 @@
 export const CHAPTER7 = {
+	read_status: 'Disabled',
 	title: 'Chapter VII',
 	description: `<h1 align = center>CHAPTER 7</h1>
 				<h2 align = center>REQUIREMENTS FOR CODING ASSEMBLY LANGUAGE</h2>`,
@@ -11,6 +12,7 @@ export const CHAPTER7 = {
 	],
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'Comments, Reserve Words and its Category',
 			content: `
 
