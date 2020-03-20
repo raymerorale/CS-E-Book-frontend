@@ -623,7 +623,8 @@ start :
 
 code ends
      end begin
-	</div></pre>`,
-		},
+	</div></pre>`},
+
 	]
+
 };
