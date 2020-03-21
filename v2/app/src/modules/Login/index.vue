@@ -17,7 +17,7 @@
 				></v-text-field>
 			</div>
 			<div class="login-form__field">
-				<v-icon class="person" />
+				<v-icon class="vpn_key" />
 				<v-text-field
 					type="password"
 					outlined
@@ -106,6 +106,7 @@ export default {
 }
 .login-form__btn {
 	width: 100%;
+	font-weight: bold;
 	color: white;
 	background: linear-gradient(to right, #1d82e1 0%, #0d2a98 100%);
 }
