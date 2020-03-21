@@ -16,7 +16,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  overflow: hidden!important;
+  overflow: auto!important;
 }
 .section-title {
 	font-weight: 400px;
