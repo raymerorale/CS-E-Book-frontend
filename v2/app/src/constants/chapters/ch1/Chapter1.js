@@ -42,8 +42,16 @@ export const CHAPTER1 = {
 
 					<p>The term decimal comes from <span class=\"latin italic\">\"decem\"</span>  the Latin word for ten. That's why it is a number system with base of ten (10). The decimal system is also called the Hindu-Arabic System and was developed by Hindu Mathematicians in India more than 2,000 years ago. It consists of ten digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
 
-
-					"examples": ["25 (base 10)", "890 (base 10)"]
+					<table style="width:50%">
+						<tr>
+							<td> Example of decimal numbers:</td>
+							<td> 25<sub>10</sub> </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td> 890<sub>10</sub> </td>
+						</tr>
+					</table>
 					`
 				},
 				{
@@ -55,7 +63,16 @@ export const CHAPTER1 = {
 
 					<p>The term binary comes from the Latin word <span class=\"latin italic\">\"bi\"</span> meaning two at a time. That's why it is a number system with a base of two (2). It consists of two digits: 0 and 1.</p>
 
-				["101 (base 2)", "111000 (base 2)"]
+					<table style="width:50%">
+						<tr>
+							<td> Example of binary numbers:</td>
+							<td> 101<sub>2</sub> </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td> 111000<sub>2</sub> </td>
+						</tr>
+					</table>
 					`
 				},
 				{
@@ -67,7 +84,16 @@ export const CHAPTER1 = {
 
 					<p>The term hexadecimal comes from the Greek word <span class=\"greek italic\">\"Hexa\"</span> meaning six and Latin word <span class=\"latin italic\">\"decem\"</span> meaning ten, That's why it is a number system with a base of sixteen (16). It consists of sixteen digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F. A, B, C, D, E, and F stands for 10, 11, 12, 13, 14, and 15 respectively.</p>
 
-				["BEA (base 2)", "8C0 (base 2)"]
+					<table style="width:50%">
+						<tr>
+							<td> Example of hexadecimal numbers:</td>
+							<td> BEA<sub>16</sub> </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td> 8C0<sub>16</sub> </td>
+						</tr>
+					</table>
 
 					`
 				}
@@ -83,13 +109,134 @@ export const CHAPTER1 = {
 			<p>The table below shows the equivalences between decimal, binary and hexadecimal digits.</p>
 
 
-		"bases": ["Decimal", "Binary", "Hexadecimal"],
-		"examples": {
-			"decimal": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,64,128,255],
-			"binary": "#TODO convert via C# from decimal",
-			"hexadecimal": "#TODO convert via C# from decimal"
-		}
+			<table>
+			<tr>
+			  <td><b>Decimal</b></td>
+			  <td><b>Binary</b></td>
+			  <td><b>Hexadecimal</b></td>
+			</tr>
+			  <tr>
+				<td>0</td><td>0000 0000</td><td>00</td>
+			  </tr>
+			  <tr>
+				<td>1</td><td>0000 0001</td><td>01</td>
+			  </tr>
+			  <tr>
+				<td>2</td><td>0000 0010</td><td>02</td>
+			  </tr>
+			  <tr>
+				<td>3</td><td>0000 0011</td><td>03</td>
+			  </tr>
+			  <tr>
+				<td>4</td><td>0000 0100</td><td>04</td>
+			  </tr>
+			  <tr>
+				<td>5</td><td>0000 0101</td><td>05</td>
+			  </tr>
+			  <tr>
+				<td>6</td><td>0000 0110</td><td>06</td>
+			  </tr>
+			  <tr>
+				<td>7</td><td>0000 0111</td><td>07</td>
+			  </tr>
+			  <tr>
+				<td>8</td><td>0000 1000</td><td>08</td>
+			  </tr>
+			  <tr>
+				<td>9</td><td>0000 1001</td><td>09</td>
+			  </tr>
+			  <tr>
+				<td>10</td><td>0000 1010</td><td>0A</td>
+			  </tr>
+			  <tr>
+				<td>11</td><td>0000 1001</td><td>0B</td>
+			  </tr>
+			  <tr>
+				<td>12</td><td>0000 1010</td><td>0C</td>
+			  </tr>
+			  <tr>
+				<td>13</td><td>0000 1011</td><td>0D</td>
+			  </tr>
+			  <tr>
+				<td>14</td><td>0000 1100</td><td>0E</td>
+			  </tr>
+			  <tr>
+				<td>15</td><td>0000 1101</td><td>0F</td>
+			  </tr>
+			  <tr>
+				<td>16</td><td>0001 0000</td><td>10</td>
+			  </tr>
+			  <tr>
+				<td>17</td><td>0001 0001</td><td>11</td>
+			  </tr>
+			  <tr>
+				<td>18</td><td>0001 0010</td><td>12</td>
+			  </tr>
+			  <tr>
+				<td>19</td><td>0001 0011</td><td>13</td>
+			  </tr>
+			  <tr>
+				<td>20</td><td>0001 0100</td><td>14</td>
+			  </tr>
+			  <tr>
+				<td>21</td><td>0001 0101</td><td>15</td>
+			  </tr>
+			  <tr>
+				<td>22</td><td>0001 0110</td><td>16</td>
+			  </tr>
+			  <tr>
+				<td>23</td><td>0001 0111</td><td>17</td>
+			  </tr>
+			  <tr>
+				<td>24</td><td>0001 1000</td><td>18</td>
+			  </tr>
+			  <tr>
+				<td>25</td><td>0001 1001</td><td>19</td>
+			  </tr>
+			  <tr>
+				<td>26</td><td>0001 1010</td><td>1A</td>
+			  </tr>
+			  <tr>
+				<td>27</td><td>0001 1011</td><td>1B</td>
+			  </tr>
+			  <tr>
+				<td>28</td><td>0001 1100</td><td>1C</td>
+			  </tr>
+			  <tr>
+				<td>29</td><td>0001 1101</td><td>1D</td>
+			  </tr>
+			  <tr>
+				<td>30</td><td>0001 1110</td><td>1E</td>
+			  </tr>
+			  <tr>
+				<td>31</td><td>0001 1111</td><td>1F</td>
+			  </tr>
+			  <tr>
+				<td>32</td><td>0010 0000</td><td>20</td>
+			  </tr>
+			  <tr>
+				<td>64</td><td>0100 0000</td><td>40</td>
+			  </tr>
+			  <tr>
+				<td>128</td><td>1000 0000</td><td>80</td>
+			  </tr>
+			  <tr>
+				<td>255</td><td>1111 1111</td><td>FF</td>
+			  </tr>
+			</table>
 
+
+			<style>
+			table {
+				width: 100%;
+			}
+			table, tr, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				border-spacing: 0;
+				padding: 1%;
+			}
+			</style>
 			`
 		},
 		{
@@ -103,60 +250,282 @@ export const CHAPTER1 = {
 				{
 					title: `Decimal to Binary`,
 					content:  `
-					<b>DECIMAL TO BINARY</b>
+					<b>DECIMAL-TO-BINARY CONVERSION</b>
 					<br>
 					<br>
-
-
+					<div id="ch1s5s1" class="subsection">
+					<div class="subtext">
+					  <p>Double-dabble Method is a way of converting any decimal number to its binary equivalent. It requires successive division by two (2), writing down binary equivalent. It requires successive division by two (2), writing down each quotient and its remainder. The last quotient and the remainders are the binary equivalent to the given decimal number.</p>
+					</div>
+					<div class="subtext">
+					  <p>Example: Convert 15<sub>10</sub> to its binary equivalent.</p>
+					  <div class="two-cols">
+						<div class="left-col">Step 1:</div>
+						<div class="right-col">Divide 15 by 2. The quotient is 7. Write it on the next line after 15, and then write the remainder (1) on the next column (beside 15).
+						  <br/>
+						  <table class="double-dabble">
+							<thead>
+							  <tr><td>2</td><td>15</td><td>1</td></tr>
+							</thead>
+							<tbody>
+							  <tr><td></td><td>7</td></tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					  <div class="two-cols">
+						<div class="left-col">Step 2:</div>
+						<div class="right-col">Divide 7 by 2. The quotient is 3. Write it on the next line after 7, and then write the remainder (1) on the next column (beside 7).
+						  <br/>
+						  <table class="double-dabble">
+							<thead>
+							  <tr><td>2</td><td>15</td><td>1</td></tr>
+							  <tr><td>2</td><td>7</td><td>1</td></tr>
+							</thead>
+							<tbody>
+							  <tr><td></td><td>3</td></tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					  <div class="two-cols">
+						<div class="left-col">Step 3:</div>
+						<div class="right-col">Divide 3 by 2. The quotient is 1. Write it on the next line after 3, and then write the remainder (1) on the next column (beside 3).
+						  <br/>
+						  <table class="double-dabble">
+							<thead>
+							  <tr><td>2</td><td>15</td><td>1</td></tr>
+							  <tr><td>2</td><td>7</td><td>1</td></tr>
+							  <tr><td>2</td><td>3</td><td>1</td></tr>
+							</thead>
+							<tbody>
+							  <tr><td></td><td>1</td></tr>
+							</tbody>
+						  </table>
+						  Final answer: <msub><mi>1111</mi><mn>2</mn></msub>
+						</div>
+					  </div>
+					  <div class="subtext">Note: Continue the process of division until the quotient is less than the divisor. Then read the final answer in upward direction.
+					  </div>
+					</div>
+				  </div>
 					`
 				},
 				{
 					title: `Decimal to Hexadecimal`,
 					content: `
-					<b>DECIMAL TO HEXADECIMAL</b>
+					<b>DECIMAL TO HEXADECIMAL CONVERSION</b>
 					<br>
 					<br>
-
+					<div id="ch1s5s2" class="subsection">
+					<div class="subtext">Hex-dabble Method is a way of converting any decimal number to its hexadecimal equivalent. It is similar to double-dabble except that sixteen (16) is used as the divisor instead of two (2).</div>
+					<div class="subtext">
+					  Example: Convert <msub><mi>43</mi><mn>10</mn></msub> to its hexadecimal equivalent.
+					  <div class="two-cols">
+						<div class="left-col">Step 1:</div>
+						<div class="right-col">Divide 43 by 16. The quotient is 2. Write it on the next line after 43 and write the quotient on the next column (beside 43).
+						  <br/>
+						  <table class="double-dabble">
+							<thead>
+							  <tr><td>16</td><td>43</td><td>B(11)</td></tr>
+							</thead>
+							<tbody>
+							  <tr><td></td><td>2</td></tr>
+							</tbody>
+						  </table>
+						</div>
+					  </div>
+					  <div class="two-cols">
+						<div class="left-col">Step 2:</div>
+						<div class="right-col">Since 2 (the quotient) is less than the divisor (which is 16) the process of division will stop and the final answer will be read upwards.
+						  <br/>
+						  <table class="double-dabble">
+							<thead>
+							  <tr><td>16</td><td>43</td><td>B(11)</td></tr>
+							</thead>
+							<tbody>
+							  <tr><td></td><td>2</td></tr>
+							</tbody>
+						  </table>
+						  Final answer: <msub><mi>2B</mi><mn>16</mn></msub>
+						</div>
+					  </div>
+					</div>
+				  </div>
 					`
 				},
 				{
 					title: `Binary to Decimal`,
 					content: `
-					<b>BINARY TO DECIMAL</b>
+					<b>BINARY TO DECIMAL CONVERSION</b>
 					<br>
 					<br>
-
-
+					<div id="ch1s5s3" class="subsection">
+					<div class="subtext">Positional Notation by power of two (2) is a method used to convert any binary numbers to its decimal equivalent.
+					</div>
+					<div class="subtext">Convert <msub><mi>10010</mi><mn>2</mn></msub> to its decimal equivalent.</div>
+					<div class="subtext">Step 1: Starting from the rightmost digit, multiply each bit by 2.
+					  <div>#TODO fig1.5.3.1</div>
+					</div>
+					<div class="subtext">Step 2: Every multiplier 2 should be raised to an exponent starting with zero (0).
+					  <div>#TODO fig1.5.3.2</div>
+					</div>
+					<div class="subtext">Step 3: Simplify the arithmetic expression.
+					  <div>#TODO fig1.5.3.3</div>
+					</div>
+					<div class="subtext">Step 4: Get the product of each expression.
+					  <div>#TODO fig1.5.3.4</div>
+					</div>
+					<div class="subtext">Step 5: After which, add the entire product and that gives you the decimal equivalent.
+					  <div>#TODO fig1.5.3.5</div>
+					</div>
+				  </div>
 					`
 				},
 				{
 					title: `Binary to Hexadecimal`,
 					content: `
-					<b>BINARY TO HEXADECIMAL</b>
+					<b>BINARY TO HEXADECIMAL CONVERSION</b>
 					<br>
 					<br>
-
-
+					<div id="ch1s5s4" class="subsection">
+					<div class="subtext">8421 Method is a way of converting any binary number to its hexadecimal equivalent.</div>
+					<div class="subtext">Example: Convert <msub><mi>101100011100</mi><mn>2</mn></msub></div>
+					<div class="subtext">Step 1: Group the bits into four (4) starting from the right going to the left
+					  <div>#TODO fig1.5.4.1 <br/> 1011 0001 1100</div>
+					</div>
+					<div class="subtext">Step 2: Represent 8-4-2-1 above the bits starting from the right
+					  <div>8421 8421 8421 <br/> 1011 0001 1100</div>
+					</div>
+					<div class="subtext">Step 3: Multiply each representation (8-4-2-1) to its corresponding bit.
+					  <div>
+						8421 8421 8421 <br/>
+						1011 0001 1100 <br/>
+						8x1  8x0  8x1<br/>
+						4x0  4x0  4x1<br/>
+						2x1  2x0  2x0<br/>
+						1x1  1x1  1x0 
+					  </div>
+					</div>
+					<div class="subtext">Step 4: Get the product of every arithmetic expression.
+					  <div>
+						8421  8421  8421 <br/>
+						1011  0001  1100 <br/>
+						8x1=8 8x0=0 8x1=8<br/>
+						4x0=0 4x0=0 4x1=4<br/>
+						2x1=2 2x0=0 2x0=0<br/>
+						1x1=1 1x1=1 1x0=0
+					  </div>
+					</div>
+					<div class="subtext">Step 5: Add all the product values in every group. If the sum is greater than nine (9), It must be changed to its equivalent alphabetic symbol (i.e. 10=A, 11=B, 12=C, 13=D, 14=E, 15=F).
+					  <div>
+						8421  8421  8421 <br/>
+						1011  0001  1100 <br/>
+						8x1=8 8x0=0 8x1=8<br/>
+						4x0=0 4x0=0 4x1=4<br/>
+						2x1=2 2x0=0 2x0=0<br/>
+						1x1=1 1x1=1 1x0=0<br/> 
+						11=B  1     12=C
+					  </div>
+					</div>
+					<div class="subtext">Step 6: Write these symbols together and that gives you the hexidecimal equivalent.
+					  <div>Therefore, 10110001100 (base 2) = B1C (base 16)  </div>
+					</div>
+				  </div>
 					`
 				},
 				{
 					title: `Hexadecimal to Decimal`,
 					content: `
-					<b>HEXADECIMAL TO DECIMAL</b>
+					<b>HEXADECIMAL TO DECIMAL CONVERSION</b>
 					<br>
 					<br>
-
-
+					<div id="ch1s5s5" class="subsection">
+					<div class="subtext">Positional Notation by Powers of Sixteen (16) is a method used to convert any hexadecimal number to its decimal equivalent. The procedure is the same with the binary to decimal equivalent. The procedure is the same with the binary to decimal conversion except that sixteen (16) is used as the multiplier instead of two (2).</div>
+					<div class="subtext">Example: Convert <msub><mi>AB1DE</mi><mn>16</mn></msub></div>
+					<div class="subtext">Step 1: Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.
+					  <div>
+						A B 1 D E (base 16) <br/>
+						A 10x16<br/>
+						B 11x16<br/>
+						1  1x16<br/>
+						D 13x16<br/>
+						E 14x16
+					  </div>
+					</div>
+					<div class="subtext">Step 2: Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.
+					  <div>
+						A B 1 D E (base 16) <br/>
+						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
+						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
+						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
+						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
+						E 14x<msup><mi>16</mi><mn>0</mn></msup>
+					  </div>
+					</div>
+					<div class="subtext">Step 3: Simplify the arithmetic expression
+					  <div>
+						A B 1 D E (base 16) <br/>
+						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
+						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
+						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
+						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
+						E 14x<msup><mi>16</mi><mn>0</mn></msup>
+					  </div>
+					</div>
+					<div class="subtext">Step 4: Get the product of each expression.
+					  <div>
+						A B 1 D E (base 16) <br/>
+						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
+						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
+						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
+						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
+						E 14x<msup><mi>16</mi><mn>0</mn></msup>
+					  </div>
+					</div>
+					<div class="subtext">Step 5: After which, add all products and that gives you the decimal equivalent.
+					  <div>
+						A B 1 D E (base 16) <br/>
+						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
+						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
+						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
+						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
+						E 14x<msup><mi>16</mi><mn>0</mn></msup>
+					  </div>
+					  Therefore, AB1DE (base 16) = 700894 (base 10)
+					</div>
+				  </div>
 					`
 				},
 				{
 					title: 	`Hexadecimal to Binary`,
 					content: `
-					<b>HEXADECIMAL TO BINARY</b>
+					<b>HEXADECIMAL TO BINARY CONVERSION</b>
 					<br>
 					<br>
-
-
+					<div id="ch1s5s6" class="subsection">
+					<div class="subtext">Memory Method is a way of converting hexadecimal to its binary equivalent. Every hexadecimal digit has its 4-bit equivalent.</div>
+					<div class="subtext two-col-table">
+					  Hexadecimal, Binary
+					  0-9-A-F, 0000 - 1111
+					</div>
+					<div class="subtext">
+					  Example: Convert C0DE8 (base 16) to its binary equivalent.
+					</div>
+					<div class="subtext">
+					  Step 1: Write out each hexadecimal digit separately.
+					  C    0    D    E    8
+					</div>
+					<div class="subtext">
+					  Step 2: Use the table and write the equivalent digit below each hexadecimal number.
+					  C    0    D    E    8 <br/>
+					  1100 0000 1101 1110 1000
+					</div>
+					<div class="subtext">
+					  Write the bits together to form the binary equivalent and the conversion is done. <br/>
+					  Therefore, C0DE8 (base 16) = 11000000110111101000 (base 2)
+					</div>
+				  </div>
 					`
 				},
 			]
