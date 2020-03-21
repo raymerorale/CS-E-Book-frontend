@@ -90,6 +90,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Identifier, Rules in Constructing Identifiers',
 			content: `
 <style type="text/css">
@@ -142,6 +143,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Statement, Most Common Directives',
 			content: `
 
@@ -338,6 +340,7 @@ Example 			.END
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'String',
 			content: `
 <style type="text/css">
@@ -358,6 +361,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Numerical Constant',
 			content: `
 <style type="text/css">
@@ -446,6 +450,7 @@ is the same with:
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Keyboard Inputs',
 			content: `
 
