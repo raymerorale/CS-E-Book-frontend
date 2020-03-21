@@ -15,7 +15,7 @@
 					width="200px"
 				/>
 				<router-link
-					to='books-list'
+					to='content'
 				>
 				  	<v-btn
 				  		dark
