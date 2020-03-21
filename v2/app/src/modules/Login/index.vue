@@ -1,32 +1,4 @@
 <template>
-	<!-- <v-container>
-		<v-row
-			align="center"
-      		justify="center"
-      	>
-      		<v-col>
-      			<v-text-field
-					label="Username"
-					width="200px"
-				/>
-				<v-text-field
-					label="Password"
-					type="password"
-					width="200px"
-				/>
-				<router-link
-					to='content'
-				>
-				  	<v-btn
-				  		dark
-				  		id="logInBtn"
-				  	>
-						LOG IN
-					</v-btn>
-				</router-link>
-			</v-col>
-  		</v-row>
-	</v-container> -->
 	<main class="login-page">
 		<section class="login-intro">
 			<img class="login-intro__image" src="../../assets/book-logo.png" alt="book logo" />
@@ -57,7 +29,8 @@
 			<div class="login-form__field">
 				<v-btn 
 					dark
-					class="login-form__btn">
+					class="login-form__btn"
+					@click="goToContent">
 					LOG IN
 				</v-btn>
 			</div>
@@ -70,6 +43,11 @@ export default {
 	name: 'Login',
 	mounted () {
 		console.log('LOGIN ', this.$store.state.chapters)
+	},
+	methods: {
+		goToContent() {
+			this.$router.push('content')
+		}
 	}
 }
 </script>
