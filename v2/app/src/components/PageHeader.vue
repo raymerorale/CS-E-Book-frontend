@@ -1,17 +1,7 @@
 <template>
 	<div>
-		<v-card
-			class="main-header-container"
-			height="60px"
-		>
-			<b>Logo</b>
-		</v-card>
-		<v-card
-			class="subheader-container"
-			height="40px"
-		>
-			<b>COE123 - ASSEMBLY</b>
-		</v-card>
+		<v-app-bar height="60">LOGO
+		</v-app-bar>
 	</div>	
 </template>	
 

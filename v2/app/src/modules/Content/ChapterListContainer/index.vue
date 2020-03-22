@@ -1,13 +1,14 @@
 <template>
-	<v-card
+	<v-navigation-drawer
 		id="chapter-list-container"
 	  	dark
-	    max-width="500"
+      permanent
+      width="400"
   	>
   	<perfect-scrollbar>
-    <list-container :nodes="chaptersList"/>
-	</perfect-scrollbar>
-  </v-card>
+      <list-container :nodes="chaptersList"/>
+    </perfect-scrollbar>
+  </v-navigation-drawer>
 </template>
 <script>
 import ListContainer from './ListContainer'

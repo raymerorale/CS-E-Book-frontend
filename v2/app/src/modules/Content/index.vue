@@ -1,18 +1,22 @@
 <template>
 	<div>
 		<page-header/>
-		<v-card
+		<div
 			width="100%"
+			class="overflow-hidden"
 		>
-			<v-layout row wrap>
-				<v-flex class="content-col" xs3>
+			<v-row>
+				<v-col class="col-3 pa-0 ma-0">
 					<chapter-list-container/>	
-				</v-flex>	
-				<v-flex class="content-col" xs9>
-					<page-content-container/>	
-				</v-flex>
-			</v-layout>	
-		</v-card>	
+				</v-col>	
+				<v-col class="col-9 pa-0 ma-0">
+					<v-app-bar height="55"
+					dark
+					></v-app-bar>
+					<page-content-container/>
+				</v-col>
+			</v-row>	
+		</div>	
 	</div>
 </template>
 
@@ -37,7 +41,5 @@ export default {
 </script>
 
 <style>
-.content-col > .v-card{
-	height: 90vh!important;
-}
+
 </style>	

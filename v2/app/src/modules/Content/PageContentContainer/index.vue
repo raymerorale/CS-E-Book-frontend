@@ -1,11 +1,12 @@
 <template>
-	<v-card flat id="content-page-container">
+	<div flat id="content-page-container">
 	  	<perfect-scrollbar>
 
 	  		<v-card
 	  			v-if='contentBody.description'
 	  			flat
 	  			v-html="contentBody.description"
+
 	  		/>
 
 	  		<span v-if="contentBody.objectives && contentBody.objectives.length>0">
@@ -20,8 +21,8 @@
 
 	  	</perfect-scrollbar>
 
-		<navigation-toolbar class="nav-tbar"/>
-	</v-card>		
+		<navigation-toolbar class="mt-3 mb-0"/>
+	</div>		
 </template>
 
 <script>
@@ -56,15 +57,12 @@ export default {
 </script>
 <style>
 #content-page-container .ps {
-  height: 65vh;
+  height: 63.7vh;
 }
 #content-page-container {
 	position: relative;
-	padding: 50px 50px;
-	font-size: 1.5rem;
+	padding: 30px 40px;
+	font-size: 1.25rem;
 }
-.nav-tbar {
-	position: absolute;
-	bottom: -2%;
-}
+
 </style>
