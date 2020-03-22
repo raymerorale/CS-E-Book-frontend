@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<v-app-bar height="60">LOGO
+		<v-app-bar fixed>LOGO
 		</v-app-bar>
 	</div>	
 </template>	

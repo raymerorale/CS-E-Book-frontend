@@ -3,8 +3,11 @@
 		id="chapter-list-container"
 	  	dark
       permanent
-      width="400"
+      width="340"
+      height="100vh"
+      absolute
   	>
+    <br><br><br><br>
   	<perfect-scrollbar>
       <list-container :nodes="chaptersList"/>
     </perfect-scrollbar>
@@ -45,4 +48,5 @@ export default {
 #chapter-list-container .ps {
   height: 80vh;
 }
+
 </style>

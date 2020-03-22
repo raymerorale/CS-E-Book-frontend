@@ -10,7 +10,7 @@
 					<chapter-list-container/>	
 				</v-col>	
 				<v-col class="col-9 pa-0 ma-0">
-					<v-app-bar height="55"
+					<v-app-bar height="55" class="sub-header"
 					dark
 					></v-app-bar>
 					<page-content-container/>
@@ -41,5 +41,7 @@ export default {
 </script>
 
 <style>
-
+.sub-header{
+	margin-top: 60px !important;
+}
 </style>	
