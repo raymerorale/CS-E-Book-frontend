@@ -2,12 +2,17 @@
 	<v-navigation-drawer
 		id="chapter-list-container"
 	  	dark
-      permanent
       width="340"
       height="100vh"
       absolute
+      v-model="drawer"
   	>
-    <br><br><br><br>
+    <br><br><br>
+    <div class="menu-btn d-block d-md-none">
+      <v-btn icon @click="willClose">
+          <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </div>
   	<perfect-scrollbar>
       <list-container :nodes="chaptersList"/>
     </perfect-scrollbar>
@@ -25,6 +30,7 @@ export default {
   },
     data () {
       return {
+        drawer: true
       }
     },
     mounted () {
@@ -33,6 +39,11 @@ export default {
     beforeDestroy () {
 
     },
+    methods: {
+      willClose(){
+        this.drawer = false
+      }
+    },
     computed: {
     	chaptersList: () => {
     		return CHAPTERS.map((v, i) => {
@@ -40,6 +51,19 @@ export default {
           return v
     		})
     	}
+    },
+    props:{
+      toggle: Boolean
+    },
+    watch:{
+      toggle: function(newVal, oldVal){
+          this.drawer = newVal
+      },
+      drawer: function(newVal, oldVal){
+        if(!this.drawer){
+          this.$emit('closed')
+        }
+      }
     }
   }
 </script>	
@@ -48,5 +72,8 @@ export default {
 #chapter-list-container .ps {
   height: 80vh;
 }
-
+.menu-btn{
+  text-align: right;
+  margin-right: 1em;
+}
 </style>

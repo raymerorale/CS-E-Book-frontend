@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import PerfectScrollbar from 'vue2-perfect-scrollbar'
+import Vue2TouchEvents from 'vue2-touch-events'
 export const bus = new Vue();
 import Vuex from 'vuex'
 import store from './store'
@@ -13,7 +14,7 @@ import 'vuetify/dist/vuetify.min.css'
 import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 
 Vue.use(PerfectScrollbar)
-
+Vue.use(Vue2TouchEvents)
 Vue.config.productionTip = false
 
 const vuetifyOptions = {

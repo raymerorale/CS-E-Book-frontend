@@ -1,18 +1,21 @@
 <template>
-	<div>
+	<div v-touch:swipe.right="toggleNav">
 		<page-header/>
 		<div
 			width="100%"
 			class="overflow-hidden"
 		>
+		<v-app-bar height="55" class="sub-header"
+					dark
+					>
+		</v-app-bar>
+	
 			<v-row>
 				<v-col class="col-3 pa-0 ma-0">
-					<chapter-list-container/>	
+					<chapter-list-container :toggle="toggle" @closed="close"/>	
 				</v-col>	
-				<v-col class="col-9 pa-0 ma-0">
-					<v-app-bar height="55" class="sub-header"
-					dark
-					></v-app-bar>
+				<v-col class="col-12 col-md-9 pa-0 ma-0">
+					
 					<page-content-container/>
 				</v-col>
 			</v-row>	
@@ -34,8 +37,17 @@ export default {
 		PageContentContainer
 	},
 	data: () => ({
+		toggle: false
 	}),
 	mounted () {
+	},
+	methods:{
+		toggleNav(){
+			this.toggle = true
+		},
+		close(){
+			this.toggle = false
+		}
 	}
 }
 </script>

@@ -5,7 +5,6 @@
             class="pl-5"
             v-if='node.sub && node.sub.length'
             v-model='node.active'
-
           >
             <v-list-item :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" @click='changeContentView(node)' slot='activator'>
                 <v-list-item>
