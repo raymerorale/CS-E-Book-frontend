@@ -1,14 +1,15 @@
 <template>
 	<main class="login-page">
 		<section class="login-intro">
-			<img class="login-intro__image" src="../../assets/book-logo.png" alt="book logo" />
+			
 			<h1 class="login-intro__title">COMPUTER STUDENTS</h1>
 			<h1 class="login-intro__subtitle">ONLINE LEARNING MATERIAL</h1>
 		</section>
 		<section class="login-form">
+			<img class="pa-3 pt-5 logo" src="../../assets/book-logo.png" alt="book logo" />
 			<h1 class="login-form__text">Sign in to get started</h1>
 			<div class="login-form__field">
-				<v-icon class="person" />
+				
 				<v-text-field
 					outlined
 					dense
@@ -17,7 +18,7 @@
 				></v-text-field>
 			</div>
 			<div class="login-form__field">
-				<v-icon class="vpn_key" />
+				
 				<v-text-field
 					type="password"
 					outlined
@@ -29,6 +30,7 @@
 			<div class="login-form__field">
 				<v-btn 
 					dark
+					large
 					class="login-form__btn"
 					@click="goToContent">
 					LOG IN
@@ -76,10 +78,12 @@ export default {
 	align-items: center;
 }
 .login-intro__title {
-	font-size: 2.3em;
+	font-size: 2.5em;
+	text-shadow: 3px 3px #4d4d4d;
 }
 .login-intro__subtitle {
-	font-weight: lighter;
+	font-size: 1.5em;
+	text-shadow: 2px 2px #4d4d4d;
 }
 .login-form__field {
 	display: flex;
@@ -97,16 +101,15 @@ export default {
 	color: white;
 	width: 50px;
 	font-size: 2em;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
 }
 .login-form__field .v-input {
-	margin-left: -5px;
-	outline: 0;
+
 }
 .login-form__btn {
 	width: 100%;
 	font-weight: bold;
+	font-size: 1.1em !important;
+	text-shadow: 2px 2px #4d4d4d;
 	color: white;
 	background: linear-gradient(to right, #1d82e1 0%, #0d2a98 100%);
 }
@@ -120,6 +123,9 @@ export default {
 	}
 	.login-form__field {
 		max-width: 600px;
+	}
+	.logo{
+		display:none;
 	}
 }
 
@@ -143,7 +149,5 @@ export default {
 </style>	
 
 <style>
-.login-form__field .v-text-field--outlined fieldset {
-	border-left: 0!important;
-}
+
 </style>
