@@ -2,6 +2,6 @@ import { CHAPTERS } from '@/constants/chapters/'
 
 export default {
 	API: false,
-	PROGRESS: true,
+	PROGRESS: false,
 	chapters: CHAPTERS
 }
