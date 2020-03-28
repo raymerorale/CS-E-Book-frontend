@@ -4,8 +4,8 @@
 			<v-icon>mdi-menu-left</v-icon>
 		</v-btn>
 		<v-btn 
-			:dark="!isDisabled"
-			:disabled="isDisabled"
+			:dark="!$store.getters.PROGRESS || !isDisabled"
+			:disabled="$store.getters.PROGRESS && isDisabled"
 			fab small color="primary" class="ml-4">
 			<v-icon>mdi-menu-right</v-icon>
 		</v-btn>
@@ -20,7 +20,7 @@ export default {
 	],
 	computed: {
 		isDisabled() {
-			return this.next_content_body.read_status && this.next_content_body.read_status === 'Disabled'
+			return $store.getters.PROGRESS && this.next_content_body.read_status && this.next_content_body.read_status === 'Disabled'
 		}
 	}
 }

@@ -2,19 +2,19 @@
     <v-list>
       <template v-for='(node, index) in nodes'>
           <v-list-group
-            :disabled="node.read_status === 'Disabled'"
-            :inactive="node.read_status === 'Disabled'"
+            :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+            :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
             class="pl-5"
             :key="node.title"
             v-if='node.sub && node.sub.length'
             v-model='node.active'
           >
             <v-list-item 
-              :disabled="node.read_status === 'Disabled'"
-              :inactive="node.read_status === 'Disabled'"
+              :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+              :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
               :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" 
               @click='changeContentView(node, index)' slot='activator'>
-                <v-list-item :disabled="node.read_status === 'Disabled'">
+                <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'">
                   <v-list-item-title> {{ node.title }} </v-list-item-title>
                 </v-list-item>  
             </v-list-item>
@@ -26,11 +26,11 @@
               />
           </v-list-group>
           <v-list-item 
-            :disabled="node.read_status === 'Disabled'"
-            :inactive="node.read_status === 'Disabled'"
+            :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+            :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
             :key="node.title"
             @click='changeContentView(node, index)' v-else>
-              <v-list-item :disabled="node.read_status === 'Disabled'">
+              <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'">
                 <v-list-item-title> {{ node.title }} </v-list-item-title>
               </v-list-item>
           </v-list-item>
