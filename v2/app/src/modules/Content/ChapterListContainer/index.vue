@@ -8,12 +8,14 @@
       v-model="drawer"
   	>
     <br><br>
+    <br v-if="!$store.getters.PROGRESS">
     <div class="menu-btn d-block d-md-none">
       <v-btn icon @click="willClose">
           <v-icon>mdi-menu</v-icon>
       </v-btn>
     </div>
     <v-progress-linear
+      v-if="$store.getters.PROGRESS"
       :value="progress"
       height="30"
     >
