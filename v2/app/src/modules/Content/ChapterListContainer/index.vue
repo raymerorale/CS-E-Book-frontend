@@ -7,7 +7,7 @@
       absolute
       v-model="drawer"
   	>
-    <br><br><br>
+    <br><br>
     <div class="menu-btn d-block d-md-none">
       <v-btn icon @click="willClose">
           <v-icon>mdi-menu</v-icon>
@@ -15,7 +15,7 @@
     </div>
     <v-progress-linear
       :value="progress"
-      height="25"
+      height="30"
     >
       <strong>{{ progress }}%</strong>
     </v-progress-linear>
@@ -101,5 +101,8 @@ export default {
 .menu-btn{
   text-align: right;
   margin-right: 1em;
+}
+.v-progress-linear {
+  margin-top: 13px;
 }
 </style>
