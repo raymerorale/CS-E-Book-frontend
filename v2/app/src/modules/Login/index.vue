@@ -64,6 +64,8 @@ export default {
 					username: this.username,
 					password: this.password
 				})
+				.then(() => this.goToContent())
+				.catch(() => alert('Invalid username or password'))
 			} else {
 				this.goToContent()
 			}
