@@ -1,4 +1,5 @@
 export const CHAPTER10 = {
+	read_status: 'Disabled',
 	title: 'Chapter X',
 	description: `<h1 align = center>CHAPTER 10</h1>
 				<h2 align = center>SCREEN PROCESSING</h2>
@@ -13,6 +14,7 @@ export const CHAPTER10 = {
 			</ul>`,
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'The Monitor',
 			content:`<b>THE MONITOR</b>
 			<style> 
@@ -77,6 +79,7 @@ export const CHAPTER10 = {
 				</table>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: 'Clearing the Screen in Assembly Approach',
 			content:`<b> CLEARING THE SCREEN IN ASSEMBLY APPROACH </b>
 			<br/>
@@ -120,6 +123,7 @@ export const CHAPTER10 = {
 			</div>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: 'Setting the Cursor Position',
 			content:`<b> SETTING THE CURSOR POSITION </b>
 			<br/>
@@ -163,6 +167,7 @@ export const CHAPTER10 = {
 			</div>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Displaying the Character 'x' at the Center of the Screen`,
 			content: `<b>DISPLAYING THE CHARACTER 'x' AT THE CENTER OF THE SCREEN</b>
 			<div class="terminal-box" style="font-size: 20px">
@@ -197,6 +202,7 @@ code ends
 				</pre></div>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Displaying the String RTU at the center of the screen`,
 			content: `<b>DISPLAYING THE STRING 'RTU' AT THE CENTER OF THE SCREEN</b>
 			<div class="terminal-box" style="font-size: 20px">
@@ -236,6 +242,7 @@ code ends
 				`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Display ASCII Character Set`,
 			content: `<b>DISPLAY ASCII CHARACTER SET</b>
 			<br/>
@@ -304,6 +311,7 @@ code ends
 			</table>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Color Chart`,
 			content: `<b>COLOR CHART</b>
 			<br/>
@@ -458,6 +466,7 @@ code ends
 			`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Text and Back Ground Colors`,
 			content: `<b>TEXT AND BACK GROUND COLORS</b>
 			<br/>
@@ -548,6 +557,7 @@ code ends
 			</table>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Displaying Character 'x' with Attributes`,
 			content: `<b>DISPLAYING CHARACTER 'x' WITH ATTRIBUTES</b>
 			<br/>
@@ -589,6 +599,7 @@ code ends
      </pre></div>`,
 		},
 	{
+		read_status: 'Disabled',
 		title: `Displaying the String 'RTU' with Attributes`,
 		content: `<b>DISPLAYING THE STRING 'RTU' WITH ATTRIBUTES</b>
 		<div class="terminal-box" style="font-size: 20px">

@@ -1,5 +1,6 @@
 export const CHAPTER12 = {
 	
+	read_status: 'Disabled',
 	title: 'Chapter XII',
 	description: `<h1 align = center>CHAPTER 12</h1>
 				<h2 align = center>USING PROCEDURE</h2>
@@ -12,6 +13,7 @@ export const CHAPTER12 = {
 
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'Using Procedure', //page 1
 			content: `<b>DESIGN PROGRAMS USING PROCEDURE </b>
 					<br/>
@@ -24,6 +26,7 @@ export const CHAPTER12 = {
 			
 		},
 		{	
+			read_status: 'Disabled',
 			title: 'Defining a Procedure', //page2
 			content: `<b>DEFINING A PROCEDURE </b>
 					<br/>
@@ -45,6 +48,7 @@ export const CHAPTER12 = {
 		MAIN ENDP</pre></p>`,
 		},
 		{	
+			read_status: 'Disabled',
 			title: 'Calling a Procedure', //page 3
 			content: `<b>CALLING A PROCEDURE </b>
 					<br/>
@@ -72,6 +76,7 @@ export const CHAPTER12 = {
 					<p>You must make it a point that every procedure returns to its calling procedure. Use RET instruction, to do this just type RET before you end the procedure.</p>`,
 		},
 		{	
+			read_status: 'Disabled',
 			title: 'Applying the Concept of Procedure in a Program', //psge 4
 			content: `<b>APPLYING THE CONCEPT OF PROCEDURE IN A PROGRAM</b>
 					<br/>
@@ -119,6 +124,7 @@ export const CHAPTER12 = {
 		},
 
 		{	
+			read_status: 'Disabled',
 			title: 'INT 10H Functions', //page5
 			content:`
 			<style>
@@ -323,6 +329,7 @@ export const CHAPTER12 = {
 		},
 		
 		{	
+			read_status: 'Disabled',
 			title: 'INT 21H Functions', //page6
 			content: `
 			<style>

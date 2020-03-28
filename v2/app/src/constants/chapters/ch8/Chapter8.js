@@ -1,4 +1,5 @@
 export const CHAPTER8 = {
+	read_status: 'Disabled',
 	title: 'Chapter VIII',
 	description: `<h1 align = center>CHAPTER 8</h1>
 				<h2 align = center>UNDERSTANDING THE ASSEMBLY LANGUAGE PROGRAM</h2>`,
@@ -9,6 +10,7 @@ export const CHAPTER8 = {
 	],
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'Creating your own assembly language program',
 			content: `
 				
@@ -59,6 +61,7 @@ export const CHAPTER8 = {
 </pre></div>`
 		},
 		{
+			read_status: 'Disabled',
 			title: 'Saving, Exiting your program',
 			content: `
 <p><b>SAVING YOUR WORK</b></p>
@@ -69,6 +72,7 @@ export const CHAPTER8 = {
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Structure of assembly Language Program',
 			content: `
 <p><b>STRUCTURE OF AN ASSEMBLY LANGUAGE PROGRAM</b></p>
@@ -93,6 +97,7 @@ export const CHAPTER8 = {
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Instruction for Initializing, Concluding program',
 			content: `
 <p><b>INSTRUCTIONS FOR INITIALIZING THE PROGRAM</b></p>
@@ -117,6 +122,7 @@ export const CHAPTER8 = {
 
 		{
 
+			read_status: 'Disabled',
 		title: 'Example of Assembly Programming',
 			content: `
 <p><b>EXAMPLES OF ASSEMBLY LANGUAGE PROGRAMS</b></p>

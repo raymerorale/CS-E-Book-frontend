@@ -1,4 +1,5 @@
 export const CHAPTER7 = {
+	read_status: 'Disabled',
 	title: 'Chapter VII',
 	description: `<h1 align = center>CHAPTER 7</h1>
 				<h2 align = center>REQUIREMENTS FOR CODING ASSEMBLY LANGUAGE</h2>`,
@@ -11,6 +12,7 @@ export const CHAPTER7 = {
 	],
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'Comments, Reserve Words and its Category',
 			content: `
 
@@ -88,6 +90,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Identifier, Rules in Constructing Identifiers',
 			content: `
 <style type="text/css">
@@ -140,6 +143,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Statement, Most Common Directives',
 			content: `
 
@@ -336,6 +340,7 @@ Example 			.END
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'String',
 			content: `
 <style type="text/css">
@@ -356,6 +361,7 @@ pre{
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Numerical Constant',
 			content: `
 <style type="text/css">
@@ -444,6 +450,7 @@ is the same with:
 		},
 
 		{
+			read_status: 'Disabled',
 			title: 'Keyboard Inputs',
 			content: `
 

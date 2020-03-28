@@ -1,4 +1,5 @@
 export const CHAPTER11 = {
+	read_status: 'Disabled',
 	title: 'Chapter XI',
 	description: `<h1 align = center>CHAPTER 11</h1>
 				<h2 align = center>KEYBOARD PROCESSING</h2>`,
@@ -10,6 +11,7 @@ export const CHAPTER11 = {
 	],
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'String Input',
 			content : `
 <style type="text/css">
@@ -85,6 +87,7 @@ To illustrate this :</p>
 `
 		},
 		{
+			read_status: 'Disabled',
 			title: 'Displaying the Input String',
 			content : `
 

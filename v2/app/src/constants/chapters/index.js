@@ -11,9 +11,6 @@ import { CHAPTER10 } from './ch10/Chapter10.js'
 import { CHAPTER11 } from './ch11/Chapter11.js'
 import { CHAPTER12 } from './ch12/Chapter12.js'
 
-// No. of chapters
-let CHAPTERS_LEN = 12;
-
 // List of chapters with content
 let chaptersList = [
 	CHAPTER1,

@@ -1,4 +1,5 @@
 export const CHAPTER1 = {
+	read_status: 'In Progress',
 	title: `Chapter I`,
 	description: `<h1 align = center>CHAPTER 1</h1>
 				<h2 align = center>NUMBER SYSTEMS REVISITED</h2>`,
@@ -9,6 +10,7 @@ export const CHAPTER1 = {
 	],
 	sub: [
 		{
+			read_status: 'Disabled',
 			title: 'Number System',
 			content: `
 			<b>NUMBER SYSTEM</b>
@@ -17,6 +19,7 @@ export const CHAPTER1 = {
 			<p>It is a way of counting things and identifying the quantity of something. Likewise, number system refers to the set of symbols used to express quantities as the basis for counting, determining order, comparing amounts, performing calculations, and representing value. It is the set of characters and mathematical rules that are used to represent a digit. Examples include the Arabic, Babylonian, Chinese, Egyptian, Greek, Mayan, and Roman number systems. The ISBN and Dewey Decimal System are examples of number systems used in libraries. Even Social Security System has a number system of its own.</p>`,
 		},
 		{
+			read_status: 'Disabled',
 			title: `Base`,
 			content: `
 			<b>BASE</b>
@@ -25,6 +28,7 @@ export const CHAPTER1 = {
 			<p>It is also called as the <span class=\"bold italic\">radix</span>. Base refers to the number of digits (basic symbols) in a number system. A subcript attached to a number indicates the base radix of that number. 100 (base 2) means 100 (read as one-zero-one), on the other hand, 100 (base 10) means decimal 100 (read as one hundred) subscripts help classify equations where different number systems are combined.</p>`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Common Used Bases of Number Systems in Assembly Language`,
 			content: `
 			<b>COMMON USED BASES OF NUMBER SYSTEMS IN ASSEMBLY LANGUAGE</b>
@@ -34,6 +38,7 @@ export const CHAPTER1 = {
 			`,
 			sub: [
 				{
+					read_status: 'Disabled',
 					title: `Decimal Number System`,
 					content: `
 					<b>DECIMAL NUMBER SYSTEM</b>
@@ -55,6 +60,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Binary Number System`,
 					content: `
 					<b>BINARY NUMBER SYSTEM</b>
@@ -76,6 +82,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Hexadecimal Number System`,
 					content: `
 					<b>HEXADECIMAL NUMBER SYSTEM</b>
@@ -100,6 +107,7 @@ export const CHAPTER1 = {
 			]
 		},
 		{
+			read_status: 'Disabled',
 			title: `Equivalences`,
 			content: `
 			<b>EQUIVALENCES</b>
@@ -240,6 +248,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Conversion of Number Systems`,
 			content: `
 			<b>CONVERSION OF NUMBER SYSTEMS</b>
@@ -248,6 +257,7 @@ export const CHAPTER1 = {
 			`,
 			sub: [
 				{
+					read_status: 'Disabled',
 					title: `Decimal to Binary`,
 					content:  `
 					<b>DECIMAL-TO-BINARY CONVERSION</b>
@@ -312,6 +322,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Decimal to Hexadecimal`,
 					content: `
 					<b>DECIMAL TO HEXADECIMAL CONVERSION</b>
@@ -355,6 +366,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Binary to Decimal`,
 					content: `
 					<b>BINARY TO DECIMAL CONVERSION</b>
@@ -383,6 +395,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Binary to Hexadecimal`,
 					content: `
 					<b>BINARY TO HEXADECIMAL CONVERSION</b>
@@ -435,6 +448,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: `Hexadecimal to Decimal`,
 					content: `
 					<b>HEXADECIMAL TO DECIMAL CONVERSION</b>
@@ -498,6 +512,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					read_status: 'Disabled',
 					title: 	`Hexadecimal to Binary`,
 					content: `
 					<b>HEXADECIMAL TO BINARY CONVERSION</b>
@@ -531,6 +546,7 @@ export const CHAPTER1 = {
 			]
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 1`,
 			content: `
 			<b>LECTURE EXERCISE 1</b>
@@ -653,6 +669,7 @@ export const CHAPTER1 = {
 		}, //So di ko na tinapos to. Scratch lang din naman to, kasi sabi ni nics di nadaw sasama pala exercises. And di ko na din alam paano tapusin ih. HAHA 
 		
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
 			<b>LABORATORY EXERCISE 1</b>
@@ -663,6 +680,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 2`,
 			content: `
 			<b>LECTURE EXERCISE 2</b>
@@ -672,6 +690,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
 			<b>LABORATORY EXERCISE 2</b>
@@ -682,6 +701,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 3`,
 			content: `
 			<b>LECTURE EXERCISE 3</b>
@@ -691,6 +711,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
 			<b>LABORATORY EXERCISE 3</b>
@@ -700,6 +721,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 4`,
 			content: `
 			<b>LECTURE EXERCISE 4</b>
@@ -709,6 +731,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 4`,
 			content: `
 			<b>LABORATORY EXERCISE 4</b>
@@ -718,6 +741,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
 			<b>LEcTURE EXERCISE 5</b>
@@ -727,6 +751,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 5`,
 			content: `
 			<b>LABORATORY EXERCISE 5</b>
@@ -736,6 +761,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Lecture Exercise 6`,
 			content: `
 			<b>LECTURE EXERCISE 6</b>
@@ -745,6 +771,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 6`,
 			content: `
 			<b>LABORATORY EXERCISE 6</b>
@@ -756,4 +783,4 @@ export const CHAPTER1 = {
 
 	]
 
-};
+}

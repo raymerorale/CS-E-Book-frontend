@@ -7,12 +7,18 @@
       absolute
       v-model="drawer"
   	>
-    <br><br><br>
+    <br><br>
     <div class="menu-btn d-block d-md-none">
       <v-btn icon @click="willClose">
           <v-icon>mdi-menu</v-icon>
       </v-btn>
     </div>
+    <v-progress-linear
+      :value="progress"
+      height="30"
+    >
+      <strong>{{ progress }}%</strong>
+    </v-progress-linear>
   	<perfect-scrollbar>
       <list-container :nodes="chaptersList"/>
     </perfect-scrollbar>
@@ -24,48 +30,68 @@ import { CHAPTERS } from '@/constants/chapters/'
 import { bus } from '@/main.js'
 
 export default {
-	name: 'ChapterListContainer',
+  name: 'ChapterListContainer',
   components: {
     ListContainer
   },
-    data () {
-      return {
-        drawer: true
-      }
+  data () {
+    return {
+      drawer: true
+    }
+  },
+  computed: {
+    chaptersList: () => {
+      return CHAPTERS.map((v, i) => {
+        v.active = i === 0 ? true : false;
+        return v
+      })
     },
-    mounted () {
+    progress() {
+      const TOTAL_READ = this.getTotalRead(this.chaptersList)
+      const TOTAL_PAGES = this.getTotalPages(this.chaptersList)
 
+      return Math.ceil((TOTAL_READ / TOTAL_PAGES) * 100)
+    }
+  },
+  props:{
+    toggle: Boolean
+  },
+  watch:{
+    toggle: function(newVal, oldVal){
+        this.drawer = newVal
     },
-    beforeDestroy () {
-
-    },
-    methods: {
-      willClose(){
-        this.drawer = false
-      }
-    },
-    computed: {
-    	chaptersList: () => {
-    		return CHAPTERS.map((v, i) => {
-          v.active = i === 0 ? true : false;
-          return v
-    		})
-    	}
-    },
-    props:{
-      toggle: Boolean
-    },
-    watch:{
-      toggle: function(newVal, oldVal){
-          this.drawer = newVal
-      },
-      drawer: function(newVal, oldVal){
-        if(!this.drawer){
-          this.$emit('closed')
-        }
+    drawer: function(newVal, oldVal){
+      if(!this.drawer){
+        this.$emit('closed')
       }
     }
+  },
+  methods: {
+    willClose() {
+      this.drawer = false
+    },
+    getTotalPages(chaptersList) {
+      let total = chaptersList.length
+      chaptersList.map(chapter => {
+        if (chapter.sub && chapter.sub.length > 0) {
+          total += this.getTotalPages(chapter.sub)
+        }
+      })
+      return total
+    },
+    getTotalRead(chaptersList) {
+      return chaptersList.reduce((total, chapter) => {
+        if (chapter.read_status && chapter.read_status === 'Done') {
+          total++ 
+        }
+        if (chapter.sub && chapter.sub.length > 0) {
+          total += this.getTotalRead(chapter.sub)
+        }
+        return total
+      }, 0);
+    }
   }
+}
 </script>	
 
 <style>
@@ -75,5 +101,8 @@ export default {
 .menu-btn{
   text-align: right;
   margin-right: 1em;
+}
+.v-progress-linear {
+  margin-top: 13px;
 }
 </style>
