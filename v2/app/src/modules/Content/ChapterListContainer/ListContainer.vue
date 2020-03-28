@@ -2,35 +2,36 @@
     <v-list>
       <template v-for='(node, index) in nodes'>
           <v-list-group
-            :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
-            :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+            :disabled="$store.getters.PROGRESS && node.read_status === status.disabled"
+            :inactive="$store.getters.PROGRESS && node.read_status === status.disabled"
             class="pl-5"
             :key="node.title"
             v-if='node.sub && node.sub.length'
             v-model='node.active'
           >
             <v-list-item 
-              :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
-              :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+              :disabled="$store.getters.PROGRESS && node.read_status === status.disabled"
+              :inactive="$store.getters.PROGRESS && node.read_status === status.disabled"
               :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" 
               @click='changeContentView(node, index)' slot='activator'>
-                <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'">
+                <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === status.disabled">
                   <v-list-item-title> {{ node.title }} </v-list-item-title>
                 </v-list-item>  
             </v-list-item>
             <list-container 
               class='py-0 pl-3' 
+              :status="status"
               :nodes='node.sub'
               :parent_nodes="nodes"
               :parent_index="index"
               />
           </v-list-group>
           <v-list-item 
-            :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'"
-            :inactive="$store.getters.PROGRESS && node.read_status === 'Disabled'"
+            :disabled="$store.getters.PROGRESS && node.read_status === status.disabled"
+            :inactive="$store.getters.PROGRESS && node.read_status === status.disabled"
             :key="node.title"
             @click='changeContentView(node, index)' v-else>
-              <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === 'Disabled'">
+              <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === status.disabled">
                 <v-list-item-title> {{ node.title }} </v-list-item-title>
               </v-list-item>
           </v-list-item>
@@ -47,6 +48,7 @@ export default {
     ListContainer
   },
   props: [
+    'status',
     'nodes',
     'parent_nodes',
     'parent_index'

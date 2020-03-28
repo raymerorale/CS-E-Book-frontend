@@ -12,11 +12,17 @@
 	
 			<v-row>
 				<v-col class="col-3 pa-0 ma-0">
-					<chapter-list-container :toggle="toggle" @closed="close"/>	
+					<chapter-list-container 
+						:status="status"
+						:toggle="toggle" 
+						@closed="close"
+					/>	
 				</v-col>	
 				<v-col class="col-12 col-md-9 pa-0 ma-0">
 					
-					<page-content-container/>
+					<page-content-container
+						:status="status"
+					/>
 				</v-col>
 			</v-row>	
 		</div>	
@@ -39,7 +45,17 @@ export default {
 	data: () => ({
 		toggle: false
 	}),
-	mounted () {
+	computed: {
+		status() {
+			return {
+				disabled: 'Disabled',
+				in_progress: 'In Progress',
+				done: 'Done',
+			}
+		}
+	},
+	created () {
+		this.$store.dispatch('setReadStatus', this.$store.getters.user && this.$store.getters.user.id)
 	},
 	methods:{
 		toggleNav(){

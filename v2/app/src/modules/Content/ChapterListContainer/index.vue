@@ -22,7 +22,10 @@
       <strong>{{ progress }}%</strong>
     </v-progress-linear>
   	<perfect-scrollbar>
-      <list-container :nodes="chaptersList"/>
+      <list-container 
+        :status="status"
+        :nodes="chaptersList"
+      />
     </perfect-scrollbar>
   </v-navigation-drawer>
 </template>
@@ -56,7 +59,8 @@ export default {
     }
   },
   props:{
-    toggle: Boolean
+    toggle: Boolean,
+    status: Object
   },
   watch:{
     toggle: function(newVal, oldVal){
@@ -83,7 +87,7 @@ export default {
     },
     getTotalRead(chaptersList) {
       return chaptersList.reduce((total, chapter) => {
-        if (chapter.read_status && chapter.read_status === 'Done') {
+        if (chapter.read_status && chapter.read_status === this.status.done) {
           total++ 
         }
         if (chapter.sub && chapter.sub.length > 0) {

@@ -23,6 +23,7 @@
 	  	</perfect-scrollbar>
 
 		<navigation-toolbar class="mt-3 mb-0"
+			:status="status"
 			:next_content_body="nextContentBody"
 		/>
 	</div>		
@@ -38,6 +39,9 @@ export default {
 	components: {
 		NavigationToolbar
 	},
+	props: [
+		'status'
+	],
 	data: () => {
 		return {
 			contentBody: CHAPTERS[0],
@@ -74,24 +78,32 @@ export default {
 			window.scrollTo(0,0);
 		},
 		changeStatus() {
-			if (this.contentBody.read_status && this.contentBody.read_status === 'Disabled') {
-				this.contentBody.read_status = 'In Progress'
+			if (this.contentBody.read_status && this.contentBody.read_status === this.status.disabled) {
+				this.contentBody.read_status = this.status.in_progress
+
+				if (this.$store.getters.API && this.$store.getters.user) {
+					this.$store.dispatch('createReadStatus', {
+						chapterId: this.contentBody.id,
+						userId: this.$store.getters.user.id,
+						status: this.status.in_progress
+					})
+				}
 			}
 
 			let timeout = setTimeout(() => {
 				if (this.contentBody.read_status) {
-					this.contentBody.read_status = 'Done'
+					this.contentBody.read_status = this.status.done
 
 					if (this.$store.getters.API && this.$store.getters.user) {
-						this.$store.dispatch('readStatus', {
-							chapterId: 1,
+						this.$store.dispatch('updateReadStatus', {
+							chapterId: this.contentBody.id,
 							userId: this.$store.getters.user.id,
-							status: 'Done'
+							status: this.status.done
 						})
 					}
 				}
-				if (this.nextContentBody && this.nextContentBody.read_status && this.nextContentBody.read_status === 'Disabled') {
-					this.nextContentBody.read_status = 'In Progress'
+				if (this.nextContentBody && this.nextContentBody.read_status && this.nextContentBody.read_status === this.status.disabled) {
+					this.nextContentBody.read_status = this.status.in_progress
 				}
 				clearTimeout(timeout)
 			}, this.minReadTime);

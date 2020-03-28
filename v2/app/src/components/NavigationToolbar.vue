@@ -16,11 +16,12 @@
 export default {
 	name: 'NavigationToolbar',
 	props: [
+		'status',
 		'next_content_body'
 	],
 	computed: {
 		isDisabled() {
-			return this.$store.getters.PROGRESS && this.next_content_body.read_status && this.next_content_body.read_status === 'Disabled'
+			return this.$store.getters.PROGRESS && this.next_content_body.read_status && this.next_content_body.read_status === this.status.disabled
 		}
 	}
 }
