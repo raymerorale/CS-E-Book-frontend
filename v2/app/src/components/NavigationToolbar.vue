@@ -20,7 +20,7 @@ export default {
 	],
 	computed: {
 		isDisabled() {
-			return $store.getters.PROGRESS && this.next_content_body.read_status && this.next_content_body.read_status === 'Disabled'
+			return this.$store.getters.PROGRESS && this.next_content_body.read_status && this.next_content_body.read_status === 'Disabled'
 		}
 	}
 }
