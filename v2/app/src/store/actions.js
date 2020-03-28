@@ -8,5 +8,8 @@ export default {
 			}
 		})
 	},
+	readStatus: ({ commit }, payload) => {
+		return http.post('readstatus', payload)
+	},
 	updateChapters: ({ commit, state }, value) => commit('updateChapters', value)
 }

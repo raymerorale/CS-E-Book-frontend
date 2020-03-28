@@ -81,6 +81,14 @@ export default {
 			let timeout = setTimeout(() => {
 				if (this.contentBody.read_status) {
 					this.contentBody.read_status = 'Done'
+
+					if (this.$store.getters.API && this.$store.getters.user) {
+						this.$store.dispatch('readStatus', {
+							chapterId: 1,
+							userId: this.$store.getters.user.id,
+							status: 'Done'
+						})
+					}
 				}
 				if (this.nextContentBody && this.nextContentBody.read_status && this.nextContentBody.read_status === 'Disabled') {
 					this.nextContentBody.read_status = 'In Progress'
