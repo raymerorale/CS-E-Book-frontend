@@ -11,6 +11,7 @@
 			<div class="login-form__field">
 				
 				<v-text-field
+					v-model="username"
 					outlined
 					dense
 					hide-details
@@ -20,6 +21,7 @@
 			<div class="login-form__field">
 				
 				<v-text-field
+					v-model="password"
 					type="password"
 					outlined
 					dense
@@ -32,7 +34,7 @@
 					dark
 					large
 					class="login-form__btn"
-					@click="goToContent">
+					@click="login">
 					LOG IN
 				</v-btn>
 			</div>
@@ -41,14 +43,40 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
 	name: 'Login',
+	data() {
+		return {
+			username: '',
+			password: ''
+		}
+	},
 	mounted () {
 		console.log('LOGIN ', this.$store.state.chapters)
 	},
 	methods: {
 		goToContent() {
 			this.$router.push('content')
+		},
+		login() {
+			if (this.$store.getters.API) {
+				axios.post('http://localhost:4000/user/authenticate', {
+					username: this.username,
+					password: this.password
+				}, {
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				}).then(response => {
+					console.log(response)
+				}).catch(error => {
+					console.log(error)
+				})
+			} else {
+				this.goToContent()
+			}
 		}
 	}
 }
