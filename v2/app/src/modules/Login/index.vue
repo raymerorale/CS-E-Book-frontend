@@ -43,8 +43,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
 	name: 'Login',
 	data() {
@@ -62,17 +60,9 @@ export default {
 		},
 		login() {
 			if (this.$store.getters.API) {
-				axios.post('http://localhost:4000/user/authenticate', {
+				this.$store.dispatch('login', {
 					username: this.username,
 					password: this.password
-				}, {
-					headers: {
-						'Content-Type': 'application/json'
-					}
-				}).then(response => {
-					console.log(response)
-				}).catch(error => {
-					console.log(error)
 				})
 			} else {
 				this.goToContent()
