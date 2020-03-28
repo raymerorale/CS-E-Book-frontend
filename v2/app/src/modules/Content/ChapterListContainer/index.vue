@@ -30,76 +30,68 @@ import { CHAPTERS } from '@/constants/chapters/'
 import { bus } from '@/main.js'
 
 export default {
-	name: 'ChapterListContainer',
+  name: 'ChapterListContainer',
   components: {
     ListContainer
   },
-    data () {
-      return {
-        drawer: true
-      }
+  data () {
+    return {
+      drawer: true
+    }
+  },
+  computed: {
+    chaptersList: () => {
+      return CHAPTERS.map((v, i) => {
+        v.active = i === 0 ? true : false;
+        return v
+      })
     },
-    mounted () {
+    progress() {
+      const TOTAL_READ = this.getTotalRead(this.chaptersList)
+      const TOTAL_PAGES = this.getTotalPages(this.chaptersList)
 
+      return Math.ceil((TOTAL_READ / TOTAL_PAGES) * 100)
+    }
+  },
+  props:{
+    toggle: Boolean
+  },
+  watch:{
+    toggle: function(newVal, oldVal){
+        this.drawer = newVal
     },
-    beforeDestroy () {
-
-    },
-    methods: {
-      willClose(){
-        this.drawer = false
-      }
-    },
-    computed: {
-    	chaptersList: () => {
-    		return CHAPTERS.map((v, i) => {
-          v.active = i === 0 ? true : false;
-          return v
-    		})
-    	}
-    },
-    props:{
-      toggle: Boolean
-    },
-    watch:{
-      toggle: function(newVal, oldVal){
-          this.drawer = newVal
-      },
-      drawer: function(newVal, oldVal){
-        if(!this.drawer){
-          this.$emit('closed')
-        }
-      },
-      progress() {
-        const TOTAL_READ = this.getTotalRead(this.chaptersList)
-        const TOTAL_PAGES = this.getTotalPages(this.chaptersList)
-
-        return Math.ceil((TOTAL_READ / TOTAL_PAGES) * 100)
-      }
-    },
-    methods: {
-      getTotalPages(chaptersList) {
-        let total = chaptersList.length
-        chaptersList.map(chapter => {
-          if (chapter.sub && chapter.sub.length > 0) {
-            total += this.getTotalPages(chapter.sub)
-          }
-        })
-        return total
-      },
-      getTotalRead(chaptersList) {
-        return chaptersList.reduce((total, chapter) => {
-          if (chapter.read_status && chapter.read_status === 'Done') {
-            total++ 
-          }
-          if (chapter.sub && chapter.sub.length > 0) {
-            total += this.getTotalRead(chapter.sub)
-          }
-          return total
-        }, 0);
+    drawer: function(newVal, oldVal){
+      if(!this.drawer){
+        this.$emit('closed')
       }
     }
+  },
+  methods: {
+    willClose() {
+      this.drawer = false
+    },
+    getTotalPages(chaptersList) {
+      let total = chaptersList.length
+      chaptersList.map(chapter => {
+        if (chapter.sub && chapter.sub.length > 0) {
+          total += this.getTotalPages(chapter.sub)
+        }
+      })
+      return total
+    },
+    getTotalRead(chaptersList) {
+      return chaptersList.reduce((total, chapter) => {
+        if (chapter.read_status && chapter.read_status === 'Done') {
+          total++ 
+        }
+        if (chapter.sub && chapter.sub.length > 0) {
+          total += this.getTotalRead(chapter.sub)
+        }
+        return total
+      }, 0);
+    }
   }
+}
 </script>	
 
 <style>
