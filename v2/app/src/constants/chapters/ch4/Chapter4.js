@@ -13,7 +13,7 @@ export const CHAPTER4 = {
 		{
 			read_status: 'Disabled',
 			title: 'Bits, Bytes, Related Bytes',
-			content: `<b> Bits </b>
+			content: `<b> BIT </b>
 			<style>
 			table, th, td {
   				border: 1px solid black;
@@ -26,7 +26,7 @@ export const CHAPTER4 = {
   			</style>
 			<p style="text-indent:3em"> The fundamental of building block of the computer storage is the bit. It is a contraction of the compound word "binary digit". A bit can be equal to zero (0) which means off state or it can be equal to one (1) which is considered on state. A single bit doesn't provide much information, but it is surprising what a bunch of them can do. A binary number like 1100 has four (4) bits: 101010 has six (6) bits; and 10010110 has eight (8) bits. </p>
 			<p style="text-indent:3em;"> The figure below shows four (4) light-emitting diodes (LEDs). A colored circle means that the LED is on; and the uncolored circle means it is off.</p>
-			<span style="font-size:60px; margin-left:50%; margin-top=3em;">&#9679;&#9675;&#9679;&#9675;</span>
+			<span style="font-size:60px; margin-left:48%; margin-top=3em;">&#9679;&#9675;&#9679;&#9675;</span>
 			<table>
 				<tr>
 					<th>LED</th>
