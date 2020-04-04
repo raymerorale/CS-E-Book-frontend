@@ -1154,23 +1154,23 @@ export const CHAPTER5 = {
 
 			<b>Starting DEBUG</b>
 			<p>From the DOS prompt, key in the word DEBUG and press ENTER key. A hyphen (-) appears on screen, that is the DEBUG prompt. DEBUG us now ready to accept commands.</p>
-			<img src="cmdImage1.png" alt="cmd_start" style="width:600px; height:200px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage1_tFuSk6PVN.png" alt="cmd_start" style="width:600px; height:200px;"><br/>
 
 			<b> Quitting and closing the DEBUG environment </b>
 			<p>To close DEBUG and go back to DOS environment. Type Q and press &lt;ENTER&gt; key.</p>
-			<img src="cmdImage2.png" alt="cmd_close" style="width:600px; height:200px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage2_NCmcD6YIH.png" alt="cmd_close" style="width:600px; height:200px;"><br/>
 
 			<b> Adding and subtracting 4-digit hexadecimal values </b>
 			<p>To get the sum and difference of two hexadecimal numbers: type H followed by a space, a 4-digit hexadecimal value followed by a space agein, another 4-digit hexadecimal value and then press &lt;ENTER&gt; key. The leftmost part is the sum and the rightmost part is the difference. </p>
-			<img src="cmdImage3.png" alt="cmd_sum_diff" style="width:600px; height:200px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage3_qCIuGh28E.png" alt="cmd_sum_diff" style="width:600px; height:200px;"><br/>
 
 			<b> Viewing the contents of the registers </b>
 			<p> To show the values of the registers: type R and press &lt;ENTER&gt; key. </p>
-			<img src="cmdImage4.png" alt="cmd_view_reg" style="width:600px; height:200px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage4_CRc0sU0T5.pngcmdImage4.png" alt="cmd_view_reg" style="width:600px; height:200px;"><br/>
 
 			<b> Changing the contents of a specific registers </b>
 			<p> To modify the value of a particular register, let's say BX:type R followed by a space, type BX and press &lt;ENTER&gt;. Debug will display the current value of BX (i.e. 0000) and will wait for you to enter the new value. Just type in the new value in hexadecimal form after the colon and press &lt;ENTER&gt; key. To confirm if the new value for BX is stored, type R to display the values of the registers. </p>
-			<img src="cmdImage5.png" alt="cmd_change" style="width:600px; height:250px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage5_M-WV_Wc7V.png" alt="cmd_change" style="width:600px; height:250px;"><br/>
 
 			<b> Entering String </b>
 			<p> Lets store the string into memory. We'll start at offset 0200h so that the string wont become tangled with the code at 0100h. Here are the steps: </p>
@@ -1253,15 +1253,15 @@ export const CHAPTER5 = {
 				<td> 24 </td>
 			</tr></table><br/>
 			<i>Step 3:</i> &nbsp;&nbsp; Enter these hex codes using the command E 0200. Type E 0200 after the DEBUG prompt and press ENTER key. Key in the first hex code (i.e. 48) and press SPACE bar. Key in the second hex code (i.e. 65) and press SPACE bar. Do it over and over again until you have entered 24 for the dollar sign. Press ENTER key to end the process.<br/><br/>
-			<img src="cmdImage6.png" alt="cmd_store" style="width:600px; height:250px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage6_IfVi6P4Oo.png" alt="cmd_store" style="width:600px; height:250px;"><br/>
 
 			<b> Displaying the input string </b>
 			<p> Now that you've stored the string into memory. it's time to see how it looks like. Use D command to display or dump the contents of memory on screen. Since you'd input the string at offset 0200h, you are going to use this address again to display the string. Type D 0200 and press &lt; ENTER&gt; key. </p>
-			<img src="cmdImage7.png" alt="cmd_display_string" style="width:600px; height:250px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage7_8t7c6oiD6.png" alt="cmd_display_string" style="width:600px; height:250px;"><br/>
 
 			<b> The DEBUG display </b>
 			<p> We know that D command dumps the contents of a requested data area on screen. It displays eight(8) lines of data, each containing sixteen (16) bytes or 32 hex codes, for 128 bytes in all, beginning with the address that you specify in the D command. Diagrammatically we have the following: </p>
-			<img src="cmdImage8.png" alt="cmd_display" style="width:600px; height:250px;"><br/>
+			<img src="https://ik.imagekit.io/assembly/chapter5/cmdImage8_mTm1cToYB.png" alt="cmd_display" style="width:600px; height:250px;"><br/>
 			<p> The display consists of three parts.
 			<ul style="margin-left:2em">
 				<li> The address in segment: offset format. </li>
@@ -1282,14 +1282,14 @@ export const CHAPTER5 = {
 		INT 20
 			</pre>
 			<p style="text-indent:3em"> When you have keyed in the last instruction (i.e. INT 20) press &lt;ENTER&gt; key again to exit from the A command. That is one extra &lt;ENTER&gt; which tells DEBUG that you have no more symbolic instructions to enter. On completion, DEBUG should display the following: </p>
-			<center><img class="marginauto" alt="create" src="cmdImage9.png"  style="width:600px; height:250px;"></center><br/>`
+			<center><img class="marginauto" alt="create" src="https://ik.imagekit.io/assembly/chapter5/cmdImage9_K6rcdYcT9.png"  style="width:600px; height:250px;"></center><br/>`
 		},
 		{
 			read_status: 'Disabled',
 			title:`Executing one instruction at a time`,
 			content:`<b> EXECUTING ONE INSTRUCTION AT A TIME </b>
 			<p style="text-indent:3em"> To run each instruction: type T and press &lt;ENTER&gt; key. DEBUG will display the new values of the registers and the next instruction to be fetched and executed. Repeat this process until NOP is displayed. NOP (pronounce as "no-op") is an instruction that does nothing and it means that's the end of tracing the program. </p>
-			<center><img src="cmdImage10.png" alt="cmd_execute" style="width:600px; height:350px;"></center><br/>
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage10_GhKt01RX_.png" alt="cmd_execute" style="width:600px; height:350px;"></center><br/>
 
 			<b> Running the entire program </b>
 			<p style="text-indent:3em"> To execute the entire symbolic assembly program: type G and press &lt;ENTER&gt; key. DEBUG will display the output and the message "Program terminated normally". Let's have a new set of program this time, key in the following instructions each followed by pressing &lt;ENTER&gt; key: </p>
@@ -1299,7 +1299,7 @@ export const CHAPTER5 = {
 		ADD AX, BX
 		INT 20
 			</pre>
-			<center><img src="cmdImage11.png" alt="cmd_run" style="width:600px; height:250px;"></center><br/>`
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage11_WS49tKMWq.png" alt="cmd_run" style="width:600px; height:250px;"></center><br/>`
 		},
 		{
 			read_status: 'Disabled',
@@ -1311,26 +1311,26 @@ export const CHAPTER5 = {
 			<i>Step 3:</i> &nbsp;&nbsp;	Give the filename. <br/>
 			<i>Step 4:</i> &nbsp;&nbsp;	Save the program onto disk storage by using W command. Type W and press &lt;ENTER&gt; key. The message "Writing 0008 bytes" will be displayed on screen.<br/>
 			<i>Step 5:</i> &nbsp;&nbsp; Lastly, check if the DEBUG program was stored by quitting DEBUG and using dir *.com DOS command to view the contents to disk storage.<br/><br/>
-			<center><img src="cmdImage12.png" alt="cmd_save" style="width:600px; height:300px;"></center><br/>
-			<center><img src="cmdImage13.png" alt="cmd_dir" style="width:600px; height:250px;"></center><br/>
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage12_IVCDjr0gB.png" alt="cmd_save" style="width:600px; height:300px;"></center><br/>
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage13_V-rb5JZJz.png" alt="cmd_dir" style="width:600px; height:250px;"></center><br/>
 
 			<b> Running your program in DOS environment </b>
 			<p style="text-indent="3em"> To execute your DEBUG program in DOS environment, just type only the base name (no need to add the extension name .COM) and press ENTER key. </p>
-			<center><img src="cmdImage14.png" alt="cmd_sample" style="width:600px; height:200px;"></center><br/>`
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage14_aVmzirBY3.png" alt="cmd_sample" style="width:600px; height:200px;"></center><br/>`
 		},
 		{
 			read_status: 'Disabled',
 			title:`Loading your DEBUG program`,
 			content:`<b> LOADING YOUR DEBUG PROGRAM </b>
 			<p style="text-indent:3em"> To retrieve your DEBUG program for modification, type DEBUG followed by a space and the file name. This time add the extension name .COM (i.e. DEBUG SAMPLE.COM) and press ENTER key. Debug prompt will be displayed on screen which means it is ready to accept any modification. From the DEBUG prompt, type U 0100 and press ENTER Key. Your program will be listed down on screen. </p>
-			<center><img src="cmdImage15.png" alt="cmd_load" style="width:600px; height:200px;"></center><br/>`
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage15_YiGo8PsGK.png" alt="cmd_load" style="width:600px; height:200px;"></center><br/>`
 		},
 		{
 			read_status: 'Disabled',
 			title:`Modifying Instruction in DEBUG`,
 			content:`<b> MODIFYING INSTRUCTION IN DEBUG </b>
 			<p style="text-indent:3em"> To change a particular instruction in DEBUG, type A followed by space, followed by the offset address and press ENTER key. DEBUG is now ready to accept a new instruction for this offset address. For example, instead of MOV DL, 01 your instruction is MOV DL, 03. To do this, type A 0102 and press &lt;ENTER&gt; key. Type MOV DL, 03 and press &lt;ENTER&gt; and &lt;ENTER&gt; key again. If you want to make sure that the instruction was changed, type U100 </p>
-			<center><img src="cmdImage16.png" alt="cmd_modify" style="width:600px; height:750px;"></center><br/>`
+			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage16_94Wx63cCm.png" alt="cmd_modify" style="width:600px; height:750px;"></center><br/>`
 		},
 		{
 			read_status: 'Disabled',

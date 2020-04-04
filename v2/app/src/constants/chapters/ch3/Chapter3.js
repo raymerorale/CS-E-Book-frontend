@@ -31,7 +31,7 @@ export const CHAPTER3 = {
 				<br/>
 				<p>You use DOS prompt to enter DOS commands. These commands specify to DOS the exact action you wish to take as well as any special information needed to carry out your request. The illustration below shows the DOS environment.</p>
 				<br/>
-				<img src="cmdImage1.PNG" alt="Command Prompt" ></img>
+				<img src="https://ik.imagekit.io/assembly/chapter3/cmdImage1_d9qfSClYD.PNG" alt="Command Prompt" ></img>
 
 				`,
 				sub: [
@@ -43,7 +43,7 @@ export const CHAPTER3 = {
 						<br/>
 						<br/>
 						<p>This command clears all information from the screen when you are working at the command prompt. To enter this command, type <b>CLS</b> and press enter key.</b>
-						<img src="cmdImage2.png" alt="Command Prompt" >
+						<img src="https://ik.imagekit.io/assembly/chapter3/cmdImage2_i04LZhmqx.PNG" alt="Command Prompt" >
 						</p>
 						`
 				}
@@ -59,7 +59,7 @@ export const CHAPTER3 = {
 					<br/>
 					<p>When you use command prompt entries, a DOS prompt appears to indiate that DOS is ready to process your next entry. The default setting for this prompt displays a letter representing the active drive. To change from drive C to drive A, type <b>A</b> followed by a colon (:) and press enter key.</p>
 					<br/>
-					<img src="cmdImage3.png" alt="Command Prompt" >
+					<img src="https://ik.imagekit.io/assembly/chapter3/cmdImage3_YFDMWIYGR.PNG" alt="Command Prompt" >
 					`,
 			sub: [
 				{
@@ -67,51 +67,51 @@ export const CHAPTER3 = {
 					title: `CD`,
 					content: `This command changes the current directory. For example, you want to go to WINDOWS subdirectory, just type <b>CD</b> and the subdirectory name and press ENTER key.
 					<br/>
-					<img src="cmdImage4.png" alt="Command Prompt" >
+					<img src="https://ik.imagekit.io/assembly/chapter3/cmdImage4_ggHo_fMM2.PNG" alt="Command Prompt" >
 					<p> To go back to the previous directory, you can use <b>CD</b> or <b>CD/</b>.
-					<p><img src="cmdImage5.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage5_68xTENBDt.PNG" alt="Command Prompt" ></p>
 					` 
 				},
 				{
 					read_status: 'Disabled',
 					title: `DIR`,
 					content: `This command lists the content of a directory, to enter this command, just type <b>DIR</b> and press <ENTER> key.
-					<p><img src="cmdImage6.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage6_C3N70uX7t.PNG" alt="Command Prompt" ></p>
 					`
 				},	
 				{
 					read_status: 'Disabled',
 					title: `COPY`,
 					content: `This command duplicates file or files to another location/directory. To enter this command, type COPY, followed by a space and the filename, space again, path name and press <ENTER> key.
-					<p><img src="cmdImage7.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage7_v6HS6eVZE.PNG" alt="Command Prompt" ></p>
 					`
 				},
 				{
 					read_status: 'Disabled',
 					title:`REN`,
 					content: `This command changes the name of your file and cannot change the name of subdirectories. To enter the command type REN, followed by a space, then the old filename, space again, the name filename and press <ENTER> key.
-					<p><img src="cmdImage8.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage8_p36NRMAwO.PNG" alt="Command Prompt" ></p>
 					`
 				},
 				{
 					read_status: 'Disabled',
 					title: `DEL`,
 					content:`This command removes one or more files form a disk. To enter this command, type <b>DEL</b> followed by space, then the filename and press <ENTER> key.
-					<p><img src="cmdImage9.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage9_Cahz_JKnp.PNG" alt="Command Prompt" ></p>
 					`
 				},
 				{
 					read_status: 'Disabled',
 					title: `MD`,
 					content: `This command creates a subdirectory using the name you provide preferably eight (8) characters and must start with a letter. To enter the command, type <b>MD</b> followed by a space then the subdirectory name and press <ENTER> key.
-					<p><img src="cmdImage10.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage10_tsk6MkqiP.PNG" alt="Command Prompt" ></p>
 					`
 				},
 				{
 					read_status: 'Disabled',
 					title: `RD`,
 					content: `This command removes a specific subdirectory. Make sure that the subdirectory is empty. To enter this command type <b>RD</b> followed by a space then the subdirectory name and press <ENTER> key.
-					<p><img src="cmdImage11.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage11_zIR6_ig5E.PNG" alt="Command Prompt" ></p>
 					`
 				}
 			]
@@ -332,10 +332,10 @@ export const CHAPTER3 = {
 					<p>A Batch File is a text file that contains a sequence of commands for a computer operating system. It's called a batch file because it batches (bundles or packages) into a single file a set of commands that would otherwise have to be presented to the system interactively from a keyboard one at a time. A batch file is usually created for command sequences for which a user has a repeated need. Commonly needed batch files are often delivered as part of an operating system. You initiate the the sequence of commands in the batch file by simply entering the name of the batch file on a command line.</p>
 					<p>In the Disk Operating System (DOS), a batch file has the file name extension ".BAT". (The best known DOS batch file is the AUTOEXEC. BAT file that initializes DOS when you start the system). In UNIX-based operating systems, a batch file is called a shell script. In IBM's mainframe VM operating systems, it's called an EXEC. (http://searchwinit.techtarget.com/definition/batchfile)</p>
 					<p>Sample of batch program. <b>FILENAME:index.bat</b>
-					<p><img src="notepadImg1.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/notepadImg1_sXcbsCVQq.PNG" alt="Command Prompt" ></p>
 					<br>
 					<p><b>OUTPUT:</b></p>
-					<p><img src="cmdImage12.png" alt="Command Prompt" ></p>
+					<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage12_8eeocdshn.PNG" alt="Command Prompt" ></p>
 					<br>
 					
 					<style>
@@ -395,10 +395,10 @@ export const CHAPTER3 = {
 						<p>will display on the monitor the phrase "Type 1 or 2, then press ENTER." It will then wait for the user to type something and press ENTER. It will then assign whatever character the user types to the system variable %M%, which you can use in other batch file commands.</p>
 						<p>Windows Vista has added the CHOICE command. This is pretty cool! It sets you to build sample menus just form this one command. On a Windows Vista computer, open a command prompt and type CHOICE /? to see all the things you can do with it. At the present, this might not be so useful if you are writing batch files that also will be run on Windows XP computers, because the CHOICE commands will not work on those computers-and teh SET/P approach above still works in Vista.</p>
 						<p>Sample program of MENU. ><b>FILENAME: MENU.BAT</b></p>
-						<p><img src="notepadImg2.png" alt="Command Prompt" ></p>
+						<p><img src="https://ik.imagekit.io/assembly/chapter3/notepadImg2_C0LPaltxo.PNG" alt="Command Prompt" ></p>
 						<br/>
 						<p><b>OUTPUT:</b></p>
-						<p><img src="cmdImage13.png" alt="Command Prompt" ></p>
+						<p><img src="https://ik.imagekit.io/assembly/chapter3/cmdImage13_K8Qat_HkF.PNG" alt="Command Prompt" ></p>
 					`
 
 				}

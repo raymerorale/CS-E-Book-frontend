@@ -410,7 +410,7 @@ is the same with:
 
 	<p>Sample Program</p>
 	<!-- put image here -->
-	<img src="" alt="put image here ">
+	<img src="https://ik.imagekit.io/assembly/chapter7/cmdImage1_VSGzxN_4s.png" alt="put image here ">
 	<br><br>
 	<table width="98%" class="table2">
 		<tr>
@@ -445,7 +445,7 @@ is the same with:
 
 	<p>Sample Program with Multiple Strings</p>
 	<!-- put image here -->
-	<img src="" alt="put image here">
+	<img src="https://ik.imagekit.io/assembly/chapter7/cmdImage2_hBLPmXPID.png" alt="put image here">
 	<br><br>`,
 		},
 
@@ -481,7 +481,7 @@ table,tr,td{
 	INT 21 FUNCTION</p>
 
 		<!-- put image here -->
-	<img src="" alt="put image here">
+	<img src="https://ik.imagekit.io/assembly/chapter7/cmdImage3_rbDcpK7Wv.png" alt="put image here">
 	<br><br>
 
 	<table width="98%" class = "table2">
@@ -502,7 +502,7 @@ table,tr,td{
 	</table>
 	<br><br>
 	<!-- put image here -->
-	<img src="" alt="put image here">
+	<img src="https://ik.imagekit.io/assembly/chapter7/cmdImage4_CzK5B7fka.png" alt="put image here">
 	<br><br>
 
 	<pre> AL = 61		61 the ASCII value of 'a'</pre>

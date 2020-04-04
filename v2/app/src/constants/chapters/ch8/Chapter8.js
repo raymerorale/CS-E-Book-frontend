@@ -36,6 +36,10 @@ export const CHAPTER8 = {
 	&lt;base name&gt; . &lt;extension name&gt;
 </pre></p>
 
+<p>
+	<img src="https://ik.imagekit.io/assembly/chapter8/cmdImage1_Vf-CLT1dC.png" alt="Assembly program"/>
+</p>
+
 <p>Step 2:	Then, you can type now your program, just like using an MS Word application.</p>
 <p>Key in the given program:</p>
 
