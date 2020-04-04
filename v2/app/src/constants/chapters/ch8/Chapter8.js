@@ -293,6 +293,99 @@ code ends
 
 </pre></div>`
 
-		}
+		},
+
+
+		{
+			title: `Exercise 1`,
+			sub: [
+			{
+				title: `Lecture`,
+			},
+			{
+				title: `Laboratory`,
+				content:`
+				<h1>Laboratory Exercise 1</h1>
+				<p>Formulate an assembly language program that will display the given sample output below. Write your answer on the space provided. </p>
+				<p><b>OUTPUT: FILENAME: PTASK8A.ASM</b></p>
+				<div style="width:700px;height:90px;border:2px solid #000;">
+				<ul style="list-style-type:none;"><font size="3rem">
+				<li>(CMD)</li>
+				<li>Input A Letter: A CAPITAL LETTER</li>
+				<li>F:\CHRIST~1\ASSEMB~1\EXERCI~1>_</li>
+				</ul>
+				</div>
+				<br/>
+				<div style="width:700px;height:90px;border:2px solid #000;">
+				<ul style="list-style-type:none;"><font size="3rem">
+				<li>(CMD)</li>
+				<li>Input A Letter: : a small LETTER</li>
+				<li>F:\CHRIST~1\ASSEMB~1\EXERCI~1>_</li>
+				</ul>
+				</div>
+				`,
+			}
+			]
+		},
+		{
+			title: `Exercise 2`,
+			sub: [
+			{
+				title:`Lecture`,
+			},
+			{
+				title: `Laboratory`,
+				content: `
+				<h1>Laboratory Exercise 2</h1>
+				<p>Formulate an assembly language program that will display the given sample output below. Write your answer on the space provided. </p>
+				<p><b>OUTPUT: FILENAME: PTASK8B.ASM</b></p>
+				<div style="width:700px;height:400px;border:2px solid #000;">
+				<ul style="list-style-type:none;"><font size="3rem">
+				<li>(CMD)</li>
+				<li>F:\CHRIST~\TASM>menu</li>
+            	<li>MENU</li>
+				<li>1.	ALPHABETH</li>
+				<li>2.	NUMERIC</li>
+				<li>3.	EXIT</li>
+				<li>Enter your Choice: 1</li>
+				<li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+				<li>F:\CHRIST~\TASM>menu</li>
+            	<li>MENU</li>
+				<li>1.	ALPHABETH</li>
+				<li>2.	NUMERIC</li>
+				<li>3.	EXIT</li>
+				<li>Enter your Choice: 2</li>
+				<li>0123456789</li>
+				<li>F:\CHRIST~\TASM></li>
+				</ul>
+				</div>
+				`,
+			}				
+			]
+		},
+		{
+			title: `Case Study 3`,
+			sub: [
+			{
+				title:`Laboratory`,
+				content: `
+				<h1>Laboratory Case Study 3</h1>
+				<p>Formulate an assembly language program that will indicate whether the character is on ALPHABET, a NUMERIC, and a SPECIAL CHARACTER.</p>
+				<p><b>OUTPUT: FILENAME: CASE4.ASM</b></p>
+				<div style="width:700px;height:220px;border:2px solid #000;">
+				<ul style="list-style-type:none;"><font size="5rem">
+				<li>Input a Character: A</li>
+				<li>It’s an Alphabet</li>
+				<li>Input a Character: 9</li>
+				<li>It’s a Numeric</li>
+				<li>Input a Character: *</li>
+				<li>It’s a Special Character</li>
+				</ul>
+				</div>
+
+				`,
+			}
+			]
+			},
 	]
 };

@@ -400,5 +400,48 @@ export const CHAPTER12 = {
 				</tr>
  			</body></table>`,
 		},
+
+
+
+
+
+
+
+{
+			title: `Case Study 3`,
+			sub: [
+			{
+				title: `Lecture`,
+			},
+			{
+				title:` Laboratory`,
+				content:`
+				<h1>Laboratory Case Study 3</h1>
+				<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+				<td><div style="width:700px;height:130px;border:2px solid #000;" align= "center">
+				<ul style="list-style-type:none;"><font size="3rem">
+			<li>MENU</li>
+			<li>1.	Converter</li>
+			<li>2.	 Calculator</li>
+			<li>3.	Exit</li>
+			<li>Enter your Choice: 1</li>
+			</td>
+			</div>
+			</table>
+			<br/>
+			<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+			<td><div style="width:700px;height:200px;border:2px solid #000;" align= "center">
+			<p style="list-style-type:none;"><font size="3rem">
+			<p>(CMD)</p>
+			<p>CONVERSION PROGRAM</p>
+			<p>A PROGRAM THAT PERFORMS CONVERSION</p>
+			<p>Convert DECIMAL to (1)HEX (2)OCTAL (3 BINARY:</p>
+				`,
+			}
+			
+
+			
+			]
+		},
 	]
 };

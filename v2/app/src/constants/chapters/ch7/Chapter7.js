@@ -507,6 +507,180 @@ table,tr,td{
 
 	<pre> AL = 61		61 the ASCII value of 'a'</pre>
 `
-		}
+		},
+		{
+			title: `Exercise 1`,
+			sub: [
+			{
+				title: `Lecture`,
+				content:`
+				`,
+			},
+			{
+				title: `Laboratory`,
+				content: ``,
+			}
+			]
+		},
+		{
+			title: `Exercise 2`,
+			sub: [
+			{
+			title: `Lecture`,
+			content: ``,
+			},
+			{
+				title: `Laboratory`,
+				content:`
+				<h1>Laboratory Exercise 2</h1>
+				<p>Using your assigned unit in the laboratory, construct an assembly language program that will display your nickname, course, mobile number, and e-mail address at the center of the screen.</p>
+				<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+				<td><div style="width:700px;height:200px;border:2px solid #000;" align= "center">
+				<p>Miley</p>
+				<p>BS Computer Engineering</p>
+				<p>09228765432</p>
+				<p>Gorgeousmiley14@yahoo.com</p>
+				</td>
+				</div>
+				</table>
+			`,	
+			}
+			]
+			
+		},
+		{
+			title: `Exercise 3`,
+			sub: [
+			{
+				title: `Lecture`,
+				content:`,`
+			},
+			{
+				title: `Laboratory`,
+				content:`
+				<h1>Laboratory Exercise 3</h1>
+				<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will input a single character and will display the corresponding letter shown below:</p>
+				<div style="width:700px;height:150px;border:2px solid #000;">
+				<p>Convert Capital Letter to Small Letter</p>
+				<p>Input Capital Letter: A</p>
+				<p>Output: a</p>
+				</div>
+				<br/>
+				<div style="width:700px;height:150px;border:2px solid #000;">Write the program below:</div>
+				<br/>
+				<p><b>Output: FILENAME: PTASK7C.COM</b></p>
+				<div style="width:700px;height:150px;border:2px solid #000;">
+				<p>Convert Capital Letter to Small Letter</p>
+				<p>Input Capital Letter: B </p>
+				<p>Output: b </p>
+				</div>
+				<br/>
+				<div style="width:700px;height:150px;border:2px solid #000;">Write the program below:</div>
+
+			`,	
+			}
+			]
+		},
+		{
+			title: `Exercise 4`,
+			sub: [
+				{
+					title: `Lecture`,
+				},
+				{
+					title:`Laboratory`,
+					content:`
+					<h1> Laboratory Exercise 4</h1>
+					<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will input a single character and will display the corresponding letter shown below:</p>
+					<br/>
+					<p><b>Output: FILENAME: PTASK7D.COM</b></p>
+					<div style="width:700px;height:300px;border:2px solid #000;">
+					<ul style="list-style-type:none;"><font size="3rem">
+					<li>-G</li>
+					<li>Input Capital Letter: A</li>
+					<li>Output: BCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+					<li>-G</li>
+					<li>Input Capital Letter: L</li>
+					<li>Output: MNOPQRSTUVWXYZ</li>
+					<li>-G</li>
+					<li>Input Capital Letter: W</li>
+					<li>Output: XYZ</li>
+					<li>-G</li>
+					<li>Input Capital Letter: Z</li>
+					<li>Output:</li>
+					</ul>
+					</div>
+
+					`,
+				}
+			]
+		},
+		{
+			title: `Exercise 5`,
+			sub: [
+				{
+					title: `Lecture`,
+				},
+				{
+					title: `Laboratory`,
+					content: `
+					<h1>Laboratory Exercise 5</h1>
+					<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will input a single character and will display the corresponding letter shown below:</p>
+					<br/>
+					<p><b>Output: FILENAME: PTASK7D.COM</b></p>
+					<div style="width:700px;height:300px;border:2px solid #000;">
+					<ul style="list-style-type:none;"><font size="3rem">
+					<li>-G</li>
+					<li>Input Capital Letter: a</li>
+					<li>Output: bcdefghijklmnopqrstuvwxyz</li>
+					<li>-G</li>
+					<li>Input Capital Letter: l</li>
+					<li>Output: mnopqrstuvwxyz</li>
+					<li>-G</li>
+					<li>Input Capital Letter: w</li>
+					<li>Output: xyz</li>
+					<li>-G</li>
+					<li>Input Capital Letter: z</li>
+					<li>Output:</li>
+					</ul>
+					</div>
+					`,
+				}
+			]
+		},
+		{
+			title: `Exercise 6`,
+			sub: [
+			{
+				title:`Lecture`,
+			},
+			{
+				title: `Laboratory`,
+				content:`
+				<h1>Laboratory Exercise 6</h1>
+				<p>Using your assigned computer unit in the laboratory, construct an assembly language programs that will input a single character and will display the corresponding letter shown below:</p>
+				<br/>
+				<p><b>Output: FILENAME: PTASK7E.COM</b></p>
+				<div style="width:700px;height:300px;border:2px solid #000;">
+					<ul style="list-style-type:none;"><font size="3rem">
+					<li>-G</li>
+					<li>Input Capital Letter: A</li>
+					<li>Output: BCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+					<li>-G</li>
+					<li>Input Capital Letter: l</li>
+					<li>Output: : mnopqrstuvwxyz</li>
+					<li>-G</li>
+					<li>Input Capital Letter: W</li>
+					<li>Output: XYZ</li>
+					<li>-G</li>
+					<li>Input Capital Letter: z</li>
+					<li>Output:</li>
+					</ul>
+					</div>
+
+				`
+			}
+			]
+		},		
 	]
 };
