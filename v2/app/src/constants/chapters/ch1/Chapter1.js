@@ -16,7 +16,10 @@ export const CHAPTER1 = {
 			<b>NUMBER SYSTEM</b>
 			<br>
 			<br>
-			<p>It is a way of counting things and identifying the quantity of something. Likewise, number system refers to the set of symbols used to express quantities as the basis for counting, determining order, comparing amounts, performing calculations, and representing value. It is the set of characters and mathematical rules that are used to represent a digit. Examples include the Arabic, Babylonian, Chinese, Egyptian, Greek, Mayan, and Roman number systems. The ISBN and Dewey Decimal System are examples of number systems used in libraries. Even Social Security System has a number system of its own.</p>`,
+			<p>It is a way of counting things and identifying the quantity of something. Likewise, number system refers to the set of symbols used to express quantities as the basis for counting, determining order, comparing amounts, performing calculations, and representing value. It is the set of characters and mathematical rules that are used to represent a digit. Examples include the Arabic, Babylonian, Chinese, Egyptian, Greek, Mayan, and Roman number systems. The ISBN and Dewey Decimal System are examples of number systems used in libraries. Even Social Security System has a number system of its own.</p>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/crSGS1uBSNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			`,
 		},
 		{
 			read_status: 'Disabled',
@@ -319,6 +322,9 @@ export const CHAPTER1 = {
 					  </div>
 					</div>
 				  </div>
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/2U9b76JRz7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 					`
 				},
 				{
@@ -363,6 +369,8 @@ export const CHAPTER1 = {
 					  </div>
 					</div>
 				  </div>
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/uVpQ9pPskNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					`
 				},
 				{
@@ -392,7 +400,9 @@ export const CHAPTER1 = {
 					  <div>#TODO fig1.5.3.5</div>
 					</div>
 				  </div>
-					`
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/6Tt-RA6KD30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  `
 				},
 				{
 					read_status: 'Disabled',
@@ -445,7 +455,9 @@ export const CHAPTER1 = {
 					  <div>Therefore, 10110001100 (base 2) = B1C (base 16)  </div>
 					</div>
 				  </div>
-					`
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/8T4F7WboWPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  `
 				},
 				{
 					read_status: 'Disabled',
@@ -509,7 +521,10 @@ export const CHAPTER1 = {
 					  Therefore, AB1DE (base 16) = 700894 (base 10)
 					</div>
 				  </div>
-					`
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/1tHgs0mrZ5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				  `
 				},
 				{
 					read_status: 'Disabled',
@@ -541,7 +556,9 @@ export const CHAPTER1 = {
 					  Therefore, C0DE8 (base 16) = 11000000110111101000 (base 2)
 					</div>
 				  </div>
-					`
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/WI6Uvci2p7E?start=0&end=234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  `
 				},
 			]
 		},

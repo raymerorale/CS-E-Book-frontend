@@ -20,7 +20,10 @@ export const CHAPTER3 = {
 				<br/>
 				<p>DOS is an acronym for Disk Operating System. DOS traced back its roots from the emergence of the "Personal Computer (PC)". During those times when IBM was about to launch its new generation computer they are in the dilemma of finding a suitable operating system for their machine. Since disks are the predominant method of storing data before, it was the most popular operating system for microcomputer systems. It is an operating system that provides support services for other programs. Also, DOS is a collection of programs provided as files. These programs provide services such as file and memory management support for devices attached to your computer. The illustration below shows how DOS environment looks like.</p>
 				<br/>
-				<p>IBM sourced out their system to Digital Research, the company that sold their Operating System with its CP/M computer. Digital Research was the leader of those systems that time. But unfortunately, the small company in Seattle, named Microsoft was the company where IBM commissioned to create the operating system for their machines. Microsoft was bold enough to take the challenge of providing IBM with an operating system. MS-DOS was the standard operating system for IBM-compatible personal computers.</p>`,
+				<p>IBM sourced out their system to Digital Research, the company that sold their Operating System with its CP/M computer. Digital Research was the leader of those systems that time. But unfortunately, the small company in Seattle, named Microsoft was the company where IBM commissioned to create the operating system for their machines. Microsoft was bold enough to take the challenge of providing IBM with an operating system. MS-DOS was the standard operating system for IBM-compatible personal computers.</p>
+				
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/EbxukDnRqSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				`,
 		},
 		{
 			read_status: 'Disabled',
@@ -45,6 +48,9 @@ export const CHAPTER3 = {
 						<p>This command clears all information from the screen when you are working at the command prompt. To enter this command, type <b>CLS</b> and press enter key.</b>
 						<img src="https://ik.imagekit.io/assembly/chapter3/cmdImage2_i04LZhmqx.PNG" alt="Command Prompt" >
 						</p>
+
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MNwErTxfkUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 						`
 				}
 				
@@ -124,7 +130,6 @@ export const CHAPTER3 = {
 					<b>Note:</b>
 					<br/>
 					<p>Example files (e.g., file.ext, file1, file2), file extensions (.ext), directories (e.g., diry, diry1, diry2), commands (e.g., command), and drive letters (e.g., a:, b:, c:) are given, substitute the name of your own file, directory, command, or drive letter. Since DOS is not case sensitive, you can type these commands in either upper or lowercase.'</p>
-					
 					`,
 			sub: [
 				{
@@ -322,6 +327,10 @@ export const CHAPTER3 = {
 									<td>Check memory usage.</td>
 								</tr>
 							</table>
+
+
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/MNwErTxfkUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 					`
 				},
 				{

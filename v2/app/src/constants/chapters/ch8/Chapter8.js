@@ -295,7 +295,11 @@ msg1 : DB "Computer!$"
 code ends
 	end begin
 
-</pre></div>`
+</pre></div>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDYwJ1FryKc?start=502&end=709" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`
 
 		},
 

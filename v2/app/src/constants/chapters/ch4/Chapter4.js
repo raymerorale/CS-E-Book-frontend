@@ -260,7 +260,10 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			<tr>
 			<td colspan="9" style="border: 2px solid black"> DATA BUS </td>
 			</tr>
-		</table>`,
+		</table>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/aj8gdnUjWD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		`,
 		},
 		{
 			title: `Brief Description of Different Intel Microprocessor`,
@@ -371,7 +374,9 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 					<td> Status and instruction registers </td>
 					<td><p align="justify"> These special purpose registers are used to record and alter certain aspects of the 80386 processors state. </p></td>
 				</tr>
-			`,
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/EAhDfRJ0miM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				`,
 		},
 		{
 			title:`General-Purpose Registers`,

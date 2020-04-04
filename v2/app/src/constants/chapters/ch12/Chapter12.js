@@ -9,7 +9,8 @@ export const CHAPTER12 = {
 			`<p>At the end of the chapter, the learners are expected to: </p>
 			<ul> <li>Differentiate the methods of how to assemble, link and execute assembly program.
 			<li>Assemble a source program, link and object module, and execute assembly language code.
-			<li>Recognize the role of the assembler and linker in running the program.</li></ul>`,
+			<li>Recognize the role of the assembler and linker in running the program.</li></ul>			
+			`,
 
 	sub: [
 		{
@@ -22,7 +23,11 @@ export const CHAPTER12 = {
 					<p>You might ask, "How do I know how to split a long program into procedures?" Here are suggested guidelines to follow: </p>
 				
 					<ul><li>Design your program so that each procedure performs only one function.
-						<li>Keep procedure small. </li></ul>`,
+						<li>Keep procedure small. </li></ul>
+						
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0dLkvasLSlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						`,
 			
 		},
 		{	

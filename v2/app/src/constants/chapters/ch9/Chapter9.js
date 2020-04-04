@@ -140,7 +140,9 @@ export const CHAPTER9 = {
 	<br/> Step 8 : Type <i>myprog</i> and press ENTER key to execute the program.
 	<br/> And voila ! Your program is running.
 </p>
-			`,
+			
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDYwJ1FryKc?start=502" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`,
 			sub: []
 		},
 

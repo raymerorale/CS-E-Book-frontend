@@ -1268,7 +1268,10 @@ export const CHAPTER5 = {
 				<li> The hexadecimal representation are those that shows (2) hex digit for each byte, followed by a space for readability. Also, a hyphen seperates the second 8 byes from the first 8. </li>
 				<li> The ASCII representation of bytes that contatins displayable characters, which can help you, interpret the hex representation. </li>
 			</ul></p>
-			<p> Take note that the remaining characters displated after the dollar ($) sign are the miscellaneuos assortment of characters. Whenever you see a period (.) in the ASCII window, it represents either a period or a special character such as the Greek letter alpha. DEBUG's D command displays only 96 out of 256 characters in the ASCII table so a period is used for the remaining 160 characters. </p><br/>`
+			<p> Take note that the remaining characters displated after the dollar ($) sign are the miscellaneuos assortment of characters. Whenever you see a period (.) in the ASCII window, it represents either a period or a special character such as the Greek letter alpha. DEBUG's D command displays only 96 out of 256 characters in the ASCII table so a period is used for the remaining 160 characters. </p><br/>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/s1uOGjt0YJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			`
 		},
 		{
 			read_status: 'Disabled',
@@ -1282,7 +1285,11 @@ export const CHAPTER5 = {
 		INT 20
 			</pre>
 			<p style="text-indent:3em"> When you have keyed in the last instruction (i.e. INT 20) press &lt;ENTER&gt; key again to exit from the A command. That is one extra &lt;ENTER&gt; which tells DEBUG that you have no more symbolic instructions to enter. On completion, DEBUG should display the following: </p>
-			<center><img class="marginauto" alt="create" src="https://ik.imagekit.io/assembly/chapter5/cmdImage9_K6rcdYcT9.png"  style="width:600px; height:250px;"></center><br/>`
+			<center><img class="marginauto" alt="create" src="https://ik.imagekit.io/assembly/chapter5/cmdImage9_K6rcdYcT9.png"  style="width:600px; height:250px;"></center><br/>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/azGrJVdnyi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			`
 		},
 		{
 			read_status: 'Disabled',
