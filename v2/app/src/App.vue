@@ -28,4 +28,16 @@ export default {
 	padding: 10px;
 	margin: 50px;
 }
+iframe {
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+}
+img {
+  margin: 20px;
+}
 </style>
