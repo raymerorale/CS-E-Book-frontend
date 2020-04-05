@@ -372,28 +372,25 @@ code ends
 			]
 		},
 		{
-			title: `Case Study 3`,
-			sub: [
-			{
-				title:`Laboratory`,
-				content: `
-				<h1>Laboratory Case Study 3</h1>
-				<p>Formulate an assembly language program that will indicate whether the character is on ALPHABET, a NUMERIC, and a SPECIAL CHARACTER.</p>
-				<p><b>OUTPUT: FILENAME: CASE4.ASM</b></p>
-				<div style="width:700px;height:220px;border:2px solid #000;">
-				<ul style="list-style-type:none;"><font size="5rem">
-				<li>Input a Character: A</li>
-				<li>It’s an Alphabet</li>
-				<li>Input a Character: 9</li>
-				<li>It’s a Numeric</li>
-				<li>Input a Character: *</li>
-				<li>It’s a Special Character</li>
-				</ul>
-				</div>
+			title: `Case Study 4`,
+			content: `
+			<b>LABORATORY CASE STUDY 4</b>
+			<br/>
+			<br/>
+			<p>Formulate an assembly language program that will indicate whether the character is on ALPHABET, a NUMERIC, and a SPECIAL CHARACTER.</p>
+			<p><b>OUTPUT: FILENAME: CASE4.ASM</b></p>
+			<div style="width:700px;height:220px;border:2px solid #000;">
+			<ul style="list-style-type:none;"><font size="5rem">
+			<li>Input a Character: A</li>
+			<li>It’s an Alphabet</li>
+			<li>Input a Character: 9</li>
+			<li>It’s a Numeric</li>
+			<li>Input a Character: *</li>
+			<li>It’s a Special Character</li>
+			</ul>
+			</div>
 
-				`,
-			}
-			]
+			`,
 			},
 	]
 };

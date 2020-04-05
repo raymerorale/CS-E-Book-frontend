@@ -684,6 +684,35 @@ table,tr,td{
 				`
 			}
 			]
-		},		
+		},
+		{
+			title: `Case Study 3`,
+			content: `
+			<b>LABORATORY CASE STUDY 3</b>
+			<br/>
+			<br/>
+			<p>Using your assigned computer unit in the laboratory, construct an assembly language programs that will input a single character and will convert in ASCII value:</p>
+			<br/>
+			<p><b>Output: FILENAME: CASE2.COM</b></p>
+			<div style="width:700px;height:300px;border:2px solid #000;">
+				<ul style="list-style-type:none;"><font size="3rem">
+				<li>-G</li>
+				<li>Input a Character: A</li>
+				<li>ASCII value is: 41</li>
+				<li>-G</li>
+				<li>Input a Character: 0</li>
+				<li>ASCII value is: 30</li>
+				<li>-G</li>
+				<li>Input a Character: *</li>
+				<li>ASCII value is: 2A</li>
+				<li>-G</li>
+				<li>Input Capital Letter: z</li>
+				<li>Output:</li>
+				</ul>
+				</div>
+
+			`,
+		},
+		
 	]
 };
