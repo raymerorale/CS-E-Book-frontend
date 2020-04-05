@@ -55,7 +55,9 @@ export default {
 		}
 	},
 	created () {
-		this.$store.dispatch('setReadStatus', this.$store.getters.user && this.$store.getters.user.id)
+		if (this.$store.getters.API && this.$store.getters.user) {
+			this.$store.dispatch('setReadStatus', this.$store.getters.user && this.$store.getters.user.id)
+		}
 	},
 	methods:{
 		toggleNav(){

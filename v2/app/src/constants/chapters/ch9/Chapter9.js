@@ -148,63 +148,56 @@ export const CHAPTER9 = {
 
 		
 		{
-			title: `Exercise`,
-			sub: [
-			{
-				title: `Lecture`,
-			},
-			{
-				title: `Laboratory`,
-				content:`
-				<h1>Laboratory Exercise 1</h1>
+			title: `Laboratory Exercise 1`,
+			content:`
+			<b>LABORATORY EXERCISE 1</b>
+			<br/>
+			<br/>
 				<p>Using your assigned computer unit in the laboratory, type the given assembly language program, below, after which, save it; assemble it, link it, and run it. Observe and write the output.</p>
-				<br/>
-				<p><b>Program:</b></p>
-				<div style="width:700px;height:700px;border:2px solid #000;">
-				<ul style="list-style-type:none;"><font size="2rem">
-				<li><b>title Activity.asm</b></li>
-				<li><b>code segment</b></li>
-				<p></p>
-				<li>Assume cm:code:ds:code</li>
-				<li>org 100h</li>
-				<li>begin:</li>
-				<li style="padding-left: 20px;">jmp start</li>
-				<li>msg1:   db “Can this$”</li>
-				<li>msg2:   db “Love7$”</li>
-				<li>start:</li>
-				<li style="padding-left: 20px;">mov ah, 09h</li>
-				<li style="padding-left: 20px;">mov dx, OFFSET msg1</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov ah, 02</li>
-				<li style="padding-left: 20px;">mov dl, 0ah</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov dl, 0dh</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov ah, 02h</li>
-				<li style="padding-left: 20px;">mov dl, 02h</li>
-				<li style="padding-left: 20px;">int     21h</li>
-				<li style="padding-left: 20px;">mov ah, 02h</li>
-				<li style="padding-left: 20px;">mov dl, 65h</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov ah, 02</li>
-				<li style="padding-left: 20px;">mov dl, 0ah</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov dl, 0dh</li>
-				<li style="padding-left: 20px;">int    21h</li>
-				<li style="padding-left: 20px;">mov ah, 09h</li>
-				<li style="padding-left: 20px;">mov dx, OFFSET msg2</li>
-				<li style="padding-left: 20px;">int 21h</li>
-				<li style="padding-left: 20px;">mov ax, 4c00h</li>
-				<li style="padding-left: 20px;">int 21h</li>
-				<li>code ends</li>
-				<li>end begin</li>
-				</ul>
-				</div>
+			<br/>
+			<p><b>Program:</b></p>
+			<div style="width:700px;height:700px;border:2px solid #000;">
+			<ul style="list-style-type:none;"><font size="2rem">
+			<li><b>title Activity.asm</b></li>
+			<li><b>code segment</b></li>
+			<p></p>
+			<li>Assume cm:code:ds:code</li>
+			<li>org 100h</li>
+			<li>begin:</li>
+			<li style="padding-left: 20px;">jmp start</li>
+			<li>msg1:   db “Can this$”</li>
+			<li>msg2:   db “Love7$”</li>
+			<li>start:</li>
+			<li style="padding-left: 20px;">mov ah, 09h</li>
+			<li style="padding-left: 20px;">mov dx, OFFSET msg1</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov ah, 02</li>
+			<li style="padding-left: 20px;">mov dl, 0ah</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov dl, 0dh</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov ah, 02h</li>
+			<li style="padding-left: 20px;">mov dl, 02h</li>
+			<li style="padding-left: 20px;">int     21h</li>
+			<li style="padding-left: 20px;">mov ah, 02h</li>
+			<li style="padding-left: 20px;">mov dl, 65h</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov ah, 02</li>
+			<li style="padding-left: 20px;">mov dl, 0ah</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov dl, 0dh</li>
+			<li style="padding-left: 20px;">int    21h</li>
+			<li style="padding-left: 20px;">mov ah, 09h</li>
+			<li style="padding-left: 20px;">mov dx, OFFSET msg2</li>
+			<li style="padding-left: 20px;">int 21h</li>
+			<li style="padding-left: 20px;">mov ax, 4c00h</li>
+			<li style="padding-left: 20px;">int 21h</li>
+			<li>code ends</li>
+			<li>end begin</li>
+			</ul>
+			</div>
 
-				`,
-			}
-
-			]
+			`,
 		},
 	]
 };

@@ -565,5 +565,467 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			</pre>
 			`,
 		},
+		{
+			title: `Lecture Exercise 1`,
+			content: `
+			<b>LECTURE EXERCISE 1</b>
+			<br/>
+			<br/>
+			<p>I. Determine the length of the following data items or terms of bytes. Write you answer on the space provided.</p>
+			<ol>
+				<li> Nibble – </li>
+				<li> Quadword – </li>
+				<li> Paragraph – </li>
+				<li> Word – </li>
+				<li>Kilobyte – </li>
+				<li> Megabyte – </li>
+				<li> Gigabyte – </li>
+				<li> Terabyte – </li>
+			</ol>
+ 
+			<p>II. Convert the following negative decimal number into its equivalent bits. Show your solutions and box your final answer.</p>
+			<ol>
+				<li> -75 </li>
+				<li> -50 </li>
+				<li> -36 </li>
+				<li> -18 </li>
+				<li> -90 </li>
+				<li> -188 </li>
+				<li> -234 </li>
+			</ol>
+
+			<style>
+				ol {
+					margin: 20px 50px;
+				}
+			</style>
+
+			`
+		},
+		{
+			title: `Lecture Exercise 2`,
+			content: `
+			<b>LECTURE EXERCISE 2</b>
+			<br/>
+			<br/>
+
+			<p>I. Using ASCII reference table, translate the following strings as sequence of hex codes. Write your answer on the boxes provided below each item.</p>
+			<ol>
+				<li> MICROPROCESSOR
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>																					
+				</li>
+
+				<li> \& nbsp
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>																																											
+				</li>
+				
+				<li> Inspiron MINI
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>																					
+				</li>																			
+				
+				<li> 04G26B0004
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>																					
+				</li>																			
+				
+				<li> CEIT – 15 – 301A
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>																					
+				</li>
+			</ol>
+																									
+			<style>
+				table {
+					margin: 20px 0px;
+					width: 100%;
+				}
+				td {
+					height: 40px;
+					border: 1px solid black;
+				}
+				ol {
+					margin: 20px 50px;
+				}
+				</style>
+			`
+		},
+		{
+			title: `Laboratory Exercise 1`,
+			content: `
+			<b>LABORATORY EXERCISE 1</b>
+			<br/>
+			<br/>
+
+			<p> I. Determine the contents of AX, BX, CX, and DX after executing every sequence of assembly language instruction. Write your answer on the space provided.</p>
+
+			A.
+			<table>
+				<tr>
+					<th> INSTRUCTION </th>
+					<th> AX </th>
+					<th> BX </th>
+					<th> CX </th>
+					<th> DX </th>
+				</tr>
+				<tr>
+					<td> MOV AX, 50C0h </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV BX, 38FEh </td>			
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV CX, 0002h </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MUL CH	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> SUB AX, BX </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD AL, BL	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD DL, CL	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+			</table>
+			
+			B.
+			<table>
+				<tr>
+					<th> INSTRUCTION </th>
+					<th> AX </th>
+					<th> BX </th>
+					<th> CX </th>
+					<th> DX </th>
+				</tr>
+				<tr>
+					<td> MOV AX, 0002h </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MUL AX </td>			
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MUL AX </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV BX, 0003h </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD AX, BX </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD DX, CX	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MUL CX </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+			</table>
+			<style>
+				table {
+					width: 100%;
+					margin-bottom: 50px;
+				}
+				th, td {
+					border: 1px solid black;
+					height: 20px;
+					padding: 5px;
+				}
+			</style>
+			`
+		},
+		{
+			title: `Laboratory Exercise 2`,
+			content: `
+			<b>LABORATORY EXERCISE 2</b>
+			<br/>
+			<br/>
+
+			<p> I. Using your assigned computer unit in the laboratory, find out what flag register is affected when the following instructions are executed by checking the appropriate box and writing what status of the flag was shown on the screen. Write it on the space provided beside the box.</p>
+			<table>
+				<tr>
+					<th> INSTRUCTION </th>
+					<th> OF </th>
+					<th> DF </th>
+					<th> IF </th>
+					<th> SF </th>
+					<th> ZF </th>
+					<th> AF </th>
+					<th> PF </th>
+					<th> CF </th>
+				</tr>
+				<tr>
+					<td> MOV CL, 03	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD CL,02 </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> SUB CL, 05	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> SUB CL, 02	</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV DH, 02 </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> ADD DH, 0FF </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV AL, 04 </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> MOV AL, 7F </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+			</table>
+			
+			<style>
+				table {
+					margin: 20px 0px;
+					width: 100%
+				}
+				th, td {
+					border: 1px solid black;
+					height: 20px;
+					padding: 5px;				
+				}
+			</style>		
+
+			`
+		},
 	]
 }; //padouble check na lang kung tama content. Tinamad na ako ireview e. Haha

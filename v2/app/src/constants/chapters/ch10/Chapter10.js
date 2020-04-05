@@ -639,52 +639,43 @@ code ends
 
 
 	{
-		title: `Exercise 1`,
-		sub: [
-		{
-			title: `Lecture`,
-		},
-		{
-			title: `Laboratory`,
-			content:`
-			<h1>Laboratory Exercise 1</h1>
-			<p>Construct an assembly language program that will display as shown below at the center of the screen.</p>
-			<br/>
-			<p><b>Sample Output:</b></p>
-			<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
-			<td><div style="width:700px;height:200px;border:2px solid #000;" align= "center">
-			<p>MENU</p>
-			<p>1.	ALPHABET</p>
-			<p>2.	NUMBER</p>
-			<p>INPUT YOUT CHOICE</p>
+		title: `Laboratory Exercise 1`,
+		content:`
+		<b>LABORATORY EXERCISE 1</b>
+		<br/>
+		<br/>
 
-			`,
-		}			
-		]
+		<p>Construct an assembly language program that will display as shown below at the center of the screen.</p>
+		<br/>
+		<p><b>Sample Output:</b></p>
+		<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+		<td><div style="width:700px;height:200px;border:2px solid #000;" align= "center">
+		<p>MENU</p>
+		<p>1.	ALPHABET</p>
+		<p>2.	NUMBER</p>
+		<p>INPUT YOUT CHOICE</p>
+
+		`,
 	},
 	{
-		title: `Exercise 2`,
-		sub:[
-		{
-			title: `Lecture`,
-		},
-		{
-			title: `Laboratory`,
-			content: `
-			<h1>Laboratory Exercise 2</h1>
-			<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will display the following at the center of the screen and apply the color specificationsbelow:</p>
-			<br/>
-			<ul style="list-style-type:none;"><font size="3rem">
-			<li>Blue background for the monitor</li>
-			<li>Red text color for ace of heart and diamond</li>
-			<li>Black text color for ace of club and spade</li>
-			<li>White background for the cards (boxes)</li>
-			</ul>
-			<img src="cards.PNG" alt="4 cards" ></img>
-		`,
-		}
-		]
-	},
+		title: `Laboratory Exercise 2`,
+		content: `
+		<b>LABORATORY EXERCISE 2</b>
+		<br/>
+		<br/>
+
+		<h1>Laboratory Exercise 2</h1>
+		<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will display the following at the center of the screen and apply the color specificationsbelow:</p>
+		<br/>
+		<ul style="list-style-type:none;"><font size="3rem">
+		<li>Blue background for the monitor</li>
+		<li>Red text color for ace of heart and diamond</li>
+		<li>Black text color for ace of club and spade</li>
+		<li>White background for the cards (boxes)</li>
+		</ul>
+		<img src="cards.PNG" alt="4 cards" ></img>
+	`,
+	}
 
 ]
 };

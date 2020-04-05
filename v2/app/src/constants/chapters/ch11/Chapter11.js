@@ -149,12 +149,12 @@ END start
 
 
 		{
-			title: `Exercise 1`,
-			sub: [
-			{
-				title:`Laboratory`,
-				content:`
-				<h1>Laboratory Exercise 1</h1>
+			title: `Laboratory Exercise 1`,
+			content:`
+			<b>LABORATORY EXERCISE 1</b>
+			<br/>
+			<br/>
+
 				<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will enter a user’s name and will display the following:</p>
 			<div style="width:700px;height:100px;border:2px solid #000;">
 			<ul style="list-style-type:none;"><font size="3rem">
@@ -164,30 +164,24 @@ END start
 			<li>Sugar is sweet and so are you, Miley!</li>
 			</ul>
 			</div>
-			`,
-			}
-			]
+			`
 		},
 		{
-			title: `Exercise 2`,
-			sub:[
-			{
-				title: `Laboratory`,
-				content:`
-				<h1> Laboratory Exercise 2</h1>
-				<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will allow the user to input numbers from 0 to 9 only and will convert and display the equivalent number word.</p>
-				<br/>
-				<p><b>Sample Output:</b></p>
-				<div style="width:700px;height:75px;border:2px solid #000;">
-				<ul style="list-style-type:none;"><font size="3rem">
-				<li>Enter a number (0-9): 8</li>
-				<li>Equivalent number word: Eight</li>
-				</ul>
-				</div>
-				`,
-			}
-			]
-		},
-				
+			title: `Laboratory Exercise 2`,
+			content:`
+			<b>LABORATORY EXERCISE 2</b>
+			<br/>
+			<br/>
+			<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will allow the user to input numbers from 0 to 9 only and will convert and display the equivalent number word.</p>
+			<br/>
+			<p><b>Sample Output:</b></p>
+			<div style="width:700px;height:75px;border:2px solid #000;">
+			<ul style="list-style-type:none;"><font size="3rem">
+			<li>Enter a number (0-9): 8</li>
+			<li>Equivalent number word: Eight</li>
+			</ul>
+			</div>
+			`,
+		}				
 	]
 };
