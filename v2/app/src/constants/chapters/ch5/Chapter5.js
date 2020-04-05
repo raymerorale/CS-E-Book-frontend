@@ -1363,7 +1363,7 @@ export const CHAPTER5 = {
 			<center><img src=" " alt="cmd_muldiv1" style="width:600px; height:300px;"></center><br/>
 			<i>Step 2:</i> &nbsp;&nbsp; Input the numbers F7h and E3h using E command. <br/>
 			<center><img src=" " alt="cmd_muldiv2" style="width:600px; height:300px;"></center><br/>
-			<i>Step 32:</i> &nbsp;&nbsp; Display the register and trace if the instruction will work <br/>
+			<i>Step 3:</i> &nbsp;&nbsp; Display the register and trace if the instruction will work <br/>
 			<center><img src=" " alt="cmd_muldiv3" style="width:600px; height:300px;"></center><br/>
 
 			<p style="text-indent:3em"> In multiplication, when the product is greater than 16-bit result, the higher 16-bits are stored in DX register. For division, the quotient is stored in AX while the remainder is stored in DX. Now, try dividing the sample numbers in your computer. </p>
@@ -1474,6 +1474,510 @@ export const CHAPTER5 = {
 				<center><img src=" .png" alt="insert image"></center><br/>
 					STEP 3: &nbsp;&nbsp; Press <ENTER> key to go back to the hyphen prompt, then key in -D 0200 and press <ENTER> key to display the string
 				<center><img src=" .png" alt="insert image"></center><br/>`
+		},
+		{
+			title: `Lecture Exercise 1`,
+			content: `
+			<b>LECTURE EXERCISE 1</b>
+			<br/>
+			<br/>
+			<p> I. Simulate the following instructions using ADD and SUB: </p>
+
+			<table>
+				<tr>
+					<td> MOV DX, 0002 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV BX, 0012 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV AX, BX </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV CL, DL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AX, 0009 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV AH, 01 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV BH, 09 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AL, BH </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV DH, 10 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> ADD BH, AH </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> ADD AL, 12 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> ADD AL, 08 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AL, CL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AL, 28 </td>
+					<td> </td>
+				</t>
+			</table>
+
+			<style>
+				table {
+					margin: 20px 0px;
+					width: 90%					
+				}
+				td {
+					padding: 5px;
+					height: 20px;
+				}
+				td:nth-child(1) {
+					width: 200px;
+					text-align: right;
+				}
+				tr> td:nth-child(2) {
+					border: 1px solid black;
+				}
+
+			</style>
+			`
+		},
+		{
+			title: `Laboratory Exercise 1`,
+			content: `
+			<b>LABORATORY EXERCISE 1</b>
+			<br/>
+			<br/>
+			<p> Create a <b> DEBUG </b> program using ADD and SUBTRACT commands that display OUTPUT shown below: </p>
+			<p> OUTPUT <b> FILENAME: PTASK5A.COM </b> </p>
+			<div class="terminal-box">
+				ABCDEFGHIJKLMNOPQRSTUVWXYZ
+				</br>
+			</div>
+
+			<p> OUTPUT <b> FILENAME: PTASK5B.COM </b> </p>
+			<div class="terminal-box">
+				9876543210
+				</br>
+			</div>
+
+			`
+		},
+		{
+			title: `Lecture Exercise 2`,
+			content: `
+			<b>LECTURE EXERCISE 2</b>
+			<br/>
+			<br/>
+			<p> I. Simulate the assembly instructions using MUL and DIV: </p>
+
+			<table>
+				<tr>
+					<td> MOV BH, 10 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV AL, 5 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV AL, BH </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV DL, 2 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MUL DL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV DL, 9 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV CL, 7 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB DL, CL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV AH, 1 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> DIV DL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AL, 15 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> MOV BL, 4 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> DIV BL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> DIV BL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> DIV BL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> SUB AL, 1 </td>
+					<td> </td>
+				</t>
+			</table>
+
+			<style>
+				table {
+					margin: 20px 0px;
+					width: 90%					
+				}
+				td {
+					padding: 5px;
+					height: 20px;
+				}
+				td:nth-child(1) {
+					width: 200px;
+					text-align: right;
+				}
+				tr> td:nth-child(2) {
+					border: 1px solid black;
+				}
+
+			</style>
+
+
+			`
+		},
+		{
+			title: `Lecture Exercise 3`,
+			content: `
+			<b>LECTURE EXERCISE 3</b>
+			<br/>
+			<br/>
+			<p> I. SIMULATE THE FOLLOWING INSTRUCTIONS: </p>
+
+			<table>
+				<tr>
+					<td> </td>
+					<td> MOV BH, 10 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MOV AL, 5 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> ADD AL, BH </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MOV DL, 2 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MUL DL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MOV DL, 9 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MOV CL, 3 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> SUB DL, CL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> DIV DL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> MOV DH, 2 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> ZZZ: </td>
+					<td> MUL DH </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> ADD AL, 2 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> LOOP ZZZ </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> SUB AL, 46 </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> DIV BL </td>
+					<td> </td>
+				</t>
+				<tr>
+					<td> </td>
+					<td> SUB AL, 1 </td>
+					<td> </td>
+				</t>
+			</table>
+
+			<style>
+				table {
+					margin: 20px 0px;
+					width: 90%					
+				}
+				td {
+					padding: 5px;
+					height: 20px;
+				}
+				td:first-child {
+					width: 60px;
+					text-align: right;
+				}
+				td:nth-child(2) {
+					width: 200px;
+					text-align: right;
+				}
+				tr> td:nth-child(3) {
+					border: 1px solid black;
+				}
+
+			</style>
+
+
+
+			`
+		},
+		{
+			title: `Laboratory Exercise 2`,
+			content: `
+			<b>LABORATORY EXERCISE 2</b>
+			<br/>
+			<br/>
+			<p> Create a DEBUG program using LOOP which is shown below. </p>
+
+
+			<div class="parent-div">
+				<div class="filename-div"> FILENAME: PTASK5C.COM </div>
+				<div class="filename-div"> FILENAME: PTASK5D.COM	</div>
+				<div>
+					0123456789
+					</br>1
+					</br>2
+					</br>3
+					</br>4
+					</br>5
+					</br>6
+					</br>7
+					</br>8
+					</br>9
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td> 0 </td>
+							<td> 1 </td>
+							<td> 2 </td>
+							<td> 3 </td>
+							<td> 4 </td>
+							<td> 5 </td>
+							<td> 6 </td>
+							<td> 7 </td>
+							<td> 8 </td>
+							<td> 9 </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> 1 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> 2 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 3 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 4 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 5 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 6 </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 7 </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 8 </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> 9 </td>
+						</tr>
+					</table>
+				</div>
+				<div> Write your Program Here: </div>
+				<div> Write your Program Here: </div>
+			</div>
+
+			<style>
+				.parent-div {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.parent-div div {
+					float: left;
+					width: 40%;
+					height: 450px;
+					border: 1px solid black;
+					margin: 1%;
+					padding: 5px;
+				}
+				.filename-div {
+					border: none!important;
+					height: 20px!important;
+					margin-botto: 10px;
+				}
+				table {
+					width: 100%;
+				}
+				td {
+					height: 20px;
+					border: none;
+				}
+
+			</style>
+			`
 		},
 	]
 };
