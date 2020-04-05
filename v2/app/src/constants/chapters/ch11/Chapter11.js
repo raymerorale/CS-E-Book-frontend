@@ -152,9 +152,6 @@ END start
 			title: `Exercise 1`,
 			sub: [
 			{
-				title:`Lecture`,			
-			},
-			{
 				title:`Laboratory`,
 				content:`
 				<h1>Laboratory Exercise 1</h1>
@@ -174,9 +171,6 @@ END start
 		{
 			title: `Exercise 2`,
 			sub:[
-			{
-				title: `Lecture`,
-			},
 			{
 				title: `Laboratory`,
 				content:`
