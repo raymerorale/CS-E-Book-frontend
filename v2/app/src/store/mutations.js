@@ -5,7 +5,7 @@ export default {
 	},
 	SET_USER_CHAPTER_ENABLED: (state, chapter_ids) => {
 		chapter_ids.map(id =>{
-			let chapter = state.chapters.find(chapter => chapter.id == id)
+			let chapter = state.chapters.find(chapter => chapter.chapterId == id)
 			if (chapter) {
 				chapter.read_status = 'Done'
 			}

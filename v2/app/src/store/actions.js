@@ -10,8 +10,9 @@ export default {
 	},
 	setUserChapterIdsEnabled: ({ commit }, user_id) => {
 		return http.get(`userchapter/user/${ user_id }`).then(response => {
-			if (response) {
-				commit('SET_USER_CHAPTERS_ENABLED', response)
+			if (response && response.data && response.data.userChapterIdsEnabled) {
+				console.log('user chapters enabled ', response)
+				commit('SET_USER_CHAPTERS_ENABLED', response.data.userChapterIdsEnabled)
 			}
 		})
 	},
