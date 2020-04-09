@@ -12,6 +12,7 @@
 	
 			<v-row>
 				<v-col class="pa-0 ma-0"
+					style="transition: all 0.2s ease"
 					:class="[{ 'col-1': !toggle  }, { 'col-3': toggle }]">
 					<chapter-list-container 
 						ref="chapterListContainer"
