@@ -5,7 +5,6 @@
       width="340"
       height="100vh"
       absolute
-      temporary
       v-model="drawer"
   	>
     <br><br>
@@ -74,6 +73,9 @@ export default {
     }
   },
   methods: {
+    toggleDrawer() {
+      this.drawer = !this.drawer;
+    },
     willClose() {
       this.drawer = false
     },
@@ -102,6 +104,9 @@ export default {
 </script>	
 
 <style>
+#chapter-list-container {
+  z-index: 4;
+}
 #chapter-list-container .ps {
   height: 80vh;
 }
