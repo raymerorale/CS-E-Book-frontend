@@ -1,5 +1,6 @@
 export const CHAPTER1 = {
 	chapterId: 1,
+	read_status: 'In Progress',
 	title: `Chapter I`,
 	description: `<h1 align = center>CHAPTER 1</h1>
 				<h2 align = center>NUMBER SYSTEMS REVISITED</h2>`,
@@ -11,6 +12,7 @@ export const CHAPTER1 = {
 	sub: [
 		{
 			chapterId: 2,
+			read_status: 'Disabled',
 			title: 'Number System',
 			content: `
 			<b>NUMBER SYSTEM</b>
@@ -23,6 +25,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 3,
+			read_status: 'Disabled',
 			title: `Base`,
 			content: `
 			<b>BASE</b>
@@ -32,6 +35,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 4,
+			read_status: 'Disabled',
 			title: `Common Used Bases of Number Systems in Assembly Language`,
 			content: `
 			<b>COMMON USED BASES OF NUMBER SYSTEMS IN ASSEMBLY LANGUAGE</b>
@@ -42,6 +46,7 @@ export const CHAPTER1 = {
 			sub: [
 				{
 					chapterId: 5,
+					read_status: 'Disabled',
 					title: `Decimal Number System`,
 					content: `
 					<b>DECIMAL NUMBER SYSTEM</b>
@@ -64,6 +69,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 6,
+					read_status: 'Disabled',
 					title: `Binary Number System`,
 					content: `
 					<b>BINARY NUMBER SYSTEM</b>
@@ -86,6 +92,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 7,
+					read_status: 'Disabled',
 					title: `Hexadecimal Number System`,
 					content: `
 					<b>HEXADECIMAL NUMBER SYSTEM</b>
@@ -111,6 +118,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 8,
+			read_status: 'Disabled',
 			title: `Equivalences`,
 			content: `
 			<b>EQUIVALENCES</b>
@@ -252,6 +260,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 9,
+			read_status: 'Disabled',
 			title: `Conversion of Number Systems`,
 			content: `
 			<b>CONVERSION OF NUMBER SYSTEMS</b>
@@ -261,6 +270,7 @@ export const CHAPTER1 = {
 			sub: [
 				{
 					chapterId: 10,
+					read_status: 'Disabled',
 					title: `Decimal to Binary`,
 					content:  `
 					<b>DECIMAL-TO-BINARY CONVERSION</b>
@@ -329,6 +339,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 11,
+					read_status: 'Disabled',
 					title: `Decimal to Hexadecimal`,
 					content: `
 					<b>DECIMAL TO HEXADECIMAL CONVERSION</b>
@@ -375,6 +386,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 12,
+					read_status: 'Disabled',
 					title: `Binary to Decimal`,
 					content: `
 					<b>BINARY TO DECIMAL CONVERSION</b>
@@ -406,6 +418,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 13,
+					read_status: 'Disabled',
 					title: `Binary to Hexadecimal`,
 					content: `
 					<b>BINARY TO HEXADECIMAL CONVERSION</b>
@@ -461,6 +474,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 14,
+					read_status: 'Disabled',
 					title: `Hexadecimal to Decimal`,
 					content: `
 					<b>HEXADECIMAL TO DECIMAL CONVERSION</b>
@@ -528,6 +542,7 @@ export const CHAPTER1 = {
 				},
 				{
 					chapterId: 15,
+					read_status: 'Disabled',
 					title: 	`Hexadecimal to Binary`,
 					content: `
 					<b>HEXADECIMAL TO BINARY CONVERSION</b>
@@ -564,6 +579,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 16,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 1`,
 			content: `
 			<b>LECTURE EXERCISE 1</b>
@@ -687,6 +703,7 @@ export const CHAPTER1 = {
 		
 		{
 			chapterId: 17,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
 			<b>LABORATORY EXERCISE 1</b>
@@ -698,6 +715,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 18,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 2`,
 			content: `
 			<b>LECTURE EXERCISE 2</b>
@@ -708,6 +726,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 19,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
 			<b>LABORATORY EXERCISE 2</b>
@@ -719,6 +738,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 20,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 3`,
 			content: `
 			<b>LECTURE EXERCISE 3</b>
@@ -729,6 +749,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 21,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
 			<b>LABORATORY EXERCISE 3</b>
@@ -739,6 +760,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 22,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 4`,
 			content: `
 			<b>LECTURE EXERCISE 4</b>
@@ -749,6 +771,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 23,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 4`,
 			content: `
 			<b>LABORATORY EXERCISE 4</b>
@@ -759,6 +782,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 24,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
 			<b>LEcTURE EXERCISE 5</b>
@@ -769,6 +793,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 25,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 5`,
 			content: `
 			<b>LABORATORY EXERCISE 5</b>
@@ -779,6 +804,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 26,
+			read_status: 'Disabled',
 			title: `Lecture Exercise 6`,
 			content: `
 			<b>LECTURE EXERCISE 6</b>
@@ -789,6 +815,7 @@ export const CHAPTER1 = {
 		},
 		{
 			chapterId: 27,
+			read_status: 'Disabled',
 			title: `Laboratory Exercise 6`,
 			content: `
 			<b>LABORATORY EXERCISE 6</b>

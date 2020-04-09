@@ -1,4 +1,5 @@
 export const CHAPTER3 = {
+	chapterId: 30,
 	read_status: 'Disabled',
 	title: `Chapter III`,
 	description: `
@@ -12,6 +13,7 @@ export const CHAPTER3 = {
 	
 	sub: [
 		{
+			chapterId: 31,
 			read_status: 'Disabled',
 			title: 'Disk Operating System',
 			content: `
@@ -26,6 +28,7 @@ export const CHAPTER3 = {
 				`,
 		},
 		{
+			chapterId: 32,
 			read_status: 'Disabled',
 			title: `Command Prompt`,
 			content: `
@@ -39,6 +42,7 @@ export const CHAPTER3 = {
 				`,
 				sub: [
 				{
+					chapterId: 33,
 					read_status: 'Disabled',
 					title: `CLS`,
 					content: `
@@ -57,6 +61,7 @@ export const CHAPTER3 = {
 			]
 		},
 		{
+			chapterId: 34,
 			read_status: 'Disabled',
 			title: `How to Change Drive`,
 			content: `
@@ -69,6 +74,7 @@ export const CHAPTER3 = {
 					`,
 			sub: [
 				{
+					chapterId: 35,
 					read_status: 'Disabled',
 					title: `CD`,
 					content: `This command changes the current directory. For example, you want to go to WINDOWS subdirectory, just type <b>CD</b> and the subdirectory name and press ENTER key.
@@ -79,6 +85,7 @@ export const CHAPTER3 = {
 					` 
 				},
 				{
+					chapterId: 36,
 					read_status: 'Disabled',
 					title: `DIR`,
 					content: `This command lists the content of a directory, to enter this command, just type <b>DIR</b> and press <ENTER> key.
@@ -86,6 +93,7 @@ export const CHAPTER3 = {
 					`
 				},	
 				{
+					chapterId: 37,
 					read_status: 'Disabled',
 					title: `COPY`,
 					content: `This command duplicates file or files to another location/directory. To enter this command, type COPY, followed by a space and the filename, space again, path name and press <ENTER> key.
@@ -93,6 +101,7 @@ export const CHAPTER3 = {
 					`
 				},
 				{
+					chapterId: 38,
 					read_status: 'Disabled',
 					title:`REN`,
 					content: `This command changes the name of your file and cannot change the name of subdirectories. To enter the command type REN, followed by a space, then the old filename, space again, the name filename and press <ENTER> key.
@@ -100,6 +109,7 @@ export const CHAPTER3 = {
 					`
 				},
 				{
+					chapterId: 39,
 					read_status: 'Disabled',
 					title: `DEL`,
 					content:`This command removes one or more files form a disk. To enter this command, type <b>DEL</b> followed by space, then the filename and press <ENTER> key.
@@ -107,6 +117,7 @@ export const CHAPTER3 = {
 					`
 				},
 				{
+					chapterId: 40,
 					read_status: 'Disabled',
 					title: `MD`,
 					content: `This command creates a subdirectory using the name you provide preferably eight (8) characters and must start with a letter. To enter the command, type <b>MD</b> followed by a space then the subdirectory name and press <ENTER> key.
@@ -114,6 +125,7 @@ export const CHAPTER3 = {
 					`
 				},
 				{
+					chapterId: 41,
 					read_status: 'Disabled',
 					title: `RD`,
 					content: `This command removes a specific subdirectory. Make sure that the subdirectory is empty. To enter this command type <b>RD</b> followed by a space then the subdirectory name and press <ENTER> key.
@@ -124,6 +136,7 @@ export const CHAPTER3 = {
 		},		
 					
 		{
+			chapterId: 42,
 			read_status: 'Disabled',
 			title: `List of useful DOS commands`,
 			content: `
@@ -133,6 +146,7 @@ export const CHAPTER3 = {
 					`,
 			sub: [
 				{
+					chapterId: 43,
 					read_status: 'Disabled',
 					title: `List of Commands`,
 					content:`
@@ -334,6 +348,7 @@ export const CHAPTER3 = {
 					`
 				},
 				{
+					chapterId: 44,
 					read_status: 'Disabled',
 					title: `Batch file`,
 					content: `
@@ -391,6 +406,7 @@ export const CHAPTER3 = {
 					`,
 				},
 				{
+					chapterId: 45,
 					read_status: 'Disabled',
 					title:`Menu Creation`,
 					content: `
@@ -418,11 +434,12 @@ export const CHAPTER3 = {
 
 
 {
+			chapterId: 46,
 			read_status: 'Disabled',
-
 			title: `Exercise 1`,
 			sub:[
 			{
+				chapterId: 47,
 				read_status: 'Disabled',
 				title: `Lecture`,
 				Content:`
@@ -431,6 +448,7 @@ export const CHAPTER3 = {
 
 			},
 			{
+				chapterId: 48,
 				read_status: 'Disabled',
 				title:`Laboratory`,
 				content: `
@@ -441,10 +459,12 @@ export const CHAPTER3 = {
 
 		},
 		{
+			chapterId: 49,
 			read_status: 'Disabled',
 			title: `Exercise 2`,
 			sub:[
 			{
+				chapterId: 50,
 				read_status: 'Disabled',
 				title:`Lecture`,
 				Content: `
@@ -452,6 +472,7 @@ export const CHAPTER3 = {
 				 `
 		},
 		{
+				chapterId: 51,
 				read_status: 'Disabled',
 				title: `Laboratory`,
 				content: `
@@ -462,10 +483,12 @@ export const CHAPTER3 = {
 			]
 		},
 		{
+			chapterId: 52,
 			read_status: 'Disabled',
 			title: `Exercise 3`,
 			sub:[
 			{
+				chapterId: 53,
 				read_status: 'Disabled',
 				title:`Lecture`,
 				Content: `
@@ -473,8 +496,8 @@ export const CHAPTER3 = {
 				 `
 		},
 		{
+				chapterId: 54,
 				read_status: 'Disabled',
-
 				title: `Laboratory`,
 				content: `
 				<p>LA3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -484,10 +507,12 @@ export const CHAPTER3 = {
 			]
 		},
 		{
+			chapterId: 55,
 			read_status: 'Disabled',
 			title: `Exercise 4`,
 			sub:[
 			{
+				chapterId: 56,
 				read_status: 'Disabled',
 				title:`Lecture`,
 				Content: `
@@ -495,6 +520,7 @@ export const CHAPTER3 = {
 				 `
 		},
 		{
+				chapterId: 57,
 				read_status: 'Disabled',
 				title: `Laboratory`,
 				content: `
@@ -505,10 +531,12 @@ export const CHAPTER3 = {
 			]
 		},
 		{
+			chapterId: 58,
 			read_status: 'Disabled',
 			title: `Exercise 5`,
 			sub:[
 			{
+				chapterId: 59,
 				read_status: 'Disabled',
 				title:`Lecture`,
 				Content: `
@@ -516,6 +544,7 @@ export const CHAPTER3 = {
 				 `
 		},
 		{
+				chapterId: 60,
 				read_status: 'Disabled',
 				title: `Laboratory`,
 				content: `
@@ -526,10 +555,12 @@ export const CHAPTER3 = {
 			]
 		},
 		{
+			chapterId: 61,
 			read_status: 'Disabled',
 			title: `Exercise 6`,
 			sub:[
 			{
+				chapterId: 62,
 				read_status: 'Disabled',
 				title:`Lecture`,
 				Content: `
@@ -537,6 +568,7 @@ export const CHAPTER3 = {
 				 `
 		},
 		{
+				chapterId: 63,
 				read_status: 'Disabled',
 				title: `Laboratory`,
 				content: `
