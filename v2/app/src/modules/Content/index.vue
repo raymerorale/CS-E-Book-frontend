@@ -12,7 +12,7 @@
 	
 			<v-row>
 				<v-col class="pa-0 ma-0"
-					:class="[{ 'col-2': !toggle  }, { 'col-3': toggle }]">
+					:class="[{ 'col-1': !toggle  }, { 'col-3': toggle }]">
 					<chapter-list-container 
 						ref="chapterListContainer"
 						:status="status"
