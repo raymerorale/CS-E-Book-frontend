@@ -22,10 +22,10 @@
 
 	  	</perfect-scrollbar>
 
-		<navigation-toolbar class="mt-3 mb-0"
+		<!-- <navigation-toolbar class="mt-3 mb-0"
 			:status="status"
 			:next_content_body="nextContentBody"
-		/>
+		/> -->
 	</div>		
 </template>
 
