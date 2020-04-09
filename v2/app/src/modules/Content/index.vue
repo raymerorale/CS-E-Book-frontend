@@ -11,14 +11,19 @@
 		</v-app-bar>
 	
 			<v-row>
-				<v-col class="col-3 pa-0 ma-0">
-					<chapter-list-container 
-						:status="status"
-						:toggle="toggle" 
-						@closed="close"
-					/>	
-				</v-col>	
-				<v-col class="col-12 col-md-9 pa-0 ma-0">
+				<chapter-list-container 
+					:status="status"
+					:toggle="toggle" 
+					@closed="close"
+				/>	
+				<v-btn 
+					class="toggle-filter-btn blue--text"
+					@click.stop="toggle = !toggle">
+					<v-icon>
+						book
+					</v-icon>
+        </v-btn>
+				<v-col class="col-12 col-md-12 pa-0 ma-0">
 					
 					<page-content-container
 						:status="status"
@@ -73,5 +78,13 @@ export default {
 <style>
 .sub-header{
 	margin-top: 60px !important;
+}
+.toggle-filter-btn {
+	position: fixed!important;
+	top: 20%!important;
+	left: 0!important;
+	box-shadow: none!important;
+	cursor: pointer!important;
+	z-index: 2!important;
 }
 </style>	
