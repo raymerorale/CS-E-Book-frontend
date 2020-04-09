@@ -113,7 +113,8 @@ export default {
 </script>
 <style>
 #content-page-container .ps {
-  height: 63.7vh;
+  height: 72vh;
+  /* height: 63.7vh; */ /* with prev & next buttons*/
 }
 #content-page-container {
 	position: relative;
