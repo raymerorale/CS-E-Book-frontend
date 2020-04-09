@@ -676,9 +676,7 @@ code ends
 		<b>LABORATORY EXERCISE 2</b>
 		<br/>
 		<br/>
-
-		<h1>Laboratory Exercise 2</h1>
-		<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will display the following at the center of the screen and apply the color specificationsbelow:</p>
+		<p>Using your assigned computer unit in the laboratory, construct an assembly language program that will display the following at the center of the screen and apply the color specifications below:</p>
 		<br/>
 		<ul style="list-style-type:none;"><font size="3rem">
 		<li>Blue background for the monitor</li>
