@@ -8,6 +8,13 @@ export default {
 			}
 		})
 	},
+	setUserChapterIdsEnabled: ({ commit }, user_id) => {
+		return http.get(`userchapter/user/${ user_id }`).then(response => {
+			if (response) {
+				commit('SET_USER_CHAPTERS_ENABLED', response)
+			}
+		})
+	},
 	setReadStatus: ({ commit }, user_id) => {
 		return http.get(`readstatus/user/${ user_id }`).then(read_status => {
 			if (read_status) {

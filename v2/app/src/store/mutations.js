@@ -3,6 +3,14 @@ export default {
 		state.user = user
 		localStorage.setItem('user', JSON.stringify(user))
 	},
+	SET_USER_CHAPTER_ENABLED: (state, chapter_ids) => {
+		chapter_ids.map(id =>{
+			let chapter = state.chapters.find(chapter => chapter.id == id)
+			if (chapter) {
+				chapter.read_status = 'Done'
+			}
+		})
+	},
 	SET_READ_STATUS: (state, read_status) => state.read_status = read_status,
 	CREATE_READ_STATUS: (state, read_status) => state.read_status.push(read_status),
 	UPDATE_READ_STATUS: (state, read_status) => {
