@@ -1,4 +1,5 @@
 export const CHAPTER6 = {
+	chapterId: 124,
 	read_status: 'Disabled',
 	title: 'Chapter VI',
 	description: `<h1 align = center>CHAPTER 6</h1>
@@ -10,9 +11,11 @@ export const CHAPTER6 = {
 		// 	content: ``,
 		// },
 		{
+			chapterId: 125,
 			title: `Exercise 1`,
 			sub:[
 			{
+				chapterId: 126,
 				title: `Lecture`,
 				Content:`
 				<p>LE1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -20,6 +23,7 @@ export const CHAPTER6 = {
 
 			},
 			{
+				chapterId: 127,
 				title:`Laboratory`,
 				content: `
 				<h1>Laboratory Exercise 1.A</h1>
@@ -57,9 +61,11 @@ export const CHAPTER6 = {
 		},
 
 		{
+			chapterId: 128,
 			title: `Exercise 2`,
 			sub: [
 			{
+				chapterId: 129,
 				title: `Lecture`,
 				content: `
 				<h1>Computer Lecture 2</h1>
@@ -123,6 +129,7 @@ export const CHAPTER6 = {
 
 			},
 			{
+				chapterId: 130,
 				title: `Laboratory`,
 				content:`
 				<h1>Laboratory Exercise 2</h1>
@@ -144,14 +151,17 @@ export const CHAPTER6 = {
 			]
 			},
 			{
+				chapterId: 131,
 				title: `Exercise 3`,
 				sub:[
 				{
+					chapterId: 132,
 					title: `Lecture`,
 					content: `asssa
 					`,
 				},
 				{
+				chapterId: 133,
 				title: `Laboratory`,
 				content:`
 				<h1>Laboratory Exercise 3</h1>
