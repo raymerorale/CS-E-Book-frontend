@@ -1,4 +1,5 @@
 export const CHAPTER11 = {
+	chapterId: 175,
 	read_status: 'Disabled',
 	title: 'Chapter XI',
 	description: `<h1 align = center>CHAPTER 11</h1>
@@ -11,6 +12,7 @@ export const CHAPTER11 = {
 	],
 	sub: [
 		{
+			chapterId: 176,
 			read_status: 'Disabled',
 			title: 'String Input',
 			content : `
@@ -87,6 +89,7 @@ To illustrate this :</p>
 `
 		},
 		{
+			chapterId: 177,
 			read_status: 'Disabled',
 			title: 'Displaying the Input String',
 			content : `
@@ -149,6 +152,7 @@ END start
 
 
 		{
+			chapterId: 178,
 			title: `Laboratory Exercise 1`,
 			content:`
 			<b>LABORATORY EXERCISE 1</b>
@@ -167,6 +171,7 @@ END start
 			`
 		},
 		{
+			chapterId: 179,
 			title: `Laboratory Exercise 2`,
 			content:`
 			<b>LABORATORY EXERCISE 2</b>

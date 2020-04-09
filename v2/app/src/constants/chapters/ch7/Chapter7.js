@@ -1,4 +1,5 @@
 export const CHAPTER7 = {
+	chapterId: 134,
 	read_status: 'Disabled',
 	title: 'Chapter VII',
 	description: `<h1 align = center>CHAPTER 7</h1>
@@ -12,6 +13,7 @@ export const CHAPTER7 = {
 	],
 	sub: [
 		{
+			chapterId: 135,
 			read_status: 'Disabled',
 			title: 'Comments, Reserve Words and its Category',
 			content: `
@@ -93,6 +95,7 @@ pre{
 		},
 
 		{
+			chapterId: 136,
 			read_status: 'Disabled',
 			title: 'Identifier, Rules in Constructing Identifiers',
 			content: `
@@ -146,6 +149,7 @@ pre{
 		},
 
 		{
+			chapterId: 137,
 			read_status: 'Disabled',
 			title: 'Statement, Most Common Directives',
 			content: `
@@ -343,6 +347,7 @@ Example 			.END
 		},
 
 		{
+			chapterId: 138,
 			read_status: 'Disabled',
 			title: 'String',
 			content: `
@@ -364,6 +369,7 @@ pre{
 		},
 
 		{
+			chapterId: 139,
 			read_status: 'Disabled',
 			title: 'Numerical Constant',
 			content: `
@@ -453,6 +459,7 @@ is the same with:
 		},
 
 		{
+			chapterId: 140,
 			read_status: 'Disabled',
 			title: 'Keyboard Inputs',
 			content: `
@@ -512,6 +519,7 @@ table,tr,td{
 `
 		},
 		{
+			chapterId: 141,
 			title: `Laboratory Exercise 4`,
 			content:`
 			<b>LABORATORY EXERCISE 2</b>
@@ -532,6 +540,7 @@ table,tr,td{
 		`,	
 		},
 		{
+			chapterId: 142,
 			title: `Laboratory Exercise 5`,
 			content:`
 			<b>LABORATORY EXERCISE 3</b>
@@ -560,6 +569,7 @@ table,tr,td{
 		`,	
 		},
 		{
+			chapterId: 143,
 			title: `Laboratory Exercise 6`,
 			content:`
 			<b>LABORATORY EXERCISE 4</b>
@@ -589,6 +599,7 @@ table,tr,td{
 			`,
 		},
 		{
+			chapterId: 144,
 			title: `Laboratory Exercise 7`,
 			content: `
 			<b>LABORATORY EXERCISE 5</b>
@@ -617,6 +628,7 @@ table,tr,td{
 			`,
 		},
 		{
+			chapterId: 145,
 			title: `Laboratory Exercise 8`,
 			content:`
 			<b>LABORATORY CASE STUDY 6</b>
@@ -646,6 +658,7 @@ table,tr,td{
 			`
 		},
 		{
+			chapterId: 146,
 			title: `Case Study 3`,
 			content: `
 			<b>LABORATORY CASE STUDY 3</b>

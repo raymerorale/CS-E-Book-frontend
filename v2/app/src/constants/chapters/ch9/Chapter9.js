@@ -1,4 +1,5 @@
 export const CHAPTER9 = {
+	chapterId: 156,
 	read_status: 'Disabled',
 	title: 'Chapter IX',
 	description: `<h1 align = center>CHAPTER 9</h1>
@@ -10,6 +11,7 @@ export const CHAPTER9 = {
 	],
 	sub: [
 		{
+			chapterId: 157,
 			read_status: 'Disabled',
 			title: 'How to Assemble a Source Program',
 			content: `
@@ -59,6 +61,7 @@ export const CHAPTER9 = {
 			`,
 		},
 		{
+			chapterId: 158,
 			read_status: 'Disabled',
 			title: 'How to Find and Correct Errors',
 			content: `
@@ -85,6 +88,7 @@ export const CHAPTER9 = {
 			sub: []
 		},
 		{
+			chapterId: 159,
 			read_status: 'Disabled',
 			title: 'How to Link an Object Program',
 			content: `
@@ -113,6 +117,7 @@ export const CHAPTER9 = {
 			sub: []
 		},
 		{
+			chapterId: 160,
 			read_status: 'Disabled',
 			title: 'How to Execute a Program',
 			content: `
@@ -148,6 +153,7 @@ export const CHAPTER9 = {
 
 		
 		{
+			chapterId: 161,
 			title: `Laboratory Exercise 1`,
 			content:`
 			<b>LABORATORY EXERCISE 1</b>

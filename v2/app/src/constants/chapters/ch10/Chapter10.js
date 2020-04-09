@@ -1,4 +1,5 @@
 export const CHAPTER10 = {
+	chapterId: 162,
 	read_status: 'Disabled',
 	title: 'Chapter X',
 	description: `<h1 align = center>CHAPTER 10</h1>
@@ -14,6 +15,7 @@ export const CHAPTER10 = {
 			</ul>`,
 	sub: [
 		{
+			chapterId: 163,
 			read_status: 'Disabled',
 			title: 'The Monitor',
 			content:`<b>THE MONITOR</b>
@@ -79,6 +81,7 @@ export const CHAPTER10 = {
 				</table>`,
 		},
 		{
+			chapterId: 164,
 			read_status: 'Disabled',
 			title: 'Clearing the Screen in Assembly Approach',
 			content:`<b> CLEARING THE SCREEN IN ASSEMBLY APPROACH </b>
@@ -123,6 +126,7 @@ export const CHAPTER10 = {
 			</div>`,
 		},
 		{
+			chapterId: 165,
 			read_status: 'Disabled',
 			title: 'Setting the Cursor Position',
 			content:`<b> SETTING THE CURSOR POSITION </b>
@@ -167,6 +171,7 @@ export const CHAPTER10 = {
 			</div>`,
 		},
 		{
+			chapterId: 166,
 			read_status: 'Disabled',
 			title: `Displaying the Character 'x' at the Center of the Screen`,
 			content: `<b>DISPLAYING THE CHARACTER 'x' AT THE CENTER OF THE SCREEN</b>
@@ -202,6 +207,7 @@ code ends
 				</pre></div>`,
 		},
 		{
+			chapterId: 167,
 			read_status: 'Disabled',
 			title: `Displaying the String RTU at the center of the screen`,
 			content: `<b>DISPLAYING THE STRING 'RTU' AT THE CENTER OF THE SCREEN</b>
@@ -242,6 +248,7 @@ code ends
 				`,
 		},
 		{
+			chapterId: 168,
 			read_status: 'Disabled',
 			title: `Display ASCII Character Set`,
 			content: `<b>DISPLAY ASCII CHARACTER SET</b>
@@ -311,6 +318,7 @@ code ends
 			</table>`,
 		},
 		{
+			chapterId: 169,
 			read_status: 'Disabled',
 			title: `Color Chart`,
 			content: `<b>COLOR CHART</b>
@@ -466,6 +474,7 @@ code ends
 			`,
 		},
 		{
+			chapterId: 170,
 			read_status: 'Disabled',
 			title: `Text and Back Ground Colors`,
 			content: `<b>TEXT AND BACK GROUND COLORS</b>
@@ -557,6 +566,7 @@ code ends
 			</table>`,
 		},
 		{
+			chapterId: 171,
 			read_status: 'Disabled',
 			title: `Displaying Character 'x' with Attributes`,
 			content: `<b>DISPLAYING CHARACTER 'x' WITH ATTRIBUTES</b>
@@ -599,6 +609,7 @@ code ends
      </pre></div>`,
 		},
 	{
+		chapterId: 172,
 		read_status: 'Disabled',
 		title: `Displaying the String 'RTU' with Attributes`,
 		content: `<b>DISPLAYING THE STRING 'RTU' WITH ATTRIBUTES</b>
@@ -639,6 +650,7 @@ code ends
 
 
 	{
+		chapterId: 173,
 		title: `Laboratory Exercise 1`,
 		content:`
 		<b>LABORATORY EXERCISE 1</b>
@@ -658,6 +670,7 @@ code ends
 		`,
 	},
 	{
+		chapterId: 174,
 		title: `Laboratory Exercise 2`,
 		content: `
 		<b>LABORATORY EXERCISE 2</b>

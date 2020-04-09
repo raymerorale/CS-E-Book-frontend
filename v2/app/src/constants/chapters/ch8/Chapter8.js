@@ -1,4 +1,5 @@
 export const CHAPTER8 = {
+	chapterId: 147,
 	read_status: 'Disabled',
 	title: 'Chapter VIII',
 	description: `<h1 align = center>CHAPTER 8</h1>
@@ -10,6 +11,7 @@ export const CHAPTER8 = {
 	],
 	sub: [
 		{
+			chapterId: 148,
 			read_status: 'Disabled',
 			title: 'Creating your own assembly language program',
 			content: `
@@ -65,6 +67,7 @@ export const CHAPTER8 = {
 </pre></div>`
 		},
 		{
+			chapterId: 149,
 			read_status: 'Disabled',
 			title: 'Saving, Exiting your program',
 			content: `
@@ -76,6 +79,7 @@ export const CHAPTER8 = {
 		},
 
 		{
+			chapterId: 150,
 			read_status: 'Disabled',
 			title: 'Structure of assembly Language Program',
 			content: `
@@ -101,6 +105,7 @@ export const CHAPTER8 = {
 		},
 
 		{
+			chapterId: 151,
 			read_status: 'Disabled',
 			title: 'Instruction for Initializing, Concluding program',
 			content: `
@@ -125,9 +130,9 @@ export const CHAPTER8 = {
 		},
 
 		{
-
+			chapterId: 152,
 			read_status: 'Disabled',
-		title: 'Example of Assembly Programming',
+			title: 'Example of Assembly Programming',
 			content: `
 <p><b>EXAMPLES OF ASSEMBLY LANGUAGE PROGRAMS</b></p>
 
@@ -305,6 +310,7 @@ code ends
 
 
 		{
+			chapterId: 153,
 			title: `Laboratory Exercise 1`,
 			content:`
 			<b>LABORATORY EXERCISE 1</b>
@@ -331,6 +337,7 @@ code ends
 			`,
 		},
 		{
+			chapterId: 154,
 			title: `Laboratory Exercise 2`,
 			content: `
 			<b>LABORATORY EXERCISE 2</b>
@@ -362,6 +369,7 @@ code ends
 			`,
 		},				
 		{
+			chapterId: 155,
 			title: `Case Study 4`,
 			content: `
 			<b>LABORATORY CASE STUDY 4</b>

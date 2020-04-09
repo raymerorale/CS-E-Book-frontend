@@ -1,4 +1,5 @@
 export const CHAPTER5 = {
+	chapterId: 81,
 	read_status: 'Disabled',
 	title: 'Chapter V',
 	description: `<h1 align = center>CHAPTER 5</h1>
@@ -10,6 +11,7 @@ export const CHAPTER5 = {
 	],
 	sub: [
 		{
+			chapterId: 82,
 			read_status: 'Disabled',
 			title: 'Bug, Debugger, Debug',
 			content: `<b> BUG </b>
@@ -31,6 +33,7 @@ export const CHAPTER5 = {
 			<p> When Debug is started without any parameters of the Debug prompt, a "-", appears. The use can then enter one of several one or two-letter subcommands, including "a" to enter the assembler mode, "d" to perform a hexadecimal dump, "t" to trace and "u" to unassemble (disassemble) a program in memory. Debug can also be used as a "debug script" interpreter using the following syntax. </p>`,
 		},
 		{
+			chapterId: 83,
 			read_status: 'Disabled',
 			title:`Changes in MS-Debug`,
 			content: `<b>CHANGES IN MS-DEBUG</b><br/><br/>
@@ -50,12 +53,14 @@ export const CHAPTER5 = {
 			<p> DEBUG's code went through a number of changes (and 'bug fixes' too) over the years! Some of these internal changes were related to DOS system calls and screen output, then there was the change in file type from a .COM to an .EXE program under DOS 5.0. But in spite of all those changes and others which followed, DEBUG has never had an official revision since 2.40 (those digits have been embedded inside all versions of DEBUG since DOS 3.0) </p>`,
 		},
 		{
+			chapterId: 84,
 			read_status: 'Disabled',
 			title:`Masm`,
 			content:`<b>MASM</b>
 			<p style="text-indent: 2em"> Microsoft did create their own, Assembler (MASM), 'C' compiler and Debugger (CodeView). Rather than using MASM and CodeView, many opted for the less expensive Borland assembler (TASM) and Turbo Debugger when they appeared, or some other commercial product. Howeverm users and studetns alike can still learn a great deal about Assembly language by using DEBUG. </p>`,
 		},
 		{
+			chapterId: 85,
 			read_status: 'Disabled',
 			title: `Advantage of Debug, Debug Command`,
 			content: `<b> ADVANTAGES OF DEBUG </b><br/>
@@ -194,6 +199,7 @@ export const CHAPTER5 = {
 			
 			sub: [
 			{
+				chapterId: 86,
 				read_status: 'Disabled',
 				title:`A (Assemble)`,
 				content:`<b>A (Assemble)</b>
@@ -210,6 +216,7 @@ export const CHAPTER5 = {
 					The segment-override mnemonics are <b> cs:, ds:, es:, </b> and <b> ss </b>:. The mnemonics for the far return is <b> retf </b>. String-manipulation mnemonics must explicitly state the string size. For example, use <b> movsw </b> to move word strings (16 bits), and use <b> movsb </b> to move byte strings (8 bits). </div></pre>`
 			},
 			{
+				chapterId: 87,
 				read_status: 'Disabled',
 				title:`C (Compare)`,
 				content:`<b>C (Compare)</b>
@@ -255,6 +262,7 @@ export const CHAPTER5 = {
 				<div></pre>`
 			},
 			{
+				chapterId: 88,
 				read_status: 'Disabled',
 				title:`D (Dump)`,
 				content:`<b>D (Dump)</b>
@@ -285,6 +293,7 @@ export const CHAPTER5 = {
 				</pre>`
 			},
 			{
+				chapterId: 89,
 				read_status: 'Disabled',
 				title:`E (Enter)`,
 				content:`<b>E (Enter)</b>
@@ -352,6 +361,7 @@ export const CHAPTER5 = {
 				</div></pre>`
 			},
 			{
+				chapterId: 90,
 				read_status: 'Disabled',
 				title:`F (Fill)`,
 				content:`<b>F (Fill)</b>
@@ -382,6 +392,7 @@ export const CHAPTER5 = {
 				</div></pre>`
 			},
 			{
+				chapterId: 91,
 				read_status: 'Disabled',
 				title: `G (Go)`,
 				content: `<b>G (Go)</b>
@@ -432,6 +443,7 @@ export const CHAPTER5 = {
 				</div></pre>`
 			},
 			{
+				chapterId: 92,
 				read_status: 'Disabled',
 				title:`H (Hex)`,
 				content:`<b>H (Hex)</b>
@@ -457,6 +469,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 93,
 				read_status: 'Disabled',
 				title: `I (Input)`,
 				content:`<b>I (Input)</b>
@@ -476,6 +489,7 @@ export const CHAPTER5 = {
 						&nbsp; 42</div></pre>`
 			},
 			{
+				chapterId: 94,
 				read_status: 'Disabled',
 				title:`L (Load)`,
 				content:`<b>L (Load)</b>
@@ -527,6 +541,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 95,
 				read_status: 'Disabled',
 				title:`M (Move)`,
 				content: `<b>M (Move)</b>
@@ -556,6 +571,7 @@ export const CHAPTER5 = {
 			</div></pre>`
 			},
 			{
+				chapterId: 96,
 				read_status: 'Disabled',
 				title:`N (Name)`,
 				content:`<b>N (Name)</b>
@@ -625,6 +641,7 @@ export const CHAPTER5 = {
 				Note that you do not use the <b>l</b> command after the second form of the <b>n</b> command. Also note that if you now use the <b>w</b> command, MS-DOS saves FILE1.EXE, the file being debugged, with the name FILE2.DAT. To avoid this result, you should always use the first form of the <b>n</b> command immediately before either an l or a w command.</div></pre>`
 			},
 			{
+				chapterId: 97,
 				read_status: 'Disabled',
 				title:`O (Output)`,
 				content:`<b>O (Output)</b>
@@ -645,6 +662,7 @@ export const CHAPTER5 = {
 				</div></pre>`
 			},
 			{
+				chapterId: 98,
 				read_status: 'Disabled',
 				title:`P (Proceed)`,
 				content:`<b>P (Proceed)</b>
@@ -680,6 +698,7 @@ export const CHAPTER5 = {
 					2246:1442 7505 &nbsp; JNZ &nbsp; 144A </p>`
 			},
 			{
+				chapterId: 99,
 				read_status: 'Disabled',
 				title:`Q (Quit)`,
 				content:`<b>Q (Quit)</b>
@@ -694,6 +713,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 100,
 				read_status: 'Disabled',
 				title:`Debug: R (Register)`,
 				content: `<b>Debug: R (Register)</b>
@@ -807,6 +827,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 101,
 				read_status: 'Disabled',
 				title: `S (Search)`,
 				content: `<b>S (Search)</b>
@@ -837,6 +858,7 @@ export const CHAPTER5 = {
 				</pre><div>`
 			},
 			{
+				chapterId: 102,
 				read_status: 'Disabled',
 				title: `T (Trace)`,
 				content: `<b>T (Trace)</b>
@@ -871,6 +893,7 @@ export const CHAPTER5 = {
 				04BA:011A	&nbsp;	CD21	&nbsp;&nbsp;	INT 21</p>`
 			},
 			{
+				chapterId: 103,
 				read_status: 'Disabled',
 				title:`U (Unassemble)`,
 				content:`<b>U (Unassemble)</b>
@@ -987,6 +1010,7 @@ export const CHAPTER5 = {
 				</table></pre></div>`
 			},
 			{
+				chapterId: 104,
 				read_status: 'Disabled',
 				title:`W (Write)`,
 				content: `<b>W (Write)</b>
@@ -1029,6 +1053,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 105,
 				read_status: 'Disabled',
 				title:`XA (Allocate Expanded Memory)`,
 				content:`<b>XA (Allocate Expanded Memory) </b>
@@ -1047,6 +1072,7 @@ export const CHAPTER5 = {
 					Handle 0003 allocated`		
 			},
 			{
+				chapterId: 106,
 				read_status: 'Disabled',
 				title: `XD (Deallocate Expanded Memory)`,
 				content: `<b> XD (Deallocate Expanded Memory) </b>
@@ -1067,6 +1093,7 @@ export const CHAPTER5 = {
 				</pre></div>`
 			},
 			{
+				chapterId: 107,
 				read_status: 'Disabled',
 				title:`M (Map Expanded Memory Pages)`,
 				content:`<b>M (Map Expanded Memory Pages)</b>
@@ -1092,6 +1119,7 @@ export const CHAPTER5 = {
 						&nbsp; Logical page 05 mapped to physical page 02`
 			},
 			{
+				chapterId: 108,
 				read_status: 'Disabled',
 				title:`Debug: XS (Display Expanded-Memory Status)`,
 				content:`<b>Debug: XS (Display Expanded-Memory Status)</b>
@@ -1124,6 +1152,7 @@ export const CHAPTER5 = {
 			]
 		},
 		{
+			chapterId: 109,
 			read_status: 'Disabled',
 			title:`Rules of Debug Commands`,
 			content:`<b>RULES OF DEBUG COMMANDS</b>
@@ -1137,6 +1166,7 @@ export const CHAPTER5 = {
 			</ul>`
 		},
 		{
+			chapterId: 110,
 			read_status: 'Disabled',
 			title:`A Sample Session with Debug`,
 			content:`<b>A SAMPLE SESSION WITH DEBUG</b>
@@ -1274,6 +1304,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 111,
 			read_status: 'Disabled',
 			title:`Creating a program in DEBUG`,
 			content:`<b> CREATING A PROGRAM IN DEBUG </b>
@@ -1292,6 +1323,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 112,
 			read_status: 'Disabled',
 			title:`Executing one instruction at a time`,
 			content:`<b> EXECUTING ONE INSTRUCTION AT A TIME </b>
@@ -1309,6 +1341,7 @@ export const CHAPTER5 = {
 			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage11_WS49tKMWq.png" alt="cmd_run" style="width:600px; height:250px;"></center><br/>`
 		},
 		{
+			chapterId: 113,
 			read_status: 'Disabled',
 			title:`Saving your program`,
 			content:`<b> SAVING YOUR PROGRAM </b>
@@ -1326,6 +1359,7 @@ export const CHAPTER5 = {
 			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage14_aVmzirBY3.png" alt="cmd_sample" style="width:600px; height:200px;"></center><br/>`
 		},
 		{
+			chapterId: 114,
 			read_status: 'Disabled',
 			title:`Loading your DEBUG program`,
 			content:`<b> LOADING YOUR DEBUG PROGRAM </b>
@@ -1333,6 +1367,7 @@ export const CHAPTER5 = {
 			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage15_YiGo8PsGK.png" alt="cmd_load" style="width:600px; height:200px;"></center><br/>`
 		},
 		{
+			chapterId: 115,
 			read_status: 'Disabled',
 			title:`Modifying Instruction in DEBUG`,
 			content:`<b> MODIFYING INSTRUCTION IN DEBUG </b>
@@ -1340,6 +1375,7 @@ export const CHAPTER5 = {
 			<center><img src="https://ik.imagekit.io/assembly/chapter5/cmdImage16_94Wx63cCm.png" alt="cmd_modify" style="width:600px; height:750px;"></center><br/>`
 		},
 		{
+			chapterId: 116,
 			read_status: 'Disabled',
 			title:`Addition and Subtraction, Machine Language Style`,
 			content:`<b> ADDITION AND SUBTRACTION, MACHINE LANGUAGE STYLE </b>
@@ -1354,6 +1390,7 @@ export const CHAPTER5 = {
 			<p style="text-indent:3em">For subtraction, apply the same procedure but use different machine code. Try it in your computer.</p>`
 		},
 		{
+			chapterId: 117,
 			read_status: 'Disabled',
 			title:`Multiplication and Division, Machine Language Style`,
 			content:`<b> MULTIPLICATION AND DIVISION, MACHINE LANGUAGE STYLE </b>
@@ -1449,6 +1486,7 @@ export const CHAPTER5 = {
 			</ol>`
 		},
 		{
+			chapterId: 118,
 			read_status: 'Disabled',
 			title:`Programming using DEBUG`,
 			content:`<b> PROGRAMMING USING DEBUG </b>
@@ -1476,6 +1514,7 @@ export const CHAPTER5 = {
 				<center><img src=" .png" alt="insert image"></center><br/>`
 		},
 		{
+			chapterId: 119,
 			title: `Lecture Exercise 1`,
 			content: `
 			<b>LECTURE EXERCISE 1</b>
@@ -1563,6 +1602,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 120,
 			title: `Laboratory Exercise 1`,
 			content: `
 			<b>LABORATORY EXERCISE 1</b>
@@ -1584,6 +1624,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 121,
 			title: `Lecture Exercise 2`,
 			content: `
 			<b>LECTURE EXERCISE 2</b>
@@ -1681,6 +1722,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 122,
 			title: `Lecture Exercise 3`,
 			content: `
 			<b>LECTURE EXERCISE 3</b>
@@ -1799,6 +1841,7 @@ export const CHAPTER5 = {
 			`
 		},
 		{
+			chapterId: 123,
 			title: `Laboratory Exercise 2`,
 			content: `
 			<b>LABORATORY EXERCISE 2</b>
