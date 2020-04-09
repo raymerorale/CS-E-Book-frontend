@@ -1,4 +1,5 @@
 export const CHAPTER1 = {
+	chapterId: 1,
 	read_status: 'In Progress',
 	title: `Chapter I`,
 	description: `<h1 align = center>CHAPTER 1</h1>
@@ -10,6 +11,7 @@ export const CHAPTER1 = {
 	],
 	sub: [
 		{
+			chapterId: 2,
 			read_status: 'Disabled',
 			title: 'Number System',
 			content: `
@@ -22,6 +24,7 @@ export const CHAPTER1 = {
 			`,
 		},
 		{
+			chapterId: 3,
 			read_status: 'Disabled',
 			title: `Base`,
 			content: `
@@ -31,6 +34,7 @@ export const CHAPTER1 = {
 			<p>It is also called as the <span class=\"bold italic\">radix</span>. Base refers to the number of digits (basic symbols) in a number system. A subcript attached to a number indicates the base radix of that number. 100 (base 2) means 100 (read as one-zero-one), on the other hand, 100 (base 10) means decimal 100 (read as one hundred) subscripts help classify equations where different number systems are combined.</p>`
 		},
 		{
+			chapterId: 4,
 			read_status: 'Disabled',
 			title: `Common Used Bases of Number Systems in Assembly Language`,
 			content: `
@@ -41,6 +45,7 @@ export const CHAPTER1 = {
 			`,
 			sub: [
 				{
+					chapterId: 5,
 					read_status: 'Disabled',
 					title: `Decimal Number System`,
 					content: `
@@ -63,6 +68,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					chapterId: 6,
 					read_status: 'Disabled',
 					title: `Binary Number System`,
 					content: `
@@ -85,6 +91,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					chapterId: 7,
 					read_status: 'Disabled',
 					title: `Hexadecimal Number System`,
 					content: `
@@ -110,6 +117,7 @@ export const CHAPTER1 = {
 			]
 		},
 		{
+			chapterId: 8,
 			read_status: 'Disabled',
 			title: `Equivalences`,
 			content: `
@@ -251,6 +259,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 9,
 			read_status: 'Disabled',
 			title: `Conversion of Number Systems`,
 			content: `
@@ -260,6 +269,7 @@ export const CHAPTER1 = {
 			`,
 			sub: [
 				{
+					chapterId: 10,
 					read_status: 'Disabled',
 					title: `Decimal to Binary`,
 					content:  `
@@ -328,6 +338,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					chapterId: 11,
 					read_status: 'Disabled',
 					title: `Decimal to Hexadecimal`,
 					content: `
@@ -374,6 +385,7 @@ export const CHAPTER1 = {
 					`
 				},
 				{
+					chapterId: 12,
 					read_status: 'Disabled',
 					title: `Binary to Decimal`,
 					content: `
@@ -405,6 +417,7 @@ export const CHAPTER1 = {
 				  `
 				},
 				{
+					chapterId: 13,
 					read_status: 'Disabled',
 					title: `Binary to Hexadecimal`,
 					content: `
@@ -460,6 +473,7 @@ export const CHAPTER1 = {
 				  `
 				},
 				{
+					chapterId: 14,
 					read_status: 'Disabled',
 					title: `Hexadecimal to Decimal`,
 					content: `
@@ -527,6 +541,7 @@ export const CHAPTER1 = {
 				  `
 				},
 				{
+					chapterId: 15,
 					read_status: 'Disabled',
 					title: 	`Hexadecimal to Binary`,
 					content: `
@@ -563,6 +578,7 @@ export const CHAPTER1 = {
 			]
 		},
 		{
+			chapterId: 16,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 1`,
 			content: `
@@ -686,6 +702,7 @@ export const CHAPTER1 = {
 		}, //So di ko na tinapos to. Scratch lang din naman to, kasi sabi ni nics di nadaw sasama pala exercises. And di ko na din alam paano tapusin ih. HAHA 
 		
 		{
+			chapterId: 17,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
@@ -697,6 +714,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 18,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 2`,
 			content: `
@@ -707,6 +725,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 19,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
@@ -718,6 +737,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 20,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 3`,
 			content: `
@@ -728,6 +748,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 21,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
@@ -738,6 +759,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 22,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 4`,
 			content: `
@@ -748,6 +770,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 23,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 4`,
 			content: `
@@ -758,6 +781,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 24,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
@@ -768,6 +792,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 25,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 5`,
 			content: `
@@ -778,6 +803,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 26,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 6`,
 			content: `
@@ -788,6 +814,7 @@ export const CHAPTER1 = {
 			`
 		},
 		{
+			chapterId: 27,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 6`,
 			content: `

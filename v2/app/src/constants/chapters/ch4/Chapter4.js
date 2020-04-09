@@ -1,4 +1,5 @@
 export const CHAPTER4 = {
+	chapterId: 64,
 	read_status: 'Disabled',
 	title: 'Chapter IV',
 	description: `<h1 align = center>CHAPTER 4</h1>
@@ -11,6 +12,7 @@ export const CHAPTER4 = {
 	sub: [
 
 		{
+			chapterId: 65,
 			read_status: 'Disabled',
 			title: 'Bits, Bytes, Related Bytes',
 			content: `<b> BIT </b>
@@ -89,6 +91,7 @@ export const CHAPTER4 = {
 			`,
 		},
 		{
+			chapterId: 66,
 			title: `Negative Numbers`,
 			content:`<b> NEGATIVE NUMBERS </b>
 			<p style = "text-indent: 3em;"> A signed binary digit is considered positive if the leftmost bit is always equal to zero (0). For all negative numbers, the leftmost bit is always equal to one (1).</p>
@@ -100,6 +103,7 @@ Example:  +35<sub>10</sub>   = 0010 0011<sup>2</sup>
 		</pre>`,
 		},
 		{
+			chapterId: 67,
 			title: `Two's Complement Notation`,
 			content:`<b> TWO'S COMPLEMENT NOTATION </b>
 			<style>
@@ -196,12 +200,14 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 		</table>`,
 		},
 		{
+			chapterId: 68,
 			title:`How Characters are Stored`,
 			content:`<b>HOW CHARACTERS ARE STORED</b>
 			<p style = "text-indent: 3em;"> If computer memory can hold only long sequence of 0's and 1's. How meaningful information stored? There are several ways. Text which is information consisting of characters is represented by a code. As you know, each byte contains 8 bits and each of these bits can be a 0 or a 1; there are 2^8 or 256 different possibilities. These 256 patterns are used to form a code. One pattern stands for one symbol. </p>
 			<p style = "text-indent: 3em;"> For example, the pattern for the uppercase letter A is 0100 0001. The set of patterns along with the characters they stand for is called the <b>American Standard Code for Information Interchange</b>, or simply ASCII (pronounced ask-ee). Characters are stored in 8-bit patterns given for each character in the ASCII table. Thus, if you want to decode a long string of bits, all you have to do is divide the bits into bytes and look up each patterns in the ASCII reference table. </p>`,
 		},
 		{
+			chapterId: 69,
 			title:` ASCII `,
 			content: `<b>ASCII</b>
 			<p style = "text-indent: 3em;"> To get information in and out of a computer, we need to use numbers, letters and other symbols. This implies some kind of alphanumeric code I/O unit of a computer. At one time, every manufacturer has a different code which led to all kinds of confusion. Eventually, industry settled on an I/O code known as the American Standard Code for Information Interchange. This code allows computer manufacturers to standardize I/O  hardware such as keyboards, printers, monitors, and other devices. The 8-bit ASCII that the computer uses provides 256 characters including symbols for foreign alphabets. In particular, the uppercase letters are distinguished from the lowercase letters.</p>
@@ -209,6 +215,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 		`,
 		},
 		{
+			chapterId: 70,
 			title:` Microprocessor, Microcomputer Architecture `,
 			content: `<b> MICROPROCESSOR </b>
 			<p style = "text-indent: 3em;"> The heart and brain of the computer is the microprocessor (or simply processor) based on Intel 8086 family that performs all the execution of instruction and processing of data that is entirely contained on a single silicon chips. Microprocessor vary in speed, capacity of memory, registers and data bus. </p>
@@ -266,6 +273,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 		`,
 		},
 		{
+			chapterId: 71,
 			title: `Brief Description of Different Intel Microprocessor`,
 			content: `<b>BRIEF DESCRIPTION OF DIFFERENT INTEL MICROPROCESSOR</b>
 			<br/>
@@ -349,6 +357,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`,
 		},
 		{
+			chapterId: 72,
 			title:`Registers`,
 			content: `<b>REGISTERS</b>
 			<p style="text-indent: 3em;" > The processors registers are used to control instructions being executed to handle addressing of memory and to provide arithmetic capability. The 80386 contains a total of sixteen registers that are of interest to to the application programmer. These registers may be grouped into these basic categories:
@@ -380,6 +389,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 				`,
 		},
 		{
+			chapterId: 73,
 			title:`General-Purpose Registers`,
 			content:`<b> GENERAL-PURPOSE REGISTERS </b>
 			<style>
@@ -454,6 +464,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			</p>`,
 		},
 		{
+			chapterId: 74,
 			title: `Stack Pointer Register`,
 			content: `<b>STACK POINTER REGISTER</b>
 			<br/>
@@ -472,6 +483,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`,
 		},
 		{
+			chapterId: 75,
 			title: `Segment Register`,
 			content: `<b>SEGMENT REGISTER</b>
 			<br/>
@@ -495,6 +507,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`,
 		},
 		{
+			chapterId: 76,
 			title: `Flag Register`,
 			content: `<b>FLAG REGISTER</b>
 			<br/>
@@ -566,6 +579,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`,
 		},
 		{
+			chapterId: 77,
 			title: `Lecture Exercise 1`,
 			content: `
 			<b>LECTURE EXERCISE 1</b>
@@ -603,6 +617,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`
 		},
 		{
+			chapterId: 78,
 			title: `Lecture Exercise 2`,
 			content: `
 			<b>LECTURE EXERCISE 2</b>
@@ -763,6 +778,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`
 		},
 		{
+			chapterId: 79,
 			title: `Laboratory Exercise 1`,
 			content: `
 			<b>LABORATORY EXERCISE 1</b>
@@ -904,6 +920,7 @@ Step 2:    Reverse the bits by changing all 0's to 1's and all 1's to 0's.
 			`
 		},
 		{
+			chapterId: 80,
 			title: `Laboratory Exercise 2`,
 			content: `
 			<b>LABORATORY EXERCISE 2</b>

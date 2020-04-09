@@ -1,4 +1,5 @@
 export const CHAPTER2 = {
+	chapterId: 28,
 	read_status: 'Disabled',
 	title: 'Chapter II',
 	description: `<h1 align = center>CHAPTER 2</h1>
@@ -10,6 +11,7 @@ export const CHAPTER2 = {
 	],			
 	sub: [
 		{
+			chapterId: 29,
 			read_status: 'Disabled',
 			title: 'Addition',
 			content: `
