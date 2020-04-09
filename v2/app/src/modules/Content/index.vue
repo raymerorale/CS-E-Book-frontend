@@ -11,20 +11,24 @@
 		</v-app-bar>
 	
 			<v-row>
-				<chapter-list-container 
-					:status="status"
-					:toggle="toggle" 
-					@closed="close"
-				/>	
-				<v-btn 
-					class="toggle-filter-btn blue--text"
-					@click.stop="toggle = !toggle">
-					<v-icon>
-						book
-					</v-icon>
-        </v-btn>
-				<v-col class="col-12 col-md-12 pa-0 ma-0">
-					
+				<v-col class="pa-0 ma-0"
+					:class="[{ 'col-2': !toggle  }, { 'col-3': toggle }]">
+					<chapter-list-container 
+						ref="chapterListContainer"
+						:status="status"
+						:toggle="toggle" 
+						@closed="close"
+					/>	
+					<v-btn 
+						class="toggle-filter-btn blue--text"
+						:class="{ 'toggle-filter-btn--inactive': !toggle }"
+						@click.stop="toggleNav">
+						<v-icon>
+							book
+						</v-icon>
+					</v-btn>
+				</v-col>
+				<v-col class="col-12 col-md-9 pa-0 ma-0">
 					<page-content-container
 						:status="status"
 					/>
@@ -48,7 +52,7 @@ export default {
 		PageContentContainer
 	},
 	data: () => ({
-		toggle: false
+		toggle: true
 	}),
 	computed: {
 		status() {
@@ -66,7 +70,7 @@ export default {
 	},
 	methods:{
 		toggleNav(){
-			this.toggle = true
+			this.toggle = !this.toggle
 		},
 		close(){
 			this.toggle = false
@@ -80,11 +84,11 @@ export default {
 	margin-top: 60px !important;
 }
 .toggle-filter-btn {
-	position: fixed!important;
-	top: 20%!important;
-	left: 0!important;
-	box-shadow: none!important;
-	cursor: pointer!important;
-	z-index: 2!important;
+	position: absolute!important;
+	left: 24%;
+	z-index: 3;
+}
+.toggle-filter-btn--inactive {
+	left: 0%;
 }
 </style>	
