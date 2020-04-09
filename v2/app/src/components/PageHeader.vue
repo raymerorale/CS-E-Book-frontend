@@ -2,15 +2,15 @@
 	<div>
 		<v-app-bar height="60" fixed>
 			<v-layout>
-				<v-flex xs12 sm6>
-					LOGO
+				<v-flex xs12 sm6 class="pl-4">
+					<b> CS E-Book </b>
 				</v-flex>
 				<v-flex xs12 sm6 class="pr-5 text-right">
 					{{ $store.getters.user.firstName }}
 					{{ $store.getters.user.lastName }}
 					<v-menu offset-y>
 						<template v-slot:activator="{ on }">
-							<v-icon class="ml-5" v-on="on">mdi-account-circle</v-icon>
+							<v-icon large class="ml-5" v-on="on">mdi-account-circle</v-icon>
 						</template>
 						<v-list>
 							<v-list-item

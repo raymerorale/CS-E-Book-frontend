@@ -1,7 +1,7 @@
 import { CHAPTERS } from '@/constants/chapters/'
 
 export default {
-	API: false,
+	API: true,
 	PROGRESS: false,
 	user: {},
 	read_status: [],
