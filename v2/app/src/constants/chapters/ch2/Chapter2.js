@@ -6979,7 +6979,7 @@ export const CHAPTER2 = {
 						<td> <sub>16</sub></td>
 					</tr>
 				</table>
-				<br/>
+				</p>
   		<br/>
   		<form action="/action_page.php">
  		<input type="submit" value="SUBMIT">
@@ -7434,7 +7434,7 @@ export const CHAPTER2 = {
 						<td> <sub>16</sub></td>
 					</tr>
 				</table>
-				<br/>
+				,/p>
   		<br/>
   		<form action="/action_page.php">
  		<input type="submit" value="SUBMIT">
@@ -7647,7 +7647,7 @@ export const CHAPTER2 = {
   					<td><input type="text" size="25%"></td>
   				</tr>
   			</table>
-  			<p><b>Missing page</b><p>
+  			<p><b>Book Typo (same as Lecture Exercise 5)</b><p>
   			
 
 
@@ -8003,8 +8003,7 @@ export const CHAPTER2 = {
 						<td> <sub>16</sub></td>
 					</tr>
 				</table>
-				<br/>
-
+			</p>
   		<br/>
   		<form action="/action_page.php">
  		<input type="submit" value="SUBMIT">
@@ -8073,8 +8072,390 @@ export const CHAPTER2 = {
   					<td><input type="text" size="25%"></td>
   				</tr>
   			</table>
-  			<p><b>Missing page</b><p>
+  			<p>Arithmetic Binary and Hexadecimal Division</p>
   			
+  			<p>
+				<table id="q1">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<tr>
+						<td> <b>1.</b> </td>
+						<td> </td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> <sub>2</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> / </td>
+						<td> </td>
+						<td> </td>
+						<td> 1</td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> 1 </td>
+						<td> <sub>2</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> </td>
+					</tr>
+
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> <sub>2</sub></td>
+					</tr>
+				</table>
+				<br/>
+
+				<table id="q2">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<tr>
+						<td> <b>1.</b> </td>
+						<td> </td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> <sub>2</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> / </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> 1 </td>
+						<td> 1 </td>
+						<td> 0 </td>
+						<td> 1 </td>
+						<td> <sub>2</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> </td>
+					</tr>
+
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> <sub>2</sub></td>
+					</tr>
+				</table>
+				<br/>
+	
+				<table id="q3">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<tr>
+						<td> <b>3.</b> </td>
+						<td> </td>
+						<td> </td>
+						<td> 7 </td>
+						<td> 6 </td>
+						<td> 5 </td>
+						<td> 5 </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> /</td>
+						<td> </td>
+						<td> </td>
+						<td> 1</td>
+						<td> 2 </td>
+						<td> 3 </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> </td>
+					</tr>
+
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> <sub>16</sub></td>
+					</tr>
+				</table>
+				<br/>
+
+	
+				<table id="q4">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<tr>
+						<td> <b>4.</b> </td>
+						<td> </td>
+						<td> 4 </td>
+						<td> 5 </td>
+						<td> 8 </td>
+						<td> 9 </td>
+						<td> 1 </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> / </td>
+						<td> </td>
+						<td> </td>
+						<td> 4 </td>
+						<td> 3 </td>
+						<td> 2 </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> </td>
+					</tr>
+
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> <sub>16</sub></td>
+					</tr>
+				</table>
+				<br/>
+
+				<table id="q5">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<col width="30">
+					<tr>
+						<td> <b>5.</b> </td>
+						<td> </td>
+						<td> </td>
+						<td> B </td>
+						<td> F </td>
+						<td> A </td>
+						<td> D </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> / </td>
+						<td> </td>
+						<td> </td>
+						<td> 3 </td>
+						<td> 1 </td>
+						<td> 5 </td>
+						<td> <sub>16</sub> </td>
+					</tr>
+					<tr>
+						<td> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> <hr/> </td>
+						<td> </td>
+					</tr>
+
+					<tr>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> <sub>16</sub></td>
+					</tr>
+				</table>
+				</p>
+
+  		<br/>
+  		<form action="/action_page.php">
+ 		<input type="submit" value="SUBMIT">
+		</form>
+			</body></table>
+
+			`
+		}, {
+			read_status: 'Disabled',
+			title: `Case Study 1`,
+			content: `
+			<b>CASE STUDY 1</b>
+			<style>
+			table#t01, table#t02, table#t01 th, table#t01 td, table#t02 th, table#t02 td
+			{
+  				border: 1px solid black;
+  				border-collapse: collapse;
+  				font-size: 18px;  				
+			}
+			table#t01
+			{
+				width:99%;
+			}
+			table#t01 th, table#t02 th
+			{
+				width: 31%;
+				text-align: right;
+				padding-right: 5px;
+			}
+			table#t01 td, table#t02 td
+			{
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button 
+			{
+ 			-webkit-appearance: none;
+  			margin: 2;
+  			}
+			</style>
+			<body>
+			<table id="t02" style="width:99%">
+				<tr>
+   					<td align="left" ><b> CHAPTER 2 CASE STUDY 1 </b></td>
+  				</tr>
+  			</table>
+  			<br/>
+  			<table id="t01">
+  				<tr>
+  					<th><b><label for="sname"> NAME</b></th>
+  					<td><input type="text" id="sname" name="sname" size="25%"></td>
+  					<th><b>DATE</b></th>
+  					<td><input type="date" size="25%"></td>
+  				</tr>
+  				<tr>
+  					<th><b>COURSE</b></th>
+  					<td><input type="text" size="25%"></td>
+  					<th><b>SECTION</b></th>
+  					<td><input type="text" size="25%"></td>
+  				</tr>
+  				<tr>
+  					<th><b>CLASS SCHEDULE</b></th>
+  					<td><input type="text" size="25%"></td>
+  					<th><b>INSTRUCTOR</b></th>
+  					<td><input type="text" size="25%"></td>
+  				</tr>
+  			</table>
+  			<p>Create a C++/JAVA program that performs MULTIPLICATION AND DIVISION OF BINARY AND HEXADECIMAL.</p>
+  			<p><b>FILENAME: CASE1</b></p>
+  			
+  			<p>Sample Output:
+  			<br/>
+  			<br/><b>NUMBER SYSTEM</b>
+  			<br/>
+  			<br/> 1. BINARY
+  			<br/> 2. HEXADECIMAL
+  			<br/> ENTER YOUR CHOICE: <b><u>1</u></b>
+ 			<br/>
+  			<br/> ENTER FIRST BINARY NUMBER: 1011
+  			<br/> ENTER SECOND BINARY NUMBER: 11
+ 			
+ 			<br/>
+  			<br/><b>ARITHMETIC OPERATION</b>
+  			<br/>
+  			<br/> 1. MULTIPLICATION
+  			<br/> 2. DIVISION
+  			<br/> ENTER YOUR CHOICE: <b><u>1</u></b>
+ 			<br/>
+  			<br/> ENTER FIRST BINARY NUMBER: 1011
+  			<br/> ENTER SECOND BINARY NUMBER: 11
+ 			<br/>
+  			<br/> <b>RESULT: 100001</b>
+  			 			 			
+  			</p>
 
 
   		<br/>
