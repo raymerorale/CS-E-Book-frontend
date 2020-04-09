@@ -5,6 +5,7 @@
       width="340"
       height="100vh"
       absolute
+      temporary
       v-model="drawer"
   	>
     <br><br>

@@ -119,6 +119,8 @@ export default {
 	position: relative;
 	padding: 30px 40px;
 	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
 }
 
 </style>
