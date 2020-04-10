@@ -768,7 +768,7 @@ export const CHAPTER1 = {
 				}
 			</style>
 			<body>
-				<p>CHAPTER 1 LABORATORY- EXERCISE 2</p>
+				<p><b>CHAPTER 1 LABORATORY- EXERCISE 2</b></p>
 				<br>
 				<table class="Student", border="1">
 					<tr>
@@ -915,7 +915,7 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
-			<b>LEcTURE EXERCISE 5</b>
+			<b>LECTURE EXERCISE 5</b>
 			<br>
 			<br>
 
