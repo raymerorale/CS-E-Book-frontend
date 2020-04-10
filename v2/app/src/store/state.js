@@ -5,5 +5,6 @@ export default {
 	PROGRESS: false,
 	user: {},
 	read_status: [],
-	chapters: CHAPTERS
+	chapters: CHAPTERS,
+	showChapterIds: false
 }
