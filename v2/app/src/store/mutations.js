@@ -3,7 +3,7 @@ export default {
 		state.user = user
 		localStorage.setItem('user', JSON.stringify(user))
 	},
-	SET_USER_CHAPTER_ENABLED: (state, chapter_ids) => {
+	SET_USER_CHAPTERS_ENABLED: (state, chapter_ids) => {
 		chapter_ids.map(id =>{
 			let chapter = state.chapters.find(chapter => chapter.chapterId == id)
 			if (chapter) {
