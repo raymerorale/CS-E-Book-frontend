@@ -45,8 +45,8 @@ export default {
     }
   },
   computed: {
-    chaptersList: () => {
-      return CHAPTERS.map((v, i) => {
+    chaptersList() {
+      return this.$store.getters.chapters.map((v, i) => {
         v.active = i === 0 ? true : false;
         return v
       })
