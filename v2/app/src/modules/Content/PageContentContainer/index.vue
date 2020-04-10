@@ -85,6 +85,13 @@ export default {
 			let timeout = setTimeout(() => {
 				if (this.contentBody.read_status) {
 					this.contentBody.read_status = this.status.done
+
+					if (this.$store.getters.BACKEND && this.$store.getters.user) {
+						this.$store.dispatch('saveProgress', {
+							userId: this.$store.getters.user.id,
+							chapterId: this.contentBody.chapterId
+						})
+					}
 				}
 				if (this.nextContentBody && this.nextContentBody.read_status && this.nextContentBody.read_status === this.status.disabled) {
 					this.nextContentBody.read_status = this.status.in_progress
