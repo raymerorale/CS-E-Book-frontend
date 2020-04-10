@@ -1887,6 +1887,7 @@ export const CHAPTER2 = {
 			</p>
 			`,
 		},	{
+			chapterId: 188,
 			read_status: 'Disabled',
 			title: 'Subtraction',
 			content: `
@@ -2733,6 +2734,7 @@ export const CHAPTER2 = {
 			`,
 		},
 		{
+			chapterId: 189,
 			read_status: 'Disabled',
 			title: 'Multiplication',
 			content: `
@@ -4788,6 +4790,7 @@ export const CHAPTER2 = {
 
 			`,
 		}, {
+			chapterId: 190,
 			read_status: 'Disabled',
 			title: 'Division',
 			content: `
@@ -6091,6 +6094,7 @@ export const CHAPTER2 = {
 
 			`,
 		}, { //find exer1
+			chapterId: 191,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 1`,
 			content: `
@@ -6573,6 +6577,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {//find exer1lab
+			chapterId: 192,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
@@ -6645,6 +6650,7 @@ export const CHAPTER2 = {
 
 			`
 		}, { //find exer2
+			chapterId: 193,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 2`,
 			content: `
@@ -6988,6 +6994,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
+			chapterId: 194,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
@@ -7060,6 +7067,7 @@ export const CHAPTER2 = {
 
 			`
 		},  {
+			chapterId: 195,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 3`,
 			content: `
@@ -7443,6 +7451,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
+			chapterId: 196,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
@@ -7517,6 +7526,7 @@ export const CHAPTER2 = {
 		},
 		//find exer4
 		{
+			chapterId: 197,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 4`,
 			content: `
@@ -7587,6 +7597,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
+			chapterId: 198,
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 4`,
 			content: `
@@ -7661,6 +7672,7 @@ export const CHAPTER2 = {
 		},
 		//find exer5
 		{
+			chapterId: 199,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
@@ -8012,6 +8024,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
+			chapterId: 200,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 6`,
 			content: `
@@ -8369,6 +8382,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
+			chapterId: 201,
 			read_status: 'Disabled',
 			title: `Case Study 1`,
 			content: `
