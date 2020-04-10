@@ -6581,73 +6581,42 @@ export const CHAPTER2 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
-			<b>LABORATORY EXERCISE 1</b>
-			<style>
-			table#t01, table#t02, table#t01 th, table#t01 td, table#t02 th, table#t02 td
-			{
-  				border: 1px solid black;
-  				border-collapse: collapse;
-  				font-size: 18px;  				
-			}
-			table#t01
-			{
-				width:99%;
-			}
-			table#t01 th, table#t02 th
-			{
-				width: 31%;
-				text-align: right;
-				padding-right: 5px;
-			}
-			table#t01 td, table#t02 td
-			{
-				padding-left: 3px;
-				padding-right: 3px;
-			}
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button 
-			{
- 			-webkit-appearance: none;
-  			margin: 2;
-  			}
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
 			</style>
 			<body>
-			<table id="t02" style="width:99%">
-				<tr>
-   					<td align="left" ><b> CHAPTER 2 LABORATORY - EXERCISE 1 </b></td>
-  				</tr>
-  			</table>
-  			<br/>
-  			<table id="t01">
-  				<tr>
-  					<th><b><label for="sname"> NAME</b></th>
-  					<td><input type="text" id="sname" name="sname" size="25%"></td>
-  					<th><b>DATE</b></th>
-  					<td><input type="date" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>COURSE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>SECTION</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>CLASS SCHEDULE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>INSTRUCTOR</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  			</table>
-  			<p><b>Missing page</b><p>
-  			
+				<p>CHAPTER 2 LABORATORY- EXERCISE 1</p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
 
-
-  		<br/>
-  		<form action="/action_page.php">
- 		<input type="submit" value="SUBMIT">
-		</form>
-			</body></table>
-
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left"><img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that performs Arithmetic BINARY ADDITION.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK2A
+					</pre></p>
+				
+			</body>
 			`
 		}, { //find exer2
 			chapterId: 193,
@@ -6998,72 +6967,42 @@ export const CHAPTER2 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
-			<b>LABORATORY EXERCISE 2</b>
-			<style>
-			table#t01, table#t02, table#t01 th, table#t01 td, table#t02 th, table#t02 td
-			{
-  				border: 1px solid black;
-  				border-collapse: collapse;
-  				font-size: 18px;  				
-			}
-			table#t01
-			{
-				width:99%;
-			}
-			table#t01 th, table#t02 th
-			{
-				width: 31%;
-				text-align: right;
-				padding-right: 5px;
-			}
-			table#t01 td, table#t02 td
-			{
-				padding-left: 3px;
-				padding-right: 3px;
-			}
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button 
-			{
- 			-webkit-appearance: none;
-  			margin: 2;
-  			}
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
 			</style>
 			<body>
-			<table id="t02" style="width:99%">
-				<tr>
-   					<td align="left" ><b> CHAPTER 2 LABORATORY - EXERCISE 2 </b></td>
-  				</tr>
-  			</table>
-  			<br/>
-  			<table id="t01">
-  				<tr>
-  					<th><b><label for="sname"> NAME</b></th>
-  					<td><input type="text" id="sname" name="sname" size="25%"></td>
-  					<th><b>DATE</b></th>
-  					<td><input type="date" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>COURSE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>SECTION</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>CLASS SCHEDULE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>INSTRUCTOR</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  			</table>
-  			<p><b>Missing page</b><p>
-  			
+				<p>CHAPTER 2 LABORATORY- EXERCISE 2</p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
 
-
-  		<br/>
-  		<form action="/action_page.php">
- 		<input type="submit" value="SUBMIT">
-		</form>
-			</body></table>
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left"><img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that performs Arithmetic HEXADECIMAL ADDITION.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK2B
+					</pre></p>
+				
+			</body>
 
 			`
 		},  {
@@ -7455,73 +7394,42 @@ export const CHAPTER2 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
-			<b>LABORATORY EXERCISE 3</b>
-			<style>
-			table#t01, table#t02, table#t01 th, table#t01 td, table#t02 th, table#t02 td
-			{
-  				border: 1px solid black;
-  				border-collapse: collapse;
-  				font-size: 18px;  				
-			}
-			table#t01
-			{
-				width:99%;
-			}
-			table#t01 th, table#t02 th
-			{
-				width: 31%;
-				text-align: right;
-				padding-right: 5px;
-			}
-			table#t01 td, table#t02 td
-			{
-				padding-left: 3px;
-				padding-right: 3px;
-			}
-			input::-webkit-outer-spin-button,
-			input::-webkit-inner-spin-button 
-			{
- 			-webkit-appearance: none;
-  			margin: 2;
-  			}
-			</style>
-			<body>
-			<table id="t02" style="width:99%">
-				<tr>
-   					<td align="left" ><b> CHAPTER 2 LABORATORY - EXERCISE 3 </b></td>
-  				</tr>
-  			</table>
-  			<br/>
-  			<table id="t01">
-  				<tr>
-  					<th><b><label for="sname"> NAME</b></th>
-  					<td><input type="text" id="sname" name="sname" size="25%"></td>
-  					<th><b>DATE</b></th>
-  					<td><input type="date" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>COURSE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>SECTION</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  				<tr>
-  					<th><b>CLASS SCHEDULE</b></th>
-  					<td><input type="text" size="25%"></td>
-  					<th><b>INSTRUCTOR</b></th>
-  					<td><input type="text" size="25%"></td>
-  				</tr>
-  			</table>
-  			<p><b>Missing page</b><p>
-  			
+				<style type="text/css">
+					.Student
+					{
+						text-align: right;
+					}
+				</style>
+				<body>
+					<p>CHAPTER 2 LABORATORY- EXERCISE 3</p>
+					<br>
+					<table class="Student", border="1">
+						<tr>
+							<td>NAME</td>
+							<td><pre>				</pre></td>
+							<td>DATE</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>COURSE</td>
+							<td><pre>				</pre></td>
+							<td>SECTION</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>CLASS SCHEDULE</td>
+							<td><pre>				</pre></td>
+							<td>INSTRUCTOR</td>
+							<td><pre> 				</pre></td>
+						</tr>
+					</table>
+						<br><br><br>
 
-
-  		<br/>
-  		<form action="/action_page.php">
- 		<input type="submit" value="SUBMIT">
-		</form>
-			</body></table>
-
+						<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left"><img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that performs Arithmetic BINARY SUBTRACTION.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+							FILENAME: PTASK2C
+						</pre></p>
+					
+				</body>
 			`
 		},
 		//find exer4
@@ -8026,9 +7934,53 @@ export const CHAPTER2 = {
 		}, {
 			chapterId: 200,
 			read_status: 'Disabled',
-			title: `Lecture Exercise 6`,
+			title: `Laboratory Exercise 4`,
 			content: `
-			<b>LECTURE EXERCISE 6</b>
+				<style type="text/css">
+					.Student
+					{
+						text-align: right;
+					}
+				</style>
+				<body>
+					<p>CHAPTER 2 LABORATORY- EXERCISE 4</p>
+					<br>
+					<table class="Student", border="1">
+						<tr>
+							<td>NAME</td>
+							<td><pre>				</pre></td>
+							<td>DATE</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>COURSE</td>
+							<td><pre>				</pre></td>
+							<td>SECTION</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>CLASS SCHEDULE</td>
+							<td><pre>				</pre></td>
+							<td>INSTRUCTOR</td>
+							<td><pre> 				</pre></td>
+						</tr>
+					</table>
+						<br><br><br>
+
+						<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left"><img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that performs Arithmetic HEXADECIMAL MULTIPLICATION.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+							FILENAME: PTASK2D
+						</pre></p>
+					
+				</body>
+
+			`
+		},
+		//find exer5
+		{
+			read_status: 'Disabled',
+			title: `Lecture Exercise 5`,
+			content: `
+			<b>LECTURE EXERCISE 5</b>
 			<style>
 			table#t01, table#t02, table#t01 th, table#t01 td, table#t02 th, table#t02 td
 			{
@@ -8061,7 +8013,7 @@ export const CHAPTER2 = {
 			<body>
 			<table id="t02" style="width:99%">
 				<tr>
-   					<td align="left" ><b> CHAPTER 2 LECTURE - EXERCISE 6 </b></td>
+   					<td align="left" ><b> CHAPTER 2 LECTURE - EXERCISE 5 </b></td>
   				</tr>
   			</table>
   			<br/>
