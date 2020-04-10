@@ -706,11 +706,43 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 1`,
 			content: `
-			<b>LABORATORY EXERCISE 1</b>
-			<br>
-			<br>
+				<style type="text/css">
+					.Student
+					{
+						text-align: right;
+					}
+				</style>
+				<body>
+					<p><b>CHAPTER 1 LABORATORY- EXERCISE 1</b></p>
+					<br>
+					<table class="Student", border="1">
+						<tr>
+							<td>NAME</td>
+							<td><pre>				</pre></td>
+							<td>DATE</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>COURSE</td>
+							<td><pre>				</pre></td>
+							<td>SECTION</td>
+							<td><pre> 				</pre></td>
+						</tr>
+						<tr>
+							<td>CLASS SCHEDULE</td>
+							<td><pre>				</pre></td>
+							<td>INSTRUCTOR</td>
+							<td><pre> 				</pre></td>
+						</tr>
+					</table>
+						<br><br><br>
 
-
+						<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+							<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts decimal to Binary.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+							FILENAME: PTASK1A
+						</pre></p>
+					
+				</body>
 			`
 		},
 		{
@@ -729,11 +761,43 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 2`,
 			content: `
-			<b>LABORATORY EXERCISE 2</b>
-			<br>
-			<br>
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
+			</style>
+			<body>
+				<p>CHAPTER 1 LABORATORY- EXERCISE 2</p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
 
-
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+					<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts decimal to Hexadecimal.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK1B
+					</pre></p>
+				
+			</body>
 			`
 		},
 		{
@@ -752,10 +816,43 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 3`,
 			content: `
-			<b>LABORATORY EXERCISE 3</b>
-			<br>
-			<br>
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
+			</style>
+			<body>
+				<p><b>CHAPTER 1 LABORATORY- EXERCISE 3</b></p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
 
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+					<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts binary to decimal.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK1C
+					</pre></p>
+				
+			</body>
 			`
 		},
 		{
@@ -774,9 +871,42 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 4`,
 			content: `
-			<b>LABORATORY EXERCISE 4</b>
-			<br>
-			<br>
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
+			</style>
+			<body>
+				<p><b>CHAPTER 1 LABORATORY- EXERCISE 4</b></p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
+
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+					<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts binary to hexadecimal.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK1D
+					</pre></p>
+			</body>
 
 			`
 		},
@@ -796,10 +926,44 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 5`,
 			content: `
-			<b>LABORATORY EXERCISE 5</b>
-			<br>
-			<br>
+			<style type="text/css">
+				.Student
+				{
+					text-align: right;
+				}
+			</style>
+			<title>CHAPTER 1 LABORATORY- EXERCISE 5</title>
+			<body>
+				<p><b>CHAPTER 1 LABORATORY- EXERCISE 5</b></p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
 
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+					<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts Hexadecimal to Decimal.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK1E
+					</pre></p>
+				
+			</body>
 			`
 		},
 		{
@@ -818,9 +982,43 @@ export const CHAPTER1 = {
 			read_status: 'Disabled',
 			title: `Laboratory Exercise 6`,
 			content: `
-			<b>LABORATORY EXERCISE 6</b>
-			<br>
-			<br>
+			<style type="text/css">
+					.Student
+					{
+						text-align: right;
+					}
+				</style>
+			<body>
+				<p>CHAPTER 1 LABORATORY- EXERCISE 6</p>
+				<br>
+				<table class="Student", border="1">
+					<tr>
+						<td>NAME</td>
+						<td><pre>				</pre></td>
+						<td>DATE</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>COURSE</td>
+						<td><pre>				</pre></td>
+						<td>SECTION</td>
+						<td><pre> 				</pre></td>
+					</tr>
+					<tr>
+						<td>CLASS SCHEDULE</td>
+						<td><pre>				</pre></td>
+						<td>INSTRUCTOR</td>
+						<td><pre> 				</pre></td>
+					</tr>
+				</table>
+					<br><br><br>
+
+					<p><img src="https://ik.imagekit.io/assembly/logos/cpluspluslogo_inWQzTtCI.png" width="60" height="75" align="left">
+					<img src="https://ik.imagekit.io/assembly/logos/javalogo_3mvJxQB-U.png" width="120" height="180" align="left">Create a C++/ JAVA program that converts Hexadecimal to Binary.<pre style="font-family: serif; font-size: 20; font-weight: bold;">
+						FILENAME: PTASK1F
+					</pre></p>
+				
+			</body>
 
 			`
 		},
