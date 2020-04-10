@@ -59,4 +59,7 @@ export default {
 .v-card.subheader-container {
 	background-color: orange!important;
 }
+.v-icon {
+	color: #2196f3!important;
+}
 </style>
