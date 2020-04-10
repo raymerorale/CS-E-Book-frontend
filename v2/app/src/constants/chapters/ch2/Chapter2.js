@@ -7977,6 +7977,7 @@ export const CHAPTER2 = {
 		},
 		//find exer5
 		{
+			chapterId: 201,
 			read_status: 'Disabled',
 			title: `Lecture Exercise 5`,
 			content: `
@@ -8334,7 +8335,7 @@ export const CHAPTER2 = {
 
 			`
 		}, {
-			chapterId: 201,
+			chapterId: 202,
 			read_status: 'Disabled',
 			title: `Case Study 1`,
 			content: `
