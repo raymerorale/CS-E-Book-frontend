@@ -68,7 +68,7 @@ export default {
 		}
 	},
 	created () {
-		if (this.$store.getters.API && this.$store.getters.user) {
+		if (this.$store.getters.BACKEND && this.$store.getters.user) {
 			// this.$store.dispatch('setReadStatus', this.$store.getters.user && this.$store.getters.user.id)
 			this.$store.dispatch('setUserChapterIdsEnabled', this.$store.getters.user && this.$store.getters.user.id)
 		}

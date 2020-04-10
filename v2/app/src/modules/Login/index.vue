@@ -60,7 +60,7 @@ export default {
 			this.$router.push('content')
 		},
 		login() {
-			if (this.$store.getters.API) {
+			if (this.$store.getters.BACKEND) {
 				this.$store.dispatch('login', {
 					username: this.username,
 					password: this.password
