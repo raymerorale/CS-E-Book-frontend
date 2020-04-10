@@ -1,3 +1,5 @@
+import { findChapterById } from '@/helpers/chapters'
+
 export default {
 	USER: (state, user) => {
 		state.user = user
@@ -5,7 +7,7 @@ export default {
 	},
 	SET_USER_CHAPTERS_ENABLED: (state, chapter_ids) => {
 		chapter_ids.map(id =>{
-			let chapter = state.chapters.find(chapter => chapter.chapterId == id)
+			let chapter = findChapterById(state.chapters, id)
 			if (chapter) {
 				chapter.read_status = 'Done'
 			}

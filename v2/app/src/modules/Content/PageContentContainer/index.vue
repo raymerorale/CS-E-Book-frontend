@@ -80,27 +80,11 @@ export default {
 		changeStatus() {
 			if (this.contentBody.read_status && this.contentBody.read_status === this.status.disabled) {
 				this.contentBody.read_status = this.status.in_progress
-
-				if (this.$store.getters.API && this.$store.getters.user) {
-					this.$store.dispatch('createReadStatus', {
-						chapterId: this.contentBody.id,
-						userId: this.$store.getters.user.id,
-						status: this.status.in_progress
-					})
-				}
 			}
 
 			let timeout = setTimeout(() => {
 				if (this.contentBody.read_status) {
 					this.contentBody.read_status = this.status.done
-
-					if (this.$store.getters.API && this.$store.getters.user) {
-						this.$store.dispatch('updateReadStatus', {
-							chapterId: this.contentBody.id,
-							userId: this.$store.getters.user.id,
-							status: this.status.done
-						})
-					}
 				}
 				if (this.nextContentBody && this.nextContentBody.read_status && this.nextContentBody.read_status === this.status.disabled) {
 					this.nextContentBody.read_status = this.status.in_progress
