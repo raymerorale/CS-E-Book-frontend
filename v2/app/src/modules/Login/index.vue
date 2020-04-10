@@ -52,9 +52,6 @@ export default {
 			password: ''
 		}
 	},
-	mounted () {
-		console.log('LOGIN ', this.$store.state.chapters)
-	},
 	methods: {
 		goToContent() {
 			this.$router.push('content')
