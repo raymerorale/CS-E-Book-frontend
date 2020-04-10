@@ -27,6 +27,7 @@
 					dense
 					hide-details
 					label="Password"
+					@keyup.enter="login"
 				></v-text-field>
 			</div>
 			<div class="login-form__field">

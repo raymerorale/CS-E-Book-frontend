@@ -15,8 +15,8 @@
               :class="[ (node.title.includes('Chapter') ? 'chapter-title' : node.sub && node.sub.length ? 'has-children' : '') ]" 
               @click='changeContentView(node, index)' slot='activator'>
                 <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === status.disabled">
-                  <!-- <v-list-item-title> {{ node.chapterId }} {{ node.title }} </v-list-item-title> -->
-                  <v-list-item-title> {{ node.title }} </v-list-item-title>
+                  <v-list-item-title> {{ node.chapterId }} {{ node.title }} </v-list-item-title>
+                  <!-- <v-list-item-title> {{ node.title }} </v-list-item-title> -->
                 </v-list-item>  
             </v-list-item>
             <list-container 
@@ -33,8 +33,8 @@
             :key="node.title"
             @click='changeContentView(node, index)' v-else>
               <v-list-item :disabled="$store.getters.PROGRESS && node.read_status === status.disabled">
-                <!-- <v-list-item-title> {{ node.chapterId }} {{ node.title }} </v-list-item-title> -->
-                <v-list-item-title> {{ node.title }} </v-list-item-title>
+                <v-list-item-title> {{ node.chapterId }} {{ node.title }} </v-list-item-title>
+                <!-- <v-list-item-title> {{ node.title }} </v-list-item-title> -->
               </v-list-item>
           </v-list-item>
       </template>
