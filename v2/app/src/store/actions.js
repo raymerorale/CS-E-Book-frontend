@@ -13,6 +13,7 @@ export default {
 			if (response && response.data && response.data.userChapterIdsEnabled) {
 				console.log('user chapters enabled ', response.data.userChapterIdsEnabled)
 				commit('SET_USER_CHAPTERS_ENABLED', response.data.userChapterIdsEnabled)
+				commit('SET_ACTIVE_USER_CHAPTER', Math.max(...response.data.userChapterIdsEnabled))
 			}
 		})
 	},
