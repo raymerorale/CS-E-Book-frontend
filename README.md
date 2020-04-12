@@ -6,17 +6,17 @@ see also [CS E-Book Backend](https://github.com/raymerorale/CS-E-Book-backend/ed
 ---
 ## Project Requirements
 1. Create a Github account
-2. (Gitbash/Terminal)[https://git-scm.com/downloads]
-3. (Node.js)[https://nodejs.org/en/](to run command lines like 'npm install' and 'npm run serve' on cmd). 
-   - Download version - Recommended for Most Users.
-4. (Sublime Text)[https://www.sublimetext.com/]
+2. [Gitbash](https://git-scm.com/downloads)
+3. [Node.js](https://nodejs.org/en/](to run command lines like 'npm install' and 'npm run serve' on cmd/gitbash] 
+   - Download the version - Recommended for Most Users.
+4. [Sublime Text](https://www.sublimetext.com/)
 
 
 ---
 ## How to Run CS E-BOOK Frontend
 1.	Setup SSH Key on your local computer.
-  - (Generating a new SSH key)[https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent]
-  - (Adding a new SSH key to your GitHub account)[https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account]
+  - [Generating a new SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+  - [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 2.  Create a folder/choose an existing folder.
 
