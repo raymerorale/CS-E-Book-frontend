@@ -7,7 +7,7 @@ see also [CS E-Book Backend](https://github.com/raymerorale/CS-E-Book-backend/ed
 ## Project Requirements
 1. Create a Github account
 2. [Gitbash](https://git-scm.com/downloads)
-3. [Node.js](https://nodejs.org/en/](to run command lines like 'npm install' and 'npm run serve' on cmd/gitbash] 
+3. [Node.js](https://nodejs.org/en/) (to run command lines like 'npm install' and 'npm run serve' on cmd/gitbash)
    - Download the version - Recommended for Most Users.
 4. [Sublime Text](https://www.sublimetext.com/)
 
