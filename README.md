@@ -4,6 +4,61 @@ CEIT-03-1001p
 see also [CS E-Book Backend](https://github.com/raymerorale/CS-E-Book-backend/edit/master/README.md)
 
 ---
+## Project Requirements
+1. Create a Github account
+2. (Gitbash/Terminal)[https://git-scm.com/downloads]
+3. (Node.js)[https://nodejs.org/en/](to run command lines like 'npm install' and 'npm run serve' on cmd). 
+   - Download version - Recommended for Most Users.
+4. (Sublime Text)[https://www.sublimetext.com/]
+
+
+---
+## How to Run CS E-BOOK Frontend
+1.	Setup SSH Key on your local computer.
+  - (Generating a new SSH key)[https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent]
+  - (Adding a new SSH key to your GitHub account)[https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account]
+
+2.  Create a folder/choose an existing folder.
+
+3.  Right-click, choose "Git Bash Here".
+
+4.  Clone project CS-E-Book-frontend
+```bash 
+# clone repository
+git clone git@github.com:raymerorale/CS-E-Book-frontend.git
+```
+
+5. Follow Build Setup.
+
+
+---
+## Build Setup
+
+``` bash
+# checkout to master branch
+git checkout master
+
+# update local master branch
+git pull origin master 
+
+# install node and npm
+<depending on your machine>
+
+# change directory to where package.json is
+cd v2/app
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run serve
+
+# open browser and navigate to localhost:8080
+<enjoy!>
+
+```
+
+
 
 ## App Structure
 
@@ -61,34 +116,7 @@ Base folder: /v2/app
       - **main.js** - main js file ng app
     - **package.json** - contains list of dependencies/packages na need para magrun ng maayos yung app
 
-
 ---
-
-## Build Setup
-
-``` bash
-# checkout to master branch
-git checkout master
-
-# update local master branch
-git pull origin master 
-
-# install node and npm
-<depending on your machine>
-
-# change directory to where package.json is
-cd v2/app
-
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run serve
-
-# open browser and navigate to localhost:8080
-<enjoy!>
-
-```
 
 ### Project specifications
 #### DEADLINE: 1st or 2nd week of april (READY NA FOR TESTING)
@@ -105,9 +133,9 @@ Isang domain tatlong libro na. (For IT and CpE pla)
 
 1. Open language ba to basta web app? Meaning, kahit anong prog language basta web app?	 
 - Asp.net. See branch [dotnet](https://github.com/pereav/cs-e-book/tree/dotnet)
-3. Ilan sila sa group?
+2. Ilan sila sa group?
 - 3 blocks
-4. Pahingi ako ng scope ng app nila. Or anything na makikita ko kung anong eksaktong app ang kailangan idev. 
+3. Pahingi ako ng scope ng app nila. Or anything na makikita ko kung anong eksaktong app ang kailangan idev. 
 
 ##### USER ACCESS
 * sa Assembly si 2nd year cpe lang pwede maka access
