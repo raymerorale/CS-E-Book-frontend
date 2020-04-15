@@ -16,8 +16,7 @@ export const CHAPTER1 = {
 			title: 'Number System',
 			content: `
 			<b>NUMBER SYSTEM</b>
-			<br>
-			<br>
+			<br><br>
 			<p>It is a way of counting things and identifying the quantity of something. Likewise, number system refers to the set of symbols used to express quantities as the basis for counting, determining order, comparing amounts, performing calculations, and representing value. It is the set of characters and mathematical rules that are used to represent a digit. Examples include the Arabic, Babylonian, Chinese, Egyptian, Greek, Mayan, and Roman number systems. The ISBN and Dewey Decimal System are examples of number systems used in libraries. Even Social Security System has a number system of its own.</p>
 
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/crSGS1uBSNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -29,9 +28,8 @@ export const CHAPTER1 = {
 			title: `Base`,
 			content: `
 			<b>BASE</b>
-			<br>
-			<br>
-			<p>It is also called as the <span class=\"bold italic\">radix</span>. Base refers to the number of digits (basic symbols) in a number system. A subcript attached to a number indicates the base radix of that number. 100 (base 2) means 100 (read as one-zero-one), on the other hand, 100 (base 10) means decimal 100 (read as one hundred) subscripts help classify equations where different number systems are combined.</p>`
+			<br/><br/>
+			<p>It is also called as the <b>radix</b>. Base refers to the number of digits (basic symbols) in a number system. A subcript attached to a number indicates the base radix of that number. 100<sub>2</sub> means binary 100 (read as one-zero-one), on the other hand, 100<sub>2</sub> means decimal 100 (read as one hundred) subscripts help classify equations where different number systems are combined.</p>`
 		},
 		{
 			chapterId: 4,
@@ -39,10 +37,7 @@ export const CHAPTER1 = {
 			title: `Common Used Bases of Number Systems in Assembly Language`,
 			content: `
 			<b>COMMON USED BASES OF NUMBER SYSTEMS IN ASSEMBLY LANGUAGE</b>
-			<br>
-			<br>
-
-			`,
+			<br><br>`,
 			sub: [
 				{
 					chapterId: 5,
@@ -50,10 +45,8 @@ export const CHAPTER1 = {
 					title: `Decimal Number System`,
 					content: `
 					<b>DECIMAL NUMBER SYSTEM</b>
-					<br>
-					<br>
-
-					<p>The term decimal comes from <span class=\"latin italic\">\"decem\"</span>  the Latin word for ten. That's why it is a number system with base of ten (10). The decimal system is also called the Hindu-Arabic System and was developed by Hindu Mathematicians in India more than 2,000 years ago. It consists of ten digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
+					<br><br>
+					<p>The term decimal comes from &#34decem&#34 the Latin word for ten. That's why it is a number system with base of ten (10). The decimal system is also called the Hindu-Arabic System and was developed by Hindu Mathematicians in India more than 2,000 years ago. It consists of ten digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
 
 					<table style="width:50%">
 						<tr>
@@ -64,8 +57,7 @@ export const CHAPTER1 = {
 							<td></td>
 							<td> 890<sub>10</sub> </td>
 						</tr>
-					</table>
-					`
+					</table>`
 				},
 				{
 					chapterId: 6,
@@ -73,10 +65,8 @@ export const CHAPTER1 = {
 					title: `Binary Number System`,
 					content: `
 					<b>BINARY NUMBER SYSTEM</b>
-					<br>
-					<br>
-
-					<p>The term binary comes from the Latin word <span class=\"latin italic\">\"bi\"</span> meaning two at a time. That's why it is a number system with a base of two (2). It consists of two digits: 0 and 1.</p>
+					<br><br>
+					<p>The term binary comes from the Latin word <i>&#34bi&#34</i> meaning two at a time. That's why it is a number system with a base of two (2). It consists of two digits: 0 and 1.</p>
 
 					<table style="width:50%">
 						<tr>
@@ -87,8 +77,7 @@ export const CHAPTER1 = {
 							<td></td>
 							<td> 111000<sub>2</sub> </td>
 						</tr>
-					</table>
-					`
+					</table>`
 				},
 				{
 					chapterId: 7,
@@ -96,10 +85,8 @@ export const CHAPTER1 = {
 					title: `Hexadecimal Number System`,
 					content: `
 					<b>HEXADECIMAL NUMBER SYSTEM</b>
-					<br>
-					<br>
-
-					<p>The term hexadecimal comes from the Greek word <span class=\"greek italic\">\"Hexa\"</span> meaning six and Latin word <span class=\"latin italic\">\"decem\"</span> meaning ten, That's why it is a number system with a base of sixteen (16). It consists of sixteen digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F. A, B, C, D, E, and F stands for 10, 11, 12, 13, 14, and 15 respectively.</p>
+					<br><br>
+					<p>The term hexadecimal comes from the Greek word <i>&#34Hexa&#34</i> meaning six and Latin word <i>&#34decem&#34</i> meaning ten, That's why it is a number system with a base of sixteen (16). It consists of sixteen digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F. A, B, C, D, E, and F stands for 10, 11, 12, 13, 14, and 15 respectively.</p>
 
 					<table style="width:50%">
 						<tr>
@@ -110,9 +97,7 @@ export const CHAPTER1 = {
 							<td></td>
 							<td> 8C0<sub>16</sub> </td>
 						</tr>
-					</table>
-
-					`
+					</table>`
 				}
 			]
 		},
@@ -123,10 +108,7 @@ export const CHAPTER1 = {
 			content: `
 			<b>EQUIVALENCES</b>
 			<br>
-			<br>
-
-			<p>The table below shows the equivalences between decimal, binary and hexadecimal digits.</p>
-
+			<p><center>The table below shows the equivalences between decimal, binary and hexadecimal digits.</p></center>
 
 			<table>
 			<tr>
@@ -244,19 +226,18 @@ export const CHAPTER1 = {
 			  </tr>
 			</table>
 
-
 			<style>
 			table {
-				width: 100%;
+				width: 99%;
 			}
 			table, tr, td {
 				border: 1px solid black;
 				border-collapse: collapse;
 				border-spacing: 0;
 				padding: 1%;
+				text-align:center;
 			}
-			</style>
-			`
+			</style>`
 		},
 		{
 			chapterId: 9,
@@ -264,77 +245,84 @@ export const CHAPTER1 = {
 			title: `Conversion of Number Systems`,
 			content: `
 			<b>CONVERSION OF NUMBER SYSTEMS</b>
-			<br>
-			<br>
-			`,
+			<br><br>`,
 			sub: [
 				{
 					chapterId: 10,
 					read_status: 'Disabled',
 					title: `Decimal to Binary`,
 					content:  `
+
 					<b>DECIMAL-TO-BINARY CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s1" class="subsection">
-					<div class="subtext">
-					  <p>Double-dabble Method is a way of converting any decimal number to its binary equivalent. It requires successive division by two (2), writing down binary equivalent. It requires successive division by two (2), writing down each quotient and its remainder. The last quotient and the remainders are the binary equivalent to the given decimal number.</p>
-					</div>
-					<div class="subtext">
-					  <p>Example: Convert 15<sub>10</sub> to its binary equivalent.</p>
-					  <div class="two-cols">
-						<div class="left-col">Step 1:</div>
-						<div class="right-col">Divide 15 by 2. The quotient is 7. Write it on the next line after 15, and then write the remainder (1) on the next column (beside 15).
-						  <br/>
-						  <table class="double-dabble">
-							<thead>
-							  <tr><td>2</td><td>15</td><td>1</td></tr>
-							</thead>
-							<tbody>
-							  <tr><td></td><td>7</td></tr>
-							</tbody>
-						  </table>
-						</div>
-					  </div>
-					  <div class="two-cols">
-						<div class="left-col">Step 2:</div>
-						<div class="right-col">Divide 7 by 2. The quotient is 3. Write it on the next line after 7, and then write the remainder (1) on the next column (beside 7).
-						  <br/>
-						  <table class="double-dabble">
-							<thead>
-							  <tr><td>2</td><td>15</td><td>1</td></tr>
-							  <tr><td>2</td><td>7</td><td>1</td></tr>
-							</thead>
-							<tbody>
-							  <tr><td></td><td>3</td></tr>
-							</tbody>
-						  </table>
-						</div>
-					  </div>
-					  <div class="two-cols">
-						<div class="left-col">Step 3:</div>
-						<div class="right-col">Divide 3 by 2. The quotient is 1. Write it on the next line after 3, and then write the remainder (1) on the next column (beside 3).
-						  <br/>
-						  <table class="double-dabble">
-							<thead>
-							  <tr><td>2</td><td>15</td><td>1</td></tr>
-							  <tr><td>2</td><td>7</td><td>1</td></tr>
-							  <tr><td>2</td><td>3</td><td>1</td></tr>
-							</thead>
-							<tbody>
-							  <tr><td></td><td>1</td></tr>
-							</tbody>
-						  </table>
-						  Final answer: <msub><mi>1111</mi><mn>2</mn></msub>
-						</div>
-					  </div>
-					  <div class="subtext">Note: Continue the process of division until the quotient is less than the divisor. Then read the final answer in upward direction.
-					  </div>
-					</div>
-				  </div>
+					<br><br>
+					<p style="text-indent:2em">Double-dabble Method is a way of converting any decimal number to its binary equivalent. It requires successive division by two (2), writing down binary equivalent. It requires successive division by two (2), writing down each quotient and its remainder. The last quotient and the remainders are the binary equivalent to the given decimal number.</p>
+				
+					<p>Example: Convert 15<sub>10</sub> to its binary equivalent.</p>
+					
+						<i>Step 1:</i>
+						Divide 15 by 2. The quotient is 7. Write it on the next line after 15, and then write the remainder (1) on the next column (beside 15).<br/>
+
+						<center><svg height="150" width="200">
+						<path d="M50 30 L50 70" stroke="black" stroke-width="1"/>
+						<path d="M50 70 L100 70" stroke="black" stroke-width="1"/>
+
+						<g font-size="17" font-family="sans-serif" fill="black" stroke="none" text-anchor="left">
+						    <text x="30" y="55">2</text>
+						    <text x="60" y="55">15</text>
+						    <text x="60" y="95">7</text>
+						    <text x="115" y="55">1</text>
+						  </g></svg></center>
+						
+						<i>Step 2:</i>
+						Divide 7 by 2. The quotient is 3. Write it on the next line after 7, and then write the remainder (1) on the next column (beside 7).<br/>
+
+						<center><svg height="160" width="200">
+						<path d="M50 30 L50 110" stroke="black" stroke-width="1"/>
+						<path d="M50 70 L100 70" stroke="black" stroke-width="1"/>
+						<path d="M50 110 L100 110" stroke="black" stroke-width="1"/>
+
+						<g font-size="17" font-family="sans-serif" fill="black" stroke="none" text-anchor="left">
+						    <text x="30" y="55">2</text>
+						    <text x="30" y="95">2</text>
+						    <text x="60" y="55">15</text>
+						    <text x="60" y="95">7</text>
+						    <text x="60" y="135">3</text>
+						    <text x="115" y="55">1</text>
+						    <text x="115" y="95">1</text>
+						  </g></svg></center>
+				
+						<i>Step 3:</i>
+						Divide 3 by 2. The quotient is 1. Write it on the next line after 3, and then write the remainder (1) on the next column (beside 3).<br/>
+
+						<center><svg height="200" width="200">
+						<path d="M50 30 L50 140" stroke="black" stroke-width="1"/>
+						<path d="M50 140 L100 140" stroke="black" stroke-width="1"/>
+						<path d="M50 100 L100 100" stroke="black" stroke-width="1"/>
+						<path d="M50 60 L100 60" stroke="black" stroke-width="1"/>
+						<path d="M75 155 L150 155" stroke="black" stroke-width="1"/>
+						<path d="M150 155 L150 40" stroke="black" stroke-width="1"/>
+						<path d="M150 40 L145 50" stroke="black" stroke-width="1"/>
+						<path d="M145 50 L150 40" stroke="black" stroke-width="1"/>
+						<path d="M150 40 L155 50" stroke="black" stroke-width="1"/>
+
+						<g font-size="17" font-family="sans-serif" fill="black" stroke="none" text-anchor="left">
+						    <text x="30" y="55">2</text>
+						    <text x="30" y="95">2</text>
+						    <text x="30" y="135">2</text>
+						    <text x="60" y="55">15</text>
+						    <text x="60" y="95">7</text>
+						    <text x="60" y="135">3</text>
+						    <text x="115" y="55">1</text>
+						    <text x="115" y="95">1</text>
+						    <text x="115" y="135">1</text>
+						    <text x="60" y="160">1</text>
+						  </g></svg></center>
+
+						<center style="border:1px solid black; width:40%; margin-left:auto; margin-right:auto">Final answer: 	1111</sub>2</sub></center><br/>
+
+					<b>Note:</b> Continue the process of division until the quotient is less than the divisor. Then read the final answer in upward direction.
 
 				  <iframe width="560" height="315" src="https://www.youtube.com/embed/2U9b76JRz7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 					`
 				},
 				{
@@ -342,47 +330,41 @@ export const CHAPTER1 = {
 					read_status: 'Disabled',
 					title: `Decimal to Hexadecimal`,
 					content: `
-					<b>DECIMAL TO HEXADECIMAL CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s2" class="subsection">
-					<div class="subtext">Hex-dabble Method is a way of converting any decimal number to its hexadecimal equivalent. It is similar to double-dabble except that sixteen (16) is used as the divisor instead of two (2).</div>
-					<div class="subtext">
-					  Example: Convert <msub><mi>43</mi><mn>10</mn></msub> to its hexadecimal equivalent.
-					  <div class="two-cols">
-						<div class="left-col">Step 1:</div>
-						<div class="right-col">Divide 43 by 16. The quotient is 2. Write it on the next line after 43 and write the quotient on the next column (beside 43).
-						  <br/>
-						  <table class="double-dabble">
-							<thead>
-							  <tr><td>16</td><td>43</td><td>B(11)</td></tr>
-							</thead>
-							<tbody>
-							  <tr><td></td><td>2</td></tr>
-							</tbody>
-						  </table>
-						</div>
-					  </div>
-					  <div class="two-cols">
-						<div class="left-col">Step 2:</div>
-						<div class="right-col">Since 2 (the quotient) is less than the divisor (which is 16) the process of division will stop and the final answer will be read upwards.
-						  <br/>
-						  <table class="double-dabble">
-							<thead>
-							  <tr><td>16</td><td>43</td><td>B(11)</td></tr>
-							</thead>
-							<tbody>
-							  <tr><td></td><td>2</td></tr>
-							</tbody>
-						  </table>
-						  Final answer: <msub><mi>2B</mi><mn>16</mn></msub>
-						</div>
-					  </div>
-					</div>
-				  </div>
+					<b>DECIMAL TO HEXADECIMAL CONVERSION</b><br/><br/>
+					
+					<p style="text-indent:2em">Hex-dabble Method is a way of converting any decimal number to its hexadecimal equivalent. It is similar to double-dabble except that sixteen (16) is used as the divisor instead of two (2).
+					<p>Example: Convert 43</sub>10</sub> to its hexadecimal equivalent.</p>
+					 
+					<i>Step 1: </i>
+						Divide 43 by 16. The quotient is 2. Write it on the next line after 43 and write the quotient on the next column (beside 43).<br/>
+						
+						<center><svg height="150" width="200">
+						<path d="M50 30 L50 70" stroke="black" stroke-width="1"/>
+						<path d="M50 70 L100 70" stroke="black" stroke-width="1"/>
 
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/uVpQ9pPskNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					`
+						<g font-size="17" font-family="sans-serif" fill="black" stroke="none" text-anchor="left">
+						    <text x="25" y="55">16</text>
+						    <text x="60" y="55">43</text>
+						    <text x="60" y="95">3</text>
+						    <text x="115" y="55">B(11)</text>
+						  </g></svg></center>
+					
+						<i>Step 2: </i>
+						Since 2 (the quotient) is less than the divisor (which is 16) the process of division will stop and the final answer will be read upwards.<br/>
+					
+						<center><svg height="150" width="200">
+						<path d="M50 30 L50 70" stroke="black" stroke-width="1"/>
+						<path d="M50 70 L100 70" stroke="black" stroke-width="1"/>
+
+						<g font-size="17" font-family="sans-serif" fill="black" stroke="none" text-anchor="left">
+						    <text x="25" y="55">16</text>
+						    <text x="60" y="55">43</text>
+						    <text x="60" y="95">3</text>
+						    <text x="115" y="55">B(11)</text>
+						  </g></svg></center>
+						<center style="border:1px solid black; width:40%; margin-left:auto; margin-right:auto"> Final answer: 2B<sub>16</sub></center>
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/uVpQ9pPskNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 				},
 				{
 					chapterId: 12,
@@ -390,31 +372,158 @@ export const CHAPTER1 = {
 					title: `Binary to Decimal`,
 					content: `
 					<b>BINARY TO DECIMAL CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s3" class="subsection">
-					<div class="subtext">Positional Notation by power of two (2) is a method used to convert any binary numbers to its decimal equivalent.
-					</div>
-					<div class="subtext">Convert <msub><mi>10010</mi><mn>2</mn></msub> to its decimal equivalent.</div>
-					<div class="subtext">Step 1: Starting from the rightmost digit, multiply each bit by 2.
-					  <div>#TODO fig1.5.3.1</div>
-					</div>
-					<div class="subtext">Step 2: Every multiplier 2 should be raised to an exponent starting with zero (0).
-					  <div>#TODO fig1.5.3.2</div>
-					</div>
-					<div class="subtext">Step 3: Simplify the arithmetic expression.
-					  <div>#TODO fig1.5.3.3</div>
-					</div>
-					<div class="subtext">Step 4: Get the product of each expression.
-					  <div>#TODO fig1.5.3.4</div>
-					</div>
-					<div class="subtext">Step 5: After which, add the entire product and that gives you the decimal equivalent.
-					  <div>#TODO fig1.5.3.5</div>
-					</div>
-				  </div>
+					<br><br>
+					<p style="text-indent:2em">Positional Notation by power of two (2) is a method used to convert any binary numbers to its decimal equivalent.</p>
+					
+					<p>Convert 10010<sub>2</sub> to its decimal equivalent.</p>
+					<i>Step 1:</i> Starting from the rightmost digit, multiply each bit by 2.<br/>
 
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/6Tt-RA6KD30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				  `
+						<center>
+							<svg height="280" width="350">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">1</text>
+							<text x="55" y="25">0</text>
+							<text x="95" y="25">0</text>
+							<text x="135" y="25">1</text>
+							<text x="175" y="25">0<tspan font-size="12" baseline-shift="sub">2</tspan></text>
+
+							<text x="255" y="75">0 x 2</text>
+							<text x="255" y="115">1 x 2</text>
+							<text x="255" y="155">0 x 2</text>
+							<text x="255" y="195">0 x 2</text>
+							<text x="255" y="235">1 x 2</text>
+						</g></svg></center>
+						
+					<i>Step 2:</i> Every multiplier 2 should be raised to an exponent starting with zero (0).<br>
+
+						<center>
+							<svg height="280" width="350">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">1</text>
+							<text x="55" y="25">0</text>
+							<text x="95" y="25">0</text>
+							<text x="135" y="25">1</text>
+							<text x="175" y="25">0<tspan font-size="12" baseline-shift="sub">2</tspan></text>
+
+							<text x="255" y="75">0 x 2<tspan font-size="12" baseline-shift="super">0</tspan></text>
+							<text x="255" y="115">1 x 2<tspan font-size="12" baseline-shift="super">1</tspan></text>
+							<text x="255" y="155">0 x 2<tspan font-size="12" baseline-shift="super">2</tspan></text>
+							<text x="255" y="195">0 x 2<tspan font-size="12" baseline-shift="super">3</tspan></text>
+							<text x="255" y="235">1 x 2<tspan font-size="12" baseline-shift="super">4</tspan></text>
+						</g></svg></center>
+
+					<i>Step 3:</i> Simplify the arithmetic expression.<br/>
+					
+						<center>
+							<svg height="280" width="400">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">1</text>
+							<text x="55" y="25">0</text>
+							<text x="95" y="25">0</text>
+							<text x="135" y="25">1</text>
+							<text x="175" y="25">0<tspan font-size="12" baseline-shift="sub">2</tspan></text>
+
+							<text x="255" y="75">0 x 2<tspan font-size="12" baseline-shift="super">0</tspan> = 0 x 1</text>
+							<text x="255" y="115">1 x 2<tspan font-size="12" baseline-shift="super">1</tspan> = 1 x 2</text>
+							<text x="255" y="155">0 x 2<tspan font-size="12" baseline-shift="super">2</tspan> = 0 x 4</text>
+							<text x="255" y="195">0 x 2<tspan font-size="12" baseline-shift="super">3</tspan> = 0 x 8</text>
+							<text x="255" y="235">1 x 2<tspan font-size="12" baseline-shift="super">4</tspan> = 1 x 16</text>
+						</g></svg></center>
+
+					<i>Step 4:</i> Get the product of each expression.<br>
+						
+						<center>
+							<svg height="280" width="420">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">1</text>
+							<text x="55" y="25">0</text>
+							<text x="95" y="25">0</text>
+							<text x="135" y="25">1</text>
+							<text x="175" y="25">0<tspan font-size="12" baseline-shift="sub">2</tspan></text>
+
+							<text x="255" y="75">0 x 2<tspan font-size="12" baseline-shift="super">0</tspan> = 0 x 1 = 0</text>
+							<text x="255" y="115">1 x 2<tspan font-size="12" baseline-shift="super">1</tspan> = 1 x 2 = 2</text>
+							<text x="255" y="155">0 x 2<tspan font-size="12" baseline-shift="super">2</tspan> = 0 x 4 = 0</text>
+							<text x="255" y="195">0 x 2<tspan font-size="12" baseline-shift="super">3</tspan> = 0 x 8 = 0</text>
+							<text x="255" y="235">1 x 2<tspan font-size="12" baseline-shift="super">4</tspan> = 1 x 16 = 16</text>
+							</g></svg></center>
+					
+					<i>Step 5:</i> After which, add the entire product and that gives you the decimal equivalent.
+						
+						<center>
+							<svg height="280" width="420">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+							<path d="M365 245 L410 245" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">1</text>
+							<text x="55" y="25">0</text>
+							<text x="95" y="25">0</text>
+							<text x="135" y="25">1</text>
+							<text x="175" y="25">0<tspan font-size="12" baseline-shift="sub">2</tspan></text>
+
+							<text x="255" y="75">0 x 2<tspan font-size="12" baseline-shift="super">0</tspan> = 0 x 1 = 0</text>
+							<text x="255" y="115">1 x 2<tspan font-size="12" baseline-shift="super">1</tspan> = 1 x 2 = 2</text>
+							<text x="255" y="155">0 x 2<tspan font-size="12" baseline-shift="super">2</tspan> = 0 x 4 = 0</text>
+							<text x="255" y="195">0 x 2<tspan font-size="12" baseline-shift="super">3</tspan> = 0 x 8 = 0</text>
+							<text x="255" y="235">1 x 2<tspan font-size="12" baseline-shift="super">4</tspan> = 1 x 16 = 16</text>
+							<text x="375" y="265">16</text>
+							</g></svg></center>
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/6Tt-RA6KD30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 				},
 				{
 					chapterId: 13,
@@ -422,55 +531,164 @@ export const CHAPTER1 = {
 					title: `Binary to Hexadecimal`,
 					content: `
 					<b>BINARY TO HEXADECIMAL CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s4" class="subsection">
-					<div class="subtext">8421 Method is a way of converting any binary number to its hexadecimal equivalent.</div>
-					<div class="subtext">Example: Convert <msub><mi>101100011100</mi><mn>2</mn></msub></div>
-					<div class="subtext">Step 1: Group the bits into four (4) starting from the right going to the left
-					  <div>#TODO fig1.5.4.1 <br/> 1011 0001 1100</div>
-					</div>
-					<div class="subtext">Step 2: Represent 8-4-2-1 above the bits starting from the right
-					  <div>8421 8421 8421 <br/> 1011 0001 1100</div>
-					</div>
-					<div class="subtext">Step 3: Multiply each representation (8-4-2-1) to its corresponding bit.
-					  <div>
-						8421 8421 8421 <br/>
-						1011 0001 1100 <br/>
-						8x1  8x0  8x1<br/>
-						4x0  4x0  4x1<br/>
-						2x1  2x0  2x0<br/>
-						1x1  1x1  1x0 
-					  </div>
-					</div>
-					<div class="subtext">Step 4: Get the product of every arithmetic expression.
-					  <div>
-						8421  8421  8421 <br/>
-						1011  0001  1100 <br/>
-						8x1=8 8x0=0 8x1=8<br/>
-						4x0=0 4x0=0 4x1=4<br/>
-						2x1=2 2x0=0 2x0=0<br/>
-						1x1=1 1x1=1 1x0=0
-					  </div>
-					</div>
-					<div class="subtext">Step 5: Add all the product values in every group. If the sum is greater than nine (9), It must be changed to its equivalent alphabetic symbol (i.e. 10=A, 11=B, 12=C, 13=D, 14=E, 15=F).
-					  <div>
-						8421  8421  8421 <br/>
-						1011  0001  1100 <br/>
-						8x1=8 8x0=0 8x1=8<br/>
-						4x0=0 4x0=0 4x1=4<br/>
-						2x1=2 2x0=0 2x0=0<br/>
-						1x1=1 1x1=1 1x0=0<br/> 
-						11=B  1     12=C
-					  </div>
-					</div>
-					<div class="subtext">Step 6: Write these symbols together and that gives you the hexidecimal equivalent.
-					  <div>Therefore, 10110001100 (base 2) = B1C (base 16)  </div>
-					</div>
-				  </div>
+					<br><br>
+					<p style="text-indent:2em;">8421 Method is a way of converting any binary number to its hexadecimal equivalent.</p>
 
+					<p>Example: Convert 10110001110<sub>0</sub></p>
+
+					<i>Step 1:</i> Group the bits into four (4) starting from the right going to the left.
+					<br/>
+
+						<center><svg height="12" width="250"><polyline points="6,0 0,6 6,12 0,6 250,6" style="fill:none;stroke:black;stroke-width:1" /></svg></center>
+					
+						<table>
+						<tr>
+							<td>1 0 0 1</td>
+							<td>0 0 0 1</td>
+							<td>1 1 0 0</td>
+						</tr>
+						</table><br>
+			
+					<i>Step 2:</i> Represent 8-4-2-1 above the bits starting from the right going to the left.<br>
+
+						<table>
+						<tr>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+						</tr>
+						<tr>
+							<td>1 0 0 1</td>
+							<td>0 0 0 1</td>
+							<td>1 1 0 0</td>
+						</tr>
+						</table><br>
+
+					<i>Step 3:</i> Multiply each representation (8-4-2-1) to its corresponding bit.<br>
+						
+						<table>
+						<tr>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+						</tr>
+						<tr>
+							<td>1 0 0 1</td>
+							<td>0 0 0 1</td>
+							<td>1 1 0 0</td>
+						</tr>
+						<tr>
+							<td>8 x 1</td>
+							<td>8 x 0</td>
+							<td>8 x 1</td>
+						</tr>
+						<tr>
+							<td>4 x 0</td>
+							<td>4 x 0</td>
+							<td>4 x 1</td>
+						</tr>
+						<tr>
+							<td>2 x 1</td>
+							<td>2 x 0</td>
+							<td>2 x 0</td>
+						</tr>
+						<tr>
+							<td>1 x 1</td>
+							<td>1 x 1</td>
+							<td>1 x 0</td>
+						</tr>
+						</table><br>
+
+					<i>Step 4:</i> Get the product of every arithmetic expression.<br>
+						
+						<table>
+						<tr>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+						</tr>
+						<tr>
+							<td>1 0 0 1</td>
+							<td>0 0 0 1</td>
+							<td>1 1 0 0</td>
+						</tr>
+						<tr>
+							<td>8 x 1 = 8</td>
+							<td>8 x 0 = 0</td>
+							<td>8 x 1 = 8</td>
+						</tr>
+						<tr>
+							<td>4 x 0 = 0</td>
+							<td>4 x 0 = 0</td>
+							<td>4 x 1 = 4</td>
+						</tr>
+						<tr>
+							<td>2 x 1 = 2</td>
+							<td>2 x 0 = 0</td>
+							<td>2 x 0 = 0</td>
+						</tr>
+						<tr>
+							<td>1 x 1 = 1</td>
+							<td>1 x 1 = 1</td>
+							<td>1 x 0 = 0</td>
+						</tr>
+						</table><br>
+				
+					<i>Step 5:</i> Add all the product values in every group. If the sum is greater than nine (9), It must be changed to its equivalent alphabetic symbol (i.e. 10=A, 11=B, 12=C, 13=D, 14=E, 15=F).<br><br>
+					
+						<table>
+						<tr>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+							<td>8 4 2 1</td>
+						</tr>
+						<tr>
+							<td>1 0 0 1</td>
+							<td>0 0 0 1</td>
+							<td>1 1 0 0</td>
+						</tr>
+						<tr>
+							<td>8 x 1 = 8</td>
+							<td>8 x 0 = 0</td>
+							<td>8 x 1 = 8</td>
+						</tr>
+						<tr>
+							<td>4 x 0 = 0</td>
+							<td>4 x 0 = 0</td>
+							<td>4 x 1 = 4</td>
+						</tr>
+						<tr>
+							<td>2 x 1 = 2</td>
+							<td>2 x 0 = 0</td>
+							<td>2 x 0 = 0</td>
+						</tr>
+						<tr>
+							<td>1 x 1 = 1</td>
+							<td>1 x 1 = 1</td>
+							<td>1 x 0 = 0</td>
+						</tr>
+						<tr>
+							<td style= "border:1px solid black;">11 = B</td>
+							<td style= "border:1px solid black;">1</td>
+							<td style= "border:1px solid black;">12 = C</td>
+						</tr>
+						</table><br>
+					  
+					<i>Step 6:</i> Write these symbols together and that gives you the hexidecimal equivalent.
+					<p style=text-indent:3em;">Therefore, 10110001100<sub>2</sub>= B1C<sub>16</sub><p>
+					<br/>
+					
 				  <iframe width="560" height="315" src="https://www.youtube.com/embed/8T4F7WboWPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				  `
+				  
+				<style>
+				  	table, td{
+						border-collapse:separate;
+						padding: 5px 20px 5px 20px;
+						margin-left:auto;
+						margin-right:auto;
+						text-align:center;
+					}
+				</style>`
 				},
 				{
 					chapterId: 14,
@@ -478,67 +696,166 @@ export const CHAPTER1 = {
 					title: `Hexadecimal to Decimal`,
 					content: `
 					<b>HEXADECIMAL TO DECIMAL CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s5" class="subsection">
-					<div class="subtext">Positional Notation by Powers of Sixteen (16) is a method used to convert any hexadecimal number to its decimal equivalent. The procedure is the same with the binary to decimal equivalent. The procedure is the same with the binary to decimal conversion except that sixteen (16) is used as the multiplier instead of two (2).</div>
-					<div class="subtext">Example: Convert <msub><mi>AB1DE</mi><mn>16</mn></msub></div>
-					<div class="subtext">Step 1: Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.
-					  <div>
-						A B 1 D E (base 16) <br/>
-						A 10x16<br/>
-						B 11x16<br/>
-						1  1x16<br/>
-						D 13x16<br/>
-						E 14x16
-					  </div>
-					</div>
-					<div class="subtext">Step 2: Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.
-					  <div>
-						A B 1 D E (base 16) <br/>
-						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
-						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
-						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
-						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
-						E 14x<msup><mi>16</mi><mn>0</mn></msup>
-					  </div>
-					</div>
-					<div class="subtext">Step 3: Simplify the arithmetic expression
-					  <div>
-						A B 1 D E (base 16) <br/>
-						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
-						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
-						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
-						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
-						E 14x<msup><mi>16</mi><mn>0</mn></msup>
-					  </div>
-					</div>
-					<div class="subtext">Step 4: Get the product of each expression.
-					  <div>
-						A B 1 D E (base 16) <br/>
-						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
-						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
-						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
-						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
-						E 14x<msup><mi>16</mi><mn>0</mn></msup>
-					  </div>
-					</div>
-					<div class="subtext">Step 5: After which, add all products and that gives you the decimal equivalent.
-					  <div>
-						A B 1 D E (base 16) <br/>
-						A 10x</msup><msup><mi>16</mi><mn>4</mn></msup><br/>
-						B 11x</msup><msup><mi>16</mi><mn>3</mn></msup><br/>
-						1  1x</msup><msup><mi>16</mi><mn>2</mn></msup><br/>
-						D 13x</msup><msup><mi>16</mi><mn>1</mn></msup><br/>
-						E 14x<msup><mi>16</mi><mn>0</mn></msup>
-					  </div>
-					  Therefore, AB1DE (base 16) = 700894 (base 10)
-					</div>
-				  </div>
+					<br><br> 
 
-				  <iframe width="560" height="315" src="https://www.youtube.com/embed/1tHgs0mrZ5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p style="text-indent:2em;">Positional Notation by Powers of Sixteen (16) is a method used to convert any hexadecimal number to its decimal equivalent. The procedure is the same with the binary to decimal equivalent. The procedure is the same with the binary to decimal conversion except that sixteen (16) is used as the multiplier instead of two (2).</p>
+					<p>Example: Convert AB1DE<sub>16</sub></p>
+					<i>Step 1:</i> Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.<br/>
 
-				  `
+					<center>
+						<svg height="280" width="400">
+						<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+						<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+						<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+						<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+						<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+						<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+						<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+						<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+						<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+						<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+						<g font-size="17" fill="black" stroke="none" text-anchor="left">
+						<text x="15" y="25">A</text>
+						<text x="55" y="25">B</text>
+						<text x="95" y="25">1</text>
+						<text x="135" y="25">D</text>
+						<text x="175" y="25">E<tspan font-size="12" baseline-shift="sub">16</tspan></text>
+
+						<text x="255" y="75">E =  14 x 16</text>
+						<text x="255" y="115">D = 13 x 16</text>
+						<text x="255" y="155">1 = 1 x 16</text>
+						<text x="255" y="195">B = 11 x 16</text>
+						<text x="255" y="235">A = 10 x 16</text>
+					</g></svg></center>
+
+				<i>Step 2:</i> Starting from the rightmost digit, multiply each digit by 16. If the digit is greater than 9, (i.e. A, B, C and so on) convert it to its equivalent decimal digits.<br/>
+					  
+					 	<center>
+							<svg height="280" width="400">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">A</text>
+							<text x="55" y="25">B</text>
+							<text x="95" y="25">1</text>
+							<text x="135" y="25">D</text>
+							<text x="175" y="25">E<tspan font-size="12" baseline-shift="sub">16</tspan></text>
+
+							<text x="255" y="75">E =  14 x 16<tspan font-size="12" baseline-shift="super">0</tspan></text>
+							<text x="255" y="115">D = 13 x 16<tspan font-size="12" baseline-shift="super">1</tspan></text>
+							<text x="255" y="155">1 = 1 x 16<tspan font-size="12" baseline-shift="super">2</tspan></text>
+							<text x="255" y="195">B = 11 x 16<tspan  font-size="12"baseline-shift="super">3</tspan></text>
+							<text x="255" y="235">A = 10 x 16<tspan font-size="12" baseline-shift="super">4</tspan></text>
+						</g></svg></center>
+
+					<i>Step 3:</i> Simplify the arithmetic expression.<br/>
+
+						<center>
+							<svg height="280" width="500">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">A</text>
+							<text x="55" y="25">B</text>
+							<text x="95" y="25">1</text>
+							<text x="135" y="25">D</text>
+							<text x="175" y="25">E<tspan font-size="12" baseline-shift="sub">16</tspan></text>
+
+							<text x="255" y="75">E =  14 x 16<tspan font-size="12" baseline-shift="super">0</tspan> = 14 x 1</text>
+							<text x="255" y="115">D = 13 x 16<tspan font-size="12" baseline-shift="super">1</tspan> = 13 x 16</text>
+							<text x="255" y="155">1 = 1 x 16<tspan font-size="12" baseline-shift="super">2</tspan> = 1 x 256</text>
+							<text x="255" y="195">B = 11 x 16<tspan  font-size="12"baseline-shift="super">3</tspan> = 11 x 4096</text>
+							<text x="255" y="235">A = 10 x 16<tspan font-size="12" baseline-shift="super">4</tspan> = 10 x 65536</text>
+						</g></svg></center>
+						
+					<i>Step 4:</i> Get the product of each expression.<br/>
+
+						<center>
+							<svg height="280" width="550">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">A</text>
+							<text x="55" y="25">B</text>
+							<text x="95" y="25">1</text>
+							<text x="135" y="25">D</text>
+							<text x="175" y="25">E<tspan font-size="12" baseline-shift="sub">16</tspan></text>
+
+							<text x="255" y="75">E =  14 x 16<tspan font-size="12" baseline-shift="super">0</tspan> = 14 x 1 = 14</text>
+							<text x="255" y="115">D = 13 x 16<tspan font-size="12" baseline-shift="super">1</tspan> = 13 x 16 = 208</text>
+							<text x="255" y="155">1 = 1 x 16<tspan font-size="12" baseline-shift="super">2</tspan> = 1 x 256 = 256</text>
+							<text x="255" y="195">B = 11 x 16<tspan  font-size="12"baseline-shift="super">3</tspan> = 11 x 4096 = 45056</text>
+							<text x="255" y="235">A = 10 x 16<tspan font-size="12" baseline-shift="super">4</tspan> = 10 x 65536 = 655360</text>
+						</g></svg></center>
+
+					<i>Step 5:</i> After which, add all products and that gives you the decimal equivalent.<br/>
+
+						<center>
+							<svg height="280" width="550">
+							<path d="M20 30 L20 230" stroke="black" stroke-width="1"/>
+							<path d="M20 230 L250 230" stroke="black" stroke-width="1"/>
+							<path d="M60 30 L60 190" stroke="black" stroke-width="1"/>
+							<path d="M60 190 L250 190" stroke="black" stroke-width="1"/>
+							<path d="M100 30 L100 150" stroke="black" stroke-width="1"/>
+							<path d="M100 150 L250 150" stroke="black" stroke-width="1"/>
+							<path d="M140 30 L140 110" stroke="black" stroke-width="1"/>
+							<path d="M140 110 L250 110" stroke="black" stroke-width="1"/>
+							<path d="M180 30 L180 70" stroke="black" stroke-width="1"/>
+							<path d="M180 70 L250 70" stroke="black" stroke-width="1"/>
+                            
+                            
+                            <path d="M460 270 L460 245 " stroke="black" stroke-width="1"/>
+                            <path d="M460 245 L530 245" stroke="black" stroke-width="1"/>
+                            <path d="M530 245 L530 270" stroke="black" stroke-width="1"/>
+                            <path d="M530 270 L460 270" stroke="black" stroke-width="1"/>
+						    
+
+							<g font-size="17" fill="black" stroke="none" text-anchor="left">
+							<text x="15" y="25">A</text>
+							<text x="55" y="25">B</text>
+							<text x="95" y="25">1</text>
+							<text x="135" y="25">D</text>
+							<text x="175" y="25">E<tspan font-size="12" baseline-shift="sub">16</tspan></text>
+
+							<text x="255" y="75">E =  14 x 16<tspan font-size="12" baseline-shift="super">0</tspan> = 14 x 1 = 14</text>
+							<text x="255" y="115">D = 13 x 16<tspan font-size="12" baseline-shift="super">1</tspan> = 13 x 16 = 208</text>
+							<text x="255" y="155">1 = 1 x 16<tspan font-size="12" baseline-shift="super">2</tspan> = 14 x 256 = 256</text>
+							<text x="255" y="195">B = 11 x 16<tspan  font-size="12"baseline-shift="super">3</tspan> = 11 x 4096 = 45056</text>
+							<text x="255" y="235">A = 10 x 16<tspan font-size="12" baseline-shift="super">4</tspan> = 10 x 65536 = 655360</text>
+                            <text x="470" y="265"> 700894 </text>
+						</g></svg></center>
+					  
+					Therefore, AB1DE (base 16) = 700894 (base 10) <br/>
+
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/1tHgs0mrZ5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 				},
 				{
 					chapterId: 15,
@@ -546,34 +863,104 @@ export const CHAPTER1 = {
 					title: 	`Hexadecimal to Binary`,
 					content: `
 					<b>HEXADECIMAL TO BINARY CONVERSION</b>
-					<br>
-					<br>
-					<div id="ch1s5s6" class="subsection">
-					<div class="subtext">Memory Method is a way of converting hexadecimal to its binary equivalent. Every hexadecimal digit has its 4-bit equivalent.</div>
-					<div class="subtext two-col-table">
-					  Hexadecimal, Binary
-					  0-9-A-F, 0000 - 1111
-					</div>
-					<div class="subtext">
-					  Example: Convert C0DE8 (base 16) to its binary equivalent.
-					</div>
-					<div class="subtext">
-					  Step 1: Write out each hexadecimal digit separately.
-					  C    0    D    E    8
-					</div>
-					<div class="subtext">
-					  Step 2: Use the table and write the equivalent digit below each hexadecimal number.
-					  C    0    D    E    8 <br/>
-					  1100 0000 1101 1110 1000
-					</div>
-					<div class="subtext">
-					  Write the bits together to form the binary equivalent and the conversion is done. <br/>
-					  Therefore, C0DE8 (base 16) = 11000000110111101000 (base 2)
-					</div>
-				  </div>
+					<br><br>
+					
+					<p style="text-indent:2em;">Memory Method is a way of converting hexadecimal to its binary equivalent. Every hexadecimal digit has its 4-bit equivalent.</p>
+
+					<table>
+					<tr>
+						<th>HEXADECIMAL</th> <th>BINARY</th>
+					</tr>
+					<tr>
+						<td>0</td> <td>0 0 0 0</td>
+					</tr>
+					<tr>
+						<td>1</td> <td>0 0 0 1</td>
+					</tr>
+					<tr>
+						<td>2</td> <td>0 0 1 0 </td>
+					</tr>
+					<tr>
+						<td>3</td> <td>0 0 1 1</td>
+					</tr>
+					<tr>
+						<td>4</td> <td>0 1 0 0</td>
+					</tr>
+					<tr>
+						<td>5</td> <td>0 1 0 1</td>
+					</tr>
+					<tr>
+						<td>6</td> <td>0 1 1 0</td>
+					</tr>
+					<tr>
+						<td>7</td> <td>0 1 1 1</td>
+					</tr>
+					<tr>
+						<td>8</td> <td> 1 0 0 0</td>
+					</tr>
+					<tr>
+						<td>9</td> <td> 1 0 0 1</td>
+					</tr>
+					<tr>
+						<td>A</td> <td>1 0 1 0</td>
+					</tr>
+					<tr>
+						<td>B</td> <td>1 0 1 1</td>
+					</tr> 
+					<tr>
+						<td>C</td> <td>1 1 0 0</td>
+					</tr>
+					<tr>
+						<td>D</td> <td>1 1 0 1</td>
+					</tr>
+					<tr>
+						<td>E</td> <td>1 1 1 0</td>
+					</tr>
+					<tr>
+						<td>F</td> <td>1 1 1 1</td>
+					</tr>
+					</table><br/>
+				
+					<p>Example: Convert C0DE8 (base 16) to its binary equivalent.</p>
+					
+					<i>Step 1:</i> Write out each hexadecimal digit separately.<br>
+					<p style="text-indent:3em;">  C 0 D E 8 </p>
+					
+					<i>Step 2:</i> Use the table and write the equivalent digit below each hexadecimal number.<br/><br/>
+
+					<table>
+					<tr>
+						<td> C </td>
+						<td> 0 </td>
+						<td> D </td>
+						<td> E </td>
+						<td> 8 </td>
+					</tr>
+					<tr>
+						<td> 1 1 0 0 </td>
+						<td> 0 0 0 0 </td>
+						<td> 1 1 0 1 </td>
+						<td> 1 1 1 0 </td>
+						<td> 1 0 0 0 </td>
+					</tr>
+					</table><br/>
+					      
+					<p>Write the bits together to form the binary equivalent and the conversion is done.<br/>
+					Therefore, C0DE8 (base 16) = 11000000110111101000 (base 2)</p><br/>
 
 				  <iframe width="560" height="315" src="https://www.youtube.com/embed/WI6Uvci2p7E?start=0&end=234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				  `
+
+				<style>
+				  table, th, td{	
+           			border: 1px solid black;
+  					border-collapse: collapse;
+           			font-size: 20px;
+  					text-align: center;
+  					margin-left:auto;
+  					margin-right:auto;
+  					padding: 0px 50px 0px 50px;
+  					}
+				</style>`
 				},
 			]
 		},
